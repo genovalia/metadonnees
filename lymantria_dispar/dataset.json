@@ -1,0 +1,40 @@
+{
+  "@context": {},
+  "@id": "",
+  "t@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Range-wide sampling of Lymantria dispar",
+  "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 350 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
+  "dcat:landingPage": "",
+
+  "dcterms:publisher": {},
+  "dcat:contactPoint": {},
+
+  "dcat:keyword": [],
+  "dcat:theme": "URI TO THEME TERM",
+
+  "dcat:distribution": [],
+
+  "dcterms:temporal": {},
+  "dcterms:spatial": {},
+
+  "dcterms:version": "",
+
+  "dcterms:license": "",
+  "dcterms:accessRights": "",
+
+  "dcterms:creator": {
+    "@type": "foaf:Person",
+    "foaf:name": ""
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        // example
+      },
+      "dcat:hadRole": ""
+    }
+  ]
+}
