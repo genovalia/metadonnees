@@ -1,40 +1,114 @@
 {
-  "@context": {},
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
   "@id": "",
-  "t@type": "dcat:Dataset",
+  "@type": "dcat:Dataset",
   "dcterms:identifier": "",
   "dcterms:language": "en",
   "dcterms:title": "Range-wide sampling of Lymantria dispar",
   "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 350 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
   "dcat:landingPage": "",
 
-  "dcterms:publisher": {},
-  "dcat:contactPoint": {},
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
 
-  "dcat:keyword": [],
-  "dcat:theme": "URI TO THEME TERM",
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+
+  "dcat:keyword": [
+    "Genotyping-by-Sequencing",
+    "Invasive species",
+    "Spongy moth"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
 
   "dcat:distribution": [],
 
-  "dcterms:temporal": {},
-  "dcterms:spatial": {},
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2016"
+    }
+  },
+  "dcterms:spatial": "http://sws.geonames.org/6295630/",
 
-  "dcterms:version": "",
+  "dcterms:version": "0.1",
 
   "dcterms:license": "",
-  "dcterms:accessRights": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
 
   "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0003-1436-3307",
     "@type": "foaf:Person",
-    "foaf:name": ""
+    "foaf:name": "Sandrine Picq"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:agent": {
-        // example
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-1436-3307",
+        "@type": "prov:Person",
+        "foaf:name": "Sandrine Picq"
       },
-      "dcat:hadRole": ""
+      "dcat:hadRole": ["author"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-6375-6580",
+        "@type": "prov:Person",
+        "foaf:name": "Yunke Wu"
+      },
+      "dcat:hadRole": ["coAuthor", "contributor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-7061-3772",
+        "@type": "prov:Person",
+        "foaf:name": "Vyacheslav V. Martemyano"
+      },
+      "dcat:hadRole": ["coAuthor", "contributor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-4006-532X",
+        "@type": "prov:Person",
+        "foaf:name": "Richard Hamelin"
+      },
+      "dcat:hadRole": ["principalInvestigator", "coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-1541-6052",
+        "@type": "prov:Person",
+        "foaf:name": "Michel Cusson"
+      },
+      "dcat:hadRole": ["coAuthor", "contributor"]
     }
   ]
 }
