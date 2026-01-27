@@ -1,7 +1,7 @@
 {
   "theme": {
     "type": "ncbi",
-    "path": "dcat:theme"
+    "path": "'dcat:theme'"
   },
   "publisher_name": {
     "type": "jsonpath",
