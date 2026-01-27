@@ -5,11 +5,11 @@
   },
   "publisher_name": {
     "type": "jsonpath",
-    "path": "'dcat:publisher'.'foaf:name'"
+    "path": "'dcterms:publisher'.'foaf:name'"
   },
   "publisher_url": {
     "type": "jsonpath",
-    "path": "'dcat:publisher'.'foaf:homepage'"
+    "path": "'dcterms:publisher'.'foaf:homepage'"
   },
   "contact_name": {
     "type": "jsonpath",
