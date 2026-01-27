@@ -1,1 +1,10 @@
-{}
+{
+  "content": [
+    {
+      "title": "Range-wide sampling of Lymantria dispar",
+      "mapper": "lymantria_dispar/mapper.json",
+      "OCA": "lymantria_dispar/asian_spongy_moth_OCA_package.json",
+      "DCAT": "lymantria_dispar/dcat.json"
+    }
+  ]
+}

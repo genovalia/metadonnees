@@ -1,0 +1,44 @@
+{
+  "theme": {
+    "type": "ncbi",
+    "path": "dcat:theme"
+  },
+  "publisher_name": {
+    "type": "jsonpath",
+    "path": "dcat:publisher.foaf:name"
+  },
+  "publisher_url": {
+    "type": "jsonpath",
+    "path": "dcat:publisher.foaf:homepage"
+  },
+  "contact_name": {
+    "type": "jsonpath",
+    "path": "dcat:contactPoint.vcard:fn"
+  },
+  "contact_email": {
+    "type": "jsonpath",
+    "path": "dcat:contactPoint.vcard:hasEmail.@id"
+  },
+  "species": {
+    "type": "literal",
+    "value": "Lymantria dispar",
+    "url": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/"
+  },
+  "year_begin": {
+    "type": "jsonpath",
+    "path": "dcterms:temporal.time:hasBeginning.time:inXSDgYear"
+  },
+  "year_end": {
+    "type": "jsonpath",
+    "path": "dcterms:temporal.time:hasEnd.time:inXSDgYear"
+  },
+  "spatial": {
+    "type": "literal",
+    "value": "Worldwide",
+    "url": "https://www.geonames.org/6295630/earth.html"
+  },
+  "creators": {
+    "type": "jsonpath",
+    "value": "dcat:qualifiedAttribution[0].prov:Agent"
+  }
+}
