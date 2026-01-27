@@ -35,7 +35,7 @@
   "spatial": {
     "type": "literal",
     "value": "Worldwide",
-    "url": "https://www.geonames.org/6295630/earth.html"
+    "hyperlink": "https://www.geonames.org/6295630/earth.html"
   },
   "creators": {
     "type": "jsonpath_multiple",
