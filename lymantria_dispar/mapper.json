@@ -13,11 +13,11 @@
   },
   "contact_name": {
     "type": "jsonpath",
-    "path": "dcat:contactPoint.vcard:fn"
+    "path": "'dcat:contactPoint'.'vcard:fn'"
   },
   "contact_email": {
     "type": "jsonpath",
-    "path": "dcat:contactPoint.vcard:hasEmail.@id"
+    "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
   },
   "species": {
     "type": "literal",
@@ -26,11 +26,11 @@
   },
   "year_begin": {
     "type": "jsonpath",
-    "path": "dcterms:temporal.time:hasBeginning.time:inXSDgYear"
+    "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
   },
   "year_end": {
     "type": "jsonpath",
-    "path": "dcterms:temporal.time:hasEnd.time:inXSDgYear"
+    "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
   },
   "spatial": {
     "type": "literal",
@@ -39,6 +39,6 @@
   },
   "creators": {
     "type": "jsonpath",
-    "value": "dcat:qualifiedAttribution[0].prov:Agent"
+    "value": "'dcat:qualifiedAttribution'[*].'prov:Agent'"
   }
 }
