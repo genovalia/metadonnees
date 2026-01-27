@@ -39,6 +39,6 @@
   },
   "creators": {
     "type": "jsonpath_multiple",
-    "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'"
+    "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'foaf:name'"
   }
 }
