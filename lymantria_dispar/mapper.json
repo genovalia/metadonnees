@@ -38,7 +38,7 @@
     "url": "https://www.geonames.org/6295630/earth.html"
   },
   "creators": {
-    "type": "jsonpath",
+    "type": "jsonpath_multiple",
     "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'"
   }
 }
