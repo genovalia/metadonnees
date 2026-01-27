@@ -22,7 +22,7 @@
   "species": {
     "type": "literal",
     "value": "Lymantria dispar",
-    "url": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/"
+    "hyperlink": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/"
   },
   "year_begin": {
     "type": "jsonpath",
