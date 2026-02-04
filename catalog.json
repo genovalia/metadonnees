@@ -9,7 +9,7 @@
     {
       "title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
       "mapper": "white_spruce/mapper.json",
-      "OCA": "white_sprice/oca.json",
+      "OCA": "white_spruce/oca.json",
       "DCAT": "white_spruce/dcat.json"
     }
   ]
