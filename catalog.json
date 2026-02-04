@@ -5,6 +5,12 @@
       "mapper": "lymantria_dispar/mapper.json",
       "OCA": "lymantria_dispar/asian_spongy_moth_OCA_package.json",
       "DCAT": "lymantria_dispar/dcat.json"
+    },
+    {
+      "title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
+      "mapper": "white_spruce/mapper.json",
+      "OCA": "",
+      "DCAT": "white_spruce/dcat.json"
     }
   ]
 }

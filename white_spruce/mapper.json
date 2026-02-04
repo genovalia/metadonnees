@@ -1,0 +1,46 @@
+{
+  "theme": {
+    "type": "ncbi",
+    "path": "'dcat:theme'"
+  },
+  "publisher_name": {
+    "type": "jsonpath",
+    "path": "'dcterms:publisher'.'foaf:name'"
+  },
+  "publisher_url": {
+    "type": "jsonpath",
+    "path": "'dcterms:publisher'.'foaf:homepage'"
+  },
+  "contact_name": {
+    "type": "jsonpath",
+    "path": "'dcat:contactPoint'.'vcard:fn'"
+  },
+  "contact_email": {
+    "type": "jsonpath",
+    "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+  },
+  "species": {
+    "type": "literal",
+    "value": "Picea glauca"
+  },
+  "year_begin": {
+    "type": "jsonpath",
+    "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+  },
+  "year_end": {
+    "type": "jsonpath",
+    "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+  },
+  "spatial": {
+    "type": "literal",
+    "value": "Province of Quebec, Canada"
+  },
+  "creators": {
+    "type": "jsonpath_multiple",
+    "path": "'dcat:qualifiedAttribution'[0].'prov:Agent'.'foaf:name'"
+  },
+  "creators_urls": {
+    "type": "jsonpath_multiple",
+    "path": "'dcat:qualifiedAttribution'[0].'prov:Agent'.'@id'"
+  }
+}

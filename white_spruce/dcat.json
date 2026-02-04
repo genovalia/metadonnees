@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
+  "dcterms:description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity for 1473 trees sampled in 43 natural populations from the province of Québec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
+  "dcat:landingPage": "",
+
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+
+  "dcat:keyword": [
+    "conifer",
+    "Picea glauca",
+    "genomics",
+    "drought adaptation",
+    "phenotypic variation",
+    "tree-ring analysis"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3330/",
+
+  "dcat:distribution": [],
+
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2005"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2017"
+    }
+  },
+  "dcterms:spatial": "https://www.geonames.org/6115047/",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/ClosedAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-8621-9801",
+    "@type": "foaf:Person",
+    "foaf:name": "Nathalie Isabel"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0001-8621-9801",
+        "@type": "prov:Person",
+        "foaf:name": "Nathalie Isabel"
+      },
+      "dcat:hadRole": ["pointOfContact"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://www.ffgg.ulaval.ca/faculte/departement-des-sciences-du-bois-et-de-la-foret/personnel-enseignant/jean-bousquet",
+        "@type": "prov:Person",
+        "foaf:name": "Jean Bousquet"
+      },
+      "dcat:hadRole": ["pointOfContact"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-1340-1586",
+        "@type": "prov:Person",
+        "foaf:name": "Claire Depardieu"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-3198-4551",
+        "@type": "prov:Person",
+        "foaf:name": "Sébastien Gerardi"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-0436-7486",
+        "@type": "prov:Person",
+        "foaf:name": "Martin Girardin"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-5947-533X",
+        "@type": "prov:Person",
+        "foaf:name": "Manuel Lamothe"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-0184-9247",
+        "@type": "prov:Person",
+        "foaf:name": "Patrick Lenz"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-3519-4998",
+        "@type": "prov:Person",
+        "foaf:name": "Simon Nadeau"
+      },
+      "dcat:hadRole": ["coAuthor"]
+    }
+  ]
+}
