@@ -1,12 +1,14 @@
 {
   "content": [
     {
+      "id": "lymdis1",
       "title": "Range-wide sampling of Lymantria dispar",
       "mapper": "lymdis1/mapper.json",
       "OCA": "lymdis1/oca.json",
       "DCAT": "lymdis1/dcat.json"
     },
     {
+      "id": "picgla1",
       "title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
       "mapper": "picgla1/mapper.json",
       "OCA": "picgla1/oca.json",
