@@ -1,1 +1,218 @@
-{}
+{
+  "d": "EIFw5x_hunNc7CRslrfSiqflqRMmB79gEaeKbTD0WQkR",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "v": "OCAA11JSON00131c_",
+    "bundle": {
+      "v": "OCAS11JSON0012ff_",
+      "d": "EIuxqwW2psWwoepSVaFOAvHOfjINQqhTQ__VULnLVS4H",
+      "capture_base": {
+        "d": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "avg_density": "Numeric",
+          "avg_radial_diameter": "Numeric",
+          "avg_wall_thickness": "Numeric",
+          "country": "Text",
+          "cwr_radial": "Numeric",
+          "dbh_1997": "Numeric",
+          "dbh_2017": "Numeric",
+          "elevation": "Numeric",
+          "genotyping_technology": "Text",
+          "height_1986": "Numeric",
+          "height_1992": "Numeric",
+          "height_1997": "Numeric",
+          "height_2017": "Numeric",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "recovery_2_years_2002": "Numeric",
+          "rel_resil_2_years_2002": "Numeric",
+          "resilience_2_years_2002": "Numeric",
+          "resist_2_years_2002": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "EMxSBFUkcWJ7UVWg3YKCe59leUkikEIjUzZ18dlsh2s9",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "avg_density": "Average wood density in kg /m-3",
+              "avg_radial_diameter": "Average radial diameter in micrometers",
+              "avg_wall_thickness": "Average cell wall thickness measured in micrometers",
+              "country": "Country of origin of the individuals sampled",
+              "cwr_radial": "Cell wall reinforcement",
+              "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
+              "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
+              "elevation": "Elevation at the sites where individuals were collected (in meters)",
+              "genotyping_technology": "Genotyping technology such as WGS, GBS, SNPchip...",
+              "height_1986": "Individual height measured in 1986",
+              "height_1992": "Individual height measured in 1992",
+              "height_1997": "Individual height measured in 1997",
+              "height_2017": "Individual height measured in 2017",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "recovery_2_years_2002": "Growth recovery (basal area increment) 2 years following drought (2002 episode), calculated according to Lloret et al. 2011",
+              "rel_resil_2_years_2002": "Ralative growth resilience (basal area increment) 2 years following drought (2002 episode)",
+              "resilience_2_years_2002": "Growth resilience (basal area increment) 2 years following drought (2002 episode)",
+              "resist_2_years_2002": "Growth resistance (basal area increment) 2 years following drought (2002 episode)",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA..."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EIMmLSLSCbxd5xrteuR9Hf5x6MLJX_-rMqRHLX-TGVMe",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "avg_density": "avg_density",
+              "avg_radial_diameter": "avg_radial_diameter",
+              "avg_wall_thickness": "avg_wall_thickness",
+              "country": "country",
+              "cwr_radial": "cwr_radial",
+              "dbh_1997": "dbh_1997",
+              "dbh_2017": "dbh_2017",
+              "elevation": "elevation",
+              "genotyping_technology": "genotyping_technology",
+              "height_1986": "height_1986",
+              "height_1992": "height_1992",
+              "height_1997": "height_1997",
+              "height_2017": "height_2017",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "recovery_2_years_2002": "recovery_2_years_2002",
+              "rel_resil_2_years_2002": "rel_resil_2_years_2002",
+              "resilience_2_years_2002": "resilience_2_years_2002",
+              "resist_2_years_2002": "resist_2_years_2002",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EFsnE8VBldSs1mnstTzzFC30vTpD-07QTQsuWhgot4XQ",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity, as well as environmental data for 1473 trees sampled in 43 natural populations from the province of Quebec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
+            "name": "picea_glauca_drought_adaptation"
+          }
+        ],
+        "unit": {
+          "d": "EFaoZXzLofttAMAmxCjPGPqqNnPxJwjm_2IJytcfcSVc",
+          "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "avg_density": "kg/m3",
+            "avg_radial_diameter": "micrometer",
+            "avg_wall_thickness": "micrometer",
+            "cwr_radial": "micrometer",
+            "dbh_1997": "centimeter",
+            "dbh_2017": "centimeter",
+            "elevation": "meter",
+            "height_1986": "meter",
+            "height_1992": "meter",
+            "height_1997": "meter",
+            "height_2017": "meter",
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY": {
+        "d": "EIEpjcXeurboS4iTQjNIGpgI2GWzv_FeRSRy2FXYoIwx",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EJdUQJpy-07jzhF32mmH25M7o4HkNWA3pyUw3nMXhAKT",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "elevation",
+              "height_1986",
+              "height_1992",
+              "height_1997",
+              "height_2017",
+              "dbh_1997",
+              "dbh_2017",
+              "avg_density",
+              "avg_wall_thickness",
+              "cwr_radial",
+              "avg_radial_diameter",
+              "recovery_2_years_2002",
+              "resilience_2_years_2002",
+              "rel_resil_2_years_2002",
+              "resist_2_years_2002",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          },
+          "unit_framing": {
+            "d": "EJWh-BUuc_CY2JUHSCTKaeRSPMfPS8UcRoehZiMrro4M",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "centimeter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "cm"
+              },
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              },
+              "kg/m3": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "kg/m3"
+              },
+              "meter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "m"
+              },
+              "micrometer": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "um"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
