@@ -21,7 +21,7 @@
   },
   "species": {
     "type": "literal",
-    "value": "DNA"
+    "value": "eDNA"
   },
   "year_begin": {
     "type": "jsonpath",
