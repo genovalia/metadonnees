@@ -29,7 +29,7 @@
   },
   "year_end": {
     "type": "literal",
-    "path": "present"
+    "value": "present"
   },
   "spatial": {
     "type": "literal",
