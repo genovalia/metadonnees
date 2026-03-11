@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Projet de science participative code Béluga",
+  "dcterms:description": "Code Béluga is a community science initiative led by Génome Québec and Espace pour la vie. The project uses environmental DNA (eDNA) collected from water samples to deepen our understanding of biodiversity in the St. Lawrence River Estuary. Citizens collect water samples following a standardized protocol, and these samples are analyzed at Génome Québec’s expertise center to identify the species present in the ecosystem. The dataset contains 915 samples collected at four sites over three distinct sampling dates per season - spring, summer, and fall. Each sample was sequenced for the 12S, 16S, 18S, MiDeca, and CO1 amplicons.. Each sample was sequenced for the 12S, 16S, 18S, MiDeca, and CO1 amplicons.",
+  "dcat:landingPage": "",
+
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Génome Québec",
+    "vcard:hasEmail": {
+      "@id": "mailto:accesdonnees@genomequebec.com"
+    }
+  },
+
+  "dcat:keyword": [
+    "eDNA",
+    "lake",
+    "river",
+    "collaborative science",
+    "12S",
+    "MiFish",
+    "16S",
+    "18S",
+    "MiDeca",
+    "CO1"
+  ],
+
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/131567/",
+
+  "dcat:distribution": [],
+
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2025"
+    }
+  },
+
+  "dcterms:spatial": "https://www.geonames.org/6115047/",
+
+  "dcterms:version": "0.1",
+
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+
+  "dcterms:creator": {
+    "@id": "https://genomequebec.com",
+    "@type": "foaf:Organization",
+    "foaf:name": "Génome Québec"
+  }
+}

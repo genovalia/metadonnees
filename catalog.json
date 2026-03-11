@@ -13,6 +13,13 @@
       "mapper": "picgla1/mapper.json",
       "OCA": "picgla1/oca.json",
       "DCAT": "picgla1/dcat.json"
+    },
+    {
+      "id": "ednaspp2",
+      "title": "Projet de science participative code Béluga",
+      "mapper": "ednaspp2/mapper.json",
+      "OCA": "",
+      "DCAT": "ednaspp2/dcat.json"
     }
   ]
 }
