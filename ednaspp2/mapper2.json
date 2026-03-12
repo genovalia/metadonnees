@@ -54,7 +54,7 @@
     },
     "description": {
       "type": "literal",
-      "value": ""
+      "value": "Code Béluga est une initiative de science participative pilotée par Génome Québec et Espace pour la vie. Le projet utilise l’ADN environnemental (ADNe) extrait à partir d’échantillons d’eau afin d’approfondir notre compréhension de la biodiversité de l’estuaire du fleuve Saint-Laurent. Des citoyens collectent des échantillons d’eau selon un protocole standardisé, et ces échantillons sont ensuite analysés au centre d’expertise de Génome Québec afin d’identifier les espèces présentes dans l’écosystème. Le jeu de données comprend actuellement 915 échantillons recueillis sur quatre sites à trois dates distinctes chaque année, soit au printemps, en été et à l’automne. Chaque échantillon a été séquencé pour les amplicons 12S, 16S, 18S, MiDeca et CO1 afin d'obtenir le portrait le plus réaliste possible de la diversité des espèces présentes."
     },
     "theme": {
       "type": "literal",
