@@ -5,6 +5,12 @@
       "mapper": "ednaspp2/mapper2.json",
       "OCA": "ednaspp2/oca.json",
       "DCAT": "ednaspp2/dcat.json"
+    },
+    {
+      "id": "lymdis1",
+      "mapper": "lymdis1/mapper2.json",
+      "OCA": "lymdis1/oca.json",
+      "DCAT": "lymdis1/dcat.json"
     }
   ]
 }
