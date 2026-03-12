@@ -13,7 +13,7 @@
   "@type": "dcat:Dataset",
   "dcterms:identifier": "",
   "dcterms:language": "en",
-  "dcterms:title": "Projet de science participative code Béluga",
+  "dcterms:title": "Code Beluga, a Community Science Initiative",
   "dcterms:description": "Code Béluga is a community science initiative led by Génome Québec and Espace pour la vie. The project uses environmental DNA (eDNA) collected from water samples to deepen our understanding of biodiversity in the St. Lawrence River Estuary. Citizens collect water samples following a standardized protocol, and these samples are analyzed at Génome Québec’s expertise center to identify the species present in the ecosystem. The dataset contains 915 samples collected at four sites over three distinct sampling dates per season - spring, summer, and fall. Each sample was sequenced for the 12S, 16S, 18S, MiDeca, and CO1 amplicons.. Each sample was sequenced for the 12S, 16S, 18S, MiDeca, and CO1 amplicons.",
   "dcat:landingPage": "",
 
