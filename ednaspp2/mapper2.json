@@ -51,8 +51,14 @@
     }
   },
   "fr": {
-    "title": "",
-    "description": "",
+    "title": {
+      "type": "literal",
+      "value": "Projet de science participative code Béluga"
+    },
+    "description": {
+      "type": "literal",
+      "value": ""
+    },
     "theme": {
       "type": "literal",
       "value": "organismes cellulaires"
