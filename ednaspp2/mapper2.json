@@ -24,11 +24,11 @@
       "value": "eDNA"
     },
     "temporal": {
-      "begin": {
+      "year_begin": {
         "type": "jsonpath",
         "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
       },
-      "end": {
+      "year_end": {
         "type": "literal",
         "value": "present"
       }
