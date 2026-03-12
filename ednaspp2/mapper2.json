@@ -45,10 +45,7 @@
       "type": "jsonpath",
       "path": "'dcterms:creator'.'@id'"
     },
-    "access_request_url": {
-      "type": "literal",
-      "value": "https://wagtail.apps.genovalia.ulaval.ca/documents/19/Data_Access_Application_Form_GenomeQuebec_FINAL.pdf"
-    }
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/19/Data_Access_Application_Form_GenomeQuebec_FINAL.pdf"
   },
   "fr": {
     "title": {
@@ -103,9 +100,6 @@
       "type": "jsonpath",
       "path": "'dcterms:creator'.'@id'"
     },
-    "access_request_url": {
-      "type": "literal",
-      "value": "https://wagtail.apps.genovalia.ulaval.ca/documents/18/Formulaire_demande_dacc%C3%A8s_G%C3%A9nomeQu%C3%A9bec_Final.pdf"
-    }
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/18/Formulaire_demande_dacc%C3%A8s_G%C3%A9nomeQu%C3%A9bec_Final.pdf"
   }
 }
