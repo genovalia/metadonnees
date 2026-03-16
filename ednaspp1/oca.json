@@ -1,43 +1,44 @@
 {
-  "d": "ELQE0GGbCuA8HJjG6gNqtz2ZioW6nzQVf6ChRs2ZAx65",
+  "d": "EPO3a0pHHsRHRVhwetw72eTSA2s1Jto3cZSaBJsVz4N0",
   "type": "oca_package/1.0",
   "oca_bundle": {
-    "v": "OCAA11JSON001b78_",
+    "v": "OCAA11JSON001c34_",
     "bundle": {
-      "v": "OCAS11JSON001b5b_",
-      "d": "ECJJhYNxWek8449NBvWXbWAgYUtpGbIv0byRbc96KFcm",
+      "v": "OCAS11JSON001c17_",
+      "d": "EBcotPTC5ZEggX8iMy5udRr5dZJ9AtrBXGeLr8XeseM2",
       "capture_base": {
-        "d": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+        "d": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "analysis_method": "Text",
           "country": "Text",
+          "extraction_protocol": "Text",
           "filter_size": "Numeric",
           "filter_type": "Text",
           "fwd_probe_name": "Text",
           "fwd_probe_seq": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
-          "is_blank": "Text",
           "latitude": "Numeric",
           "library": "Text",
           "longitude": "Numeric",
+          "merging_tool": "Text",
           "number_of_cycles": "Numeric",
           "organism": "Text",
           "ref_database": "Text",
           "rev_probe_name": "Text",
           "rev_probe_seq": "Text",
-          "sample_cohort": "Text",
           "sample_field_blank": "Text",
           "sample_type": "Text",
           "sampled_quantity": "Numeric",
           "sampling_date": "DateTime",
-          "sampling_depth": "Text",
-          "sampling_time": "Text",
+          "sampling_depth": "Numeric",
           "sequenced_molecule": "Text",
           "sequencing_instrument": "Text",
           "sequencing_mode": "Text",
-          "tide": "Text"
+          "taxonomic_assign_tool": "Text",
+          "trimming_tool": "Text",
+          "unique_seq_creation_tool": "Text"
         },
         "classification": "RDF106",
         "flagged_attributes": []
@@ -45,8 +46,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAZKPLERa-GIw3-YITFDpl5tFhwAeVvwzYEFl52ez8-G",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "EOE118ZTBORR3lNUZv9J3zfq1R9Ug4t3VbQVtXZo2e66",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -70,8 +71,8 @@
           }
         ],
         "entry_code": {
-          "d": "EOHMIWObH-E8JMa7xxMNFO54EF3sLAvHGSD4GemEeo3V",
-          "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+          "d": "EHtEidVDkn-WJ262aia_vqb4wwMIPBDs4bv2Drj25Kh1",
+          "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "analysis_method": ["ASV", "OTU"],
@@ -82,23 +83,24 @@
         },
         "information": [
           {
-            "d": "EF_oLzzf_GqPVIhPdZrWzA-HxK-CBuwMcUMa_fOEm5vl",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "EOxvKg9kJqDB50hHbOF-SASrO11SvFD0zY_GBP5nN4T0",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "analysis_method": "Either OTU or ASV",
               "country": "Country of origin of the eDNA parent sample",
+              "extraction_protocol": "Method used to isolate environmental DNA / RNA from the collected sample prior to amplification and sequencing",
               "filter_size": "Pore size of the filter used to capture environmental DNA (for water samples)",
               "filter_type": "Material or model of filter used to capture environmental DNA (for water samples)",
               "fwd_probe_name": "Forward probe or primer name (such as LCO1490, MiFish\\-UF)",
               "fwd_probe_seq": "Nucleotide sequence of the forward primer or probe used to amplify or detect the target DNA region",
               "genotyping_technology": "Either amplicon, genomic DNA or RNA in an eDNA or microbiome study framework",
               "id": "ID referring to the sample in the ASV/OTU read count file. Warning : one unique id per amplicon (i.e. primer /probe) in case of amplicon sequencing",
-              "is_blank": "Indicates if a sample is a negative control",
               "latitude": "Latitude in decimal degree. Ex: \\-42.23452",
               "library": "Name of the targeted DNA region amplified for sequencing, such as 16S or 18S, for instance",
               "longitude": "Longitude in decimal degree. Ex: \\-42.23452",
+              "merging_tool": "Software or algorithm (name and version) used to merge paired\\-end sequencing reads into a single contiguous sequence",
               "number_of_cycles": "Total number of sequencing cycles performed during a sequencing run",
               "organism": "Either eDNA_spp or microbiome_spp in an eDNA / microbiome study framework",
               "ref_database": "Curated database of DNA sequences (name and version) used to assign taxonomic identities to sequencing reads (i.e. Greengenes 138, SILVA 123)",
@@ -109,67 +111,69 @@
               "sampled_quantity": "Amount of environmental material collected for DNA analysis",
               "sampling_date": "Date on which the environmental parent sample was collected, expressed in the standard ISO 8601 format YYYY\\-MM\\-DD",
               "sampling_depth": "Depth at which the environmental aprent sample was collected",
-              "sampling_time": "Time (or time range) at which the environmental parent sample was collected, expressed in ISO 8601 format (hh:mm:ss; for a range: 13:00–15:00)",
               "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
               "sequencing_instrument": "Name of the targeted DNA region amplified for sequencing, such as 16S or 18S, for instance",
               "sequencing_mode": "Read configuration used during sequencing, such as single\\-end, paired\\-end, long read sequencing",
-              "tide": "Tidal phase during which the environmental parent sample was collected"
+              "taxonomic_assign_tool": "Software or algorithm (name and version) used to assign taxonomic identities to sequencing reads based on a reference database",
+              "trimming_tool": "Software or algorithm (name and version) used to remove low\\-quality bases, adapters, or primers from sequencing reads before downstream analysis",
+              "unique_seq_creation_tool": "Tool name and version used to build unique sequences. Ex: vsearch 1.11.1"
             }
           }
         ],
         "label": [
           {
-            "d": "EEaSgBxApQAjh9wOIwzTPZ7OSUwwkWN1Guw1Q6wjfibq",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "ECb7Z1rWsb4McMwWmgkswIXFXBbloNo223PHe9_JdXnG",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "analysis_method": "analysis method",
               "country": "country",
+              "extraction_protocol": "extraction protocol",
               "filter_size": "filter size",
               "filter_type": "filter type",
               "fwd_probe_name": "forward probe name",
               "fwd_probe_seq": "forward probe sequence",
               "genotyping_technology": "genotyping technology",
               "id": "id",
-              "is_blank": "is blank",
               "latitude": "latitude",
               "library": "library",
               "longitude": "longitude",
+              "merging_tool": "merging tool",
               "number_of_cycles": "number of cycles",
               "organism": "organism",
               "ref_database": "reference database",
               "rev_probe_name": "reverse probe name",
               "rev_probe_seq": "reverse probe sequence",
-              "sample_cohort": "sample cohort",
               "sample_field_blank": "sample field blank",
               "sample_type": "sample type",
               "sampled_quantity": "sampled quantity",
               "sampling_date": "sampling date",
               "sampling_depth": "sampling depth",
-              "sampling_time": "sampling time",
               "sequenced_molecule": "sequenced molecule",
               "sequencing_instrument": "sequencing instrument",
               "sequencing_mode": "sequencing mode",
-              "tide": "tide"
+              "taxonomic_assign_tool": "taxonomic assignment tool",
+              "trimming_tool": "trimming tool",
+              "unique_seq_creation_tool": "unique sequence creation tool"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EOPRxRsROeVJJFOm6qhNDON93Wkm5EnbzPpDpuGmHmdG",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "EHp60Id7m9y2qa-AcI_RUVazQgoDLfjwUlySJwwZIaUJ",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "Code Béluga is a community science initiative led by Génome Québec and Espace pour la vie. The project uses environmental DNA (eDNA) collected from water samples to deepen our understanding of biodiversity in the St. Lawrence River Estuary. Citizens collect water samples following a standardized protocol, and these samples are analyzed at Génome Québec’s expertise center to identify the species present in the ecosystem. The dataset currently contains 915 samples collected at four sites over three distinct sampling dates per year \\- spring, summer, and fall. Each sample was sequenced for the 12S, 16S, 18S, MiDeca, and COI amplicons in order to obtain the most realistic representation possible of the diversity of species present.",
-            "name": "Code Béluga"
+            "description": "Mission eDNA is a citizen science ongoing project developed by Génome Québec, in collaboration with various scientific, educational, and governmental partners. The data set includes so far 1005 samples of water collected by students and their teachers from several Quebec schools. These samples have been sequenced for 12S, 16S, 18S and COI genomic regions.",
+            "name": "Mission_ADNeau"
           }
         ],
         "unit": {
-          "d": "EO_PMVFFIPSCF7gZntWeapHgVbegLY6uGiZzVq0QaB2b",
-          "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+          "d": "EGnskdYrV11WyqJchW2YnE6FiVE-gG_l2ZrQk4A44Edq",
+          "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "filter_size": "micrometer",
@@ -185,31 +189,28 @@
   },
   "extensions": {
     "adc": {
-      "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy": {
-        "d": "EEq3CxF3Vuz2psrPWhb-7MHYrj9HbpXByFmjchsSKR1X",
+      "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282": {
+        "d": "ENlahR2_ElvCtAremdBz_iQRPZIv9UC-pzQOA746GC_E",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAP3--vtA0-cOcCtQvvHFmq_4k4lPmgFCVtYA_GMBlui",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "EJnErVV3shOMvOKC4s2fLtYEeYaVVFEi2jV4v6O_ct-L",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "organism",
               "id",
               "sample_field_blank",
-              "sample_cohort",
-              "is_blank",
               "country",
               "latitude",
               "longitude",
               "sampling_date",
-              "sampling_time",
-              "tide",
               "sample_type",
               "sampled_quantity",
               "sampling_depth",
               "filter_size",
               "filter_type",
+              "extraction_protocol",
               "sequenced_molecule",
               "genotyping_technology",
               "library",
@@ -221,7 +222,11 @@
               "rev_probe_name",
               "rev_probe_seq",
               "analysis_method",
-              "ref_database"
+              "trimming_tool",
+              "merging_tool",
+              "unique_seq_creation_tool",
+              "ref_database",
+              "taxonomic_assign_tool"
             ],
             "entry_code_ordering": {
               "sequenced_molecule": ["DNA", "RNA"],
@@ -231,8 +236,8 @@
             }
           },
           "unit_framing": {
-            "d": "EPkIwAFvD8OcbFDX4xOfHRm3m0O1R3buveq368sblKZa",
-            "capture_base": "EL4vYPWejD87pXAiOyibA7wDh0v1euBMvq3pQBD9zVPy",
+            "d": "EKpj12AHINTC64bS1t6guNcgEl2Uj9hKz1KznTIh6HKl",
+            "capture_base": "EDFd77Sk3hH_AEWXEu--ZMNQ929B-nHu3JCD6Rfj6282",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
