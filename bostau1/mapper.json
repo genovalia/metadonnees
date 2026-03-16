@@ -1,9 +1,9 @@
 {
-  "id": "picgla1",
+  "id": "bostau1",
   "en": {
     "theme": {
       "type": "literal",
-      "value": "Picea glauca"
+      "value": "Bos taurus"
     },
     "publisher": {
       "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
@@ -21,7 +21,7 @@
     },
     "species": {
       "type": "literal",
-      "value": "Picea glauca"
+      "value": "Bos taurus"
     },
     "temporal": {
       "year_begin": {
@@ -29,8 +29,8 @@
         "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
       },
       "year_end": {
-        "type": "literal",
-        "value": "present"
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
       }
     },
     "spatial": {
@@ -50,15 +50,15 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Jeu de données génotypiques et phénotypiques pour l'étude de l'adaptation à la sécheresse chez l'épinette blanche"
+      "value": "Vaches de race Canadienne"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques et phénotypiques utilisées pour étudier l'architecture génomique de l'adaptation à la sécheresse chez l'épinette blanche (Picea glauca), un conifère nord-américain largement distribué. Il comprend des génotypes de SNPs génétiques (6153 SNPs), des phénotypes liés à l'anatomie, à la réponse de croissance et à la sensibilité au climat pour 1473 arbres échantillonnés dans 43 populations naturelles de la province de Québec. Les arbres ont été plantés dans un jardin commun établi en 1979 à Mastigouche (Québec, Canada)."
+      "value": "La Canadienne est une petite race de bovins laitiers robuste originaire du Canada, en particulier du Québec, connue pour produire du lait riche en matière grasse et en protéines par rapport à sa taille corporelle et pour son adaptation aux climats froids. Ce jeu de données contient 190 échantillons de vaches génotypés pour 312257 SNPs."
     },
     "theme": {
       "type": "literal",
-      "value": "Picea glauca"
+      "value": "Bos taurus"
     },
     "publisher": {
       "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
@@ -76,7 +76,7 @@
     },
     "species": {
       "type": "literal",
-      "value": "Picea glauca"
+      "value": "Bos taurus"
     },
     "temporal": {
       "year_begin": {

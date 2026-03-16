@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "",
+  "dcterms:language": "en",
+  "dcterms:title": "Canadienne breed cows",
+  "dcterms:description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+  "dcat:landingPage": "",
+
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+
+  "dcat:keyword": ["Canadienne breed", "genotyping chip", "genomic diversity"],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9913/",
+
+  "dcat:distribution": [],
+
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2018"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2018"
+    }
+  },
+
+  "dcterms:spatial": "https://www.geonames.org/6115047/",
+  "dcterms:version": "0.1",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  "dcterms:creator": {
+    "@id": "https://www.ulaval.ca/la-recherche/repertoire-corps-professoral/claude-robert",
+    "@type": "foaf:Person",
+    "foaf:name": "Claude Robert",
+    "foaf:mbox": "mailto:Claude.Robert@fsaa.ulaval.ca"
+  }
+}
