@@ -1,0 +1,78 @@
+{
+  // JSON-LD Context: Defines the namespaces for the properties used in this document.
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  // The unique identifier for this dataset (usually a URI).
+  "@id": "",
+  // The type of the resource (DCAT Dataset).
+  "@type": "dcat:Dataset",
+  // A secondary identifier for the dataset (e.g., a DOI or internal ID).
+  "dcterms:identifier": "",
+  // The primary language of the dataset (e.g., "en", "fr").
+  "dcterms:language": "en",
+  // The title of the dataset.
+  "dcterms:title": "",
+  // A detailed description of the dataset contents and purpose.
+  "dcterms:description": "",
+  // A Web page that can be navigated to in a Web browser to gain access to the dataset.
+  "dcat:landingPage": "",
+  // The entity responsible for making the dataset available.
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  // Contact information that can be used for sending comments about the dataset.
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  // A list of keywords (tags) describing the dataset. 
+  // Should match entries in dictionary.json for translation.
+  "dcat:keyword": [],
+  // The main theme/category of the dataset (e.g., a taxonomy URI).
+  "dcat:theme": "",
+  // Links to the actual data files or API endpoints.
+  "dcat:distribution": [],
+  // The temporal period covered by the dataset.
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      // Year in YYYY format.
+      "time:inXSDgYear": ""
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      // Year in YYYY format.
+      "time:inXSDgYear": ""
+    }
+  },
+  // The geographic area covered by the dataset (e.g., a GeoNames URI).
+  "dcterms:spatial": "",
+  // The version number of the dataset.
+  "dcterms:version": "0.1",
+  // The license under which the dataset is made available.
+  "dcterms:license": "",
+  // Information about who can access the resource or an indication of its security status.
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
+  // The person or organization that created the dataset.
+  "dcterms:creator": {
+    "@id": "", // URI of the creator (e.g., ORCID or profile link)
+    "@type": "foaf:Person",
+    "foaf:name": "",
+    "foaf:mbox": "" // mailto: email address
+  }
+}

@@ -1,0 +1,24 @@
+[project]
+name = "genovalia-catalog"
+version = "0.1.0"
+description = "Genovalia Dataset Catalog"
+authors = [
+    {name = "Olivier Banville",email = "olivier@banville.net"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "questionary (>=2.1.1,<3.0.0)",
+    "jsonpath-ng (>=1.8.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)",
+    "pytest-mock (>=3.15.1,<4.0.0)"
+]

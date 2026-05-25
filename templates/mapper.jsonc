@@ -1,0 +1,105 @@
+{
+  // The unique ID of the dataset, matching the directory name.
+  "id": "TEMPLATE_ID",
+  // English localization block.
+  "en": {
+    "theme": {
+      "type": "literal", // literal: the value is a string provided directly here.
+      "value": ""
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath", // jsonpath: extracts a single value from dcat.json using a JSONPath expression.
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      // ncbi: extracts a URL from dcat.json via JSONPath, fetches the page, and retrieves the 'ncbi_taxname' meta tag.
+      "type": "ncbi",
+      "path": "'dcat:theme'" // Example: if dcat:theme is an NCBI taxonomy URL
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": ""
+    },
+    "creators": {
+      // jsonpath_multiple: extracts ALL matching values from dcat.json as a list.
+      "type": "jsonpath_multiple",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath_multiple",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    // Direct link to the access request document.
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  // French localization block.
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": ""
+    },
+    "description": {
+      "type": "literal",
+      "value": ""
+    },
+    "theme": {
+      "type": "literal",
+      "value": ""
+    },
+    "publisher": {
+      "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
+      "url": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:homepage'" }
+    },
+    "contact": {
+      "name": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:fn'" },
+      "email": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'" }
+    },
+    "species": {
+      "type": "literal",
+      "value": ""
+    },
+    "temporal": {
+      "year_begin": { "type": "jsonpath", "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'" },
+      "year_end": { "type": "jsonpath", "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'" }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": ""
+    },
+    "creators": {
+      "type": "jsonpath_multiple",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath_multiple",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}
