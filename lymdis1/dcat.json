@@ -11,7 +11,7 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/lymdis1",
   "dcterms:language": "en",
   "dcterms:title": "Range-wide sampling of Lymantria dispar",
   "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",

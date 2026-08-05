@@ -11,7 +11,7 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/picgla1",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
   "dcterms:description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity for 1473 trees sampled in 43 natural populations from the province of Québec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
