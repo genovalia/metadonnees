@@ -11,10 +11,10 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/bostau1",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/oviari1",
   "dcterms:language": "en",
-  "dcterms:title": "Canadienne breed cows",
-  "dcterms:description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+  "dcterms:title": "Genotypic data from Quebec-raised sheeps",
+  "dcterms:description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -30,43 +30,44 @@
     }
   },
   "dcat:keyword": [
-    "Canadienne breed",
-    "genotyping chip",
-    "genomic diversity"
+    "Ovis aries",
+    "Sheep",
+    "breeding",
+    "genomics"
   ],
-  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9913/",
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9940/",
   "dcat:distribution": [],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2018"
+      "time:inXSDgYear": "2023"
     },
     "time:hasEnd": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2018"
+      "time:inXSDgYear": "present"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/",
+  "dcterms:spatial": "https://www.geonames.org/6115047/quebec.html",
   "dcterms:version": "0.1",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
-    "@id": "https://orcid.org/0000-0001-9690-8088",
-    "@type": "foaf:Person",
-    "foaf:name": "Claude Robert"
+    "@id": "https://www.semrpq.net/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Société des éleveurs de moutons de race pure du Québec"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0001-9690-8088",
-        "@type": "prov:Person",
-        "foaf:name": "Claude Robert"
+        "@id": "https://www.semrpq.net/",
+        "@type": "prov:Organization",
+        "foaf:name": "Société des éleveurs de moutons de race pure du Québec"
       },
       "dcat:hadRole": [
         "pointOfContact",
-        "principalInvestigator"
+        "owner"
       ]
     }
   ]

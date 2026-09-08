@@ -11,10 +11,10 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/bostau1",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/apimel1",
   "dcterms:language": "en",
-  "dcterms:title": "Canadienne breed cows",
-  "dcterms:description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+  "dcterms:title": "Genotypic dataset of domestic honeybees evaluated for winter hardiness, productivity, and disease resistance",
+  "dcterms:description": "This dataset contains genotypic data from female bee samples of various pedigree used to produce honeybee stock that is winter hardy, productive and disease resistant.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -30,42 +30,66 @@
     }
   },
   "dcat:keyword": [
-    "Canadienne breed",
-    "genotyping chip",
-    "genomic diversity"
+    "honeybee livestock",
+    "Apis mellifera",
+    "genomics",
+    "breeding",
+    "sustainability"
   ],
-  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9913/",
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7460/",
   "dcat:distribution": [],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2018"
+      "time:inXSDgYear": "2023"
     },
     "time:hasEnd": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2018"
+      "time:inXSDgYear": "present"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/",
+  "dcterms:spatial": "https://www.geonames.org/6251999/canada.html",
   "dcterms:version": "0.1",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
-    "@id": "https://orcid.org/0000-0001-9690-8088",
+    "@id": "https://pierre-giovenazzo.fsg.ulaval.ca/",
     "@type": "foaf:Person",
-    "foaf:name": "Claude Robert"
+    "foaf:name": "Pierre Giovenazzo"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0001-9690-8088",
+        "@id": "https://pierre-giovenazzo.fsg.ulaval.ca/",
         "@type": "prov:Person",
-        "foaf:name": "Claude Robert"
+        "foaf:name": "Pierre Giovenazzo"
       },
       "dcat:hadRole": [
         "pointOfContact",
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-4460-0131",
+        "@type": "prov:Person",
+        "foaf:name": "Ségolène Maucourt"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0002-2563-4849",
+        "@type": "prov:Person",
+        "foaf:name": "Andrée Rousseau"
+      },
+      "dcat:hadRole": [
         "principalInvestigator"
       ]
     }

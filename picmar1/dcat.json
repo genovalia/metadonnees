@@ -11,10 +11,10 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/lymdis1",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/picmar1",
   "dcterms:language": "en",
-  "dcterms:title": "Range-wide sampling of Lymantria dispar",
-  "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
+  "dcterms:title": "Genotypic dataset for studying climate adaptation in black spruce",
+  "dcterms:description": "This dataset contains genotypic data used to investigate climate adaptation in black spruce (Picea mariana), a widely distributed North American conifer. It includes gene SNP genotypes (4186 SNPs) for 254 trees sampled from 31 natural populations distributed across the species' transcontinental range. Geographic coordinates and elevation are provided for each sampling location.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -30,11 +30,14 @@
     }
   },
   "dcat:keyword": [
-    "Genotyping-by-Sequencing",
-    "invasive species",
-    "spongy moth"
+    "conifer",
+    "Picea mariana",
+    "genomics",
+    "environmental adaptation",
+    "phylogeographic lineage",
+    "candidate gene"
   ],
-  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3335/",
   "dcat:distribution": [],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
@@ -44,37 +47,37 @@
     },
     "time:hasEnd": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2016"
+      "time:inXSDgYear": "2014"
     }
   },
-  "dcterms:spatial": "http://sws.geonames.org/6295630/",
+  "dcterms:spatial": "https://www.geonames.org/6115047/",
   "dcterms:version": "0.1",
   "dcterms:license": "",
-  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
-    "@id": "https://orcid.org/0000-0003-1436-3307",
+    "@id": "https://www.ffgg.ulaval.ca/faculte/departement-des-sciences-du-bois-et-de-la-foret/personnel-enseignant/jean-bousquet",
     "@type": "foaf:Person",
-    "foaf:name": "Sandrine Picq"
+    "foaf:name": "Jean Bousquet"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-1436-3307",
+        "@id": "https://www.ffgg.ulaval.ca/faculte/departement-des-sciences-du-bois-et-de-la-foret/personnel-enseignant/jean-bousquet",
         "@type": "prov:Person",
-        "foaf:name": "Sandrine Picq"
+        "foaf:name": "Jean Bousquet"
       },
       "dcat:hadRole": [
         "pointOfContact",
-        "collaborator"
+        "principalInvestigator"
       ]
     },
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0002-6375-6580",
+        "@id": "https://www.linkedin.com/in/vincent-quevillon-9a14a9208/?isSelfProfile=false",
         "@type": "prov:Person",
-        "foaf:name": "Yunke Wu"
+        "foaf:name": "Vincent Quevillon"
       },
       "dcat:hadRole": [
         "collaborator"
@@ -83,32 +86,9 @@
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0002-7061-3772",
+        "@id": "https://orcid.org/0000-0002-0184-9247",
         "@type": "prov:Person",
-        "foaf:name": "Vyacheslav V. Martemyano"
-      },
-      "dcat:hadRole": [
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-4006-532X",
-        "@type": "prov:Person",
-        "foaf:name": "Richard Hamelin"
-      },
-      "dcat:hadRole": [
-        "principalInvestigator",
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-1541-6052",
-        "@type": "prov:Person",
-        "foaf:name": "Michel Cusson"
+        "foaf:name": "Patrick Lenz"
       },
       "dcat:hadRole": [
         "collaborator"

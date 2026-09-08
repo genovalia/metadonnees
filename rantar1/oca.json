@@ -1,0 +1,189 @@
+{
+  "d": "EPfxDCKLpHq1BVM2Fdhwig8Z-yQOzW6stGcw8ZAVYcCJ",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON001189_",
+      "d": "EClrhNO4hismO0cp3Am9CudBnSvS4PRk14fi0UIpfx6u",
+      "capture_base": {
+        "d": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "ecotype": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sample_tissue": "Text",
+          "sampling_year": "Text",
+          "sequenced_molecule": "Text",
+          "sex": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "ECSuikh-UHcEb1wEigHkLqyrIXkddjAuAL4sncFk8pmw",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
+              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "sex": "Sex: female, male, unknown"
+            }
+          },
+          {
+            "d": "ELUBymYFyEl0SZBjs3oilbaOmebfywDajl1KrOwBP2_W",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "ecotype": "Écotype: forestier, montagnard, migrateur",
+              "genotyping_technology": "technologie de génotypage: GBS, WGS, puce de génotypage",
+              "id": "ID utilisé dans le fichier de génotypage",
+              "latitude": "Latitude en degré décimaux: Ex: -42.23452",
+              "longitude": "Longitude en degré décimaux: Ex: -42.23452",
+              "organism": "Nom de l'espèce en Latin en suivant la classification de Linnée",
+              "sample_tissue": "Tissu échantillonné pour extraire l'ADN ou l'ARN ou...",
+              "sampling_year": "année de l'échantillonnage",
+              "sequenced_molecule": "Molécule séquencée: ADN, ARN,...",
+              "sex": "Sexe: Male, Femelle, inconnnu"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EIDzICWHcLrZ7fB4PSJYUElK_BQ_EnUbKzVUkSPdRY-3",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "ecotype": "ecotype",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sample_tissue": "samplee_tissue",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "ELms9L4-dRP7dR40udJBJRE2aF_1EJMYJOPhvDOtgz9H",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "ecotype": "ecotype",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sample_tissue": "sampled_tissue",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EDrLlBkHtY0Lx7DOElyHim6aV91kOmOFw3l-l0hmlGhn",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient des génotypes de caribous provenant d’échantillons collectés par le Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, le ministère responsable de la gestion de la faune sauvage au Québec.",
+            "name": "Rangifer_tarandus"
+          },
+          {
+            "d": "EIqApvZLr6m-tYzDdDS6Ue1M70hE7snqS8QWr417RRUI",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains caribou genotypes from samples collected by the Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, the department responsible for wildlife management in Quebec.",
+            "name": "Rangifer_tarandus"
+          }
+        ],
+        "unit": {
+          "d": "EMreyxz3bnT23Fe7bRhDaDMgeq5TI-bPD85lJJHZIK9q",
+          "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0": {
+        "d": "EEzoGwi7bomVVpQl4lVUSpa2Ap9odvLcxDBHWLcQ7Q-g",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EHhLFQ90Ow8q7HV6Z9dL7U6FYDysMZrHAhBQeVEERzd4",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sex",
+              "latitude",
+              "longitude",
+              "ecotype",
+              "sample_tissue",
+              "sampling_year",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          },
+          "unit_framing": {
+            "d": "EIm8umqqrmR9_zkbr4wWH-xrNStYDw404xjivW8BIODz",
+            "capture_base": "EOaraDT24OLllBei-pvlECs5U7Hu44twDTP1XJzUJwR0",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

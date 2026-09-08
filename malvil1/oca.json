@@ -1,0 +1,130 @@
+{
+  "d": "EM9LVc59zZDYeeBfxqKzf_jHNnf4QJCQeWUKo6qDjXd_",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000978_",
+      "d": "EEsILSN41FT1ei0Izgvd5LfArGsKyXNuDsxWjzCUDtJz",
+      "capture_base": {
+        "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sequenced_molecule": "Text",
+          "site_type": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "ELkNAKwkKdlL0AgoQL90uujE5K_dXFDM4dUt5Rjh_9cx",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as SNP chip, genotyping-by-sequencing, etc.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "site_type": "General environmental or habitat category of the sampling site"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EJ1hWLadP5KtL7sFMhYq-NyHR383Y7fNPLDnodJXDe4A",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "lat",
+              "longitude": "lon",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule",
+              "site_type": "site_type"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EEnMiN2iwtwtsglEiUnvtF3r37FSypyPBnM1szu9jhst",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotypes for 1360 capelin individuals (Mallotus villosus) sampled across eastern Canada to study how demographic history, shared ancestral polymorphism, and gene flow among glacial lineages contribute to local adaptation to sea conditions. Genotypes were obtained using a genotyping-by-sequencing approach. ",
+            "name": "mallotus_villotus_adaptation"
+          }
+        ],
+        "unit": {
+          "d": "EEDO-F6y4DJUtZcqhGcWZ30CEfWrRzHteWRjo369Jb6V",
+          "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "degree",
+            "longitude": "degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
+        "d": "EI2sPc2i7XpWeDJrVkO5yd8ZN-zzrQ-qG8vD4xUfBmz7",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EBOmSYI8Hs7tDZN8WOWI-lLlF5uGTnzVv7PvAQNhIMgH",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "site_type",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          },
+          "unit_framing": {
+            "d": "EImdvW7qzN1QC7T88RzFdpPvI19t9iz8ech2VLZ4Oseh",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

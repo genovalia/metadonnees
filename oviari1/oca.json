@@ -1,0 +1,111 @@
+{
+  "d": "EL7FVsLbM3v6dYx2FWnk8m7O9gmGkPv8EDeStCy6LH_T",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON00095f_",
+      "d": "ED3k70IymIIoxLvZgrXC2fjHcxshiHBBneSFeB3i0Rhb",
+      "capture_base": {
+        "d": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "breed": "Text",
+          "country": "Text",
+          "date_of_birth": "DateTime",
+          "farm": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sample_tissue": "Text",
+          "sequenced_molecule": "Text",
+          "sex": "Text"
+        },
+        "classification": "RDF402",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "ECVGgkRltz5mZAee1HU5zt19KEEVOQdxfcT-0S1egIF1",
+            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "breed": "Breed of the individual, such as Holstein or Jersey for instance",
+              "country": "Country of origin of the individuals sampled",
+              "date_of_birth": "Birth date of the individual, expressed in the standard ISO 8601 format YYYY-MM-DD",
+              "farm": "Name of the farm where the individual was raised",
+              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "sex": "Sex: female, male, unknown"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EPA6MlzM7aIDzEpCid-gF7eRqf9ZC6SVO6N3l-rMnvN4",
+            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breed": "breed",
+              "country": "country",
+              "date_of_birth": "date_of_birth",
+              "farm": "farm",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sample_tissue": "sample_tissue",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EAzn8nfB5ylv8IjOVn8NwbXD-E20YZgZqVvEfhcjkE3h",
+            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
+            "name": "ovis_aries"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY": {
+        "d": "EKY3izfUHvz27-Ha-dYA7CPCTrUjN4mgihxROLBj7Lii",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EFF1TUyHN5tYWcD2QdprYUz1Pz49q4DdavNTOEw2toNj",
+            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sex",
+              "date_of_birth",
+              "breed",
+              "farm",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          }
+        }
+      }
+    }
+  }
+}

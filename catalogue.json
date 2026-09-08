@@ -23,6 +23,48 @@
       "mapper": "bostau1/mapper.json",
       "OCA": "bostau1/oca.json",
       "DCAT": "bostau1/dcat.json"
+    },
+    {
+      "id": "ednaspp1",
+      "mapper": "ednaspp1/mapper.json",
+      "OCA": "ednaspp1/oca.json",
+      "DCAT": "ednaspp1/dcat.json"
+    },
+    {
+      "id": "apimel1",
+      "mapper": "apimel1/mapper.json",
+      "OCA": "apimel1/oca.json",
+      "DCAT": "apimel1/dcat.json"
+    },
+    {
+      "id": "corspp1",
+      "mapper": "corspp1/mapper.json",
+      "OCA": "corspp1/oca.json",
+      "DCAT": "corspp1/dcat.json"
+    },
+    {
+      "id": "malvil1",
+      "mapper": "malvil1/mapper.json",
+      "OCA": "malvil1/oca.json",
+      "DCAT": "malvil1/dcat.json"
+    },
+    {
+      "id": "oviari1",
+      "mapper": "oviari1/mapper.json",
+      "OCA": "oviari1/oca.json",
+      "DCAT": "oviari1/dcat.json"
+    },
+    {
+      "id": "picmar1",
+      "mapper": "picmar1/mapper.json",
+      "OCA": "picmar1/oca.json",
+      "DCAT": "picmar1/dcat.json"
+    },
+    {
+      "id": "rantar1",
+      "mapper": "rantar1/mapper.json",
+      "OCA": "rantar1/oca.json",
+      "DCAT": "rantar1/dcat.json"
     }
   ]
 }

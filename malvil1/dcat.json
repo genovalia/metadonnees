@@ -11,10 +11,10 @@
   },
   "@id": "",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/lymdis1",
+  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/malvil1",
   "dcterms:language": "en",
-  "dcterms:title": "Range-wide sampling of Lymantria dispar",
-  "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
+  "dcterms:title": "Caplin genotypic dataset for studying local adaptation to marine environments",
+  "dcterms:description": "This dataset contains genotypes for 1360 capelin individuals (Mallotus villosus) sampled across eastern Canada to study how demographic history, shared ancestral polymorphism, and gene flow among glacial lineages contribute to local adaptation to sea conditions. Genotypes were obtained using a genotyping-by-sequencing approach.",
   "dcat:landingPage": "",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -30,39 +30,53 @@
     }
   },
   "dcat:keyword": [
-    "Genotyping-by-Sequencing",
-    "invasive species",
-    "spongy moth"
+    "caplin",
+    "Mallotus villosus",
+    "genomics",
+    "local adaptation",
+    "marine environment",
+    "population genetics"
   ],
-  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/30960/",
   "dcat:distribution": [],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2013"
+      "time:inXSDgYear": "2014"
     },
     "time:hasEnd": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2016"
+      "time:inXSDgYear": "2014"
     }
   },
-  "dcterms:spatial": "http://sws.geonames.org/6295630/",
+  "dcterms:spatial": "https://www.geonames.org/6251999/canada.html",
   "dcterms:version": "0.1",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
-    "@id": "https://orcid.org/0000-0003-1436-3307",
+    "@id": "https://orcid.org/0000-0002-8085-9709",
     "@type": "foaf:Person",
-    "foaf:name": "Sandrine Picq"
+    "foaf:name": "Louis Bernatchez"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-1436-3307",
+        "@id": "https://orcid.org/0000-0002-8085-9709",
         "@type": "prov:Person",
-        "foaf:name": "Sandrine Picq"
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:Agent": {
+        "@id": "https://orcid.org/0000-0003-2987-3801",
+        "@type": "prov:Person",
+        "foaf:name": "Quentin Rougemont"
       },
       "dcat:hadRole": [
         "pointOfContact",
@@ -72,45 +86,12 @@
     {
       "@type": "prov:Attribution",
       "prov:Agent": {
-        "@id": "https://orcid.org/0000-0002-6375-6580",
+        "@id": "https://orcid.org/0000-0003-3250-6295",
         "@type": "prov:Person",
-        "foaf:name": "Yunke Wu"
+        "foaf:name": "Hugo Cayuela"
       },
       "dcat:hadRole": [
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:Agent": {
-        "@id": "https://orcid.org/0000-0002-7061-3772",
-        "@type": "prov:Person",
-        "foaf:name": "Vyacheslav V. Martemyano"
-      },
-      "dcat:hadRole": [
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-4006-532X",
-        "@type": "prov:Person",
-        "foaf:name": "Richard Hamelin"
-      },
-      "dcat:hadRole": [
-        "principalInvestigator",
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:Agent": {
-        "@id": "https://orcid.org/0000-0003-1541-6052",
-        "@type": "prov:Person",
-        "foaf:name": "Michel Cusson"
-      },
-      "dcat:hadRole": [
+        "pointOfContact",
         "collaborator"
       ]
     }

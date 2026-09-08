@@ -1,9 +1,9 @@
 {
-  "id": "lymdis1",
+  "id": "picmar1",
   "en": {
     "theme": {
       "type": "literal",
-      "value": "Lymantria dispar"
+      "value": "Picea mariana"
     },
     "publisher": {
       "name": {
@@ -27,68 +27,7 @@
     },
     "species": {
       "type": "literal",
-      "value": "Lymantria dispar"
-    },
-    "temporal": {
-      "year_begin": {
-        "type": "jsonpath",
-        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
-      },
-      "year_end": {
-        "type": "literal",
-        "value": "present"
-      }
-    },
-    "spatial": {
-      "type": "literal",
-      "value": "worldwide"
-    },
-    "creators": {
-      "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'foaf:name'"
-    },
-    "creators_urls": {
-      "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'@id'"
-    },
-    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
-  },
-  "fr": {
-    "title": {
-      "type": "literal",
-      "value": "Échantillonnage à l'échelle mondiale de Lymantria dispar"
-    },
-    "description": {
-      "type": "literal",
-      "value": "Ce jeu de données comprend les génotypes de 1156 individus échantillonnés à travers l’aire de répartition de la spongieuse asiatique (Lymantria dispar), qui s’étend de l’Amérique du Nord jusqu’au Japon, en passant par l’Eurasie. Le génotypage repose sur 280 SNPs diagnostiques de la provenances d'origine des individus qui ont été identifié à l’aide de la technologie de génotypage par séquençage (Genotyping-By-Sequencing)."
-    },
-    "theme": {
-      "type": "literal",
-      "value": "Lymantria dispar"
-    },
-    "publisher": {
-      "name": {
-        "type": "jsonpath",
-        "path": "'dcterms:publisher'.'foaf:name'"
-      },
-      "url": {
-        "type": "jsonpath",
-        "path": "'dcterms:publisher'.'foaf:homepage'"
-      }
-    },
-    "contact": {
-      "name": {
-        "type": "jsonpath",
-        "path": "'dcat:contactPoint'.'vcard:fn'"
-      },
-      "email": {
-        "type": "jsonpath",
-        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
-      }
-    },
-    "species": {
-      "type": "literal",
-      "value": "Lymantria dispar"
+      "value": "Picea mariana"
     },
     "temporal": {
       "year_begin": {
@@ -102,15 +41,76 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Monde Entier"
+      "value": "Canada"
     },
     "creators": {
-      "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'foaf:name'"
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
     },
     "creators_urls": {
-      "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'@id'"
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Jeu de données génotypiques pour l’étude de l’adaptation au climat chez l’épinette noire"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient des données génotypiques utilisées pour étudier l’adaptation au climat chez l’épinette noire (Picea mariana), un conifère d'Amérique du Nord à aire de répartition transcontinentale. Il comprend des données génotypiques de SNPs localisés dans des gènes (4186 SNPs) pour 254 arbres échantillonnés dans 31 populations naturelles couvrant une grande partie de l’aire de répartition de l’espèce. Les coordonnées géographiques et l’altitude sont fournies pour chaque site d’échantillonnage."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Canada"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
     },
     "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
   }
