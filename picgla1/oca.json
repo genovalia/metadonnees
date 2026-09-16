@@ -1,11 +1,10 @@
 {
-  "d": "EIFw5x_hunNc7CRslrfSiqflqRMmB79gEaeKbTD0WQkR",
+  "d": "ECUb3CiTR-_FiYYP2BKti5E8FYSy7M9AgETDMB2lvgwc",
   "type": "oca_package/1.0",
   "oca_bundle": {
-    "v": "OCAA11JSON00131c_",
     "bundle": {
-      "v": "OCAS11JSON0012ff_",
-      "d": "EIuxqwW2psWwoepSVaFOAvHOfjINQqhTQ__VULnLVS4H",
+      "v": "OCAS11JSON001329_",
+      "d": "EAepQZpaxe2jSI7xZTOobj8cCTXYMDfFtL7445XNb_Ol",
       "capture_base": {
         "d": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
         "type": "spec/capture_base/1.1",
@@ -39,7 +38,7 @@
       "overlays": {
         "information": [
           {
-            "d": "EMxSBFUkcWJ7UVWg3YKCe59leUkikEIjUzZ18dlsh2s9",
+            "d": "EA7qrNnSMHsQcAc_kSndzciA3Y3noqp2qZL3AKZQGCPN",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -52,7 +51,7 @@
               "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
               "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
-              "genotyping_technology": "Genotyping technology such as WGS, GBS, SNPchip...",
+              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip...",
               "height_1986": "Individual height measured in 1986",
               "height_1992": "Individual height measured in 1992",
               "height_1997": "Individual height measured in 1997",

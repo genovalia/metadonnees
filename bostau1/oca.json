@@ -1,1 +1,103 @@
-{}
+{
+  "d": "EG2AGgdMxrol8TdTwmsrUVplRIoXnu1Nrdp93M3eAR7Y",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000865_",
+      "d": "EOjEulVgIUtQIlInji99eqPdSMip44jy3xtx8zuQes8I",
+      "capture_base": {
+        "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "breed": "Text",
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sample_tissue": "Text",
+          "sequenced_molecule": "Text",
+          "sex": "Text"
+        },
+        "classification": "RDF402",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "EKxmhJPvtu3KaoN28dZx3lo1VwRk-tGem5zkZlW71B8M",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "breed": "Breed of the individual, such as Holstein or Jersey for instance",
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as SNP chip, genotyping-by-sequencing, etc.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "sex": "Sex: female, male, unknown"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EGasfUhfJNtn4lLoqObH612nHUZiBUeJwq8YUj4HEeeW",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breed": "breed",
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sample_tissue": "sample_tissue",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EMVVOGz7ZFP3Yaj-s1GhoRKdFK0K5ZOfqsYkF4Z-ODsv",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+            "name": "bos_taurus"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1": {
+        "d": "EHD9E89OKBM5r4fDKw7ixmHZ_W0RpJ_3O3-LTeabMH15",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EPZ3OpCwyFgcUfJOARHHyiokFcMoJ9klcctyrH8YaCd7",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sex",
+              "breed",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          }
+        }
+      }
+    }
+  }
+}
