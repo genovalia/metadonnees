@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/rantar1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/rantar1",
+  "dcterms:identifier": "rantar1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic dataset of caribou ecotypes (Rangifer tarandus)",
   "dcterms:description": "This dataset contains caribou genotypes from samples collected by the Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, the department responsible for wildlife management in Quebec.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/rantar1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -49,8 +50,8 @@
       "time:inXSDgYear": "2021"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6251999/canada.html",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6251999/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -61,7 +62,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://www.quebec.ca/gouvernement/ministeres-organismes/environnement",
         "@type": "prov:Organization",
         "foaf:name": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune"
@@ -72,7 +73,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0009-0006-2452-4409",
         "@type": "prov:Person",
         "foaf:name": "Joëlle Taillon"

@@ -57,6 +57,13 @@ Run the CLI tool to find keywords that need translation in `dictionary.json`:
 poetry run python catalogue_cli.py list-keywords
 ```
 
+### Validating the Catalog
+Check every dataset's `dcat.json` against the catalog conventions (`@id`/landing page on Sedna, `dcterms:identifier` = dataset id, `dcat:version` as `MAJOR.MINOR.PATCH`, valid dates and years, canonical GeoNames URIs, `prov:agent`, ISO 19115 roles). It exits with status 1 on any error, and the test suite runs it too:
+```bash
+poetry run python catalogue_cli.py validate
+```
+Add `--warnings` to also list missing recommended fields (license, distribution).
+
 ## Maintenance
 
 This project is consumed by the **Metadata API**. Ensure that any changes to the mapper structure are compatible with the models defined in the API.

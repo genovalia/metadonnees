@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/ednaspp1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/ednaspp1",
+  "dcterms:identifier": "ednaspp1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Mission eDNA",
   "dcterms:description": "Mission eDNA is a citizen science ongoing project developed by Génome Québec, in collaboration with various scientific, educational, and governmental partners. The data set includes so far 1005 samples of water collected by students and their teachers from several Quebec schools. These samples have been sequenced for 12S, 16S, 18S and COI genomic regions.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/ednaspp1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -43,14 +44,10 @@
     "time:hasBeginning": {
       "@type": "time:Instant",
       "time:inXSDgYear": "2022"
-    },
-    "time:hasEnd": {
-      "@type": "time:Instant",
-      "time:inXSDgYear": "present"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/quebec.html",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -61,14 +58,14 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://genomequebec.com",
         "@type": "prov:Organization",
         "foaf:name": "Génome Québec"
       },
       "dcat:hadRole": [
         "owner",
-        "pointOfcontact"
+        "pointOfContact"
       ]
     }
   ]
