@@ -2,8 +2,45 @@ import json
 import os
 import glob
 import shutil
+from datetime import date
 import questionary
 from typing import List, Dict, Any
+
+# Each dataset's "@id" and "dcat:landingPage" is its page on Sedna.
+SEDNA_DATASET_BASE_URL = "https://sedna.apps.genovalia.ulaval.ca/datasets/"
+
+def dataset_url(dataset_id: str) -> str:
+    return f"{SEDNA_DATASET_BASE_URL}{dataset_id}"
+
+def strip_jsonc_comments(text: str) -> str:
+    """Remove // comments from JSONC text, leaving "//" inside strings (e.g. URLs) alone."""
+    out = []
+    in_string = False
+    i = 0
+    while i < len(text):
+        c = text[i]
+        if in_string:
+            out.append(c)
+            if c == "\\" and i + 1 < len(text):
+                out.append(text[i + 1])
+                i += 1
+            elif c == '"':
+                in_string = False
+        elif c == '"':
+            in_string = True
+            out.append(c)
+        elif text.startswith("//", i):
+            while i < len(text) and text[i] != "\n":
+                i += 1
+            continue
+        else:
+            out.append(c)
+        i += 1
+    return "".join(out)
+
+def load_jsonc(path: str) -> Any:
+    with open(path, "r") as f:
+        return json.loads(strip_jsonc_comments(f.read()))
 
 def get_existing_values(field_path: str) -> List[Dict[str, Any]]:
     """Extract unique values for a specific field from all dcat.json files."""
@@ -137,15 +174,12 @@ def create_dataset_interactive():
     # 3. Create Files
     os.makedirs(dataset_id)
     
-    # Load template dcat
-    with open("templates/dcat.jsonc", "r") as f:
-        # Simple removal of comments for json loading if needed, 
-        # but we'll just construct the dict
-        template_lines = f.readlines()
-        clean_lines = [line for line in template_lines if not line.strip().startswith("//")]
-        dcat = json.loads("".join(clean_lines))
+    dcat = load_jsonc("templates/dcat.jsonc")
 
     # Update template with values
+    dcat["@id"] = dataset_url(dataset_id)
+    dcat["dcterms:identifier"] = dataset_id
+    dcat["dcat:landingPage"] = dataset_url(dataset_id)
     dcat["dcterms:title"] = title
     dcat["dcterms:description"] = description
     dcat["dcterms:publisher"] = publisher
@@ -154,29 +188,36 @@ def create_dataset_interactive():
     dcat["dcterms:creator"] = creator
     
     # Optional fields with defaults or prompts
-    dcat["dcterms:identifier"] = questionary.text("Identifier (e.g. DOI):").ask() or ""
+    dcat["dcat:version"] = questionary.text("Version:", default="1.0.0").ask() or "1.0.0"
+    dcat["dcterms:issued"] = questionary.text(
+        "Issued date (YYYY-MM-DD):", default=date.today().isoformat()
+    ).ask() or date.today().isoformat()
     dcat["dcat:theme"] = questionary.text("Theme (URL):").ask() or ""
     dcat["dcterms:spatial"] = questionary.text("Spatial (GeoNames URL):").ask() or ""
     
     year_start = questionary.text("Year Start:").ask()
-    year_end = questionary.text("Year End:").ask()
+    year_end = questionary.text("Year End (leave blank if ongoing):").ask()
     dcat["dcterms:temporal"]["time:hasBeginning"]["time:inXSDgYear"] = year_start
-    dcat["dcterms:temporal"]["time:hasEnd"]["time:inXSDgYear"] = year_end
+    if year_end:
+        dcat["dcterms:temporal"]["time:hasEnd"]["time:inXSDgYear"] = year_end
+    else:
+        del dcat["dcterms:temporal"]["time:hasEnd"]
 
     # Write dcat.json
     with open(os.path.join(dataset_id, "dcat.json"), "w") as f:
-        json.dump(dcat, f, indent=2)
+        json.dump(dcat, f, indent=2, ensure_ascii=False)
 
-    # Copy mapper and oca
-    shutil.copy("templates/mapper.jsonc", os.path.join(dataset_id, "mapper.json"))
-    shutil.copy("templates/oca.json", os.path.join(dataset_id, "oca.json"))
-    
-    # Update mapper ID
-    with open(os.path.join(dataset_id, "mapper.json"), "r") as f:
-        mapper_content = f.read()
-    mapper_content = mapper_content.replace("TEMPLATE_ID", dataset_id)
+    # Write mapper.json from the template, without its comments
+    with open("templates/mapper.jsonc", "r") as f:
+        mapper = json.loads(strip_jsonc_comments(f.read()).replace("TEMPLATE_ID", dataset_id))
     with open(os.path.join(dataset_id, "mapper.json"), "w") as f:
-        f.write(mapper_content)
+        json.dump(mapper, f, indent=2, ensure_ascii=False)
+
+    # The OCA schema is specific to each dataset, so there is usually no template for it
+    if os.path.exists("templates/oca.json"):
+        shutil.copy("templates/oca.json", os.path.join(dataset_id, "oca.json"))
+    else:
+        print(f"Note: no templates/oca.json; add {dataset_id}/oca.json before publishing.")
 
     # 4. Update catalogue.json
     with open("catalogue.json", "r") as f:

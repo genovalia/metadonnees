@@ -10,12 +10,16 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  // The unique identifier for this dataset (usually a URI).
+  // The URI of this dataset: its page on Sedna, https://sedna.apps.genovalia.ulaval.ca/datasets/<id>.
+  // Filled automatically by create-dataset.
   "@id": "",
   // The type of the resource (DCAT Dataset).
   "@type": "dcat:Dataset",
-  // A secondary identifier for the dataset (e.g., a DOI or internal ID).
+  // The dataset id as a plain string, matching the directory name (e.g., "apimel1").
+  // Filled automatically by create-dataset.
   "dcterms:identifier": "",
+  // The date of formal issuance (publication) of the dataset, as YYYY-MM-DD.
+  "dcterms:issued": "",
   // The primary language of the dataset (e.g., "en", "fr").
   "dcterms:language": "en",
   // The title of the dataset.
@@ -23,6 +27,7 @@
   // A detailed description of the dataset contents and purpose.
   "dcterms:description": "",
   // A Web page that can be navigated to in a Web browser to gain access to the dataset.
+  // Same as "@id" (the dataset's page on Sedna). Filled automatically by create-dataset.
   "dcat:landingPage": "",
   // The entity responsible for making the dataset available.
   "dcterms:publisher": {
@@ -47,6 +52,7 @@
   // Links to the actual data files or API endpoints.
   "dcat:distribution": [],
   // The temporal period covered by the dataset.
+  // For an ongoing dataset, omit "time:hasEnd" entirely (never use "present").
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -60,19 +66,22 @@
       "time:inXSDgYear": ""
     }
   },
-  // The geographic area covered by the dataset (e.g., a GeoNames URI).
+  // The geographic area covered by the dataset, as a canonical GeoNames URI:
+  // https://sws.geonames.org/<geonameId>/ (e.g., https://sws.geonames.org/6115047/ for Québec).
   "dcterms:spatial": "",
-  // The version number of the dataset.
-  "dcterms:version": "0.1",
+  // The version of the dataset (MAJOR.MINOR.PATCH). Bump it when the data changes.
+  "dcat:version": "1.0.0",
   // The license under which the dataset is made available.
   "dcterms:license": "",
   // Information about who can access the resource or an indication of its security status.
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   // The person or organization that created the dataset.
   "dcterms:creator": {
-    "@id": "", // URI of the creator (e.g., ORCID or profile link)
+    // URI of the creator (e.g., ORCID or profile link)
+    "@id": "",
     "@type": "foaf:Person",
     "foaf:name": "",
-    "foaf:mbox": "" // mailto: email address
+    // mailto: email address
+    "foaf:mbox": ""
   }
 }

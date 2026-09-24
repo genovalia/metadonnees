@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/lymdis1",
+  "dcterms:identifier": "lymdis1",
+  "dcterms:issued": "2025-09-16",
   "dcterms:language": "en",
   "dcterms:title": "Range-wide sampling of Lymantria dispar",
   "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -47,8 +48,8 @@
       "time:inXSDgYear": "2016"
     }
   },
-  "dcterms:spatial": "http://sws.geonames.org/6295630/",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6295630/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
@@ -59,7 +60,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0003-1436-3307",
         "@type": "prov:Person",
         "foaf:name": "Sandrine Picq"
@@ -71,7 +72,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-6375-6580",
         "@type": "prov:Person",
         "foaf:name": "Yunke Wu"
@@ -82,7 +83,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-7061-3772",
         "@type": "prov:Person",
         "foaf:name": "Vyacheslav V. Martemyano"
@@ -93,7 +94,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0003-4006-532X",
         "@type": "prov:Person",
         "foaf:name": "Richard Hamelin"
@@ -105,7 +106,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0003-1541-6052",
         "@type": "prov:Person",
         "foaf:name": "Michel Cusson"

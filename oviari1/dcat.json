@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/oviari1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/oviari1",
+  "dcterms:identifier": "oviari1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data from Quebec-raised sheeps",
   "dcterms:description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/oviari1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -42,14 +43,10 @@
     "time:hasBeginning": {
       "@type": "time:Instant",
       "time:inXSDgYear": "2023"
-    },
-    "time:hasEnd": {
-      "@type": "time:Instant",
-      "time:inXSDgYear": "present"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/quebec.html",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -60,7 +57,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://www.semrpq.net/",
         "@type": "prov:Organization",
         "foaf:name": "Société des éleveurs de moutons de race pure du Québec"

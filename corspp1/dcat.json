@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/corspp1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/corspp1",
+  "dcterms:identifier": "corspp1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic dataset for studying the evolutionary history of the genus Coregonus",
   "dcterms:description": "This dataset contains genotypic data from four North American whitefish species (14 samples), generated using a whole-genome sequencing approach. ",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/corspp1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -49,8 +50,8 @@
       "time:inXSDgYear": "2018"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6255149/north-america.html",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6255149/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
@@ -61,7 +62,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-7680-5169",
         "@type": "prov:Person",
         "foaf:name": "Trevor Krabbenhoft"
@@ -73,7 +74,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-4793-704X",
         "@type": "prov:Person",
         "foaf:name": "Nathan Backenstose"
@@ -84,7 +85,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-8085-9709",
         "@type": "prov:Person",
         "foaf:name": "Louis Bernatchez"

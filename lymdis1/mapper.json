@@ -45,11 +45,11 @@
     },
     "creators": {
       "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'foaf:name'"
+      "path": "'dcat:qualifiedAttribution'[*].'prov:agent'.'foaf:name'"
     },
     "creators_urls": {
       "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'@id'"
+      "path": "'dcat:qualifiedAttribution'[*].'prov:agent'.'@id'"
     },
     "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
   },
@@ -106,11 +106,11 @@
     },
     "creators": {
       "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'foaf:name'"
+      "path": "'dcat:qualifiedAttribution'[*].'prov:agent'.'foaf:name'"
     },
     "creators_urls": {
       "type": "jsonpath_multiple",
-      "path": "'dcat:qualifiedAttribution'[*].'prov:Agent'.'@id'"
+      "path": "'dcat:qualifiedAttribution'[*].'prov:agent'.'@id'"
     },
     "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
   }

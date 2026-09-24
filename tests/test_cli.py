@@ -2,8 +2,11 @@ import os
 import json
 import pytest
 import shutil
-from catalogue_cli import list_keywords
-from dataset_creator import get_existing_values, create_dataset_interactive
+from pathlib import Path
+from catalogue_cli import list_keywords, check_dcat, validate
+from dataset_creator import get_existing_values, create_dataset_interactive, strip_jsonc_comments
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Mocking directory and file structure for tests
 @pytest.fixture
@@ -15,17 +18,9 @@ def temp_repo(tmp_path, monkeypatch):
     # Create templates
     templates_dir = repo_dir / "templates"
     templates_dir.mkdir()
-    templates_dir.joinpath("dcat.jsonc").write_text(json.dumps({
-        "@context": {},
-        "dcterms:title": "",
-        "dcterms:publisher": {},
-        "dcterms:temporal": {
-            "time:hasBeginning": {"time:inXSDgYear": ""},
-            "time:hasEnd": {"time:inXSDgYear": ""}
-        }
-    }))
-    (templates_dir / "mapper.jsonc").write_text('{"id": "TEMPLATE_ID"}')
-    (templates_dir / "oca.json").write_text('{}')
+    # Use the real templates so comment handling is exercised
+    shutil.copy(REPO_ROOT / "templates" / "dcat.jsonc", templates_dir / "dcat.jsonc")
+    shutil.copy(REPO_ROOT / "templates" / "mapper.jsonc", templates_dir / "mapper.jsonc")
     
     # Create dictionary
     (repo_dir / "dictionary.json").write_text(json.dumps({"known": "connu"}))
@@ -60,53 +55,112 @@ def test_get_existing_values(temp_repo):
     assert len(publishers) == 1
     assert publishers[0]["foaf:name"] == "Existing Publisher"
 
-def test_create_dataset_logic(temp_repo, mocker):
-    """Test the interactive creation logic by mocking questionary."""
-    # Mock questionary prompts
+def run_create_dataset(mocker, year_end):
+    """Run create_dataset_interactive with mocked questionary answers."""
     mock_text = mocker.patch("questionary.text")
     mock_select = mocker.patch("questionary.select")
-    
-    # Define sequence of inputs
-    mock_text.return_value.ask.side_effect = [
-        "newds",      # dataset_id
-        "New Title",   # title
-        "New Desc",    # description
-        "k1, k2",     # keywords
-        "ident1",     # identifier
-        "theme1",     # theme
-        "spatial1",   # spatial
-        "2021",       # year_start
-        "2022"        # year_end
-    ]
-    
-    # Mock selects (Publisher, Contact, Creator)
-    # 1. Publisher select (return "NEW" first)
-    # 2. Contact select
-    # 3. Creator select
+
+    # Publisher, Contact and Creator selects all pick "[Enter new...]"
     mock_select.return_value.ask.side_effect = ["NEW", "NEW", "NEW"]
-    
-    # Sub-prompts for "NEW" selections
-    # This matches the order in create_dataset_interactive
-    # (Publisher details, Contact details, Creator details)
+
+    # Text prompts, in the order create_dataset_interactive asks them
     mock_text.return_value.ask.side_effect = [
         "newds", "New Title", "New Desc", # ID, Title, Desc
         "pub_id", "Pub Name", "Pub Home", # Publisher NEW details
         "Con Name", "con@mail.com",       # Contact NEW details
         "k1, k2",                         # Keywords
         "cre_id", "Cre Name", "cre@mail.com", # Creator NEW details
-        "ident1", "theme1", "spatial1", "2021", "2022" # Rest
+        "1.0.0", "2024-05-01", "theme1", "https://sws.geonames.org/6115047/", "2021", year_end # Rest
     ]
 
     create_dataset_interactive()
-    
+
+def test_create_dataset_logic(temp_repo, mocker):
+    """Test the interactive creation logic by mocking questionary."""
+    run_create_dataset(mocker, year_end="2022")
+
     assert os.path.exists("newds/dcat.json")
     assert os.path.exists("newds/mapper.json")
-    
+
     with open("newds/dcat.json") as f:
         data = json.load(f)
+        assert data["@id"] == "https://sedna.apps.genovalia.ulaval.ca/datasets/newds"
+        assert data["dcat:landingPage"] == "https://sedna.apps.genovalia.ulaval.ca/datasets/newds"
+        assert data["dcterms:identifier"] == "newds"
+        assert data["dcat:version"] == "1.0.0"
+        assert "dcterms:version" not in data
         assert data["dcterms:title"] == "New Title"
         assert data["dcat:keyword"] == ["k1", "k2"]
-    
+        assert data["dcterms:issued"] == "2024-05-01"
+        assert data["dcterms:temporal"]["time:hasEnd"]["time:inXSDgYear"] == "2022"
+
+    with open("newds/mapper.json") as f:
+        mapper = json.load(f)
+        assert mapper["id"] == "newds"
+
     with open("catalogue.json") as f:
         catalog = json.load(f)
         assert any(item["id"] == "newds" for item in catalog["content"])
+
+def test_create_dataset_ongoing(temp_repo, mocker):
+    """A blank end year means an ongoing dataset: time:hasEnd is omitted."""
+    run_create_dataset(mocker, year_end="")
+
+    with open("newds/dcat.json") as f:
+        data = json.load(f)
+        assert "time:hasEnd" not in data["dcterms:temporal"]
+
+def test_strip_jsonc_comments():
+    """Comments are removed, but "//" inside strings (URLs) is kept."""
+    text = '{\n  // a comment\n  "url": "https://example.org/a", // trailing\n  "q": "say \\"//\\""\n}'
+    assert json.loads(strip_jsonc_comments(text)) == {"url": "https://example.org/a", "q": 'say "//"'}
+
+VALID_DCAT = {
+    "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/ds1",
+    "dcterms:identifier": "ds1",
+    "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/ds1",
+    "dcat:version": "1.0.0",
+    "dcterms:issued": "2026-09-08",
+    "dcterms:temporal": {"time:hasBeginning": {"time:inXSDgYear": "2023"}},
+    "dcterms:spatial": "https://sws.geonames.org/6115047/",
+    "dcat:qualifiedAttribution": [
+        {"prov:agent": {"foaf:name": "A"}, "dcat:hadRole": ["pointOfContact", "collaborator"]}
+    ],
+}
+
+def test_check_dcat_valid():
+    errors, warnings = check_dcat("ds1", VALID_DCAT)
+    assert errors == []
+    assert warnings == ["dcterms:license is empty", "dcat:distribution is empty"]
+
+def test_check_dcat_flags_known_problems():
+    """Each problem found in the catalog before the cleanup is reported."""
+    dcat = {
+        **VALID_DCAT,
+        "@id": "",
+        "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/ds1",
+        "dcterms:version": "0.1",
+        "dcterms:temporal": {
+            "time:hasBeginning": {"time:inXSDgYear": "2023"},
+            "time:hasEnd": {"time:inXSDgYear": "present"},
+        },
+        "dcterms:spatial": "https://www.geonames.org/6115047/quebec.html",
+        "dcat:qualifiedAttribution": [
+            {"prov:Agent": {"foaf:name": "A"}, "dcat:hadRole": ["pointOfcontact"]}
+        ],
+    }
+    del dcat["dcat:version"]
+    errors, _ = check_dcat("ds1", dcat)
+    joined = "\n".join(errors)
+    for expected in ["@id", "dcterms:identifier", "dcterms:version", "dcat:version",
+                     "time:hasEnd", "dcterms:spatial", "prov:Agent", "pointOfcontact"]:
+        assert expected in joined
+
+def test_repository_catalog_is_valid(monkeypatch):
+    """The real catalog in this repository passes validation."""
+    monkeypatch.chdir(REPO_ROOT)
+
+    class Args:
+        warnings = False
+
+    validate(Args())  # exits with status 1 on any error

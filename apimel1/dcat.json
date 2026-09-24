@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/apimel1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/apimel1",
+  "dcterms:identifier": "apimel1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic dataset of domestic honeybees evaluated for winter hardiness, productivity, and disease resistance",
   "dcterms:description": "This dataset contains genotypic data from female bee samples of various pedigree used to produce honeybee stock that is winter hardy, productive and disease resistant.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/apimel1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -43,14 +44,10 @@
     "time:hasBeginning": {
       "@type": "time:Instant",
       "time:inXSDgYear": "2023"
-    },
-    "time:hasEnd": {
-      "@type": "time:Instant",
-      "time:inXSDgYear": "present"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6251999/canada.html",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6251999/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -61,7 +58,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://pierre-giovenazzo.fsg.ulaval.ca/",
         "@type": "prov:Person",
         "foaf:name": "Pierre Giovenazzo"
@@ -73,7 +70,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0003-4460-0131",
         "@type": "prov:Person",
         "foaf:name": "Ségolène Maucourt"
@@ -84,7 +81,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-2563-4849",
         "@type": "prov:Person",
         "foaf:name": "Andrée Rousseau"

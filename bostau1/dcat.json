@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/bostau1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/bostau1",
+  "dcterms:identifier": "bostau1",
+  "dcterms:issued": "2026-03-16",
   "dcterms:language": "en",
   "dcterms:title": "Canadienne breed cows",
   "dcterms:description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/bostau1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -47,8 +48,8 @@
       "time:inXSDgYear": "2018"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -59,7 +60,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0001-9690-8088",
         "@type": "prov:Person",
         "foaf:name": "Claude Robert"

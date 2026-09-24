@@ -9,13 +9,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/picmar1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "https://genovalia.ulaval.ca/datasets/picmar1",
+  "dcterms:identifier": "picmar1",
+  "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic dataset for studying climate adaptation in black spruce",
   "dcterms:description": "This dataset contains genotypic data used to investigate climate adaptation in black spruce (Picea mariana), a widely distributed North American conifer. It includes gene SNP genotypes (4186 SNPs) for 254 trees sampled from 31 natural populations distributed across the species' transcontinental range. Geographic coordinates and elevation are provided for each sampling location.",
-  "dcat:landingPage": "",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/picmar1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -50,8 +51,8 @@
       "time:inXSDgYear": "2014"
     }
   },
-  "dcterms:spatial": "https://www.geonames.org/6115047/",
-  "dcterms:version": "0.1",
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
@@ -62,7 +63,7 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://www.ffgg.ulaval.ca/faculte/departement-des-sciences-du-bois-et-de-la-foret/personnel-enseignant/jean-bousquet",
         "@type": "prov:Person",
         "foaf:name": "Jean Bousquet"
@@ -74,7 +75,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://www.linkedin.com/in/vincent-quevillon-9a14a9208/?isSelfProfile=false",
         "@type": "prov:Person",
         "foaf:name": "Vincent Quevillon"
@@ -85,7 +86,7 @@
     },
     {
       "@type": "prov:Attribution",
-      "prov:Agent": {
+      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-0184-9247",
         "@type": "prov:Person",
         "foaf:name": "Patrick Lenz"
