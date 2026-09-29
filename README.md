@@ -1,10 +1,10 @@
 # Genovalia Dataset Catalog
 
-This repository contains the metadata and schemas for Genovalia's datasets. It serves as the central source of truth for the [Metadata API](../metadata-api).
+This repository contains the metadata and schemas for Genovalia's datasets. It is the source the [Metadata API](../metadata-api) imports into its own database; see [How the catalog reaches the API](./AGENTS.md#how-the-catalog-reaches-the-api).
 
 ## Overview
 
-The catalog is organized as a collection of datasets, each residing in its own directory. We use the **DCAT-AP 3.0.1** standard (in JSON-LD syntax) to describe the metadata and a custom **Mapper** system to bridge the raw metadata with the presentation layer.
+The catalog is organized as a collection of datasets, each residing in its own directory. We use the **DCAT-AP 3.0.1** standard (in JSON-LD syntax) to describe the metadata, and a small `mapper.json` per dataset for the English and French display text.
 
 ## Project Structure
 
@@ -13,7 +13,7 @@ The catalog is organized as a collection of datasets, each residing in its own d
 - **`templates/`**: Standardized templates (`.jsonc`) for creating new datasets.
 - **`[dataset-id]/`**: Individual dataset directories containing:
     - `dcat.json`: DCAT-AP compliant metadata.
-    - `mapper.json`: UI and localization mapping logic.
+    - `mapper.json`: English and French display labels (theme, species, spatial) and the French title and description.
     - `oca.json`: Dataset schema (Overlays Capture Architecture).
 
 ## Setup
@@ -29,12 +29,8 @@ poetry install
 ### DCAT-AP Metadata
 We follow the DCAT-AP 3.0.1 recommendations. Key fields include identifiers, temporal coverage, spatial references, and themes.
 
-### Mapping System
-The `mapper.json` file determines how data is presented in the UI. It supports:
-- **Literal**: Static values.
-- **JSONPath**: Dynamic extraction from `dcat.json`.
-- **JSONPath Multiple**: Extraction of lists (e.g., multiple creators).
-- **NCBI**: Automated species name extraction from NCBI taxonomy URLs.
+### Mapper
+The API reads publisher, contact, years, creators and the other language-independent facts straight from `dcat.json`. From `mapper.json` it takes only the `value` of `theme`, `spatial` and `species` in each language, and of `title` and `description` in `fr`; English title and description come from `dcat.json`. The older entries in the file (`jsonpath`, `jsonpath_multiple`, `ncbi`, `access_request_url`) are no longer read by the API.
 
 ## Workflows
 
@@ -59,4 +55,4 @@ Add `--warnings` to also list missing recommended fields (license, distribution)
 
 ## Maintenance
 
-This project is consumed by the **Metadata API**. Ensure that any changes to the mapper structure are compatible with the models defined in the API.
+The **Metadata API** doesn't read this repo live. Its maintainer imports it with `cli.py import-metadonnees` (new datasets only) and `cli.py update-oca` (OCA files) from the `metadata-api` repo. Changes to an existing dataset's `dcat.json` or `mapper.json` have to be applied to the API separately. See [AGENTS.md](./AGENTS.md#how-the-catalog-reaches-the-api) for which fields the API uses.
