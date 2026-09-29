@@ -65,6 +65,36 @@
       "mapper": "rantar1/mapper.json",
       "OCA": "rantar1/oca.json",
       "DCAT": "rantar1/dcat.json"
+    },
+    {
+      "id": "anogla1",
+      "mapper": "anogla1/mapper.json",
+      "OCA": "anogla1/oca.json",
+      "DCAT": "anogla1/dcat.json"
+    },
+    {
+      "id": "salnam1",
+      "mapper": "salnam1/mapper.json",
+      "OCA": "salnam1/oca.json",
+      "DCAT": "salnam1/dcat.json"
+    },
+    {
+      "id": "salsal1",
+      "mapper": "salsal1/mapper.json",
+      "OCA": "salsal1/oca.json",
+      "DCAT": "salsal1/dcat.json"
+    },
+    {
+      "id": "salnam2",
+      "mapper": "salnam2/mapper.json",
+      "OCA": "salnam2/oca.json",
+      "DCAT": "salnam2/dcat.json"
+    },
+    {
+      "id": "onckis1",
+      "mapper": "onckis1/mapper.json",
+      "OCA": "onckis1/oca.json",
+      "DCAT": "onckis1/dcat.json"
     }
   ]
 }

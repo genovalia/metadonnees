@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam2",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "salnam2",
+  "dcterms:issued": "2026-09-29",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotypic data from lake trout samples representing four ecotypes collected in Lake Superior",
+  "dcterms:description": "This dataset contains genotypic data from four lake trout (Salvelinus namaycush) ecotypes sampled in Lake Superior. A total of 484 individuals were genotyped at 6822 SNPs using a genotyping-by-sequencing approach.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam2",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "lake trout",
+    "Salvelinus namaycush",
+    "genotyping-by-sequencing",
+    "ecotype",
+    "morphology"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8040/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2014"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6255149/",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-8085-9709",
+    "@type": "foaf:Person",
+    "foaf:name": "Louis Bernatchez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      }
+    },
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "pointOfContact",
+        "collaborator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-5404-8267",
+        "@type": "prov:Person",
+        "foaf:name": "Alysse Perreault-Payette"
+      }
+    }
+  ],
+  "dcat:version": "1.0.0"
+}

@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/onckis1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "onckis1",
+  "dcterms:issued": "2026-09-29",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotypic data from coho salmon samples used to delineate conservation units",
+  "dcterms:description": "This dataset includes genotypic data from 5581 coho salmon (Oncorhynchus kisutch) individuals representative of 146 wild populations, comprising 24,542 SNPs genotyped using a genotyping-by-sequencing approach.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/onckis1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Oncorhynchus kisutch",
+    "coho salmon",
+    "genotyping-by-sequencing",
+    "conservation",
+    "genomics",
+    "British Columbia"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8019/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "1997"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2015"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/5909050/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-8085-9709",
+    "@type": "foaf:Person",
+    "foaf:name": "Louis Bernatchez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-3975-2299",
+        "@type": "prov:Person",
+        "foaf:name": "Amanda Xuereb"
+      },
+      "dcat:hadRole": [
+        "pointOfContact",
+        "collaborator"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salsal1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "salsal1",
+  "dcterms:issued": "2026-09-29",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotypic data from two wild and two domesticated Atlantic salmon populations from Canada and Scotland",
+  "dcterms:description": "This dataset includes genotypic data from 165 Atlantic salmon (Salmo salar) individuals from 2 wild and 2 domesticated Canadian and Scottish populations, comprising 151,509 SNPs genotyped using a 200K SNP array.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/salsal1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Atlantic salmon",
+    "comparative genomics",
+    "Salmo salar",
+    "SNP chip",
+    "domestication"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8030/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2004"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2011"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/3411923/",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-6612-4087",
+    "@type": "foaf:Person",
+    "foaf:name": "José M. Yáñez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "collaborator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-9272-0694",
+        "@type": "prov:Person",
+        "foaf:name": "Maria E. López"
+      }
+    },
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "pointOfContact",
+        "principalInvestigator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-6612-4087",
+        "@type": "prov:Person",
+        "foaf:name": "José M. Yáñez"
+      }
+    },
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "collaborator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      }
+    }
+  ],
+  "dcat:version": "1.0.0"
+}

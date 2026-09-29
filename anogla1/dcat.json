@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "anogla1",
+  "dcterms:issued": "2026-09-29",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotypic data for studying the phylogeography of the Asian longhorned beetle",
+  "dcterms:description": "This dataset contains genotypic data from the Asian longhorned beetle (Anoplophora glabripennis) generated to study the phylogeography of the species. A total of 365 individuals from China and South Korea were genotyped at 6102 SNPs using a genotyping-by-sequencing approach.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Asian longhorned beetle",
+    "genotyping-by-sequencing",
+    "phylogeography",
+    "invasive species",
+    "Eastern Asia"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/217634/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2001"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2018"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/7729894/",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-9344-6348",
+    "@type": "foaf:Person",
+    "foaf:name": "Ilga Porth"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "pointOfContact",
+        "principalInvestigator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-9344-6348",
+        "@type": "prov:Person",
+        "foaf:name": "Ilga Porth"
+      }
+    },
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "collaborator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-1502-7276",
+        "@type": "prov:Person",
+        "foaf:name": "Amanda Roe"
+      }
+    },
+    {
+      "@type": "prov:Attribution",
+      "dcat:hadRole": [
+        "collaborator"
+      ],
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-8111-6555",
+        "@type": "prov:Person",
+        "foaf:name": "Mingming Cui"
+      }
+    }
+  ],
+  "dcat:version": "1.0.0"
+}
