@@ -12,7 +12,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "salnam1",
-  "dcterms:issued": "2026-09-24",
+  "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data from lake trout samples collected in Quebec",
   "dcterms:description": "This dataset contains genotypic data from lake trout (Salvelinus namaycush) individuals sampled across the species' natural range in the province of Quebec. A total of 673 individuals were genotyped at 7201 SNPs using a genotyping-by-sequencing approach.",

@@ -12,7 +12,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "anogla1",
-  "dcterms:issued": "2026-09-24",
+  "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data for studying the phylogeography of the Asian longhorned beetle",
   "dcterms:description": "This dataset contains genotypic data from the Asian longhorned beetle (Anoplophora glabripennis) generated to study the phylogeography of the species. A total of 365 individuals from China and South Korea were genotyped at 6102 SNPs using a genotyping-by-sequencing approach.",

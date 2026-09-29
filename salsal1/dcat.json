@@ -12,7 +12,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salsal1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "salsal1",
-  "dcterms:issued": "2026-09-24",
+  "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data from two wild and two domesticated Atlantic salmon populations from Canada and Scotland",
   "dcterms:description": "This dataset includes genotypic data from 165 Atlantic salmon (Salmo salar) individuals from 2 wild and 2 domesticated Canadian and Scottish populations, comprising 151,509 SNPs genotyped using a 200K SNP array.",

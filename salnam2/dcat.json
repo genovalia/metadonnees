@@ -12,7 +12,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam2",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "salnam2",
-  "dcterms:issued": "2026-09-24",
+  "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data from lake trout samples representing four ecotypes collected in Lake Superior",
   "dcterms:description": "This dataset contains genotypic data from four lake trout (Salvelinus namaycush) ecotypes sampled in Lake Superior. A total of 484 individuals were genotyped at 6822 SNPs using a genotyping-by-sequencing approach.",

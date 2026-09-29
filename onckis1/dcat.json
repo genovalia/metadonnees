@@ -12,7 +12,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/onckis1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "onckis1",
-  "dcterms:issued": "2026-09-25",
+  "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotypic data from coho salmon samples used to delineate conservation units",
   "dcterms:description": "This dataset includes genotypic data from 5581 coho salmon (Oncorhynchus kisutch) individuals representative of 146 wild populations, comprising 24,542 SNPs genotyped using a genotyping-by-sequencing approach.",
