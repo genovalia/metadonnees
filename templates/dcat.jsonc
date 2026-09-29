@@ -44,8 +44,8 @@
       "@id": "mailto:genovalia@ulaval.ca"
     }
   },
-  // A list of keywords (tags) describing the dataset. 
-  // Should match entries in dictionary.json for translation.
+  // A list of keywords (tags) describing the dataset.
+  // Reuse the spelling of keywords already used by other datasets.
   "dcat:keyword": [],
   // The main theme/category of the dataset (e.g., a taxonomy URI).
   "dcat:theme": "",

@@ -4,3 +4,5 @@ __pycache__/
 *$py.class
 .pytest_cache/
 .venv/
+temp/
+*:Zone.Identifier

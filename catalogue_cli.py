@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import argparse
-import glob
 import json
 import os
 import re
+import subprocess
 import sys
 from datetime import date
 from dataset_creator import create_dataset_interactive, dataset_url
@@ -19,41 +19,14 @@ SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
 GYEAR = re.compile(r"^\d{4}$")
 GEONAMES = re.compile(r"^https://sws\.geonames\.org/\d+/$")
 
-def list_keywords(args):
-    """List keywords present in dcat.json files that are not in dictionary.json."""
-    dictionary = {}
-    keywords = []
-
-    if not os.path.exists("dictionary.json"):
-        print("Error: dictionary.json not found.", file=sys.stderr)
-        return
-
-    # load dictionary
-    with open("dictionary.json", "r") as f:
-        dictionary = json.load(f)
-
-    # find all dcat.json files
-    for file in glob.glob("**/dcat.json", recursive=True):
-        # Skip if it's the current directory's dcat.json (if any, though usually in subdirs)
-        with open(file, "r") as f:
-            try:
-                data = json.load(f)
-                keywords.extend(data.get("dcat:keyword", []))
-            except json.JSONDecodeError:
-                print(f"Warning: Could not parse {file}", file=sys.stderr)
-
-    # remove keywords that are in the dictionary
-    untranslated = [k for k in keywords if k not in dictionary]
-    
-    # remove duplicates
-    untranslated = list(set(untranslated))
-
-    # print the keywords
-    print("untranslated keywords:")
-    print("{")
-    for k in untranslated:
-        print(f'  "{k}": "{k}",')
-    print("}")
+# Everything git may track besides the dataset folders. Anything else (e.g. a
+# folder of incoming exports under another name than temp/) is an error.
+REPO_FILES = {
+    ".gitignore", "AGENTS.md", "CLAUDE.md", "README.md", "catalogue.json",
+    "catalogue_cli.py", "dataset_creator.py", "poetry.lock", "pyproject.toml",
+}
+REPO_DIRS = {"templates", "tests"}
+DATASET_FILES = {"dcat.json", "mapper.json", "oca.json"}
 
 def check_dcat(dataset_id, dcat):
     """Return (errors, warnings) for one dataset's dcat.json."""
@@ -102,6 +75,29 @@ def check_dcat(dataset_id, dcat):
 
     return errors, warnings
 
+def check_tracked_files(paths, dataset_ids):
+    """Return errors for tracked files that are neither repo files nor dataset files."""
+    errors = []
+    for path in paths:
+        parts = path.split("/")
+        if len(parts) == 1:
+            ok = path in REPO_FILES
+        elif parts[0] in REPO_DIRS:
+            ok = True
+        else:
+            ok = len(parts) == 2 and parts[0] in dataset_ids and parts[1] in DATASET_FILES
+        if not ok:
+            errors.append(f"{path} should not be committed (incoming files go in temp/)")
+    return errors
+
+def tracked_files():
+    """Files committed or staged in git, or None if this isn't a git checkout."""
+    try:
+        result = subprocess.run(["git", "ls-files"], capture_output=True, text=True, check=True)
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return result.stdout.splitlines()
+
 def validate(args):
     """Check every dataset in catalogue.json. Exits with status 1 if any dataset has errors."""
     with open("catalogue.json", "r") as f:
@@ -128,6 +124,15 @@ def validate(args):
                 for message in warnings:
                     print(f"  warning: {message}")
 
+    paths = tracked_files()
+    if paths is not None:
+        file_errors = check_tracked_files(paths, {entry["id"] for entry in catalog["content"]})
+        if file_errors:
+            print("repository:")
+            for message in file_errors:
+                print(f"  error: {message}")
+        total_errors += len(file_errors)
+
     print(f"{len(catalog['content'])} datasets checked, {total_errors} errors.")
     if total_errors:
         sys.exit(1)
@@ -136,16 +141,12 @@ def main():
     parser = argparse.ArgumentParser(description="Genovalia Catalog Management CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
-    # list-keywords command
-    list_keywords_parser = subparsers.add_parser("list-keywords", help="List untranslated keywords from all datasets")
-    list_keywords_parser.set_defaults(func=list_keywords)
-
     # create-dataset command
     create_dataset_parser = subparsers.add_parser("create-dataset", help="Interactively create a new dataset entry")
     create_dataset_parser.set_defaults(func=lambda args: create_dataset_interactive())
 
     # validate command
-    validate_parser = subparsers.add_parser("validate", help="Check every dataset's dcat.json against the catalog conventions")
+    validate_parser = subparsers.add_parser("validate", help="Check every dataset's dcat.json against the catalog conventions, and that git tracks no stray files")
     validate_parser.add_argument("--warnings", action="store_true", help="Also list missing recommended fields (license, distribution)")
     validate_parser.set_defaults(func=validate)
 

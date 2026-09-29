@@ -9,8 +9,7 @@ The catalog is organized as a collection of datasets, each residing in its own d
 ## Project Structure
 
 - **`catalogue.json`**: The master index listing all available datasets.
-- **`dictionary.json`**: Centralized translations and standardized terms for keywords.
-- **`catalogue_cli.py`**: A CLI tool for catalog management (e.g., checking for untranslated keywords, creating new datasets).
+- **`catalogue_cli.py`**: A CLI tool for catalog management (e.g., validating the catalog, creating new datasets).
 - **`templates/`**: Standardized templates (`.jsonc`) for creating new datasets.
 - **`[dataset-id]/`**: Individual dataset directories containing:
     - `dcat.json`: DCAT-AP compliant metadata.
@@ -39,7 +38,7 @@ The `mapper.json` file determines how data is presented in the UI. It supports:
 
 ## Workflows
 
-For detailed instructions on adding datasets or managing keywords, please refer to the [GEMINI.md](./GEMINI.md) file.
+For detailed instructions on adding datasets, please refer to [AGENTS.md](./AGENTS.md).
 
 ### Quick Start: Adding a Dataset
 
@@ -51,14 +50,8 @@ poetry run python catalogue_cli.py create-dataset
 
 This will guide you through the metadata collection, allowing you to reuse existing publishers, contact points, and creators.
 
-### Managing Keywords
-Run the CLI tool to find keywords that need translation in `dictionary.json`:
-```bash
-poetry run python catalogue_cli.py list-keywords
-```
-
 ### Validating the Catalog
-Check every dataset's `dcat.json` against the catalog conventions (`@id`/landing page on Sedna, `dcterms:identifier` = dataset id, `dcat:version` as `MAJOR.MINOR.PATCH`, valid dates and years, canonical GeoNames URIs, `prov:agent`, ISO 19115 roles). It exits with status 1 on any error, and the test suite runs it too:
+Check every dataset's `dcat.json` against the catalog conventions (`@id`/landing page on Sedna, `dcterms:identifier` = dataset id, `dcat:version` as `MAJOR.MINOR.PATCH`, valid dates and years, canonical GeoNames URIs, `prov:agent`, ISO 19115 roles), and that git doesn't track stray files (e.g. incoming exports outside `temp/`). It exits with status 1 on any error, and the test suite runs it too:
 ```bash
 poetry run python catalogue_cli.py validate
 ```

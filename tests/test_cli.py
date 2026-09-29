@@ -3,7 +3,7 @@ import json
 import pytest
 import shutil
 from pathlib import Path
-from catalogue_cli import list_keywords, check_dcat, validate
+from catalogue_cli import check_dcat, check_tracked_files, validate
 from dataset_creator import get_existing_values, create_dataset_interactive, strip_jsonc_comments
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -22,9 +22,6 @@ def temp_repo(tmp_path, monkeypatch):
     shutil.copy(REPO_ROOT / "templates" / "dcat.jsonc", templates_dir / "dcat.jsonc")
     shutil.copy(REPO_ROOT / "templates" / "mapper.jsonc", templates_dir / "mapper.jsonc")
     
-    # Create dictionary
-    (repo_dir / "dictionary.json").write_text(json.dumps({"known": "connu"}))
-    
     # Create a dummy dataset
     ds_dir = repo_dir / "ds1"
     ds_dir.mkdir()
@@ -38,16 +35,6 @@ def temp_repo(tmp_path, monkeypatch):
     
     monkeypatch.chdir(repo_dir)
     return repo_dir
-
-def test_list_keywords(temp_repo, capsys):
-    """Test the list-keywords functionality."""
-    class Args:
-        pass
-    
-    list_keywords(Args())
-    captured = capsys.readouterr()
-    assert '"unknown": "unknown"' in captured.out
-    assert '"known"' not in captured.out
 
 def test_get_existing_values(temp_repo):
     """Test value extraction from existing datasets."""
@@ -155,6 +142,17 @@ def test_check_dcat_flags_known_problems():
     for expected in ["@id", "dcterms:identifier", "dcterms:version", "dcat:version",
                      "time:hasEnd", "dcterms:spatial", "prov:Agent", "pointOfcontact"]:
         assert expected in joined
+
+def test_check_tracked_files():
+    """Stray files and folders are flagged; repo and dataset files are not."""
+    paths = [
+        "README.md", "templates/dcat.jsonc", "tests/test_cli.py",
+        "ds1/dcat.json", "ds1/mapper.json", "ds1/oca.json",
+        "exports/ds2_DCAT.json", "ds1/README.txt", "ds3/dcat.json", "notes.txt",
+    ]
+    errors = check_tracked_files(paths, {"ds1"})
+    flagged = [e.split()[0] for e in errors]
+    assert flagged == ["exports/ds2_DCAT.json", "ds1/README.txt", "ds3/dcat.json", "notes.txt"]
 
 def test_repository_catalog_is_valid(monkeypatch):
     """The real catalog in this repository passes validation."""
