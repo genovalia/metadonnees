@@ -1,6 +1,6 @@
 # Genovalia Catalog — Agent Guide
 
-This repository holds the metadata for Genovalia's datasets. The [Metadata API](../metadata-api) reads it, and each dataset appears on Sedna at `https://sedna.apps.genovalia.ulaval.ca/datasets/<id>`. Anything merged into `main` ends up on the public site, so mistakes are visible.
+This repository holds the metadata for Genovalia's datasets. The [Metadata API](../metadata-api) imports it into its own database, and each dataset appears on Sedna at `https://sedna.apps.genovalia.ulaval.ca/datasets/<id>`. What is merged into `main` is what gets imported onto the public site, so mistakes are visible. The import isn't automatic, though (see [How the catalog reaches the API](#how-the-catalog-reaches-the-api)).
 
 ## Who you are working with
 
@@ -18,7 +18,7 @@ Some of the people using this repo are **not developers**. They mostly add new d
 - `<id>/`: one folder per dataset, always holding these three files:
   - `dcat.json`: the dataset's metadata, DCAT-AP 3.0.1 in JSON-LD.
   - `oca.json`: the dataset's schema (an OCA package).
-  - `mapper.json`: tells the API what to show in English and French.
+  - `mapper.json`: the English and French display text: theme, species and place labels, plus the French title and description.
 - `catalogue_cli.py` and `dataset_creator.py`: the CLI (`validate`, `create-dataset`).
 - `templates/`: templates used by `create-dataset`. `templates/dcat.jsonc` has a comment on every field and is the best reference for what a field means.
 - `tests/`: pytest suite. It also runs `validate` on the real catalog.
@@ -62,7 +62,7 @@ Run commands with `poetry run ...` from the repository root.
    ```
    The PR body repeats the dataset list and the corrections. Give the user the PR link.
 5. **Don't merge the PR** unless the user explicitly asks. Someone reviews it first.
-6. After it's merged, switch back to `main` and pull (step 1) before starting anything new.
+6. After it's merged, switch back to `main` and pull (step 1) before starting anything new. Tell the user the change isn't on Sedna yet: the maintainer has to import it into the API (see [How the catalog reaches the API](#how-the-catalog-reaches-the-api)).
 
 ## Adding datasets from the user's own files (the usual case)
 
@@ -92,7 +92,7 @@ Then, for each dataset:
    - `en.theme.value`, `en.species.value`, `fr.theme.value`, `fr.species.value`: the Latin species name (the CSV `species`/`espèce` column)
    - `en.spatial.value`: the English CSV `spatial`; `fr.spatial.value`: the French CSV `spatial`
    - `fr.title.value`, `fr.description.value`: the French CSV `titre` and `description`. English title and description come from `dcat.json`, so the `en` block has no `title`/`description`.
-   - Keep everything else (the JSONPath entries and `access_request_url`) exactly as in the copied file. The API depends on this structure.
+   - Leave everything else (the JSONPath entries and `access_request_url`) as in the copied file. The API no longer reads them (see [How the catalog reaches the API](#how-the-catalog-reaches-the-api)), but keeping them makes every mapper look the same.
    - Write it with 2-space indentation, UTF-8 (keep accents as they are, not `é`), and a final newline.
 5. **Cross-check the CSVs against `dcat.json`.** The English title and description, the theme URL, and the start and end years should match. If they don't, show the user the difference and ask which one is right. Watch for stray spaces at the start or end of a value, and for typos in French text. Point these out and fix them only if the user agrees.
 6. **`catalogue.json`:** add an entry at the end of `content`:
@@ -112,7 +112,7 @@ If the user has no DCAT file, the interactive script creates the folder, `dcat.j
 poetry run python catalogue_cli.py create-dataset
 ```
 
-It's interactive, so the **user** has to run it in their own terminal. It doesn't create `oca.json` (add the user's OCA package as in step 3 above), and it leaves the mapper's `theme`, `species`, `spatial` and French title/description empty. Fill those as in step 4.
+It's interactive, so the **user** has to run it in their own terminal. It doesn't create `oca.json` (add the user's OCA package as in step 3 above), and it leaves the mapper's `theme`, `species`, `spatial` and French title/description empty. Fill those as in step 4. The template's `en.species` is an `ncbi` entry with no `value`. The API ignores that type, so the dataset would show no species. Replace it with a `literal` entry holding the Latin name, as in `anogla1/mapper.json`.
 
 ## DCAT rules
 
@@ -150,22 +150,36 @@ Also check that `git status` lists only the files you meant to change. Every new
 
 Keep fixes small and limited to what the user asked. Use a `fix-<id>-<what>` branch. Bump `dcat:version` only when the data itself changes, not for metadata typos.
 
+A dataset that is already in the API isn't updated by the import (see [How the catalog reaches the API](#how-the-catalog-reaches-the-api)). Tell the user that once the fix is merged, the maintainer has to push it to the API separately, and mention this in the PR body.
+
 ## Deliberately left for later
 
 Don't "fix" these on your own. The maintainer has deferred them:
 
-- `dcterms:license` and `dcat:distribution` are empty on every dataset (`validate --warnings` lists them).
-- `dcterms:accessRights` uses the eprints vocabulary and `dcterms:language` is `"en"`. Both are planned to move to EU vocabularies later, and access rights will need a matching mapper change.
+- `dcterms:license` and `dcat:distribution` are empty on every dataset (`validate --warnings` lists them). Because of this the API has no access-request link for any dataset (see below).
+- `dcterms:accessRights` uses the eprints vocabulary and `dcterms:language` is `"en"`. Both are planned to move to EU vocabularies later. The API reads access rights from `dcat.json`, so the mapper doesn't need to change.
 - `lymdis1`'s spatial is the whole Earth, and `ednaspp1`'s theme is an EDAM topic instead of an NCBI taxonomy URL.
-- `mapper.json` files use `"jsonpath"` for `creators` (only `lymdis1` uses `"jsonpath_multiple"`), while the template uses `"jsonpath_multiple"`. Copy an existing dataset's mapper as described above.
+- `mapper.json` files still carry the old JSONPath entries and `access_request_url`, which the API ignores. Leave them as they are rather than cleaning them up one dataset at a time.
 
-## Metadata API reference
+## How the catalog reaches the API
 
-The API supports these mapper types:
+The API doesn't read this repo while it runs. It keeps everything in its own database, and the maintainer fills that database by hand with two commands from the `metadata-api` repo. Both download the files from `main` on GitHub:
 
-- `literal`: a fixed string (`value`).
-- `jsonpath`: one value from `dcat.json` (`path`, e.g. `'dcterms:publisher'.'foaf:name'`).
-- `jsonpath_multiple`: every matching value, as a list.
-- `ncbi`: fetches an NCBI taxonomy URL (`path`) and reads the species name from it.
+- `cli.py import-metadonnees` goes through `catalogue.json` and sends each dataset's `dcat.json`, `oca.json` and `mapper.json` to the API. It **only creates new datasets**: a dataset that already exists is refused ("already exists") and left unchanged.
+- `cli.py update-oca --version <v>` sends every `oca.json` again and records it as a new OCA version.
 
-It expects `theme`, `publisher` (name, url), `contact` (name, email), `species`, `temporal` (year_begin, year_end), `spatial`, `creators`, `creators_urls` and `access_request_url` in each language block, plus `title` and `description` in `fr`. Any change to the mapper structure must also be made in the API.
+Changes to the `dcat.json` or `mapper.json` of an existing dataset have no import command. The maintainer has to apply them to the API separately.
+
+What the API uses from each file:
+
+- `catalogue.json`: the list of datasets to import. A dataset missing from it is never imported.
+- `dcat.json`: required and read in full. The API reads the title, description, identifier, keywords, theme and spatial URLs, publisher, contact point, years, creators (`dcat:qualifiedAttribution`, or else `dcterms:creator`), issued and modified dates, landing page, access rights and distributions straight from it. A missing title, description, identifier, keyword list, theme, spatial, publisher name or homepage, contact name or email makes the import fail for that dataset.
+- `oca.json`: read to list the dataset's attributes. A file the API can't parse doesn't block the import.
+- `mapper.json`: only these values, taken from `value`:
+  - `theme` and `spatial` in each language. Both are required.
+  - `species` in each language, optional. A value set with the `ncbi` type is lost.
+  - `title` and `description` in `fr`, optional. Without them, and in `en`, the API shows the `dcat.json` title and description.
+
+  The `id`, `publisher`, `contact`, `temporal`, `creators`, `creators_urls` and `access_request_url` entries are ignored.
+- The access-request link shown on Sedna comes from `dcat:distribution` → `dcat:accessURL`, not from the mapper.
+- For distributions, update frequency and related links, the API reads only the `dct:` prefix (`dct:language`, `dct:license`, `dct:format`, `dct:accrualPeriodicity`, `dct:relation`), not `dcterms:`. Nothing is affected yet because those fields are empty. Raise it with the maintainer before filling them.
