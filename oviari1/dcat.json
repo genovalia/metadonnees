@@ -14,7 +14,7 @@
   "dcterms:identifier": "oviari1",
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
-  "dcterms:title": "Genotypic data from Quebec-raised sheeps",
+  "dcterms:title": "Genotypic data from Quebec-raised sheep",
   "dcterms:description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/oviari1",
   "dcterms:publisher": {
@@ -32,7 +32,7 @@
   },
   "dcat:keyword": [
     "Ovis aries",
-    "Sheep",
+    "sheep",
     "breeding",
     "genomics"
   ],
