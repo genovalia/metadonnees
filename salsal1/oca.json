@@ -1,0 +1,95 @@
+{
+  "d": "EHb6qpy2iEAeojYZJEoopzz7akkPWwMlW71ZBUc6Rdol",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON00078d_",
+      "d": "EE8KYoirbsho6G5XbVSDnjZht_v0ns7Ywxbo7I6ZbIcQ",
+      "capture_base": {
+        "d": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "population_type": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "information": [
+          {
+            "d": "ENNgX46qqhjbkEEscMeNcBctLZRUNYiOmgfyHoSem60j",
+            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "population_type": "General category describing the origin or management status of the population",
+              "sequenced_molecule": "Sequenced molecule such as DNA, RNA…"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EJ-Y9V2X_B-wdXTOTmT6ekzksPqWP3ZGP-VxU0VG4zoI",
+            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "population_type": "population_type",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "ECaoq-nvlMCL_ICK9xfVZUqSNVsqHuGNL9ZSPzDCrU4v",
+            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset includes genotypic data from 165 Atlantic salmon (Salmo salar) individuals from 2 wild and 2 domesticated Canadian and Scottish populations, comprising 151,509 SNPs genotyped using a 200K SNP array.",
+            "name": "salmo_salar_domestication"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J": {
+        "d": "EGHzn3w4LV1FYnz2skQaWnKpbWgZBQZTIZ8xLiHhDPWG",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EH4_tjUXlPNlEELET5PLi3W_D9U5uoBtSMsgqBSFhBcu",
+            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "population_type",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {}
+          }
+        }
+      }
+    }
+  }
+}
