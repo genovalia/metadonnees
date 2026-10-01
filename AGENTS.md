@@ -32,6 +32,7 @@ There are two long-lived branches. A *branch* is a separate line of changes in g
   - `dcat.json`: the dataset's metadata, DCAT-AP 3.0.1 in JSON-LD.
   - `oca.json`: the dataset's schema (an OCA package).
   - `mapper.json`: the English and French display text: theme, species and place labels, plus the French title and description.
+- `catalog.json`: the description of the catalog as a whole (title, publisher, homepage...), DCAT 3 in JSON-LD. See [The catalog description](#the-catalog-description).
 - `catalogue_cli.py`, `dataset_creator.py` and `api_sync.py`: the CLI (`validate`, `create-dataset`, `sync`).
 - `.github/workflows/`: the GitHub Actions (see [How the catalog reaches the API](#how-the-catalog-reaches-the-api)).
 - `templates/`: templates used by `create-dataset`. `templates/dcat.jsonc` has a comment on every field and is the best reference for what a field means.
@@ -170,6 +171,14 @@ Don't "fix" these on your own. The maintainer has deferred them:
 - `lymdis1`'s spatial is the whole Earth, and `ednaspp1`'s theme is an EDAM topic instead of an NCBI taxonomy URL.
 - `mapper.json` files still carry the old JSONPath entries and `access_request_url`, which the API ignores. Leave them as they are rather than cleaning them up one dataset at a time.
 
+## The catalog description
+
+`catalog.json` describes the catalog itself, not any one dataset: its title and description in French and English, publisher, contact point, homepage, the date it went live and the vocabulary its themes come from. The API serves it, with the list of datasets added, at `/v1/catalog` (e.g. https://metadata-api.apps.genovalia.ulaval.ca/v1/catalog), so other catalogs can harvest ours.
+
+- Adding or fixing a dataset never requires changing it. Only change it when the maintainer asks.
+- Don't add `dcat:dataset`, `dcterms:language` or `dcterms:modified`: the API fills those in from the datasets, and `validate` rejects them.
+- `@id`, `@type` (`dcat:Catalog`), `dcterms:title`, `dcterms:description` and `dcterms:publisher` are required.
+
 ## How the catalog reaches the API
 
 The API doesn't read this repo while it runs. It keeps everything in its own database, and the **Sync** GitHub Action (`.github/workflows/sync.yml`) brings that database in line with the repo:
@@ -179,6 +188,7 @@ The API doesn't read this repo while it runs. It keeps everything in its own dat
   - a dataset the API doesn't have is **created**;
   - a changed `dcat.json` or `oca.json` is **updated**, and a new `dcat:version` is recorded as a new version. The OCA has no version of its own: a changed `oca.json` is recorded under the dataset's `dcat:version`, which is why that has to be bumped (see [Fixing an existing dataset](#fixing-an-existing-dataset));
   - a changed `mapper.json` value is **updated** in that language.
+  - a changed `catalog.json` is **updated** as a whole (see [The catalog description](#the-catalog-description)).
 - A dataset in the API with no folder here is listed in the summary and **left alone**. Removing a dataset from the API is done by hand.
 - Whatever was edited in the API by hand is overwritten by the repo's version on the next sync.
 - Each run's summary (on the Actions tab) lists what was created and updated. The maintainer can also run it by hand from the Actions tab, as a dry run or for real.
