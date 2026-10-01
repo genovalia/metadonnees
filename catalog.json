@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/catalogue",
+  "@type": "dcat:Catalog",
+  "dcterms:title": [
+    {"@value": "Catalogue de données Genovalia", "@language": "fr"},
+    {"@value": "Genovalia data catalogue", "@language": "en"}
+  ],
+  "dcterms:description": [
+    {"@value": "Jeux de données génomiques produits ou hébergés par Genovalia, consultables sur Sedna.", "@language": "fr"},
+    {"@value": "Genomic datasets produced or hosted by Genovalia, browsable on Sedna.", "@language": "en"}
+  ],
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": {"@id": "https://genovalia.ulaval.ca/"}
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {"@id": "mailto:genovalia@ulaval.ca"}
+  },
+  "foaf:homepage": {"@id": "https://sedna.apps.genovalia.ulaval.ca/"},
+  "dcat:landingPage": [
+    {"@id": "https://sedna.apps.genovalia.ulaval.ca/catalogue"},
+    {"@id": "https://sedna.apps.genovalia.ulaval.ca/en/catalogue"}
+  ],
+  "dcterms:issued": {"@value": "2025-09-16", "@type": "xsd:date"},
+  "dcat:themeTaxonomy": {"@id": "https://www.ncbi.nlm.nih.gov/taxonomy"}
+}
