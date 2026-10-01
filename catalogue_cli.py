@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import argparse
+import glob
 import json
 import os
 import re
 import subprocess
 import sys
 from datetime import date
+import api_sync
 from dataset_creator import create_dataset_interactive, dataset_url
 
 # ISO 19115-1 CI_RoleCode values, used for dcat:hadRole.
@@ -18,14 +20,15 @@ ISO_19115_ROLES = {
 SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
 GYEAR = re.compile(r"^\d{4}$")
 GEONAMES = re.compile(r"^https://sws\.geonames\.org/\d+/$")
+DATASET_ID = re.compile(r"^[a-z]+[0-9]+$")
 
 # Everything git may track besides the dataset folders. Anything else (e.g. a
 # folder of incoming exports under another name than temp/) is an error.
 REPO_FILES = {
-    ".gitignore", "AGENTS.md", "CLAUDE.md", "README.md", "catalogue.json",
+    ".gitignore", "AGENTS.md", "CLAUDE.md", "README.md", "api_sync.py",
     "catalogue_cli.py", "dataset_creator.py", "poetry.lock", "pyproject.toml",
 }
-REPO_DIRS = {"templates", "tests"}
+REPO_DIRS = {".github", "templates", "tests"}
 DATASET_FILES = {"dcat.json", "mapper.json", "oca.json"}
 
 def check_dcat(dataset_id, dcat):
@@ -90,31 +93,70 @@ def check_tracked_files(paths, dataset_ids):
             errors.append(f"{path} should not be committed (incoming files go in temp/)")
     return errors
 
-def tracked_files():
-    """Files committed or staged in git, or None if this isn't a git checkout."""
+def git_files(*flags):
+    """`git ls-files` with these flags, or None if this isn't a git checkout."""
     try:
-        result = subprocess.run(["git", "ls-files"], capture_output=True, text=True, check=True)
+        result = subprocess.run(["git", "ls-files", *flags], capture_output=True, text=True, check=True)
     except (OSError, subprocess.CalledProcessError):
         return None
     return result.stdout.splitlines()
 
+def tracked_files():
+    """Files committed or staged in git, or None if this isn't a git checkout."""
+    return git_files()
+
+def find_dataset_ids(paths):
+    """Dataset IDs: the top-level folders holding a dcat.json."""
+    return sorted({
+        parts[0] for parts in (path.split("/") for path in paths)
+        if len(parts) == 2 and parts[1] == "dcat.json" and parts[0] not in REPO_DIRS
+    })
+
+def discover_datasets():
+    """Every dataset folder git tracks or would add.
+
+    Folders git ignores (temp/) are left out, so incoming files there are never
+    picked up. A new folder counts before it is added to git.
+    """
+    paths = git_files("--cached", "--others", "--exclude-standard")
+    if paths is None:
+        paths = [p for p in glob.glob("*/dcat.json") if not p.startswith("temp/")]
+    return find_dataset_ids(paths)
+
+def load_dataset(dataset_id):
+    """Return ({name: parsed document}, errors) for one dataset folder."""
+    docs, errors = {}, []
+    for name in sorted(DATASET_FILES):
+        path = os.path.join(dataset_id, name)
+        if not os.path.exists(path):
+            errors.append(f"{path} is missing")
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                docs[name] = json.load(f)
+        except ValueError as exc:
+            errors.append(f"{path} is not valid JSON: {exc}")
+    return docs, errors
+
+def check_dataset(dataset_id):
+    """Return (docs, errors, warnings) for one dataset folder."""
+    docs, errors = load_dataset(dataset_id)
+    warnings = []
+    if not DATASET_ID.match(dataset_id):
+        errors.append(f"folder name {dataset_id!r} is not a dataset ID (letters then a number, e.g. salnam1)")
+    if "dcat.json" in docs:
+        dcat_errors, warnings = check_dcat(dataset_id, docs["dcat.json"])
+        errors.extend(dcat_errors)
+    if "mapper.json" in docs and docs["mapper.json"].get("id") != dataset_id:
+        errors.append(f'mapper.json "id" should be "{dataset_id}", got {docs["mapper.json"].get("id")!r}')
+    return docs, errors, warnings
+
 def validate(args):
-    """Check every dataset in catalogue.json. Exits with status 1 if any dataset has errors."""
-    with open("catalogue.json", "r") as f:
-        catalog = json.load(f)
-
+    """Check every dataset folder. Exits with status 1 if any dataset has errors."""
+    dataset_ids = discover_datasets()
     total_errors = 0
-    for entry in catalog["content"]:
-        dataset_id = entry["id"]
-        errors, warnings = [], []
-        for key in ("DCAT", "mapper", "OCA"):
-            if not os.path.exists(entry[key]):
-                errors.append(f"{key} file {entry[key]} does not exist")
-        if os.path.exists(entry["DCAT"]):
-            with open(entry["DCAT"], "r") as f:
-                dcat_errors, warnings = check_dcat(dataset_id, json.load(f))
-            errors.extend(dcat_errors)
-
+    for dataset_id in dataset_ids:
+        _, errors, warnings = check_dataset(dataset_id)
         total_errors += len(errors)
         if errors or (warnings and args.warnings):
             print(f"{dataset_id}:")
@@ -126,15 +168,33 @@ def validate(args):
 
     paths = tracked_files()
     if paths is not None:
-        file_errors = check_tracked_files(paths, {entry["id"] for entry in catalog["content"]})
+        file_errors = check_tracked_files(paths, set(dataset_ids))
         if file_errors:
             print("repository:")
             for message in file_errors:
                 print(f"  error: {message}")
         total_errors += len(file_errors)
 
-    print(f"{len(catalog['content'])} datasets checked, {total_errors} errors.")
+    print(f"{len(dataset_ids)} datasets checked, {total_errors} errors.")
     if total_errors:
+        sys.exit(1)
+
+def sync(args):
+    """Bring the API at --base-url in line with the dataset folders."""
+    api_key = os.environ.get("METADATA_API_KEY")
+    if not args.dry_run and not api_key:
+        sys.exit("METADATA_API_KEY must be set (or use --dry-run, which needs no key).")
+    if not args.base_url:
+        sys.exit("Pass --base-url or set METADATA_API_URL.")
+
+    datasets = {}
+    for dataset_id in discover_datasets():
+        docs, errors, _ = check_dataset(dataset_id)
+        if errors:
+            sys.exit(f"{dataset_id} doesn't validate; run `validate` first.")
+        datasets[dataset_id] = (docs["dcat.json"], docs["oca.json"], docs["mapper.json"])
+
+    if not api_sync.run(datasets, args.base_url.rstrip("/"), api_key, args.dry_run):
         sys.exit(1)
 
 def main():
@@ -149,6 +209,12 @@ def main():
     validate_parser = subparsers.add_parser("validate", help="Check every dataset's dcat.json against the catalog conventions, and that git tracks no stray files")
     validate_parser.add_argument("--warnings", action="store_true", help="Also list missing recommended fields (license, distribution)")
     validate_parser.set_defaults(func=validate)
+
+    # sync command
+    sync_parser = subparsers.add_parser("sync", help="Create or update the datasets in a Metadata API (admin key in METADATA_API_KEY)")
+    sync_parser.add_argument("--base-url", default=os.environ.get("METADATA_API_URL"), help="API to sync, e.g. https://metadata-api-dev.apps.genovalia.ulaval.ca (default: $METADATA_API_URL)")
+    sync_parser.add_argument("--dry-run", action="store_true", help="Only report what would change; needs no API key")
+    sync_parser.set_defaults(func=sync)
 
     args = parser.parse_args()
 

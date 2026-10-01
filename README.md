@@ -1,6 +1,6 @@
 # Genovalia Dataset Catalog
 
-This repository contains the metadata and schemas for Genovalia's datasets. It is the source the [Metadata API](../metadata-api) imports into its own database; see [How the catalog reaches the API](./AGENTS.md#how-the-catalog-reaches-the-api).
+This repository contains the metadata and schemas for Genovalia's datasets. A GitHub Action syncs it into the [Metadata API](../metadata-api): merges into `dev` go to the test site, merges into `main` to the public site (Sedna). See [Branches](./AGENTS.md#branches) and [How the catalog reaches the API](./AGENTS.md#how-the-catalog-reaches-the-api).
 
 ## Overview
 
@@ -8,10 +8,11 @@ The catalog is organized as a collection of datasets, each residing in its own d
 
 ## Project Structure
 
-- **`catalogue.json`**: The master index listing all available datasets.
-- **`catalogue_cli.py`**: A CLI tool for catalog management (e.g., validating the catalog, creating new datasets).
+- **`catalogue_cli.py`**: A CLI tool for catalog management (validating the catalog, creating new datasets, syncing to the API).
+- **`api_sync.py`**: The sync to the Metadata API, used by `catalogue_cli.py sync`.
+- **`.github/workflows/`**: `validate.yml` (PR checks and a dry-run sync), `sync.yml` (sync on merge), `restrict-main-source.yml` (PRs into `main` come from `dev`).
 - **`templates/`**: Standardized templates (`.jsonc`) for creating new datasets.
-- **`[dataset-id]/`**: Individual dataset directories containing:
+- **`[dataset-id]/`**: Individual dataset directories. Any top-level folder with a `dcat.json` is a dataset; each contains:
     - `dcat.json`: DCAT-AP compliant metadata.
     - `mapper.json`: English and French display labels (theme, species, spatial) and the French title and description.
     - `oca.json`: Dataset schema (Overlays Capture Architecture).
@@ -53,6 +54,9 @@ poetry run python catalogue_cli.py validate
 ```
 Add `--warnings` to also list missing recommended fields (license, distribution).
 
-## Maintenance
-
-The **Metadata API** doesn't read this repo live. Its maintainer imports it with `cli.py import-metadonnees` (new datasets only) and `cli.py update-oca` (OCA files) from the `metadata-api` repo. Changes to an existing dataset's `dcat.json` or `mapper.json` have to be applied to the API separately. See [AGENTS.md](./AGENTS.md#how-the-catalog-reaches-the-api) for which fields the API uses.
+### Syncing to the API
+The **Sync** action runs `catalogue_cli.py sync` on every push to `dev` (dev API) and `main` (prod API), with the admin key from the GitHub Environment of the same name. It creates missing datasets, updates changed ones, and lists datasets the API has but the repo doesn't, without deleting them. To preview it locally (reads need no key):
+```bash
+poetry run python catalogue_cli.py sync --dry-run --base-url https://metadata-api-dev.apps.genovalia.ulaval.ca
+```
+For a real run, set `METADATA_API_KEY` to an admin key. See [AGENTS.md](./AGENTS.md#how-the-catalog-reaches-the-api) for what is synced and which fields the API uses.
