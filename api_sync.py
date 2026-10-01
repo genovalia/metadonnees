@@ -9,6 +9,8 @@ Each dataset folder is compared with what the API holds:
   has to be bumped whenever oca.json changes;
 - a changed mapper.json value is PUT as that language's translation.
 
+catalog.json is PUT to /catalog when it differs from the API's.
+
 Datasets in the API with no folder here are reported, never deleted.
 
 Reads are public, so a dry run needs no API key; writes need an admin key.
@@ -23,6 +25,8 @@ LANGUAGES = [
     {"code": "fr", "label": "Français", "is_default": False},
 ]
 TRANSLATION_FIELDS = ("theme", "spatial", "title", "description", "species")
+# The fields GET /catalog adds to catalog.json, from the datasets.
+CATALOG_GENERATED = ("dcat:dataset", "dcterms:language", "dcterms:modified")
 
 
 @dataclass
@@ -151,6 +155,33 @@ def plan_dataset(client, dataset_id, dcat, oca, mapper):
     return plan
 
 
+def catalog_differs(shown, catalog):
+    """Whether the API's catalog holds something other than catalog.json.
+
+    GET /catalog returns catalog.json's fields plus the generated ones, and
+    its @context is catalog.json's followed by the API's own.
+    """
+    context = shown.get("@context")
+    stored = {k: v for k, v in shown.items() if k not in CATALOG_GENERATED and k != "@context"}
+    local = {k: v for k, v in catalog.items() if k != "@context"}
+    stored_context = context[0] if isinstance(context, list) else None
+    return stored != local or stored_context != catalog.get("@context")
+
+
+def plan_catalog(client, catalog):
+    """The PUT that brings the API's catalog up to date, as a one-action plan."""
+    plan = DatasetPlan("catalog.json")
+    resp = client.get("/catalog")
+    if resp.status_code == 404:
+        plan.created = True
+    else:
+        resp.raise_for_status()
+        if not catalog_differs(resp.json(), catalog):
+            return plan
+    plan.actions.append(Action("catalog", "PUT", "/catalog", catalog))
+    return plan
+
+
 def plan_languages(client):
     resp = client.get("/languages")
     resp.raise_for_status()
@@ -179,11 +210,12 @@ def run_actions(client, plan):
             return
 
 
-def sync(client, datasets, dry_run):
-    """Plan, and unless dry_run, apply the changes for every dataset.
+def sync(client, datasets, catalog, dry_run):
+    """Plan, and unless dry_run, apply the changes for every dataset and the
+    catalog.
 
     `datasets` maps each dataset ID to its (dcat, oca, mapper) documents.
-    Returns (plans, orphans, language_actions).
+    Returns (plans, catalog_plan, orphans, language_actions).
     """
     language_actions = plan_languages(client)
     if not dry_run:
@@ -200,11 +232,18 @@ def sync(client, datasets, dry_run):
             run_actions(client, plan)
         plans.append(plan)
 
+    try:
+        catalog_plan = plan_catalog(client, catalog)
+    except httpx.HTTPError as exc:
+        catalog_plan = DatasetPlan("catalog.json", errors=[f"reading from the API failed: {exc}"])
+    if not dry_run and not catalog_plan.errors:
+        run_actions(client, catalog_plan)
+
     orphans = sorted(api_dataset_ids(client) - set(datasets))
-    return plans, orphans, language_actions
+    return plans, catalog_plan, orphans, language_actions
 
 
-def report(plans, orphans, language_actions, base_url, dry_run):
+def report(plans, catalog_plan, orphans, language_actions, base_url, dry_run):
     """The sync result as Markdown, for the terminal and the GitHub job summary."""
     verb = "Would" if dry_run else "Did"
     lines = [f"## {'Dry run against' if dry_run else 'Sync to'} {base_url}", ""]
@@ -212,7 +251,7 @@ def report(plans, orphans, language_actions, base_url, dry_run):
         lines.append(f"{verb} create: {', '.join(a.label for a in language_actions)}")
         lines.append("")
     lines += ["| Dataset | Result |", "|---|---|"]
-    for plan in plans:
+    for plan in [*plans, catalog_plan]:
         if plan.errors:
             result = "**error**: " + "; ".join(plan.errors)
         elif plan.created:
@@ -228,16 +267,17 @@ def report(plans, orphans, language_actions, base_url, dry_run):
     return "\n".join(lines) + "\n"
 
 
-def run(datasets, base_url, api_key, dry_run):
-    """Sync and print the report. Returns True if every dataset succeeded."""
+def run(datasets, catalog, base_url, api_key, dry_run):
+    """Sync and print the report. Returns True if every dataset and the
+    catalog succeeded."""
     headers = {"X-API-Key": api_key} if api_key else {}
     with httpx.Client(base_url=base_url, headers=headers, timeout=30) as client:
-        plans, orphans, language_actions = sync(client, datasets, dry_run)
+        plans, catalog_plan, orphans, language_actions = sync(client, datasets, catalog, dry_run)
 
-    text = report(plans, orphans, language_actions, base_url, dry_run)
+    text = report(plans, catalog_plan, orphans, language_actions, base_url, dry_run)
     print(text)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a") as f:
             f.write(text)
-    return not any(plan.errors for plan in plans)
+    return not any(plan.errors for plan in [*plans, catalog_plan])

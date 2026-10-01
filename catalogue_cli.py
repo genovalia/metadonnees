@@ -26,10 +26,16 @@ DATASET_ID = re.compile(r"^[a-z]+[0-9]+$")
 # folder of incoming exports under another name than temp/) is an error.
 REPO_FILES = {
     ".gitignore", "AGENTS.md", "CLAUDE.md", "README.md", "api_sync.py",
-    "catalogue_cli.py", "dataset_creator.py", "poetry.lock", "pyproject.toml",
+    "catalog.json", "catalogue_cli.py", "dataset_creator.py", "poetry.lock", "pyproject.toml",
 }
 REPO_DIRS = {".github", "templates", "tests"}
 DATASET_FILES = {"dcat.json", "mapper.json", "oca.json"}
+
+# catalog.json holds only the catalog-level fields no dataset provides. The
+# API requires these, and generates the others itself from the datasets.
+CATALOG_FILE = "catalog.json"
+CATALOG_REQUIRED = ("dcterms:title", "dcterms:description", "dcterms:publisher")
+CATALOG_GENERATED = ("dcat:dataset", "dcterms:language", "dcterms:modified")
 
 def check_dcat(dataset_id, dcat):
     """Return (errors, warnings) for one dataset's dcat.json."""
@@ -77,6 +83,33 @@ def check_dcat(dataset_id, dcat):
         warnings.append("dcat:distribution is empty")
 
     return errors, warnings
+
+def check_catalog(catalog):
+    """Return the errors in catalog.json, the same checks the API makes."""
+    errors = []
+    if not catalog.get("@id"):
+        errors.append("@id is missing")
+    if catalog.get("@type") != "dcat:Catalog":
+        errors.append(f'@type should be "dcat:Catalog", got {catalog.get("@type")!r}')
+    for key in CATALOG_REQUIRED:
+        if not catalog.get(key):
+            errors.append(f"{key} is missing")
+    for key in CATALOG_GENERATED:
+        for spelling in (key, key.replace("dcterms:", "dct:")):
+            if spelling in catalog:
+                errors.append(f"{spelling} is filled in by the API from the datasets; remove it")
+    return errors
+
+def load_catalog():
+    """Return (catalog, errors) for catalog.json."""
+    try:
+        with open(CATALOG_FILE, encoding="utf-8") as f:
+            catalog = json.load(f)
+    except FileNotFoundError:
+        return None, [f"{CATALOG_FILE} is missing"]
+    except ValueError as exc:
+        return None, [f"{CATALOG_FILE} is not valid JSON: {exc}"]
+    return catalog, check_catalog(catalog)
 
 def check_tracked_files(paths, dataset_ids):
     """Return errors for tracked files that are neither repo files nor dataset files."""
@@ -166,6 +199,13 @@ def validate(args):
                 for message in warnings:
                     print(f"  warning: {message}")
 
+    _, catalog_errors = load_catalog()
+    if catalog_errors:
+        print(f"{CATALOG_FILE}:")
+        for message in catalog_errors:
+            print(f"  error: {message}")
+    total_errors += len(catalog_errors)
+
     paths = tracked_files()
     if paths is not None:
         file_errors = check_tracked_files(paths, set(dataset_ids))
@@ -193,8 +233,11 @@ def sync(args):
         if errors:
             sys.exit(f"{dataset_id} doesn't validate; run `validate` first.")
         datasets[dataset_id] = (docs["dcat.json"], docs["oca.json"], docs["mapper.json"])
+    catalog, errors = load_catalog()
+    if errors:
+        sys.exit(f"{CATALOG_FILE} doesn't validate; run `validate` first.")
 
-    if not api_sync.run(datasets, args.base_url.rstrip("/"), api_key, args.dry_run):
+    if not api_sync.run(datasets, catalog, args.base_url.rstrip("/"), api_key, args.dry_run):
         sys.exit(1)
 
 def main():
@@ -206,12 +249,12 @@ def main():
     create_dataset_parser.set_defaults(func=lambda args: create_dataset_interactive())
 
     # validate command
-    validate_parser = subparsers.add_parser("validate", help="Check every dataset's dcat.json against the catalog conventions, and that git tracks no stray files")
+    validate_parser = subparsers.add_parser("validate", help="Check every dataset's dcat.json and catalog.json against the catalog conventions, and that git tracks no stray files")
     validate_parser.add_argument("--warnings", action="store_true", help="Also list missing recommended fields (license, distribution)")
     validate_parser.set_defaults(func=validate)
 
     # sync command
-    sync_parser = subparsers.add_parser("sync", help="Create or update the datasets in a Metadata API (admin key in METADATA_API_KEY)")
+    sync_parser = subparsers.add_parser("sync", help="Create or update the datasets and the catalog in a Metadata API (admin key in METADATA_API_KEY)")
     sync_parser.add_argument("--base-url", default=os.environ.get("METADATA_API_URL"), help="API to sync, e.g. https://metadata-api-dev.apps.genovalia.ulaval.ca (default: $METADATA_API_URL)")
     sync_parser.add_argument("--dry-run", action="store_true", help="Only report what would change; needs no API key")
     sync_parser.set_defaults(func=sync)

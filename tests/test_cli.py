@@ -5,7 +5,8 @@ import pytest
 import shutil
 from pathlib import Path
 from catalogue_cli import (
-    check_dataset, check_dcat, check_tracked_files, discover_datasets, find_dataset_ids, validate,
+    check_catalog, check_dataset, check_dcat, check_tracked_files, discover_datasets, find_dataset_ids,
+    validate,
 )
 from dataset_creator import get_existing_values, create_dataset_interactive, strip_jsonc_comments
 
@@ -137,6 +138,30 @@ def test_check_dcat_flags_known_problems():
     joined = "\n".join(errors)
     for expected in ["@id", "dcterms:identifier", "dcterms:version", "dcat:version",
                      "time:hasEnd", "dcterms:spatial", "prov:Agent", "pointOfcontact"]:
+        assert expected in joined
+
+VALID_CATALOG = {
+    "@id": "https://sedna.example/catalogue",
+    "@type": "dcat:Catalog",
+    "dcterms:title": [{"@value": "Catalogue", "@language": "fr"}],
+    "dcterms:description": "Description",
+    "dcterms:publisher": {"@id": "https://genovalia.ulaval.ca/"},
+}
+
+def test_check_catalog_valid():
+    assert check_catalog(VALID_CATALOG) == []
+
+def test_check_catalog_flags_problems():
+    catalog = {
+        **VALID_CATALOG,
+        "@type": "dcat:Dataset",
+        "dcterms:title": [],
+        "dcat:dataset": [],
+        "dct:modified": "2026-10-01",
+    }
+    del catalog["@id"], catalog["dcterms:publisher"]
+    joined = "\n".join(check_catalog(catalog))
+    for expected in ["@id", "@type", "dcterms:title", "dcterms:publisher", "dcat:dataset", "dct:modified"]:
         assert expected in joined
 
 def test_check_tracked_files():

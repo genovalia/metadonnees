@@ -11,6 +11,7 @@ The catalog is organized as a collection of datasets, each residing in its own d
 - **`catalogue_cli.py`**: A CLI tool for catalog management (validating the catalog, creating new datasets, syncing to the API).
 - **`api_sync.py`**: The sync to the Metadata API, used by `catalogue_cli.py sync`.
 - **`.github/workflows/`**: `validate.yml` (PR checks and a dry-run sync), `sync.yml` (sync on merge), `restrict-main-source.yml` (PRs into `main` come from `dev`).
+- **`catalog.json`**: DCAT 3 description of the catalog as a whole (title, publisher, homepage...). The API serves it at `/v1/catalog`, adding the list of datasets.
 - **`templates/`**: Standardized templates (`.jsonc`) for creating new datasets.
 - **`[dataset-id]/`**: Individual dataset directories. Any top-level folder with a `dcat.json` is a dataset; each contains:
     - `dcat.json`: DCAT-AP compliant metadata.
@@ -48,14 +49,14 @@ poetry run python catalogue_cli.py create-dataset
 This will guide you through the metadata collection, allowing you to reuse existing publishers, contact points, and creators.
 
 ### Validating the Catalog
-Check every dataset's `dcat.json` against the catalog conventions (`@id`/landing page on Sedna, `dcterms:identifier` = dataset id, `dcat:version` as `MAJOR.MINOR.PATCH`, valid dates and years, canonical GeoNames URIs, `prov:agent`, ISO 19115 roles), and that git doesn't track stray files (e.g. incoming exports outside `temp/`). It exits with status 1 on any error, and the test suite runs it too:
+Check every dataset's `dcat.json` and `catalog.json` against the catalog conventions (`@id`/landing page on Sedna, `dcterms:identifier` = dataset id, `dcat:version` as `MAJOR.MINOR.PATCH`, valid dates and years, canonical GeoNames URIs, `prov:agent`, ISO 19115 roles), and that git doesn't track stray files (e.g. incoming exports outside `temp/`). It exits with status 1 on any error, and the test suite runs it too:
 ```bash
 poetry run python catalogue_cli.py validate
 ```
 Add `--warnings` to also list missing recommended fields (license, distribution).
 
 ### Syncing to the API
-The **Sync** action runs `catalogue_cli.py sync` on every push to `dev` (dev API) and `main` (prod API), with the admin key from the GitHub Environment of the same name. It creates missing datasets, updates changed ones, and lists datasets the API has but the repo doesn't, without deleting them. To preview it locally (reads need no key):
+The **Sync** action runs `catalogue_cli.py sync` on every push to `dev` (dev API) and `main` (prod API), with the admin key from the GitHub Environment of the same name. It creates missing datasets, updates changed ones and the catalog description, and lists datasets the API has but the repo doesn't, without deleting them. To preview it locally (reads need no key):
 ```bash
 poetry run python catalogue_cli.py sync --dry-run --base-url https://metadata-api-dev.apps.genovalia.ulaval.ca
 ```
