@@ -1,0 +1,81 @@
+name: Sync
+
+on:
+  push:
+    branches: [dev, main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "API to sync (dev only from the dev branch, prod only from main)"
+        required: true
+        default: dev
+        type: choice
+        options:
+          - dev
+          - prod
+      dry_run:
+        description: "Only report what would change"
+        required: true
+        default: true
+        type: boolean
+
+# One sync per API at a time, never cancelled half-way.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.ref_name == 'main' && 'prod' || 'dev') }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Push to dev syncs "dev", push to main syncs "prod". A manual run picks
+    # the env explicitly; the Environment's branch rule still applies.
+    environment: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.ref_name == 'main' && 'prod' || 'dev') }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Install dependencies
+        run: poetry install --no-root
+
+      - name: Validate the datasets
+        run: poetry run python catalogue_cli.py validate
+
+      # Creates new datasets and updates changed ones; see api_sync.py. The
+      # result table is written to the job summary.
+      - name: Sync to the API
+        env:
+          METADATA_API_URL: ${{ vars.METADATA_API_URL }}
+          METADATA_API_KEY: ${{ secrets.METADATA_API_KEY }}
+        run: |
+          poetry run python catalogue_cli.py sync ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      - name: Notify Slack on success
+        if: success() && !(github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'true')
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          errors: true
+          payload: |
+            channel: "${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.ref_name == 'main' && 'prod' || 'dev')) == 'prod' && 'deployment-prod' || 'deployment-dev' }}"
+            text: ":card_index: *metadonnees* synced to *${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.ref_name == 'main' && 'prod' || 'dev') }}* (<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|summary>)"
+
+      - name: Notify Slack on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          errors: true
+          payload: |
+            channel: "github-ci"
+            text: ":x: *${{ github.event.repository.name }}* — `Sync` failed for *${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.ref_name == 'main' && 'prod' || 'dev') }}* (<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|logs>)"

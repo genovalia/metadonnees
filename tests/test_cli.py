@@ -1,9 +1,12 @@
 import os
 import json
+import subprocess
 import pytest
 import shutil
 from pathlib import Path
-from catalogue_cli import check_dcat, check_tracked_files, validate
+from catalogue_cli import (
+    check_dataset, check_dcat, check_tracked_files, discover_datasets, find_dataset_ids, validate,
+)
 from dataset_creator import get_existing_values, create_dataset_interactive, strip_jsonc_comments
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -29,10 +32,7 @@ def temp_repo(tmp_path, monkeypatch):
         "dcat:keyword": ["known", "unknown"],
         "dcterms:publisher": {"foaf:name": "Existing Publisher"}
     }))
-    
-    # Create catalogue.json
-    (repo_dir / "catalogue.json").write_text(json.dumps({"content": []}))
-    
+
     monkeypatch.chdir(repo_dir)
     return repo_dir
 
@@ -84,10 +84,6 @@ def test_create_dataset_logic(temp_repo, mocker):
     with open("newds/mapper.json") as f:
         mapper = json.load(f)
         assert mapper["id"] == "newds"
-
-    with open("catalogue.json") as f:
-        catalog = json.load(f)
-        assert any(item["id"] == "newds" for item in catalog["content"])
 
 def test_create_dataset_ongoing(temp_repo, mocker):
     """A blank end year means an ongoing dataset: time:hasEnd is omitted."""
@@ -146,13 +142,55 @@ def test_check_dcat_flags_known_problems():
 def test_check_tracked_files():
     """Stray files and folders are flagged; repo and dataset files are not."""
     paths = [
-        "README.md", "templates/dcat.jsonc", "tests/test_cli.py",
+        "README.md", "templates/dcat.jsonc", "tests/test_cli.py", ".github/workflows/sync.yml",
         "ds1/dcat.json", "ds1/mapper.json", "ds1/oca.json",
-        "exports/ds2_DCAT.json", "ds1/README.txt", "ds3/dcat.json", "notes.txt",
+        "exports/ds2_DCAT.json", "ds1/README.txt", "nouveaux/ds3/dcat.json", "notes.txt",
     ]
-    errors = check_tracked_files(paths, {"ds1"})
+    errors = check_tracked_files(paths, set(find_dataset_ids(paths)))
     flagged = [e.split()[0] for e in errors]
-    assert flagged == ["exports/ds2_DCAT.json", "ds1/README.txt", "ds3/dcat.json", "notes.txt"]
+    assert flagged == ["exports/ds2_DCAT.json", "ds1/README.txt", "nouveaux/ds3/dcat.json", "notes.txt"]
+
+def test_find_dataset_ids():
+    """A dataset is a top-level folder with a dcat.json, outside templates/ and tests/."""
+    paths = [
+        "ds1/dcat.json", "ds1/oca.json", "ds2/dcat.json", "ds3/oca.json",
+        "templates/dcat.json", "temp/ds4/dcat.json", "dcat.json",
+    ]
+    assert find_dataset_ids(paths) == ["ds1", "ds2"]
+
+def test_discover_datasets_skips_ignored_folders(tmp_path, monkeypatch):
+    """Untracked new folders count; folders git ignores (temp/) never do."""
+    monkeypatch.chdir(tmp_path)
+    subprocess.run(["git", "init", "-q"], check=True)
+    (tmp_path / ".gitignore").write_text("temp/\n")
+    for folder in ("ds1", "temp", "temp/ds2", "notes"):
+        (tmp_path / folder).mkdir()
+    (tmp_path / "ds1" / "dcat.json").write_text("{}")
+    (tmp_path / "temp" / "dcat.json").write_text("{}")
+    (tmp_path / "temp" / "ds2" / "dcat.json").write_text("{}")
+    (tmp_path / "notes" / "todo.txt").write_text("")
+    assert discover_datasets() == ["ds1"]
+
+def write_dataset(root, dataset_id, **docs):
+    folder = root / dataset_id
+    folder.mkdir()
+    for name, content in docs.items():
+        (folder / f"{name}.json").write_text(content if isinstance(content, str) else json.dumps(content))
+
+def test_check_dataset(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    dcat = {**VALID_DCAT}
+    write_dataset(tmp_path, "ds1", dcat=dcat, oca={}, mapper={"id": "ds1"})
+    write_dataset(tmp_path, "ds2", dcat={**dcat, "dcterms:identifier": "ds2"}, oca="{not json", mapper={"id": "ds1"})
+    write_dataset(tmp_path, "Ds_3", mapper={"id": "Ds_3"})
+
+    assert check_dataset("ds1")[1] == []
+    errors = "\n".join(check_dataset("ds2")[1])
+    assert "oca.json is not valid JSON" in errors
+    assert 'mapper.json "id" should be "ds2"' in errors
+    errors = "\n".join(check_dataset("Ds_3")[1])
+    assert "dcat.json is missing" in errors and "oca.json is missing" in errors
+    assert "not a dataset ID" in errors
 
 def test_repository_catalog_is_valid(monkeypatch):
     """The real catalog in this repository passes validation."""

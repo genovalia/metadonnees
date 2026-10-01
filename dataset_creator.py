@@ -219,18 +219,4 @@ def create_dataset_interactive():
     else:
         print(f"Note: no templates/oca.json; add {dataset_id}/oca.json before publishing.")
 
-    # 4. Update catalogue.json
-    with open("catalogue.json", "r") as f:
-        catalog = json.load(f)
-    
-    catalog["content"].append({
-        "id": dataset_id,
-        "mapper": f"{dataset_id}/mapper.json",
-        "OCA": f"{dataset_id}/oca.json",
-        "DCAT": f"{dataset_id}/dcat.json"
-    })
-    
-    with open("catalogue.json", "w") as f:
-        json.dump(catalog, f, indent=2)
-
     print(f"\nSuccessfully created dataset '{dataset_id}'!")
