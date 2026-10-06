@@ -75,17 +75,6 @@
     {
       "@type": "prov:Attribution",
       "prov:agent": {
-        "@id": "https://orcid.org/0000-0003-2987-3801",
-        "@type": "prov:Person",
-        "foaf:name": "Quentin Rougemont"
-      },
-      "dcat:hadRole": [
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:agent": {
         "@id": "https://orcid.org/0000-0002-3529-0736",
         "@type": "prov:Person",
         "foaf:name": "Hugo Cayuela"
