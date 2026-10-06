@@ -77,17 +77,6 @@
         "collaborator"
       ],
       "prov:agent": {
-        "@id": "https://orcid.org/0000-0003-1502-7276",
-        "@type": "prov:Person",
-        "foaf:name": "Amanda Roe"
-      }
-    },
-    {
-      "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "collaborator"
-      ],
-      "prov:agent": {
         "@id": "https://orcid.org/0000-0001-8111-6555",
         "@type": "prov:Person",
         "foaf:name": "Mingming Cui"
