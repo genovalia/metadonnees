@@ -1,10 +1,10 @@
 {
-  "d": "EEQ6wxyDsAmSWPDNFrbsxuyWFT9HbB065Onl7aqfm68k",
+  "d": "ENjjvdIXX4rZW7ZMqZcysV5Uaq8rne1UZ35kWLGCk-fU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000a5f_",
-      "d": "EKl4Y9Lt6n_iBMD_O65YID5DG6wznwOXzJ9c9eKt4u10",
+      "v": "OCAS11JSON000ab1_",
+      "d": "EMGxxn-ikOVrCWGR8D9LquTnCkpgjGpFZ9z36jDmH9nS",
       "capture_base": {
         "d": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
         "type": "spec/capture_base/1.1",
@@ -27,21 +27,21 @@
       "overlays": {
         "information": [
           {
-            "d": "EKZ7SxfOvQOzk_VNtGHJkKC8aeoipstA2ag-D53j4FQG",
+            "d": "EJ2mxLvhVUJlK755NZ53bhjBUO_s8-Z28MY14OL5QXWl",
             "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "age": "The age of the individual at the time the sample was collected",
               "country": "Country of origin of the individuals sampled",
-              "date_of_birth": "The date on which the individual was born.",
-              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "date_of_birth": "Birth date of the individual, expressed in the standard ISO 8601 format YYYY-MM-DD",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
-              "sequenced_molecule": "Sequenced molecule such as DNA, RNA…",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex: female, male, unknown"
             }
           }
@@ -80,13 +80,13 @@
           }
         ],
         "unit": {
-          "d": "EGzyA4JrCE-egus0cbDNWVyTjljG_hD_M9vdV94S50rH",
+          "d": "EMTHpWpWamMEBrro5PFTwaQMSx4uttZxQQxWfTUzFhMW",
           "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "age": "month",
-            "latitude": "degree",
-            "longitude": "degree"
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
           }
         }
       }
@@ -96,7 +96,7 @@
   "extensions": {
     "adc": {
       "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p": {
-        "d": "EPmJ09OcqSoIgvVBaY_6ptGmOIrOGUwujHMpWpxvSwLP",
+        "d": "EMFNJvOx-wPOjSgoeT3_r5kHFbdnoP8DBnmLBUOBsXRk",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
@@ -119,7 +119,7 @@
             "entry_code_ordering": {}
           },
           "unit_framing": {
-            "d": "EINDQQ2ekvJrdSEajG3yXj80gI5XlARuG7pGlZEtFQZa",
+            "d": "EAcBbfoKQ5ATXzRuOxx2dZCwtRaPZtvguIu80QhD2cNr",
             "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
@@ -129,7 +129,7 @@
               "version": ""
             },
             "units": {
-              "degree": {
+              "decimal degree": {
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"

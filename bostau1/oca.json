@@ -1,10 +1,10 @@
 {
-  "d": "EG2AGgdMxrol8TdTwmsrUVplRIoXnu1Nrdp93M3eAR7Y",
+  "d": "EPBEX8lk4Izo1I5cOKWi--XIIU_EDv3weUwQ-qZxy5PH",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000865_",
-      "d": "EOjEulVgIUtQIlInji99eqPdSMip44jy3xtx8zuQes8I",
+      "v": "OCAS11JSON00087b_",
+      "d": "EGJz7LtT0didmoYzrKFd9871XN76LHg73xM_Huf5iG6e",
       "capture_base": {
         "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
         "type": "spec/capture_base/1.1",
@@ -24,18 +24,18 @@
       "overlays": {
         "information": [
           {
-            "d": "EKxmhJPvtu3KaoN28dZx3lo1VwRk-tGem5zkZlW71B8M",
+            "d": "EKva1YnGggijzkhIrXR44-P4WAwUGYK9e1awJNetF-Ca",
             "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "breed": "Breed of the individual, such as Holstein or Jersey for instance",
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as SNP chip, genotyping-by-sequencing, etc.",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
-              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex: female, male, unknown"
             }
           }

@@ -52,7 +52,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6115047/",
-  "dcat:version": "1.0.0",
+  "dcat:version": "1.1.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {

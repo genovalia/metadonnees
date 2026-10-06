@@ -1,10 +1,10 @@
 {
-  "d": "EL7FVsLbM3v6dYx2FWnk8m7O9gmGkPv8EDeStCy6LH_T",
+  "d": "EPisMrCq3SzIakT_Le0d3dobAzQEGU3Sh9SCM2mS89GK",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00095f_",
-      "d": "ED3k70IymIIoxLvZgrXC2fjHcxshiHBBneSFeB3i0Rhb",
+      "v": "OCAS11JSON000979_",
+      "d": "EMg40pVupRTEwCunkB-cRJZbYHcWkGXdQ2Ub21ow-jOi",
       "capture_base": {
         "d": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
         "type": "spec/capture_base/1.1",
@@ -26,7 +26,7 @@
       "overlays": {
         "information": [
           {
-            "d": "ECVGgkRltz5mZAee1HU5zt19KEEVOQdxfcT-0S1egIF1",
+            "d": "EPFRzRFkT3IGmaYk1LBkFQTU3BMVXMXZxljL4nOhxjpm",
             "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -35,11 +35,11 @@
               "country": "Country of origin of the individuals sampled",
               "date_of_birth": "Birth date of the individual, expressed in the standard ISO 8601 format YYYY-MM-DD",
               "farm": "Name of the farm where the individual was raised",
-              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
-              "sequenced_molecule": "Sequenced molecule such as DNA, RNA...",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex: female, male, unknown"
             }
           }
