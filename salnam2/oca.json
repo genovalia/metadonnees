@@ -1,10 +1,10 @@
 {
-  "d": "EEJaDTrRgYVrejJAi4Mojr7IPa8FcEPO3nepNgVjTpyC",
+  "d": "EHnqDcL6lB9TxHxgfUwHwyntSYRXiQJkPXPldA5HvFcy",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e0a_",
-      "d": "ENMNEjFG5csRQTmMWphpZ0-TqhcUfoe-K_NFcsh2pBix",
+      "v": "OCAS11JSON000e1a_",
+      "d": "EPaMPNW2B8IFAuvJZIchntx7uWHQHNHSM3APVW684hxh",
       "capture_base": {
         "d": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
         "type": "spec/capture_base/1.1",
@@ -130,12 +130,12 @@
           }
         ],
         "unit": {
-          "d": "EDI4tj-k6kzyCZtRFrtL4YZkRNDNi3hhR7HeIst0NTPh",
+          "d": "EGhOIP5bdGafi1s-RaV1e9ihb1ZlSoBVlhc8lvjc6tm7",
           "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "latitude": "degree",
-            "longitude": "degree",
+            "latitude": "decimal degree",
+            "longitude": "decimal degree",
             "sample_length": "millimeter",
             "sample_weight": "gram",
             "sample_weight_in_water": "gram",
@@ -149,7 +149,7 @@
   "extensions": {
     "adc": {
       "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C": {
-        "d": "ELBzxTfIYSR3swDu6h_wE8ImGcKo1p2OFHYkDnInWF1s",
+        "d": "EApW0YrNnhtcqYAg5tkg_its_ci_RiUHoTTP19q7OUyF",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
@@ -189,7 +189,7 @@
             }
           },
           "unit_framing": {
-            "d": "EHj7hUkKJvdpAHauLp2-czNbxWZVFxC7uhTy-pAx1sJ8",
+            "d": "EAmBxoSvP4pl28RswgQ17rJZPxh-r3jFMbANuveTWt_g",
             "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
@@ -199,7 +199,7 @@
               "version": ""
             },
             "units": {
-              "degree": {
+              "decimal degree": {
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"

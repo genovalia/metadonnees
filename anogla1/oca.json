@@ -1,10 +1,10 @@
 {
-  "d": "EP_OZBIEQKqiKRwqiL-d3vPWjdzFSpCNHWPOAbbXGzks",
+  "d": "EIvKXRCus-Q5s7sVf8XLJ4EywrlvwW5xzGBCKb2gTuXI",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0009e8_",
-      "d": "EK0BmL_AOcjJTfjgHnfjW_qX65UgAQGdB5XvfFOyf7mt",
+      "v": "OCAS11JSON000a02_",
+      "d": "EDl2l7W3qGNcubaIbm3vZgJyloa5Zna7sI-usYm0YF3m",
       "capture_base": {
         "d": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
         "type": "spec/capture_base/1.1",
@@ -25,20 +25,20 @@
       "overlays": {
         "information": [
           {
-            "d": "EOPjQ3S7l0iq3aWobtyAI753RI0_V26mEC355o0WRqJl",
+            "d": "ECMD-q3jYyQyJDba05C467QgE3N9jHVfpCbZYZoaeWPt",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "life_stage": "Developmental stage of an organism, such as larva, pupa, juvenile, adult...",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_year": "Year in which the sample was collected",
-              "sequenced_molecule": "Sequenced molecule such as DNA, RNA…"
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],
