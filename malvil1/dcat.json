@@ -14,7 +14,7 @@
   "dcterms:identifier": "malvil1",
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
-  "dcterms:title": "Caplin genotypic dataset for studying local adaptation to marine environments",
+  "dcterms:title": "Capelin genotypic dataset for studying local adaptation to marine environments",
   "dcterms:description": "This dataset contains genotypes for 1360 capelin individuals (Mallotus villosus) sampled across eastern Canada to study how demographic history, shared ancestral polymorphism, and gene flow among glacial lineages contribute to local adaptation to sea conditions. Genotypes were obtained using a genotyping-by-sequencing approach.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/malvil1",
   "dcterms:publisher": {
@@ -31,7 +31,7 @@
     }
   },
   "dcat:keyword": [
-    "caplin",
+    "capelin",
     "Mallotus villosus",
     "genomics",
     "local adaptation",
