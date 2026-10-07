@@ -41,7 +41,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Canada"
+      "value": "North Atlantic Ocean"
     },
     "creators": {
       "type": "jsonpath",
@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Canada"
+      "value": "Océan Atlantique Nord"
     },
     "creators": {
       "type": "jsonpath",

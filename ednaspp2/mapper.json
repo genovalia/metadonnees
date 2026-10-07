@@ -35,7 +35,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Province of Quebec, Canada"
+      "value": "Quebec"
     },
     "creators": {
       "type": "jsonpath",
@@ -90,7 +90,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Province de Québec, Canada"
+      "value": "Québec"
     },
     "creators": {
       "type": "jsonpath",

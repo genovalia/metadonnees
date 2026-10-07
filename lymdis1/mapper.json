@@ -41,7 +41,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "worldwide"
+      "value": "Worldwide"
     },
     "creators": {
       "type": "jsonpath_multiple",
@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Monde Entier"
+      "value": "Monde entier"
     },
     "creators": {
       "type": "jsonpath_multiple",
