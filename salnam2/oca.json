@@ -1,16 +1,17 @@
 {
-  "d": "EHnqDcL6lB9TxHxgfUwHwyntSYRXiQJkPXPldA5HvFcy",
+  "d": "EJStG9xEsis4Ouif7lXgaZTkgDThaniDhzIinFmqNv3k",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e1a_",
-      "d": "EPaMPNW2B8IFAuvJZIchntx7uWHQHNHSM3APVW684hxh",
+      "v": "OCAS11JSON000fc9_",
+      "d": "EBwI16gQd3jMMw8SxsrLemYIeTQTJ8NQhUfFnm8Zs9l1",
       "capture_base": {
-        "d": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+        "d": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
           "ecotype": "Text",
+          "genotyping_technology": "Text",
           "id": "Text",
           "latitude": "Numeric",
           "longitude": "Numeric",
@@ -19,7 +20,8 @@
           "sample_length": "Numeric",
           "sample_weight": "Numeric",
           "sample_weight_in_water": "Numeric",
-          "sampling_depth": "Numeric",
+          "sampling_depth_class": "Text",
+          "sequenced_molecule": "Text",
           "sex": "Text"
         },
         "classification": "RDF106",
@@ -28,8 +30,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAFlDwQbflDMdAcbNUv77mvriSA42pyhPJ-0CAuRNpTi",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "EIec9RDG88jXZ1KB0QLf3LdrlSE6sYvk_0ZodaKMYx0o",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -37,13 +39,13 @@
                 "humper": "humper",
                 "lean": "lean",
                 "redfin": "redfin",
-                "sicowet": "sicowet"
+                "siscowet": "siscowet"
               },
               "maturity": {
                 "immature": "sexual maturity not reached yet",
                 "mature": "sexual maturity reached"
               },
-              "sampling_depth": {
+              "sampling_depth_class": {
                 "deep": ">100 meters",
                 "mid-depth": "50 to 100 meters",
                 "shallow": "<50 meters"
@@ -52,21 +54,21 @@
           }
         ],
         "entry_code": {
-          "d": "EN26Z_n4Vu2UUtc2FXkh1eoDXUEp849102J9q-VWl-BW",
-          "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+          "d": "EIvZvBIvNNGmFoDbon9uR4wobREh5m_Ev0TWDwa1mRQ4",
+          "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "ecotype": [
               "humper",
               "lean",
               "redfin",
-              "sicowet"
+              "siscowet"
             ],
             "maturity": [
               "immature",
               "mature"
             ],
-            "sampling_depth": [
+            "sampling_depth_class": [
               "deep",
               "mid-depth",
               "shallow"
@@ -75,13 +77,14 @@
         },
         "information": [
           {
-            "d": "ELftaT5QsjOpuXHO_98j-IRwZyDG9PMv1Xp6sFydLf2v",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "ELlGDXswh48RFXNuhxot5ZkTTy6BCJuj9lC0XHphziPG",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
               "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
@@ -90,21 +93,23 @@
               "sample_length": "Length of the sampled individual",
               "sample_weight": "Weight of the sampled individual",
               "sample_weight_in_water": "Weight of the sampled individual measured while immersed in water",
-              "sampling_depth": "Depth at which the sample was collected",
+              "sampling_depth_class": "Depth class at which the sample was collected: shallow (< 50 m), mid-depth (50-100 m) or deep (> 100 m)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex: female, male, unknown"
             }
           }
         ],
         "label": [
           {
-            "d": "EAGjWiAiLmWLejI_U5uJWodofLVgvaoa0n_F3NV19uzQ",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "EBEpJgcjsC2YrsLi-5Uu3ienbxthwYrdB1tFcIl6cTt_",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "country": "country",
               "ecotype": "ecotype",
+              "genotyping_technology": "genotyping_technology",
               "id": "id",
               "latitude": "latitude",
               "longitude": "longitude",
@@ -113,7 +118,8 @@
               "sample_length": "sample_length",
               "sample_weight": "sample_weight",
               "sample_weight_in_water": "sample_weight_in_water",
-              "sampling_depth": "sampling_depth",
+              "sampling_depth_class": "sampling_depth_class",
+              "sequenced_molecule": "sequenced_molecule",
               "sex": "sex"
             },
             "category_labels": {}
@@ -121,8 +127,8 @@
         ],
         "meta": [
           {
-            "d": "EA_S5nf6kgMRD1PLxIEuGMV1cJnGjJcq_Icv0MKQZJa_",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "EO9so3jb0UL1lOIT0StAP2EI1yHziIGpzmyXmpVXmuhA",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic data from four lake trout (Salvelinus namaycush) ecotypes sampled in Lake Superior. A total of 484 individuals were genotyped at 6822 SNPs using a genotyping-by-sequencing approach.",
@@ -130,16 +136,15 @@
           }
         ],
         "unit": {
-          "d": "EGhOIP5bdGafi1s-RaV1e9ihb1ZlSoBVlhc8lvjc6tm7",
-          "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+          "d": "EMP1m9RuAlYD9KYZDaQGnC06Ne7lmTbaj_5L0bEkZAlH",
+          "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
             "longitude": "decimal degree",
             "sample_length": "millimeter",
             "sample_weight": "gram",
-            "sample_weight_in_water": "gram",
-            "sampling_depth": "meter"
+            "sample_weight_in_water": "gram"
           }
         }
       }
@@ -148,13 +153,13 @@
   },
   "extensions": {
     "adc": {
-      "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C": {
-        "d": "EApW0YrNnhtcqYAg5tkg_its_ci_RiUHoTTP19q7OUyF",
+      "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a": {
+        "d": "EOJD5ZBJDq6HEk8opY8yJjRzTfm4GjWggrc4jld3rC2c",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EGU6r6SLOlG9c1LGA-ivsfwzHk_S_qbTIJWouEthCLlZ",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "EGM39UxN5mpFhD155IUAyesoZ23ouylf5tFv1MW-wGHO",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -162,16 +167,18 @@
               "country",
               "latitude",
               "longitude",
-              "sampling_depth",
+              "sampling_depth_class",
               "sample_length",
               "sample_weight",
               "sample_weight_in_water",
               "sex",
               "maturity",
-              "ecotype"
+              "ecotype",
+              "sequenced_molecule",
+              "genotyping_technology"
             ],
             "entry_code_ordering": {
-              "sampling_depth": [
+              "sampling_depth_class": [
                 "shallow",
                 "mid-depth",
                 "deep"
@@ -181,7 +188,7 @@
                 "immature"
               ],
               "ecotype": [
-                "sicowet",
+                "siscowet",
                 "humper",
                 "lean",
                 "redfin"
@@ -189,8 +196,8 @@
             }
           },
           "unit_framing": {
-            "d": "EAmBxoSvP4pl28RswgQ17rJZPxh-r3jFMbANuveTWt_g",
-            "capture_base": "EGFCiSmgBEsJw4bj6Yn4uctp_bnUXrQ2XJUsKWT-O--C",
+            "d": "EJJ9BnPT0Yk4RX9K3hbGsfJV56wNFgwi56e8WZAqWX-Q",
+            "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
@@ -208,11 +215,6 @@
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "g"
-              },
-              "meter": {
-                "framing_justification": "semapv:ManualMappingCuration",
-                "predicate_id": "skos:exactMatch",
-                "term_id": "m"
               },
               "millimeter": {
                 "framing_justification": "semapv:ManualMappingCuration",
