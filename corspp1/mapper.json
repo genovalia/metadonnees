@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "North America"
+      "value": "Amérique du Nord"
     },
     "creators": {
       "type": "jsonpath",

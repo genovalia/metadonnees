@@ -1,10 +1,10 @@
 {
-  "d": "EHb6qpy2iEAeojYZJEoopzz7akkPWwMlW71ZBUc6Rdol",
+  "d": "EGHmhHEmSayUR2XfUuhv9Hdz-mJp-U1adkjmd_Qul0Ow",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00078d_",
-      "d": "EE8KYoirbsho6G5XbVSDnjZht_v0ns7Ywxbo7I6ZbIcQ",
+      "v": "OCAS11JSON0007a7_",
+      "d": "EMFg6TUbKAIWQ2KN9zEyGGNfuNZEW1TfbV6pirF33MrE",
       "capture_base": {
         "d": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
         "type": "spec/capture_base/1.1",
@@ -22,17 +22,17 @@
       "overlays": {
         "information": [
           {
-            "d": "ENNgX46qqhjbkEEscMeNcBctLZRUNYiOmgfyHoSem60j",
+            "d": "EJ2ikxJLGXV2hVMZPqQ5RcFJWhp0-OjC6crcagXgDAyz",
             "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology such as whole genome sequencing, genotyping-by-sequencing, SNP chip…",
+              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "population_type": "General category describing the origin or management status of the population",
-              "sequenced_molecule": "Sequenced molecule such as DNA, RNA…"
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],

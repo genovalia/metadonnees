@@ -14,7 +14,7 @@
   "dcterms:identifier": "malvil1",
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
-  "dcterms:title": "Caplin genotypic dataset for studying local adaptation to marine environments",
+  "dcterms:title": "Capelin genotypic dataset for studying local adaptation to marine environments",
   "dcterms:description": "This dataset contains genotypes for 1360 capelin individuals (Mallotus villosus) sampled across eastern Canada to study how demographic history, shared ancestral polymorphism, and gene flow among glacial lineages contribute to local adaptation to sea conditions. Genotypes were obtained using a genotyping-by-sequencing approach.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/malvil1",
   "dcterms:publisher": {
@@ -31,7 +31,7 @@
     }
   },
   "dcat:keyword": [
-    "caplin",
+    "capelin",
     "Mallotus villosus",
     "genomics",
     "local adaptation",
@@ -51,8 +51,8 @@
       "time:inXSDgYear": "2014"
     }
   },
-  "dcterms:spatial": "https://sws.geonames.org/6251999/",
-  "dcat:version": "1.0.0",
+  "dcterms:spatial": "https://sws.geonames.org/3411923/",
+  "dcat:version": "1.1.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
@@ -75,19 +75,7 @@
     {
       "@type": "prov:Attribution",
       "prov:agent": {
-        "@id": "https://orcid.org/0000-0003-2987-3801",
-        "@type": "prov:Person",
-        "foaf:name": "Quentin Rougemont"
-      },
-      "dcat:hadRole": [
-        "pointOfContact",
-        "collaborator"
-      ]
-    },
-    {
-      "@type": "prov:Attribution",
-      "prov:agent": {
-        "@id": "https://orcid.org/0000-0003-3250-6295",
+        "@id": "https://orcid.org/0000-0002-3529-0736",
         "@type": "prov:Person",
         "foaf:name": "Hugo Cayuela"
       },
