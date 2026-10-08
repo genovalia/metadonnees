@@ -14,8 +14,8 @@
   "dcterms:identifier": "rantar1",
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
-  "dcterms:title": "SNP chip dataset of caribou ecotypes from Quebec",
-  "dcterms:description": "This dataset contains SNP chip genotypes for 1 773 caribou (Rangifer tarandus) of several ecotypes from Quebec, sampled by the Quebec ministry responsible for wildlife management.",
+  "dcterms:title": "SNP chip dataset of caribou ecotypes from eastern Canada",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 57 489 SNPs for 1 189 caribou (Rangifer tarandus) of several ecotypes from eastern Canada.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/rantar1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",

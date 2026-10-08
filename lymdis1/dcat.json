@@ -102,8 +102,7 @@
         "foaf:name": "Richard Hamelin"
       },
       "dcat:hadRole": [
-        "principalInvestigator",
-        "collaborator"
+        "principalInvestigator"
       ]
     },
     {

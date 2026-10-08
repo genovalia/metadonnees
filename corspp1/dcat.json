@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Whole genome sequencing dataset of four North American whitefish species",
-  "dcterms:description": "This dataset contains whole genome sequencing genotypes for 14 whitefish of four North American Coregonus species.",
+  "dcterms:description": "This dataset contains whole genome sequencing genotypes at 11.7 to 14.8 million SNPs per species for 14 whitefish of four North American Coregonus species.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/corspp1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",

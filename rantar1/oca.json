@@ -1,10 +1,10 @@
 {
-  "d": "EIMUCRSLBj5wzd5xSLfrJ6kCZNWuszRVQmeiaXIgG5MO",
+  "d": "EPPAMYnp-j2GlW5S_bsoKN-7z-hS2CYgegqfVVIdtr91",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001a53_",
-      "d": "EAcJzccehGy_ZPnoJkQludZNYgt2zodgb2mDfFtyAkX_",
+      "v": "OCAS11JSON001a5f_",
+      "d": "EJ3mc75_pqqylCM1_6MNjTAhmmvrwnKNyk5k1g2iVnSK",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -131,7 +131,7 @@
             }
           },
           {
-            "d": "EGjM8CYAx1_EV1GyGU1j0JKOUHeIuYJIfuWdXEm4Z02Y",
+            "d": "EPJ2ZAIxSzW8h8FlBFp3xAy8phu3ayw9EVAwIF9StBxR",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
@@ -142,9 +142,9 @@
               "latitude": "Latitude en degré décimaux: Ex: -42.23452",
               "longitude": "Longitude en degré décimaux: Ex: -42.23452",
               "organism": "Nom de l'espèce en Latin en suivant la classification de Linnée",
-              "sample_tissue": "Tissu échantillonné pour extraire l'ADN ou l'ARN ou...",
+              "sample_tissue": "Tissu échantillonné pour extraire l’ADN ou l’ARN.",
               "sampling_year": "année de l'échantillonnage",
-              "sequenced_molecule": "Molécule séquencée: ADN, ARN,...",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
               "sex": "Sexe: Male, Femelle, inconnnu"
             }
           }

@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of Asian longhorned beetle from China and South Korea",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 6 102 SNPs for 365 Asian longhorned beetles (Anoplophora glabripennis) from the native range in China and South Korea. Most of these beetles were also genotyped, together with invasive North American beetles, in a separate dataset.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 6 102 SNPs for 365 Asian longhorned beetles (Anoplophora glabripennis) from the native range in China and South Korea.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
