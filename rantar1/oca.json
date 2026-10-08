@@ -1,10 +1,10 @@
 {
-  "d": "EIfHm74L4FCYnv7L117BJoQxtuDEqTrVkuQMA3zo4oJj",
+  "d": "EIMUCRSLBj5wzd5xSLfrJ6kCZNWuszRVQmeiaXIgG5MO",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001622_",
-      "d": "EKZSaiy4OlOD8D-wN8zDTqt-PHS19MouI9VMSwBgVH2k",
+      "v": "OCAS11JSON001a53_",
+      "d": "EAcJzccehGy_ZPnoJkQludZNYgt2zodgb2mDfFtyAkX_",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -27,11 +27,16 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAlcDlTeZa83ik0xF4PPzqOoIjWO5O0I3GdDPnaiFZov",
+            "d": "EEDpiIIkMG8PrUSiCA0YS1xy5lY8CUbsPI7rZwMsMzh9",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
+              "ecotype": {
+                "forest-dwelling": "forest-dwelling",
+                "migratory": "migratory",
+                "mountain": "mountain"
+              },
               "genotyping_technology": {
                 "RNA sequencing": "RNA sequencing",
                 "SNP chip": "SNP chip",
@@ -39,15 +44,55 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
+              },
+              "sample_tissue": {
+                "ear punch": "ear punch",
+                "feces": "feces",
+                "hair": "hair",
+                "metatarsal punch": "metatarsal punch",
+                "serum": "serum"
+              }
+            }
+          },
+          {
+            "d": "ENqc4Xodrk0CGxONxtusDkniA4yJCkFvrgmIuCetB34N",
+            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "ecotype": {
+                "forest-dwelling": "forestier",
+                "migratory": "migrateur",
+                "mountain": "montagnard"
+              },
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "génotypage de SNP ciblés",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sample_tissue": {
+                "ear punch": "poinçon d’oreille",
+                "feces": "fèces",
+                "hair": "poils",
+                "metatarsal punch": "poinçon de métatarse",
+                "serum": "sérum"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EKTlBG0MOoKuQ9K-kfMMENY0_KsDxKBTXugOyxfh02sp",
+          "d": "ENSyKZ3fDGKKqH_5DArYKQXIzPt4lJ09xlUhFLnhl8bj",
           "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
+            "ecotype": [
+              "forest-dwelling",
+              "migratory",
+              "mountain"
+            ],
             "genotyping_technology": [
               "RNA sequencing",
               "SNP chip",
@@ -55,6 +100,13 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "sample_tissue": [
+              "ear punch",
+              "feces",
+              "hair",
+              "metatarsal punch",
+              "serum"
             ]
           }
         },
@@ -175,11 +227,11 @@
   "extensions": {
     "adc": {
       "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP": {
-        "d": "EClNQV8nzjLEVdnCbVdJU3hB6o2DD5BdMjv4UYxGparu",
+        "d": "EAmL4rNfZPW6H8-TpfNSRuw2bB1R6cYF7n4DGhykU5xU",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EL2W-UirBv3C2QM3Elp6uk3h5i1i3bFjVuOeDrxy8yP2",
+            "d": "EOH43WS0Elhm1IQgHj366OsIKSDn6rygS7_vmkASYQ0p",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -203,6 +255,18 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "ecotype": [
+                "forest-dwelling",
+                "migratory",
+                "mountain"
+              ],
+              "sample_tissue": [
+                "ear punch",
+                "metatarsal punch",
+                "hair",
+                "serum",
+                "feces"
               ]
             }
           },
