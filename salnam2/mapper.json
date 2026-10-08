@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 484 touladis (Salvelinus namaycush) de quatre écotypes du lac Supérieur à 6 822 SNP, avec des données phénotypiques."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 484 touladis (Salvelinus namaycush) appartenant à quatre écotypes du lac Supérieur, génotypés à l’aide de 6 822 SNP, ainsi que des données phénotypiques."
     },
     "theme": {
       "type": "literal",

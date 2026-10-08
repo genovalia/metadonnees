@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 254 épinettes noires (Picea mariana) de populations naturelles couvrant l’aire de répartition transcontinentale de l’espèce, à 4 186 SNP géniques."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 254 épinettes noires (Picea mariana) provenant de populations naturelles couvrant la majeure partie de l’aire de répartition transcontinentale de l’espèce, génotypées à l’aide de 4 186 SNP géniques."
     },
     "theme": {
       "type": "literal",

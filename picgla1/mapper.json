@@ -54,7 +54,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) de populations naturelles du Québec plantées en jardin commun à 6 153 SNP géniques, avec des données phénotypiques."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 153 SNP géniques, ainsi que des données phénotypiques."
     },
     "theme": {
       "type": "literal",

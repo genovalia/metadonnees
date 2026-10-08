@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of capelin from eastern Canada",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes for 1 360 capelin (Mallotus villosus) from eastern Canada.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 17 436 SNPs for 1 360 capelin (Mallotus villosus) from eastern Canada.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/malvil1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
