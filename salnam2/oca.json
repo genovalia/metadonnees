@@ -1,10 +1,10 @@
 {
-  "d": "EJStG9xEsis4Ouif7lXgaZTkgDThaniDhzIinFmqNv3k",
+  "d": "EOP4vWQBIzr6qHAMYRYlB1LzmAOz7CFat7AMZAy8wxt-",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000fc9_",
-      "d": "EBwI16gQd3jMMw8SxsrLemYIeTQTJ8NQhUfFnm8Zs9l1",
+      "v": "OCAS11JSON0011db_",
+      "d": "EMMfLlTczI2R5i0_vAUwlKLWJoj2W0JaFiTCVt2L_ULf",
       "capture_base": {
         "d": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
         "type": "spec/capture_base/1.1",
@@ -30,7 +30,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EIec9RDG88jXZ1KB0QLf3LdrlSE6sYvk_0ZodaKMYx0o",
+            "d": "EGvOzKpeK-0FHyjrtbQ2448VcXBZ_vpKfnRWuVhUfQ3s",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -41,9 +41,18 @@
                 "redfin": "redfin",
                 "siscowet": "siscowet"
               },
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              },
               "maturity": {
                 "immature": "sexual maturity not reached yet",
-                "mature": "sexual maturity reached"
+                "mature": "sexual maturity reached",
+                "unknown": "sexual maturity not determined"
               },
               "sampling_depth_class": {
                 "deep": ">100 meters",
@@ -54,7 +63,7 @@
           }
         ],
         "entry_code": {
-          "d": "EIvZvBIvNNGmFoDbon9uR4wobREh5m_Ev0TWDwa1mRQ4",
+          "d": "EHRUAzopAm6t_xcONChsmWwECr5gpt5YnSiGc-3COt1p",
           "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -64,9 +73,18 @@
               "redfin",
               "siscowet"
             ],
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ],
             "maturity": [
               "immature",
-              "mature"
+              "mature",
+              "unknown"
             ],
             "sampling_depth_class": [
               "deep",
@@ -77,14 +95,14 @@
         },
         "information": [
           {
-            "d": "ELlGDXswh48RFXNuhxot5ZkTTy6BCJuj9lC0XHphziPG",
+            "d": "EDEtg_VStZ6kmo9D3h0YZl3yagB2XItyoY1XCA-MXXmM",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
               "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
@@ -154,11 +172,11 @@
   "extensions": {
     "adc": {
       "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a": {
-        "d": "EOJD5ZBJDq6HEk8opY8yJjRzTfm4GjWggrc4jld3rC2c",
+        "d": "EI0S2T-pkQFDuJ9d985mYDXCwvqQz1nW_ur5NyoqFS_w",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EGM39UxN5mpFhD155IUAyesoZ23ouylf5tFv1MW-wGHO",
+            "d": "ELV4dOlUCK3bn5eiGbdHrhQ7AJVOOdWM-JiP02A_LHn_",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -185,13 +203,22 @@
               ],
               "maturity": [
                 "mature",
-                "immature"
+                "immature",
+                "unknown"
               ],
               "ecotype": [
                 "siscowet",
                 "humper",
                 "lean",
                 "redfin"
+              ],
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
               ]
             }
           },

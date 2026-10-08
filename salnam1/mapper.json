@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques provenant d’échantillons de touladi prélevés au Québec"
+      "value": "Données de génotypage par séquençage de touladi du Québec avec données environnementales"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques provenant d’individus de touladi (Salvelinus namaycush) échantillonnés dans l’aire de répartition naturelle de l’espèce dans la province de Québec. Au total, 673 individus ont été génotypés pour 7 201 SNPs à l’aide d’une approche de génotypage par séquençage."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 673 touladis (Salvelinus namaycush) provenant de lacs couvrant l’ensemble de l’aire de répartition de l’espèce au Québec, génotypés à l’aide de 7 201 SNP, ainsi que des données environnementales."
     },
     "theme": {
       "type": "literal",

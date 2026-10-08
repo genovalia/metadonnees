@@ -14,8 +14,8 @@
   "dcterms:identifier": "bostau1",
   "dcterms:issued": "2026-03-16",
   "dcterms:language": "en",
-  "dcterms:title": "Canadienne breed cows",
-  "dcterms:description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+  "dcterms:title": "SNP chip dataset of Canadienne breed cattle from Quebec",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 312 257 SNPs for 190 cows (Bos taurus) of the Canadienne breed, a hardy dairy breed from Quebec.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/bostau1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -32,8 +32,9 @@
   },
   "dcat:keyword": [
     "Canadienne breed",
-    "genotyping chip",
-    "genomic diversity"
+    "Bos taurus",
+    "SNP chip",
+    "genetic diversity"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9913/",
   "dcat:distribution": [],
@@ -49,7 +50,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6115047/",
-  "dcat:version": "1.1.0",
+  "dcat:version": "1.2.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {

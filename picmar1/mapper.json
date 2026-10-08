@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Jeu de données génotypiques pour l’étude de l’adaptation au climat chez l’épinette noire"
+      "value": "Données génotypiques de puce de SNP d’épinette noire de l’ensemble de l’Amérique du Nord"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques utilisées pour étudier l’adaptation au climat chez l’épinette noire (Picea mariana), un conifère d'Amérique du Nord à aire de répartition transcontinentale. Il comprend des données génotypiques de SNPs localisés dans des gènes (4186 SNPs) pour 254 arbres échantillonnés dans 31 populations naturelles couvrant une grande partie de l’aire de répartition de l’espèce. Les coordonnées géographiques et l’altitude sont fournies pour chaque site d’échantillonnage."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 254 épinettes noires (Picea mariana) provenant de populations naturelles couvrant la majeure partie de l’aire de répartition transcontinentale de l’espèce, génotypées à l’aide de 4 186 SNP géniques."
     },
     "theme": {
       "type": "literal",

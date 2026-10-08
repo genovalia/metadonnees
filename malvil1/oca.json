@@ -1,10 +1,10 @@
 {
-  "d": "EO-S8Acg45v6eTYk9U81uBwuG89RYeJF6spMaWe-4qzK",
+  "d": "EKAakzTMDKE6H5vfVHLz9kYr3p7oTKvY2gCM2fMscOQp",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0009a9_",
-      "d": "EHKvuDg3eHuXMgowmnlimlAutVzIKn2qSUUjpr5OjT9f",
+      "v": "OCAS11JSON000ded_",
+      "d": "EGC-8aD0MsQCDATVY0OfXw33HBPrMhOBnFsdFNBzQaeD",
       "capture_base": {
         "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
         "type": "spec/capture_base/1.1",
@@ -22,15 +22,60 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "ENbuWa9pJWnb8z3HEV9fzewV7_euwb0LpDRFeS_1m2yq",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              },
+              "site_type": {
+                "beach": "beach",
+                "deep-water demersal": "deep-water demersal",
+                "offshore": "offshore",
+                "shallow-water demersal": "shallow-water demersal"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EAs-Iqa-91HCK-YiBkh6pDutAGY0CNbmUESg2bYgyC9k",
+          "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ],
+            "site_type": [
+              "beach",
+              "deep-water demersal",
+              "offshore",
+              "shallow-water demersal"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EPj2yY_bBiPl_5zMKPHJ9zJ69VNkmyMIqNN9XDii3zcy",
+            "d": "EJL5qsuqpxYs46ccFqk545mCzTMcMD9Oou0eV8vRCbbr",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
@@ -86,11 +131,11 @@
   "extensions": {
     "adc": {
       "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
-        "d": "ED_R2DxUTnRJRHaJ-JLOW1WkUS7bih44WbzFXX4QrEMf",
+        "d": "EPQQoauAZNmgWesIElts3G3gn0XeX_RJ6ph5f_6rotUp",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EBOmSYI8Hs7tDZN8WOWI-lLlF5uGTnzVv7PvAQNhIMgH",
+            "d": "EEz0m17oNCqtVrJT-qPrauDw6oht8qRQhZpmkWgw01eh",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -103,7 +148,22 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "site_type": [
+                "beach",
+                "shallow-water demersal",
+                "deep-water demersal",
+                "offshore"
+              ]
+            }
           },
           "unit_framing": {
             "d": "EABYTtvodumLfMfg4kN5fpTd4GXSi3LQ5GNPYfODXgwm",

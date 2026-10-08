@@ -1,10 +1,10 @@
 {
-  "d": "EGHmhHEmSayUR2XfUuhv9Hdz-mJp-U1adkjmd_Qul0Ow",
+  "d": "EJtb1WvVxTXUF1pbHVEc--9ERKuHsy9W28xkHFJZx1pt",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0007a7_",
-      "d": "EMFg6TUbKAIWQ2KN9zEyGGNfuNZEW1TfbV6pirF33MrE",
+      "v": "OCAS11JSON000b09_",
+      "d": "EGNz_YfYhF2xE0aPNtZoDsseP-ouGqewGnNJ0fD91R4N",
       "capture_base": {
         "d": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
         "type": "spec/capture_base/1.1",
@@ -20,15 +20,48 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EBsSlSC43zPAv0GUjG5WysWLVaQTl2yRywFPcMcnBOar",
+            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EJ5QRFbri9K4UlTU-fYDi2n0MLisGQkoYzsdPF0sILjt",
+          "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EJ2ikxJLGXV2hVMZPqQ5RcFJWhp0-OjC6crcagXgDAyz",
+            "d": "EJvA3StKI4d4Xu94X2K32n75wXLBK0IliJZMckAaEula",
             "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "population_type": "General category describing the origin or management status of the population",
@@ -71,11 +104,11 @@
   "extensions": {
     "adc": {
       "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J": {
-        "d": "EGHzn3w4LV1FYnz2skQaWnKpbWgZBQZTIZ8xLiHhDPWG",
+        "d": "EO3gp5H5VXQ72KaA8hS04nnRSYcRZhVnTAyY6Zxok0n5",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EH4_tjUXlPNlEELET5PLi3W_D9U5uoBtSMsgqBSFhBcu",
+            "d": "EIcWAlaNNycbmDH967pEGnRypPDT-Hz3L5ojU5sFc5QJ",
             "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -86,7 +119,16 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           }
         }
       }

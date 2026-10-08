@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Échantillonnage à l'échelle mondiale de Lymantria dispar"
+      "value": "Données de génotypage par séquençage de la spongieuse de l’Amérique du Nord au Japon"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données comprend les génotypes de 1156 individus échantillonnés à travers l’aire de répartition de la spongieuse asiatique (Lymantria dispar), qui s’étend de l’Amérique du Nord jusqu’au Japon, en passant par l’Eurasie. Le génotypage repose sur 280 SNPs diagnostiques de la provenances d'origine des individus qui ont été identifié à l’aide de la technologie de génotypage par séquençage (Genotyping-By-Sequencing)."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 156 spongieuses (Lymantria dispar) provenant de l’ensemble de l’aire de répartition de l’espèce, de l’Amérique du Nord au Japon, et génotypées à l’aide de 280 SNP diagnostiques de la provenance."
     },
     "theme": {
       "type": "literal",

@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques de moutons élevés au Québec"
+      "value": "Données génotypiques de puce de SNP de moutons de race pure du Québec"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données, généré en partenariat avec la Société des éleveurs de moutons de race pure du Québec, regroupe les données génotypiques de 1536 moutons élevés au Québec. Les animaux ont été génotypés à l'aide d'une puce à ADN (SNP) développée dans le cadre d’un programme d’évaluation du mérite génétique assisté par la génomique."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 536 moutons de race pure (Ovis aries) élevés au Québec, générés en partenariat avec la Société des éleveurs de moutons de race pure du Québec."
     },
     "theme": {
       "type": "literal",

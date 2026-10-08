@@ -14,8 +14,8 @@
   "dcterms:identifier": "rantar1",
   "dcterms:issued": "2026-09-08",
   "dcterms:language": "en",
-  "dcterms:title": "Genotypic dataset of caribou ecotypes (Rangifer tarandus)",
-  "dcterms:description": "This dataset contains caribou genotypes from samples collected by the Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, the department responsible for wildlife management in Quebec.",
+  "dcterms:title": "SNP chip dataset of caribou ecotypes from Quebec",
+  "dcterms:description": "This dataset contains SNP chip genotypes for 1 773 caribou (Rangifer tarandus) of several ecotypes from Quebec, sampled by the Quebec ministry responsible for wildlife management.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/rantar1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -31,9 +31,10 @@
     }
   },
   "dcat:keyword": [
-    "Rangifer tarandus",
-    "Ecotype",
     "caribou",
+    "Rangifer tarandus",
+    "SNP chip",
+    "ecotype",
     "genomics",
     "conservation"
   ],
@@ -51,7 +52,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6251999/",
-  "dcat:version": "1.1.0",
+  "dcat:version": "1.2.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {

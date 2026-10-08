@@ -50,11 +50,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Vaches de race Canadienne"
+      "value": "Données génotypiques de puce de SNP de bovins de race Canadienne du Québec"
     },
     "description": {
       "type": "literal",
-      "value": "La Canadienne est une petite race de bovins laitiers robuste originaire du Canada, en particulier du Québec, connue pour produire du lait riche en matière grasse et en protéines par rapport à sa taille corporelle et pour son adaptation aux climats froids. Ce jeu de données contient 190 échantillons de vaches génotypés pour 312257 SNPs."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 190 vaches (Bos taurus) de race Canadienne, une race laitière rustique du Québec, à 312 257 SNP."
     },
     "theme": {
       "type": "literal",
