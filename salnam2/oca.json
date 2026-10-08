@@ -1,10 +1,10 @@
 {
-  "d": "EC0mPLxad_AqvZnL5yBqbGm16-xuZKkJR5wwu2zpp7zC",
+  "d": "EOP4vWQBIzr6qHAMYRYlB1LzmAOz7CFat7AMZAy8wxt-",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011a6_",
-      "d": "EN2Dz54vGi6GIT7EKCrljtzO1s4ioftBor47lsODb210",
+      "v": "OCAS11JSON0011db_",
+      "d": "EMMfLlTczI2R5i0_vAUwlKLWJoj2W0JaFiTCVt2L_ULf",
       "capture_base": {
         "d": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
         "type": "spec/capture_base/1.1",
@@ -30,7 +30,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EBa4Ruc9jxjQ8C-NRD_Ru3uLSCMYVyeyfsoDKIxVaXK7",
+            "d": "EGvOzKpeK-0FHyjrtbQ2448VcXBZ_vpKfnRWuVhUfQ3s",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -51,7 +51,8 @@
               },
               "maturity": {
                 "immature": "sexual maturity not reached yet",
-                "mature": "sexual maturity reached"
+                "mature": "sexual maturity reached",
+                "unknown": "sexual maturity not determined"
               },
               "sampling_depth_class": {
                 "deep": ">100 meters",
@@ -62,7 +63,7 @@
           }
         ],
         "entry_code": {
-          "d": "EMjlJXnrmxPd4dyGhJuHmvFYcAauDWLvgOw6uhMVosox",
+          "d": "EHRUAzopAm6t_xcONChsmWwECr5gpt5YnSiGc-3COt1p",
           "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -82,7 +83,8 @@
             ],
             "maturity": [
               "immature",
-              "mature"
+              "mature",
+              "unknown"
             ],
             "sampling_depth_class": [
               "deep",
@@ -170,11 +172,11 @@
   "extensions": {
     "adc": {
       "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a": {
-        "d": "EJ5cmR-7KbMDXCBUa70pkMI4wR2CqajAhsKxyao_i7Y0",
+        "d": "EI0S2T-pkQFDuJ9d985mYDXCwvqQz1nW_ur5NyoqFS_w",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EIQ6-UrE8NvP4yOHpQbIuTtuxHPZxScVcPRQuxLnEWsr",
+            "d": "ELV4dOlUCK3bn5eiGbdHrhQ7AJVOOdWM-JiP02A_LHn_",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -201,7 +203,8 @@
               ],
               "maturity": [
                 "mature",
-                "immature"
+                "immature",
+                "unknown"
               ],
               "ecotype": [
                 "siscowet",

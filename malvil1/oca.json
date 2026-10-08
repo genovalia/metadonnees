@@ -1,10 +1,10 @@
 {
-  "d": "EDBefeNNhLry0h_gP0VeXvQfjTBmovqh5hfoEvMlEnEP",
+  "d": "EKAakzTMDKE6H5vfVHLz9kYr3p7oTKvY2gCM2fMscOQp",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000d0b_",
-      "d": "EOv12O-EFARx6QtgvdwV2o6qCP--gA1pgBQUQDtnWddI",
+      "v": "OCAS11JSON000ded_",
+      "d": "EGC-8aD0MsQCDATVY0OfXw33HBPrMhOBnFsdFNBzQaeD",
       "capture_base": {
         "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
         "type": "spec/capture_base/1.1",
@@ -24,7 +24,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EEt2xAtyj2efiZi-NWnqzGNePxD-soSbProF_FTTIWSn",
+            "d": "ENbuWa9pJWnb8z3HEV9fzewV7_euwb0LpDRFeS_1m2yq",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -36,12 +36,18 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
+              },
+              "site_type": {
+                "beach": "beach",
+                "deep-water demersal": "deep-water demersal",
+                "offshore": "offshore",
+                "shallow-water demersal": "shallow-water demersal"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EFwxaaz9hexFWXm4kJPffIrpGnY4OvHh7ZkGEN6u0e5H",
+          "d": "EAs-Iqa-91HCK-YiBkh6pDutAGY0CNbmUESg2bYgyC9k",
           "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -52,6 +58,12 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "site_type": [
+              "beach",
+              "deep-water demersal",
+              "offshore",
+              "shallow-water demersal"
             ]
           }
         },
@@ -119,11 +131,11 @@
   "extensions": {
     "adc": {
       "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
-        "d": "EFs5g5-dHgjRIPaXnk4OjANka7C78TP9u4u5a2tv_NAM",
+        "d": "EPQQoauAZNmgWesIElts3G3gn0XeX_RJ6ph5f_6rotUp",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EIUn3ZDBTFtwHkaiqwXGj9UBbNFgH1ZHGUEpCxu7rMuh",
+            "d": "EEz0m17oNCqtVrJT-qPrauDw6oht8qRQhZpmkWgw01eh",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -144,6 +156,12 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "site_type": [
+                "beach",
+                "shallow-water demersal",
+                "deep-water demersal",
+                "offshore"
               ]
             }
           },
