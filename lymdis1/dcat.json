@@ -15,8 +15,8 @@
   "dcterms:identifier": "lymdis1",
   "dcterms:issued": "2025-09-16",
   "dcterms:language": "en",
-  "dcterms:title": "Range-wide sampling of Lymantria dispar",
-  "dcterms:description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the Genotyping-By-Sequencing technology.",
+  "dcterms:title": "Genotyping-by-sequencing dataset of spongy moth from North America to Japan",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 280 provenance-diagnostic SNPs for 1 156 spongy moths (Lymantria dispar) from across the species range, from North America to Japan.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -32,9 +32,10 @@
     }
   },
   "dcat:keyword": [
+    "spongy moth",
+    "Lymantria dispar",
     "genotyping-by-sequencing",
-    "invasive species",
-    "spongy moth"
+    "invasive species"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
   "dcat:distribution": [],
@@ -50,7 +51,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6295630/",
-  "dcat:version": "1.1.0",
+  "dcat:version": "1.2.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {

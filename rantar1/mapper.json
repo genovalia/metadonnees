@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Jeu de données génotypiques des écotypes de caribou (Rangifer tarandus)"
+      "value": "Données génotypiques de puce de SNP d’écotypes de caribou du Québec"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des génotypes de caribous provenant d’échantillons collectés par le Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, le ministère responsable de la gestion de la faune sauvage au Québec."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 773 caribous (Rangifer tarandus) de plusieurs écotypes du Québec, échantillonnés par le ministère responsable de la gestion de la faune au Québec."
     },
     "theme": {
       "type": "literal",

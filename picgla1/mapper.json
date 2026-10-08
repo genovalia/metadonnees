@@ -50,11 +50,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Jeu de données génotypiques et phénotypiques pour l'étude de l'adaptation à la sécheresse chez l'épinette blanche"
+      "value": "Données génotypiques de puce de SNP d’épinette blanche du Québec avec données phénotypiques"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques et phénotypiques utilisées pour étudier l'architecture génomique de l'adaptation à la sécheresse chez l'épinette blanche (Picea glauca), un conifère nord-américain largement distribué. Il comprend des génotypes de SNPs génétiques (6153 SNPs), des phénotypes liés à l'anatomie, à la réponse de croissance et à la sensibilité au climat pour 1473 arbres échantillonnés dans 43 populations naturelles de la province de Québec. Les arbres ont été plantés dans un jardin commun établi en 1979 à Mastigouche (Québec, Canada)."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) de populations naturelles du Québec plantées en jardin commun à 6 153 SNP géniques, avec des données phénotypiques."
     },
     "theme": {
       "type": "literal",

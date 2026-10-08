@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques provenant d’échantillons de saumon coho utilisés pour délimiter des unités de conservation"
+      "value": "Données de génotypage par séquençage de saumons coho de la Colombie-Britannique avec données environnementales"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données regroupe les données génotypiques de 5581 saumons cohos (Oncorhynchus kisutch) provenant de 146 populations sauvages. Au total, 24542 SNPs ont été génotypés à l’aide d’une approche de génotypage par séquençage."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 5 581 saumons coho (Oncorhynchus kisutch) de populations sauvages de la Colombie-Britannique à 24 542 SNP, avec des données environnementales."
     },
     "theme": {
       "type": "literal",

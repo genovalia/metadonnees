@@ -1,10 +1,10 @@
 {
-  "d": "EGT2PY417YYWFWixwUahBPASHz9uCnxewYysIFa9Qjxl",
+  "d": "EIfHm74L4FCYnv7L117BJoQxtuDEqTrVkuQMA3zo4oJj",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011a4_",
-      "d": "ENJapwRqH6VDeMmqvvPayikRucKWGrnzakC1nCEDfUq5",
+      "v": "OCAS11JSON001622_",
+      "d": "EKZSaiy4OlOD8D-wN8zDTqt-PHS19MouI9VMSwBgVH2k",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -25,16 +25,49 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EAlcDlTeZa83ik0xF4PPzqOoIjWO5O0I3GdDPnaiFZov",
+            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EKTlBG0MOoKuQ9K-kfMMENY0_KsDxKBTXugOyxfh02sp",
+          "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EISOVuiLH7UtijQHJs3VmUOPtPfLUjzzjYmNOf08RgXu",
+            "d": "EPZKZ0WILgVEJuTWEX6Z-46CC3vV6c-91AHVi0TIeguy",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
               "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
@@ -46,13 +79,13 @@
             }
           },
           {
-            "d": "EI_UCbsn_vviZ_waNx-F14oCoCwHiJlqFF_jQT5qWmGP",
+            "d": "EGjM8CYAx1_EV1GyGU1j0JKOUHeIuYJIfuWdXEm4Z02Y",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
             "attribute_information": {
               "ecotype": "Écotype: forestier, montagnard, migrateur",
-              "genotyping_technology": "technologie de génotypage: GBS, WGS, puce de génotypage",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : genotyping-by-sequencing (génotypage par séquençage), SNP chip (puce de SNP), whole genome sequencing (séquençage du génome entier), targeted sequencing (séquençage ciblé), targeted SNP assay (génotypage de SNP ciblés) ou RNA sequencing (séquençage de l’ARN).",
               "id": "ID utilisé dans le fichier de génotypage",
               "latitude": "Latitude en degré décimaux: Ex: -42.23452",
               "longitude": "Longitude en degré décimaux: Ex: -42.23452",
@@ -142,11 +175,11 @@
   "extensions": {
     "adc": {
       "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP": {
-        "d": "EP1wz-dtHH4D3MJ8aOHlAti3sKIAaQcCebuLMAyaRWun",
+        "d": "EClNQV8nzjLEVdnCbVdJU3hB6o2DD5BdMjv4UYxGparu",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHlwDcV_NcoPXHigz7YvjzItR6BTvUwEnOWcLfKo7pBX",
+            "d": "EL2W-UirBv3C2QM3Elp6uk3h5i1i3bFjVuOeDrxy8yP2",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -162,7 +195,16 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
             "d": "EADbZ4O0MyZpRNwLSloHwTimS5agyo7j4jBtNzAKATFs",

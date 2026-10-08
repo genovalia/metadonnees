@@ -1,10 +1,10 @@
 {
-  "d": "EO-S8Acg45v6eTYk9U81uBwuG89RYeJF6spMaWe-4qzK",
+  "d": "EDBefeNNhLry0h_gP0VeXvQfjTBmovqh5hfoEvMlEnEP",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0009a9_",
-      "d": "EHKvuDg3eHuXMgowmnlimlAutVzIKn2qSUUjpr5OjT9f",
+      "v": "OCAS11JSON000d0b_",
+      "d": "EOv12O-EFARx6QtgvdwV2o6qCP--gA1pgBQUQDtnWddI",
       "capture_base": {
         "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
         "type": "spec/capture_base/1.1",
@@ -22,15 +22,48 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EEt2xAtyj2efiZi-NWnqzGNePxD-soSbProF_FTTIWSn",
+            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EFwxaaz9hexFWXm4kJPffIrpGnY4OvHh7ZkGEN6u0e5H",
+          "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EPj2yY_bBiPl_5zMKPHJ9zJ69VNkmyMIqNN9XDii3zcy",
+            "d": "EJL5qsuqpxYs46ccFqk545mCzTMcMD9Oou0eV8vRCbbr",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
@@ -86,11 +119,11 @@
   "extensions": {
     "adc": {
       "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
-        "d": "ED_R2DxUTnRJRHaJ-JLOW1WkUS7bih44WbzFXX4QrEMf",
+        "d": "EFs5g5-dHgjRIPaXnk4OjANka7C78TP9u4u5a2tv_NAM",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EBOmSYI8Hs7tDZN8WOWI-lLlF5uGTnzVv7PvAQNhIMgH",
+            "d": "EIUn3ZDBTFtwHkaiqwXGj9UBbNFgH1ZHGUEpCxu7rMuh",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -103,7 +136,16 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
             "d": "EABYTtvodumLfMfg4kN5fpTd4GXSi3LQ5GNPYfODXgwm",

@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques provenant de deux populations sauvages et de deux populations domestiquées de saumon atlantique du Canada et de l’Écosse"
+      "value": "Données génotypiques de puce de SNP de saumons atlantiques sauvages et domestiqués du Canada et d’Écosse"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données comprend les données génotypiques de 165 individus de saumon atlantique (Salmo salar) provenant de deux populations sauvages et de deux populations domestiquées du Canada et de l’Écosse, comprenant 151 509 SNP génotypés à l’aide d’une puce SNP de 200K."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 165 saumons atlantiques (Salmo salar) de populations sauvages et domestiquées du Canada et d’Écosse, à 151 509 SNP."
     },
     "theme": {
       "type": "literal",

@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques pour l’étude de la phylogéographie du longicorne asiatique"
+      "value": "Données de génotypage par séquençage du longicorne asiatique de Chine et de Corée du Sud"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques de longicorne asiatique (Anoplophora glabripennis) générées dans le but d’étudier la phylogéographie de l’espèce. Au total, 365 individus provenant de Chine et de Corée du Sud ont été génotypés à 6102 SNPs à l’aide d’une approche de génotypage par séquençage."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 365 longicornes asiatiques (Anoplophora glabripennis) de l’aire d’origine, en Chine et en Corée du Sud, à 6 102 SNP. La plupart de ces insectes ont aussi été génotypés, avec des insectes envahissants d’Amérique du Nord, dans un jeu distinct."
     },
     "theme": {
       "type": "literal",

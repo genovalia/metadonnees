@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques provenant d’échantillons de touladi représentatifs de quatre écotypes prélevés dans le lac Supérieur"
+      "value": "Données de génotypage par séquençage de quatre écotypes de touladi du lac Supérieur"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques provenant de quatre écotypes de touladi (Salvelinus namaycush) échantillonnés dans le lac Supérieur. Au total, 484 individus ont été génotypés à l’aide de 6 822 SNP au moyen d’une approche de génotypage par séquençage."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 484 touladis (Salvelinus namaycush) de quatre écotypes du lac Supérieur à 6 822 SNP, avec des données phénotypiques."
     },
     "theme": {
       "type": "literal",

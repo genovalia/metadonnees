@@ -15,8 +15,8 @@
   "dcterms:identifier": "picgla1",
   "dcterms:issued": "2026-02-04",
   "dcterms:language": "en",
-  "dcterms:title": "Genotypic and phenotypic dataset for studying drought adaptation in white spruce",
-  "dcterms:description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity for 1473 trees sampled in 43 natural populations from the province of Québec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
+  "dcterms:title": "SNP chip dataset of white spruce from Quebec with phenotypic data",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 6 153 gene SNPs for 1 473 white spruce trees (Picea glauca) from natural populations of Quebec grown in a common garden, with phenotypic data.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/picgla1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -32,8 +32,10 @@
     }
   },
   "dcat:keyword": [
-    "conifer",
+    "white spruce",
     "Picea glauca",
+    "SNP chip",
+    "conifer",
     "genomics",
     "drought adaptation",
     "phenotypic variation",
@@ -53,7 +55,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6115047/",
-  "dcat:version": "1.1.0",
+  "dcat:version": "1.2.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/RestrictedAccess",
   "dcterms:creator": {
