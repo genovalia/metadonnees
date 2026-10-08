@@ -1,10 +1,10 @@
 {
-  "d": "EGMWnWueVMaN6LQ25S0s4aeuTJm5IYaMXFuYcjnbFivS",
+  "d": "EDmrWLb4bw0rbq4kJANO5Spddw19FceHOk6xHnPDTbP2",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
       "v": "OCAS11JSON000d64_",
-      "d": "EIuIxFl-n8IwycWNRZLe2Jp7rt6AWPHxD8jU-2FvNNi6",
+      "d": "EEKv8oz3KdryHdZoQ7tbLSozYB3v6NC2XMoGMKgaYSnW",
       "capture_base": {
         "d": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
         "type": "spec/capture_base/1.1",
@@ -58,7 +58,7 @@
         },
         "information": [
           {
-            "d": "EEA8-MPqYuyXsQ4WJgiZe26J7xlCD3UzYa2ZNkcyNASG",
+            "d": "EOB_QEjRscevcKEKTCjaloYHMzTHC9xHOf6dZrXbgdf_",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -67,7 +67,7 @@
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
-              "life_stage": "Developmental stage of an organism, such as larva, pupa, juvenile or adult.",
+              "life_stage": "Life stage of the sampled individual, such as egg, larva, juvenile or adult",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_year": "Year in which the sample was collected",

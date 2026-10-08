@@ -1,10 +1,10 @@
 {
-  "d": "EDNrOTe_Szo4d4CadZizCGYQutHMvv7DlMDf3PHZLgQd",
+  "d": "EOdDE_sMdwbOgrBOgJX9SEPYXX1juHj3wznMtGWyQtYD",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0016a5_",
-      "d": "EPwwgGu1udLTGu4_rDRioVmHmCn4SKjaYo7WQwSj-4Pi",
+      "v": "OCAS11JSON0016b8_",
+      "d": "EKKO-pSDk4_bMHywj2vubb4YTYNLbivy71XR_olflor2",
       "capture_base": {
         "d": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
         "type": "spec/capture_base/1.1",
@@ -71,7 +71,7 @@
         },
         "information": [
           {
-            "d": "EBy1hY4YpBcsfdfHNzIxwBBqarVOSsZ78ZcZE8TxucGy",
+            "d": "EGFQ-CzS01ZfCg9ORQnS_FGacygiRDNAPXH1PRAoGicx",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -94,7 +94,7 @@
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "recovery_2_years_2002": "Growth recovery (basal area increment) 2 years following drought (2002 episode), calculated according to Lloret et al. 2011",
-              "rel_resil_2_years_2002": "Ralative growth resilience (basal area increment) 2 years following drought (2002 episode)",
+              "rel_resil_2_years_2002": "Relative growth resilience (basal area increment) 2 years following drought (2002 episode)",
               "resilience_2_years_2002": "Growth resilience (basal area increment) 2 years following drought (2002 episode)",
               "resist_2_years_2002": "Growth resistance (basal area increment) 2 years following drought (2002 episode)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
@@ -146,11 +146,11 @@
           }
         ],
         "unit": {
-          "d": "EFaoZXzLofttAMAmxCjPGPqqNnPxJwjm_2IJytcfcSVc",
+          "d": "ECW_wAp5DexJN6cX8JYZDgAcdNlRY7xazV9bKkIh0K1e",
           "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "avg_density": "kg/m3",
+            "avg_density": "kilogram per cubic meter",
             "avg_radial_diameter": "micrometer",
             "avg_wall_thickness": "micrometer",
             "cwr_radial": "micrometer",
@@ -172,7 +172,7 @@
   "extensions": {
     "adc": {
       "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY": {
-        "d": "EALipHc2CGRlBrvS1aW4npmNDkO0ZHG8N18A2islzDv2",
+        "d": "ECVLT_dAoECqLmTeXMalNyZVEKZ0NB3W4xmfGOQoDhoy",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
@@ -215,7 +215,7 @@
             }
           },
           "unit_framing": {
-            "d": "EJWh-BUuc_CY2JUHSCTKaeRSPMfPS8UcRoehZiMrro4M",
+            "d": "EI2zo8xAFpdcZx1xRgh29_LpzQeNbBGy_1XnYIN2v9Ay",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
@@ -235,7 +235,7 @@
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"
               },
-              "kg/m3": {
+              "kilogram per cubic meter": {
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "kg/m3"

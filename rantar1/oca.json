@@ -1,10 +1,10 @@
 {
-  "d": "EPPAMYnp-j2GlW5S_bsoKN-7z-hS2CYgegqfVVIdtr91",
+  "d": "EEUlVsxhvBa9BReHCVtaNmbkhtDpSdZla9PzVQhAifxr",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001a5f_",
-      "d": "EJ3mc75_pqqylCM1_6MNjTAhmmvrwnKNyk5k1g2iVnSK",
+      "v": "OCAS11JSON001b41_",
+      "d": "EKr2aKAGqcj7x0YVMPcIc5mloSGdjflBRR6VuWRV1Aqj",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EEDpiIIkMG8PrUSiCA0YS1xy5lY8CUbsPI7rZwMsMzh9",
+            "d": "EMDYySaTzbLN_Mf0wOSh7PeLyCqDyGIykVT0GxTbcU7D",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -51,11 +51,16 @@
                 "hair": "hair",
                 "metatarsal punch": "metatarsal punch",
                 "serum": "serum"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
               }
             }
           },
           {
-            "d": "ENqc4Xodrk0CGxONxtusDkniA4yJCkFvrgmIuCetB34N",
+            "d": "ENldrTD_zh7ZjNwjG71qcturJSz2S0-yeEmbjIE89dJo",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "fra",
@@ -79,12 +84,17 @@
                 "hair": "poils",
                 "metatarsal punch": "poinçon de métatarse",
                 "serum": "sérum"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ENSyKZ3fDGKKqH_5DArYKQXIzPt4lJ09xlUhFLnhl8bj",
+          "d": "EFavyimbFz8w36t7otl4g3tUCgvU2pm1JnUW_x7HPym9",
           "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -107,27 +117,32 @@
               "hair",
               "metatarsal punch",
               "serum"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "EPZKZ0WILgVEJuTWEX6Z-46CC3vV6c-91AHVi0TIeguy",
+            "d": "EHUbIkb6psAh3X9k65mZannsW9CQik372qEL2nuzYN18",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
+              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions, such as anadromous or freshwater resident",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           },
           {
@@ -227,11 +242,11 @@
   "extensions": {
     "adc": {
       "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP": {
-        "d": "EAmL4rNfZPW6H8-TpfNSRuw2bB1R6cYF7n4DGhykU5xU",
+        "d": "EH09EbHiWLaoog_xkdr12_7YS5S4p73KBFgQBFkAcyGo",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EOH43WS0Elhm1IQgHj366OsIKSDn6rygS7_vmkASYQ0p",
+            "d": "EDmyfp80BgMpcOqJ7DLZAFLEJuovytHUOgsLkbhFvneG",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -267,6 +282,11 @@
                 "hair",
                 "serum",
                 "feces"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
               ]
             }
           },

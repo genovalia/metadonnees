@@ -1,10 +1,10 @@
 {
-  "d": "EFvc9izR4wxDZZRekU64znvwi73lQKMJLKfKJPs3P2Sz",
+  "d": "EE1e0eQdgjG8zfjtwHHhZFERrEJ7ruCTfEQm6M0AS7mH",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000bdd_",
-      "d": "EDHJUHiVWj6mPqLFm9xG0RmqnPK3AtzLkYL5lB_adtHd",
+      "v": "OCAS11JSON000c37_",
+      "d": "EJMFTuTT2ObxfcaqTjz98gLaAQZNhAl35mnLE4new45H",
       "capture_base": {
         "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
         "type": "spec/capture_base/1.1",
@@ -24,7 +24,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHcMjkr3AoJmfIkRyLngmk5KuRdtoMbz5jPTpdqTEf15",
+            "d": "EEWhtn7Et0czCDPtOAjIHJ-r_X0dUZSM4CnYfUMIfIL6",
             "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -36,12 +36,17 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ENd7XsMDxsx_5_lwIPFVZx37dhKOcd1ptf4rnSbHPc2o",
+          "d": "ED61iSNmDvbA7MjGSdSmjtr1Mo0_NbTokffBYp2QNO3h",
           "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -52,24 +57,29 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "EKUobTpau-Zw8GZ7J5tmWGljz_jXWvFXRfvX4_V309w2",
+            "d": "EBSSGU9lbcGbYZVG0dBFcZhF2kpwTWHNrnlC6qwHmjwB",
             "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "breed": "Breed of the individual, such as Holstein or Jersey for instance",
+              "breed": "Breed of the individual (animals)",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           }
         ],
@@ -110,11 +120,11 @@
   "extensions": {
     "adc": {
       "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1": {
-        "d": "EIXjt4CT3330xrJxe1nyuu4gYsLwfDk_wDA5gfg_Dst2",
+        "d": "EN88mPtt9r1LboYtALq3DlVB8J8EcfzqpoI2WYnG8G99",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EJbRbHYQAmAbGFjy_ubAf0qFTW3t7a1JxqbSduY3W7TS",
+            "d": "EKn239HyirM2NJ4D0mR1KjLNoUdyUDXjBCs3N4AfnISZ",
             "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -135,6 +145,11 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
               ]
             }
           }

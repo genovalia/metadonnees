@@ -1,18 +1,16 @@
 {
-  "d": "EJb0ZHe9Exo4R_WD24bg4rQpQBdqtA_6f25yhp-EZNvn",
+  "d": "EN6Nzavdl7-lK6ok8EBfedi1WyoONC7P4UpZEOEBfqbr",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000cdb_",
-      "d": "EMVV1G4OKqYwnimR9FaOYNV1QURHvff0v7TDqzimeyEF",
+      "v": "OCAS11JSON000c3f_",
+      "d": "EPsXKJ2uND5EIGbjVnc0qxYQEasDPIY2NXzfyx3ihweu",
       "capture_base": {
-        "d": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+        "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "breed": "Text",
           "country": "Text",
-          "date_of_birth": "DateTime",
-          "farm": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
           "organism": "Text",
@@ -26,8 +24,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAVzOOQxseeNadU-3IAFjopzgrfxBLF3CZtI_vI4dQSc",
-            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "d": "EEWhtn7Et0czCDPtOAjIHJ-r_X0dUZSM4CnYfUMIfIL6",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -38,13 +36,18 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EAqgq69O9k2JJhRPYU5VDEmdfW0MVYPXEyn52mRSCfkZ",
-          "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+          "d": "ED61iSNmDvbA7MjGSdSmjtr1Mo0_NbTokffBYp2QNO3h",
+          "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -54,41 +57,42 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "ELNr3SRSDvi2RVlNixWmv5Ea4egB2Di28cCFOSxyN9n3",
-            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "d": "EBSSGU9lbcGbYZVG0dBFcZhF2kpwTWHNrnlC6qwHmjwB",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "breed": "Breed of the individual, such as Holstein or Jersey for instance",
+              "breed": "Breed of the individual (animals)",
               "country": "Country of origin of the individuals sampled",
-              "date_of_birth": "Birth date of the individual, expressed in the standard ISO 8601 format YYYY-MM-DD",
-              "farm": "Name of the farm where the individual was raised",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           }
         ],
         "label": [
           {
-            "d": "EPA6MlzM7aIDzEpCid-gF7eRqf9ZC6SVO6N3l-rMnvN4",
-            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "d": "EGasfUhfJNtn4lLoqObH612nHUZiBUeJwq8YUj4HEeeW",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "breed": "breed",
               "country": "country",
-              "date_of_birth": "date_of_birth",
-              "farm": "farm",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "organism": "organism",
@@ -101,8 +105,8 @@
         ],
         "meta": [
           {
-            "d": "EAzn8nfB5ylv8IjOVn8NwbXD-E20YZgZqVvEfhcjkE3h",
-            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "d": "EOrDDGi_orU195EDB1XQRJ-zTMQnru3AF1OtQCXRiqlY",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
@@ -115,22 +119,20 @@
   },
   "extensions": {
     "adc": {
-      "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY": {
-        "d": "EBBZ3M-rBUk5GtyEmJX4VQP40batVyQ83GjROw86KKPF",
+      "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1": {
+        "d": "EN88mPtt9r1LboYtALq3DlVB8J8EcfzqpoI2WYnG8G99",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ECnHViepkk5J3scFwSN0Kq3ytFNYtLVQagAM40TZ4Haw",
-            "capture_base": "EGYtanMs44ZlNxANb1-shoNPwKrCz_eKdFXQP7rcLmCY",
+            "d": "EKn239HyirM2NJ4D0mR1KjLNoUdyUDXjBCs3N4AfnISZ",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
               "sex",
-              "date_of_birth",
               "breed",
-              "farm",
               "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
@@ -143,6 +145,11 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
               ]
             }
           }
