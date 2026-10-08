@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques de puce de SNP d’écotypes de caribou du Québec"
+      "value": "Données génotypiques de puce de SNP d’écotypes de caribou de l’est du Canada"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 773 caribous (Rangifer tarandus) de plusieurs écotypes du Québec, échantillonnés par le ministère responsable de la gestion de la faune au Québec."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 189 caribous (Rangifer tarandus) de plusieurs écotypes provenant de l’est du Canada, génotypés à l’aide de 57 489 SNP."
     },
     "theme": {
       "type": "literal",

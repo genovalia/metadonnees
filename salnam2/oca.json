@@ -1,10 +1,10 @@
 {
-  "d": "EOP4vWQBIzr6qHAMYRYlB1LzmAOz7CFat7AMZAy8wxt-",
+  "d": "EIHtL3A5mLOAYQbiLtHweJ1lZtMDNKyd_aujuJ2gCq5D",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011db_",
-      "d": "EMMfLlTczI2R5i0_vAUwlKLWJoj2W0JaFiTCVt2L_ULf",
+      "v": "OCAS11JSON0011e3_",
+      "d": "EHhMn8cl5myqSXxHbDGYROkmPxDLnh_UvfCzbggkItku",
       "capture_base": {
         "d": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
         "type": "spec/capture_base/1.1",
@@ -95,7 +95,7 @@
         },
         "information": [
           {
-            "d": "EDEtg_VStZ6kmo9D3h0YZl3yagB2XItyoY1XCA-MXXmM",
+            "d": "EPSY5c6aGa4a2GaFlCPGnljh5MzXoQdOdp04TKvZ8-Kx",
             "capture_base": "EI_ABrLSzjix4oR0-zuAnNKy8ETOR0wNCg1O5gcLjH9a",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -106,7 +106,7 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
-              "maturity": "Developmental stage indicating reproductive status (mature, immature…)",
+              "maturity": "Developmental stage indicating reproductive status: mature, immature or unknown.",
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_length": "Length of the sampled individual",
               "sample_weight": "Weight of the sampled individual",

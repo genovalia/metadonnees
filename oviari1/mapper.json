@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 536 moutons de race pure (Ovis aries) élevés au Québec, générés en partenariat avec la Société des éleveurs de moutons de race pure du Québec."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 536 moutons de race pure (Ovis aries) élevés au Québec."
     },
     "theme": {
       "type": "literal",
