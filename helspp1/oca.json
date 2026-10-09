@@ -1,0 +1,145 @@
+{
+  "d": "EGKU4bqp-_bd_auFggACBQvNG6E5hAPakdTvx7aHpyMk",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000cb3_",
+      "d": "EP2viKuz8c9N5zy4G9ZMg1UylDRXzdtijY-lhe_iU8_i",
+      "capture_base": {
+        "d": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sample_tissue": "Text",
+          "sequenced_molecule": "Text",
+          "subspecies": "Text",
+          "usda_accession": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EBr5NLF09jTeNVbobLREut3d9ov-P-ccN1MGO-ZJdkAV",
+            "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EKb_WH-n0AZdF56AAuj8bd3_aHNgAN4iaISoW4yliJe3",
+          "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EDJIBoRF9GIZgjBnhr2aUukBGxmjI_g85_8JUCBQNrKD",
+            "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "subspecies": "Subspecies as given in Table 2 of the source paper (praecox for H. debilis subsp. praecox)",
+              "usda_accession": "Plant introduction (PI) accession number of the seed source in the Germplasm Resources Information Network (GRIN) of the United States Department of Agriculture (USDA), when applicable"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EOeEMOR6ZxZsbQC9yOZBvG_I-MdJUulA22Acw21WUpoZ",
+            "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sample_tissue": "sample_tissue",
+              "sequenced_molecule": "sequenced_molecule",
+              "subspecies": "subspecies",
+              "usda_accession": "usda_accession"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "ED6Tq9te90nicH-DMYRkvx0V0U4yebNfqwKb9Qsf_CMB",
+            "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States.",
+            "name": "helianthus_rnaseq_population_genomics"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG": {
+        "d": "ENUezFS1-U5ykffxL5_QDwqNOpWtIOQ1N5CkKfWhvSWv",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EFb7zDougRtpt4ppE4l8cZAj3ZYWsw14FCw-p3OrUiZ6",
+            "capture_base": "ECjM5JOtvGa-STkQZ76D1LGbwY4dPYDKy1mD7lMIqGDG",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "subspecies",
+              "usda_accession",
+              "country",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

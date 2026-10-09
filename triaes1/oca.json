@@ -1,0 +1,217 @@
+{
+  "d": "EPA0tpr_TkeFXbOL790O2svidtXJnVppDhp3HSMhl5R7",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON00173d_",
+      "d": "EM0oSUyPwfroqwZgIzKh5z3ZhPKzBHprbrQQj_RedmhX",
+      "capture_base": {
+        "d": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "deoxynivalenol_2017": "Numeric",
+          "deoxynivalenol_2019": "Numeric",
+          "fusarium_damaged_kernels_2017": "Numeric",
+          "fusarium_damaged_kernels_2019": "Numeric",
+          "fusarium_head_blight_incidence_2017": "Numeric",
+          "fusarium_head_blight_incidence_2019": "Numeric",
+          "fusarium_head_blight_index_2017": "Numeric",
+          "fusarium_head_blight_index_2019": "Numeric",
+          "fusarium_head_blight_severity_2017": "Numeric",
+          "fusarium_head_blight_severity_2019": "Numeric",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "population": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ECBpgpCyVt6U7n8_N45csNd-MOvw1QcsXn2I-CBFbGeQ",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EOPh1QTlY9JLxH4o4VP2fnZmLssUv78lxy-R_IAYuTNB",
+          "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "ED5MAQAFJnyF8QuxFwzprfYb0zEFz8pzvdvH3oJSDMnp",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "deoxynivalenol_2017": "Deoxynivalenol (DON) mycotoxin content of the grain, plot value for the line, field trial 2017",
+              "deoxynivalenol_2019": "Deoxynivalenol (DON) mycotoxin content of the grain, plot value for the line, field trial 2019",
+              "fusarium_damaged_kernels_2017": "Fusarium-damaged kernels (FDK), number among 100 kernels examined, plot value for the line, field trial 2017",
+              "fusarium_damaged_kernels_2019": "Fusarium-damaged kernels (FDK), number among 100 kernels examined, plot value for the line, field trial 2019",
+              "fusarium_head_blight_incidence_2017": "Fusarium head blight (FHB) incidence, percentage of the plot that is infected, plot value for the line, field trial 2017",
+              "fusarium_head_blight_incidence_2019": "Fusarium head blight (FHB) incidence, percentage of the plot that is infected, plot value for the line, field trial 2019",
+              "fusarium_head_blight_index_2017": "Fusarium head blight (FHB) index, incidence x severity / 100, plot value for the line, field trial 2017",
+              "fusarium_head_blight_index_2019": "Fusarium head blight (FHB) index, incidence x severity / 100, plot value for the line, field trial 2019",
+              "fusarium_head_blight_severity_2017": "Fusarium head blight (FHB) severity, visual score from 0 (mild) to 100 (severe), plot value for the line, field trial 2017",
+              "fusarium_head_blight_severity_2019": "Fusarium head blight (FHB) severity, visual score from 0 (mild) to 100 (severe), plot value for the line, field trial 2019",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "population": "Non-geographic group the individual belongs to, such as a breeding population",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EKOf0EJUEThsNANb1UJBEAOho020VN78ebnvz6sLLHYX",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "deoxynivalenol_2017": "deoxynivalenol_2017",
+              "deoxynivalenol_2019": "deoxynivalenol_2019",
+              "fusarium_damaged_kernels_2017": "fusarium_damaged_kernels_2017",
+              "fusarium_damaged_kernels_2019": "fusarium_damaged_kernels_2019",
+              "fusarium_head_blight_incidence_2017": "fusarium_head_blight_incidence_2017",
+              "fusarium_head_blight_incidence_2019": "fusarium_head_blight_incidence_2019",
+              "fusarium_head_blight_index_2017": "fusarium_head_blight_index_2017",
+              "fusarium_head_blight_index_2019": "fusarium_head_blight_index_2019",
+              "fusarium_head_blight_severity_2017": "fusarium_head_blight_severity_2017",
+              "fusarium_head_blight_severity_2019": "fusarium_head_blight_severity_2019",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "population": "population",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EKjbTOmfBo74gfnmAVoWLsFFCLbzu3KZVE3BG4fHxfUW",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 37 684 SNPs for 187 CIMMYT spring synthetic hexaploid-derived wheat (Triticum aestivum) lines grown in field trials in Ontario, Canada, with phenotypic data.",
+            "name": "triticum_aestivum_fhb_resistance"
+          }
+        ],
+        "unit": {
+          "d": "EG_Lj7-oi5wiHl7ALbMNKaQsD65F20w89iOoDIYi9PJ_",
+          "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "deoxynivalenol_2017": "parts per million",
+            "deoxynivalenol_2019": "parts per million",
+            "fusarium_damaged_kernels_2017": "percent",
+            "fusarium_damaged_kernels_2019": "percent",
+            "fusarium_head_blight_incidence_2017": "percent",
+            "fusarium_head_blight_incidence_2019": "percent",
+            "fusarium_head_blight_index_2017": "percent",
+            "fusarium_head_blight_index_2019": "percent",
+            "fusarium_head_blight_severity_2017": "percent",
+            "fusarium_head_blight_severity_2019": "percent"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M": {
+        "d": "EBkk01PU8I2D16_WQywIm9OGZ1NylCGSarP1rjx9YCT8",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EBhC9Q2kRf9a3fIj9dCKAwFLMI5AzT1xaRSPvoe-HgP-",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "population",
+              "deoxynivalenol_2017",
+              "fusarium_damaged_kernels_2017",
+              "fusarium_head_blight_incidence_2017",
+              "fusarium_head_blight_index_2017",
+              "fusarium_head_blight_severity_2017",
+              "deoxynivalenol_2019",
+              "fusarium_damaged_kernels_2019",
+              "fusarium_head_blight_incidence_2019",
+              "fusarium_head_blight_index_2019",
+              "fusarium_head_blight_severity_2019",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EPa85KgICLM8_OjcYjuEblfxD1_C0d56Qc9HGaCI8d64",
+            "capture_base": "EDLWlujw13tf7tYzU3UviGnSJTOqAwi1iSZShOI-gp-M",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "parts per million": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "[ppm]"
+              },
+              "percent": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "%"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

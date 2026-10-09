@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcspp1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "alcspp1",
+  "dcterms:issued": "2026-10-09",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of Alcyonium soft corals from southern South America and the West Antarctic Peninsula",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 309 SNPs for 43 soft coral colonies of the genus Alcyonium (Alcyonium spp.) from the Southern Ocean, mostly from the West Antarctic Peninsula with a few colonies from southern South America.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcspp1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "soft coral",
+    "Alcyonium",
+    "Southern Ocean",
+    "Antarctica",
+    "genotyping-by-sequencing",
+    "phylogeography"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/40679/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2018"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2020"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/4036776/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0003-0676-6704",
+    "@type": "foaf:Person",
+    "foaf:name": "Leyla Cárdenas"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-0676-6704",
+        "@type": "prov:Person",
+        "foaf:name": "Leyla Cárdenas"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-2064-719X",
+        "@type": "prov:Person",
+        "foaf:name": "Paulina Bruning"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@type": "prov:Person",
+        "foaf:name": "Paula Ortiz"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1002/ece3.70522",
+    "https://doi.org/10.5061/dryad.wh70rxwsp"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "d": "EGAyA_hl7Si-LuYnsq4yiv7aVX2QFHCd1iS4EmwTqT42",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000a21_",
+      "d": "EM9liAVFGOh_PI9yRcvhLZx1pKy96qskif54c8fs541c",
+      "capture_base": {
+        "d": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EEoeNwaMmjGVubNkwbCreqKZ3fW2svigTqJCmC47g8I4",
+            "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EG0yiDixWcgIn8BA9B4sPeQllpsoobgZr0s5XzyYA8Iq",
+          "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EAZci509r7OOereTjakcASkwr_g79sNrfqbz0Zq3U5HJ",
+            "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EK9SQinkKnEK7i8gNaZtaudFSqTXulrAP4cxZpXutc_j",
+            "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EHiNC5pAGiFNFxyeH7jX1fqmEr7KU4EjG9m2bEVHD07r",
+            "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 32 679 SNPs designed for black cottonwood (Populus trichocarpa) for 72 accessions from North America: wild P. trichocarpa trees and accessions of other Populus species and of Salix sitchensis.",
+            "name": "populus_34k_snp_array"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6": {
+        "d": "EMGj_McxVpCWIdETtrSsVpcqaku-FXDENpHZBrdwAjJ8",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EDlEMm-MJEl1UPg-MbFnp6mOIDPAOYQYKVssCOHt0ELK",
+            "capture_base": "EBlXDPTkH1i0gJScAzmqLCD7kmCGEKVjRos5AXNMtzE6",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

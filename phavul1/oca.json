@@ -1,0 +1,177 @@
+{
+  "d": "EB1lJXddEKuW7Sl2kQTVahdjTZc4w_53vQ5ox_4gQyLW",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON0011ee_",
+      "d": "EPglvbY9box6ezBLJnu8CIlQ89rcIG7f55lfZNhr_-Dh",
+      "capture_base": {
+        "d": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "breeding_category": "Text",
+          "country": "Text",
+          "daylight_sensitive_elora2014": "Boolean",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "market_class": "Text",
+          "organism": "Text",
+          "pedigree": "Text",
+          "sample_tissue": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "trial_elora_2014": "Boolean",
+          "trial_elora_2015": "Boolean",
+          "trial_yorito_2014_2015": "Boolean",
+          "uneven_maturity_elora2014": "Boolean",
+          "variety": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EOj8TUwnPdCTqVkhkAg5EbQFqHeSwe0g6TSMhj3Z_pz5",
+            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EMGn-QBrAtW4TT5cg9S9XuoywjwtPoz8d0Er3zhtWBT5",
+          "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EFF0HLz7hDFALMlcyDi7ACbvCVjmt91rvX6RY4mPnlCA",
+            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "breeding_category": "Breeding history category of the variety: check (control variety), conventional, landrace, participatory plant breeding or participatory varietal selection",
+              "country": "Country of origin of the individuals sampled",
+              "daylight_sensitive_elora2014": "TRUE if the genotype showed day-length sensitivity at Elora 2014",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "market_class": "Seed market class (small red, black, navy, ...)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "trial_elora_2014": "TRUE if the entry was in the Elora 2014 field trial",
+              "trial_elora_2015": "TRUE if the entry was in the Elora 2015 field trial",
+              "trial_yorito_2014_2015": "TRUE if the entry was in the Yorito 2014-2015 field trial",
+              "uneven_maturity_elora2014": "TRUE if the genotype showed uneven maturity at Elora 2014 (seed increased in Puerto Rico, winter 2015)",
+              "variety": "Variety, cultivar, breeding line or landrace of the individual (plants)"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EGOZpiP86zsDP86w4PDc-HQA7_MxCw70i3s_0AXu5_fq",
+            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breeding_category": "breeding_category",
+              "country": "country",
+              "daylight_sensitive_elora2014": "daylight_sensitive_elora2014",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "market_class": "market_class",
+              "organism": "organism",
+              "pedigree": "pedigree",
+              "sample_tissue": "sample_tissue",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "trial_elora_2014": "trial_elora_2014",
+              "trial_elora_2015": "trial_elora_2015",
+              "trial_yorito_2014_2015": "trial_yorito_2014_2015",
+              "uneven_maturity_elora2014": "uneven_maturity_elora2014",
+              "variety": "variety"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EH9k2gcH19g58BmdFtGmMNCxW8i4MDZN7lal07E4JQwO",
+            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",
+            "name": "phaseolus_vulgaris_honduran_panel"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z": {
+        "d": "EP-QqTxT54eowT_EYLzjqV18H0ioXduj1CnUJDVdFTex",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EPnvS-4S-3rDdNRIj-wzbNndiFGm59FOfdZwmBXRp3cu",
+            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "variety",
+              "breeding_category",
+              "market_class",
+              "pedigree",
+              "sampling_location",
+              "trial_elora_2014",
+              "trial_yorito_2014_2015",
+              "trial_elora_2015",
+              "uneven_maturity_elora2014",
+              "daylight_sensitive_elora2014",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
