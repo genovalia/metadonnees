@@ -16,7 +16,7 @@
   "dcterms:issued": "2025-09-16",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of spongy moth from North America to Japan",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 280 provenance-diagnostic SNPs for 1 156 spongy moths (Lymantria dispar) from across the species range, from North America to Japan.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 285 provenance-diagnostic SNPs for 1 156 spongy moths (Lymantria dispar) from across the species range, from North America to Japan.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
