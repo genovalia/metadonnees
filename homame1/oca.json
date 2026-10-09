@@ -1,0 +1,176 @@
+{
+  "d": "EPnGZeHHoit2JmwNe5cwEHts6uTilj8ESP__ntWqGAS8",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000d27_",
+      "d": "EC05HmSWFkeio_8az6VQ9H_O4TORa7KnzxLLjxCSV4jA",
+      "capture_base": {
+        "d": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sample_tissue": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EGkYRTL00xVpodLHoQLfQXkCUMszU4n6dGiJlKXmj71b",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EFS8wlyWa-59X25eQAp0DKrvzn02RGqKwNZCGhj0m23z",
+          "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EHiThqXYSRs94rfaMdH1SAzYYwTVlvYDB9ajrh_fedlp",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBZfElKpFBuLA2NWJ-co_wCfS2h68QXNN5-ge5EPV4Sm",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sample_tissue": "sample_tissue",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EPH63bnQhulp1w1yWPFlKYpW3MjLk2AO4zSHbklPOfIy",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 14 534 single-copy SNPs for 1 081 American lobsters (Homarus americanus) sampled in 2016 in the southern Gulf of St. Lawrence, Canada.",
+            "name": "homarus_americanus_temperature_association"
+          }
+        ],
+        "unit": {
+          "d": "EKQt8rK3Mnzx6j7eRJbmclwbVAqiO6lxJ8nLZ1OmkKZQ",
+          "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU": {
+        "d": "EBKvjYcvC3VEy2nNxSXm-MTeEhtYKI2qGMmVXYqRepJ9",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EEbluS1BVajLA9oH91Z-WdaNlIfuXMw3rOYqQJ6TDGIy",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_year",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EPjOMzdOzbzJXhEBbHCEL5XR8tD7lfF9Oy4pTGF-4ZrJ",
+            "capture_base": "EBS1P8hnhBQp23SetKhI8jJlFCADazJHJdLfKjOgBcnU",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

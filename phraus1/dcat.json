@@ -1,0 +1,81 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/phraus1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "phraus1",
+  "dcterms:issued": "2026-10-08",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of common reed from Quebec",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/phraus1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "common reed",
+    "Phragmites australis",
+    "invasive species",
+    "genotyping-by-sequencing",
+    "road ecology",
+    "clonal reproduction"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/29695/",
+  "dcat:distribution": [],
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-6510-5178",
+    "@type": "foaf:Person",
+    "foaf:name": "Claude Lavoie"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6510-5178",
+        "@type": "prov:Person",
+        "foaf:name": "Claude Lavoie"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@type": "prov:Person",
+        "foaf:name": "Arnaud Albert"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/1365-2745.12473",
+    "https://doi.org/10.5061/dryad.rp77j"
+  ]
+}

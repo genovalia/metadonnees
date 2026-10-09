@@ -1,0 +1,159 @@
+{
+  "d": "ELTpR3rz1-5bFJNoXsWeka-bIRWXpD_9ayU-hIS-rS1D",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000c3e_",
+      "d": "ENixORgY31QU_r-W3DvP2i3BOas9fpcgMVe_ZKlGK7W6",
+      "capture_base": {
+        "d": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "section": "Text",
+          "sequenced_molecule": "Text",
+          "site_type": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ED-UABroYRstWv67XIzxLzyi2KMXaLnTZ4SjNlWnym4d",
+            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "section": {
+                "H20_S1": "Highway 20 section 1",
+                "H20_S2": "Highway 20 section 2",
+                "H20_S3": "Highway 20 section 3",
+                "IBNP": "Iles-de-Boucherville National Park"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EI8Vrhnb262zCNKIgGFVVAy1cs0yj40L0BtEe4FXokRD",
+          "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "section": [
+              "H20_S1",
+              "H20_S2",
+              "H20_S3",
+              "IBNP"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EBedBcmumwZRvF87CRvE0udPbrkjUAiHtKtQzVG32ONW",
+            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "section": "Survey section: highway 20 sections 1-3 (H20_S1, H20_S2, H20_S3) or Iles-de-Boucherville National Park (IBNP)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "site_type": "General environmental or habitat category of the sampling site"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EHkL8tiAm5O97yTRK9upJCJ07a4xz5s1m8X1nWixEc3f",
+            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "section": "section",
+              "sequenced_molecule": "sequenced_molecule",
+              "site_type": "site_type"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EGyHy7joKsGu8Qt33AAUjIft5pPSZYXF_VA1bqQ9KiGv",
+            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
+            "name": "phragmites_australis_reproduction"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5": {
+        "d": "ECQZrWXcjuioZKTo7Z8dCu2dP2O7qcuoXdVZWdT7SnSz",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EH_03e3xfHCFMs3AAfkCva4lkMp3Jz95ubOJhs6nP-MP",
+            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "section",
+              "site_type",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "section": [
+                "H20_S1",
+                "H20_S2",
+                "H20_S3",
+                "IBNP"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

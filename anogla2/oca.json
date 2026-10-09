@@ -1,0 +1,223 @@
+{
+  "d": "EDr3xG9-kUb6BxTJ8V-_scABLNZjpBdVr8vNa5vPB0Ts",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON0010e3_",
+      "d": "EADtjS9WneKMAuVyETaD3aTJkzpdUS16oIbh7-V18tCq",
+      "capture_base": {
+        "d": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "host_plant": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "life_stage": "Text",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "population_status": "Text",
+          "sample_tissue": "Text",
+          "sampling_location": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text",
+          "sex": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EP_dbKefptjK0a31e6rZKXVa1CuovvD1v_XfqKDmBIZc",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "population_status": {
+                "native": "native",
+                "introduced": "introduced"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EHPvmlPjk-Tc1JPl7lh0nxf-utP0VxR7MRuLrhSSiVwD",
+          "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "population_status": [
+              "native",
+              "introduced"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EG6ub7dey2TX_ViyEwvkd9ubF1h64StQ9eBg3EYaQsNY",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "host_plant": "Host tree species the specimen was collected from (invasive range only)",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "life_stage": "Life stage of the sampled individual, such as egg, larva, juvenile or adult",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "population_status": "Biogeographic status of the sampled population, such as native or introduced.",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "sex": "Sex of the individual: female, male or unknown"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBrDnbGQNHyNPF7GQsH30rHub12tegMgvA_IAo2JJMah",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "host_plant": "host_plant",
+              "id": "id",
+              "latitude": "latitude",
+              "life_stage": "life_stage",
+              "longitude": "longitude",
+              "organism": "organism",
+              "population_status": "population_status",
+              "sample_tissue": "sample_tissue",
+              "sampling_location": "sampling_location",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EEAOS2rwVYLdIiMy9-2lff_-bSMkfJl69t-5bFNz05Y5",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 768 SNPs for 490 Asian longhorned beetles (Anoplophora glabripennis): individuals from invasive infestations in the United States and Canada and from the native range in China and South Korea.",
+            "name": "anoplophora_glabripennis_invasion_tracking"
+          }
+        ],
+        "unit": {
+          "d": "ELCt9gtUspjv8dYMiBLAl5vJETQ7S0dv1RygA4H3DBdw",
+          "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR": {
+        "d": "EI4v6EKSMAA0cKuHuEpZ3b-F5rjaWZELr42DzTxGPZPo",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "ENQdj0lufhAHvc1vnLD0WW0rOLFREQ3HTwgF027cZ4He",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "population_status",
+              "sampling_year",
+              "life_stage",
+              "sex",
+              "host_plant",
+              "sample_tissue",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "population_status": [
+                "native",
+                "introduced"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "ENwkNBhECHF61ji7SzFDmQR4aFUgWRyVCXxoIBXdG6jQ",
+            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

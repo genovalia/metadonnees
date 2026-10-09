@@ -1,0 +1,213 @@
+{
+  "d": "EI9Etc8ZPaqZGmLcATMxD4fOT2r6x4hq5rM5sAXyoIib",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON001063_",
+      "d": "EOsquhKVFFNntpcTat5AwXPuoSmVlYIsU9wHQBYfou6X",
+      "capture_base": {
+        "d": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "birth_year": "Numeric",
+          "body_mass": "Numeric",
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "horn_base_circumference_cm": "Numeric",
+          "horn_length_cm": "Numeric",
+          "id": "Text",
+          "n_body_mass_measures": "Numeric",
+          "n_horn_base_measures": "Numeric",
+          "n_horn_length_measures": "Numeric",
+          "organism": "Text",
+          "sequenced_molecule": "Text",
+          "sex": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EHXMDZa490LZVQhLvBbDPTjYPdZL2bCftHJgR4bH19lC",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ENCsIj6tjuQCqo3ZQN1xXnJLm_0_nAaRD2pD_Wo35b1V",
+          "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EGe1_aM1sRB8a1o_qvvBWyohM3PTlZK9nHMIphCIx5um",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "birth_year": "Year of birth of the sheep",
+              "body_mass": "Body mass of the individual",
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "horn_base_circumference_cm": "Mean of the repeated horn base circumference measurements (average of left and right horn) deposited for this individual",
+              "horn_length_cm": "Mean of the repeated horn length measurements (average of left and right horn) deposited for this individual",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "n_body_mass_measures": "Number of repeated body mass measurements averaged",
+              "n_horn_base_measures": "Number of repeated horn base circumference measurements averaged",
+              "n_horn_length_measures": "Number of repeated horn length measurements averaged",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "sex": "Sex of the individual: female, male or unknown"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EJcyO-MGEqtNzUWRpqIDg96pnkAPSRLTetlopsT-DYml",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "birth_year": "birth_year",
+              "body_mass": "body_mass",
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "horn_base_circumference_cm": "horn_base_circumference_cm",
+              "horn_length_cm": "horn_length_cm",
+              "id": "id",
+              "n_body_mass_measures": "n_body_mass_measures",
+              "n_horn_base_measures": "n_horn_base_measures",
+              "n_horn_length_measures": "n_horn_length_measures",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EC1JL87zKScc9C8a28YOUGoIH9CJOJ3_oyKM_LU-6x3D",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 3 775 autosomal SNPs for 76 bighorn sheep (Ovis canadensis) from a long-term individually monitored population in Alberta, Canada, with phenotypic data.",
+            "name": "ovis_canadensis_horn_gwas"
+          }
+        ],
+        "unit": {
+          "d": "EGR5KMg5pxhUf9a2fCpQzB09lPXyvQ7bR_IUbYFUdHdk",
+          "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "body_mass": "gram",
+            "horn_base_circumference_cm": "centimeter",
+            "horn_length_cm": "centimeter"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi": {
+        "d": "EH5IQAHpOHrTLPoXaPIPe2pzcYFfPNZjohnvJLdBJLcd",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EAkQ7LZ2PORrI96W8GzH6R9xYSJIf2rpY8qRKds429lY",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sex",
+              "birth_year",
+              "body_mass",
+              "n_body_mass_measures",
+              "horn_length_cm",
+              "n_horn_length_measures",
+              "horn_base_circumference_cm",
+              "n_horn_base_measures",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EPeRY-iwVTJHaeN4V1gurhZviNACeApuzZBrC56jIpId",
+            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "centimeter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "cm"
+              },
+              "gram": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "g"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

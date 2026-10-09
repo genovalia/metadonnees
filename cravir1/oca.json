@@ -1,0 +1,172 @@
+{
+  "d": "EMorXiDPtZjMowmwqCe9lEAfDTghLJP5hmoDXnFIJQGl",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000cc6_",
+      "d": "EERnw1QZz1-bbMEoc5wpFN1kYa5zgYG3dFfLmZX4gs8i",
+      "capture_base": {
+        "d": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sequenced_molecule": "Text",
+          "subsite": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EPEdpkhssYhKCfr9Jp9emnKM1rTeUwj-h4XsO4PGQmou",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EOM65r6Qok9eFb2_HQ9W2BrcCuVolBRm2nhv3nPwjAXj",
+          "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EJ_QW9Gu1phKSiyqhEcYylFuyzCPvH3OB6NKaxV57ASE",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "subsite": "Sub-site within the site (environmental_data_pcnmRDA.txt), coordinates are averaged per sub-site"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBLOxSvopvRS44cIDuYXQ0MDfvL2fdvzSCFlNqh7MC4_",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule",
+              "subsite": "subsite"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EOSwtXpVBE3p98dfuCiUfJ5tghxf2Uunxg1msBjqU9Rc",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada).",
+            "name": "crassostrea_virginica_seascape_genomics"
+          }
+        ],
+        "unit": {
+          "d": "EPHE21HMc4EJ9F0Xwdf7zZD1AYcGUiqDiHsZzwmCCtzm",
+          "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj": {
+        "d": "EPa4pG90uzr7yqvUO6fAdNBdrqqkllYyQT89wi40L_A2",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EMh0O5J2C4vXKh4dJ5N2bcSimO1zo2bSr3OKBDHREghb",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "subsite",
+              "latitude",
+              "longitude",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EA2oF2sxctdtbusQvHe3UEJ1hkaB04gjlL3I8MD5PX-C",
+            "capture_base": "EArYHFr1mg8yw0ZoovDOGch39jHQzgCGoqBCxEP4LNjj",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
