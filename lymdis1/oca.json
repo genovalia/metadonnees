@@ -1,10 +1,10 @@
 {
-  "d": "EEPgYeNrhsBdjmxW1aQsUkbJXQtb1KQcQo1R2GbenpfA",
+  "d": "EFZUkTr3KOX4_zegol9XhugAgy2BFoX_N2AFvPLVtDtD",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e13_",
-      "d": "EI7NLEn2bXpwQaUwZqkIyMfZjE7R5j3UWg-eFJt9vutG",
+      "v": "OCAS11JSON000e63_",
+      "d": "EAzqRGbOhtC5tViQnu6B7XiSr9eRkLaTCT50qmYDKeK8",
       "capture_base": {
         "d": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EOU_ceT0IBe08uRNKRCtAws_Hy2V17ubUKvYsEeQmk_u",
+            "d": "EPzo9pVJnICiSaU_0wPa6pMXyW-Zi3VYRCLK1_S3CpDe",
             "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -39,12 +39,17 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ENj3AMgO6OcuZGMcjD8gbBwl9wKN5-QeX1_kqE3gtxGN",
+          "d": "EMwNnF3XNcVdxPh_caf1Aa5eSMBX8xcz2Da3idEJS3Kp",
           "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -55,17 +60,22 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "ELYyY_OTvjEWZ7tv2CzgEKb3Qb9bK21s431BS6_eI3qF",
+            "d": "EMlW7YafGgmVsjwXmnjictn5uhNcFkNbEfQfc5jCaYoO",
             "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "age": "The age of the individual at the time the sample was collected",
+              "age": "Age of the individual",
               "country": "Country of origin of the individuals sampled",
               "date_of_birth": "Birth date of the individual, expressed in the standard ISO 8601 format YYYY-MM-DD",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
@@ -73,9 +83,9 @@
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           }
         ],
@@ -129,11 +139,11 @@
   "extensions": {
     "adc": {
       "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p": {
-        "d": "EH-U9nc0jboeaQllVqV68p48_8CEqXSgntl-2sSi-BzI",
+        "d": "EKjfNmpR0BCmPzxgnsSzMXXvCGbDF5EADXkhWrtSiZRj",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EBlp1YeX4XS6b1SITywHbZQn69pizkIX0GPcPynHOCAm",
+            "d": "ENIuwFh5MGrtASZdyVAIYDgdZf0vKdwcIU116A8Ssy60",
             "capture_base": "ENEcMCK-y1vmmNbb-PIZdisalc0x84k52lu7bY8new0p",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -157,6 +167,11 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
               ]
             }
           },

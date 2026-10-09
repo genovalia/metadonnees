@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 156 spongieuses (Lymantria dispar) provenant de l’ensemble de l’aire de répartition de l’espèce, de l’Amérique du Nord au Japon, et génotypées à l’aide de 280 SNP diagnostiques de la provenance."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 156 spongieuses (Lymantria dispar) provenant de l’ensemble de l’aire de répartition de l’espèce, de l’Amérique du Nord au Japon, génotypées à l’aide de 285 SNP diagnostiques de la provenance."
     },
     "theme": {
       "type": "literal",

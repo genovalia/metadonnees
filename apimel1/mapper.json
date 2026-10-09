@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 94 abeilles domestiques femelles (Apis mellifera) de lignées d’élevage canadiennes, avec des données de pedigree."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 94 abeilles domestiques femelles (Apis mellifera) provenant de lignées d’élevage canadiennes, génotypées à l’aide de 69 800 SNP, ainsi que des données de pedigree."
     },
     "theme": {
       "type": "literal",
