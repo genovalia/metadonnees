@@ -1,15 +1,14 @@
 {
-  "d": "EB1lJXddEKuW7Sl2kQTVahdjTZc4w_53vQ5ox_4gQyLW",
+  "d": "ENMNFZiR8vHtrsO8Y8YFm8eAq9tdSv1umSGHTeUGpxWu",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011ee_",
-      "d": "EPglvbY9box6ezBLJnu8CIlQ89rcIG7f55lfZNhr_-Dh",
+      "v": "OCAS11JSON0011e7_",
+      "d": "EBSdUEWdP50XhxrAVPIFDltxoEKEatke_k8wpI4HlkWk",
       "capture_base": {
-        "d": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+        "d": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
         "type": "spec/capture_base/1.1",
         "attributes": {
-          "breeding_category": "Text",
           "country": "Text",
           "daylight_sensitive_elora2014": "Boolean",
           "genotyping_technology": "Text",
@@ -24,7 +23,8 @@
           "trial_elora_2015": "Boolean",
           "trial_yorito_2014_2015": "Boolean",
           "uneven_maturity_elora2014": "Boolean",
-          "variety": "Text"
+          "variety": "Text",
+          "variety_type": "Text"
         },
         "classification": "RDF106",
         "flagged_attributes": []
@@ -32,8 +32,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EOj8TUwnPdCTqVkhkAg5EbQFqHeSwe0g6TSMhj3Z_pz5",
-            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "d": "EFsql-sNX3WnauKmv4EhDLE8QXl3-2Aiwufhilmm6ai3",
+            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -49,8 +49,8 @@
           }
         ],
         "entry_code": {
-          "d": "EMGn-QBrAtW4TT5cg9S9XuoywjwtPoz8d0Er3zhtWBT5",
-          "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+          "d": "EIOhGe941hY8S2kB0WZlzScFbTRVeHT2k69ASJP0PoW0",
+          "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -65,12 +65,11 @@
         },
         "information": [
           {
-            "d": "EFF0HLz7hDFALMlcyDi7ACbvCVjmt91rvX6RY4mPnlCA",
-            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "d": "EKtu7PbAUWU6Y0cdtjOBiiP8LZ3hSQdOhzpRb8WU6OQL",
+            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "breeding_category": "Breeding history category of the variety: check (control variety), conventional, landrace, participatory plant breeding or participatory varietal selection",
               "country": "Country of origin of the individuals sampled",
               "daylight_sensitive_elora2014": "TRUE if the genotype showed day-length sensitivity at Elora 2014",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
@@ -85,19 +84,19 @@
               "trial_elora_2015": "TRUE if the entry was in the Elora 2015 field trial",
               "trial_yorito_2014_2015": "TRUE if the entry was in the Yorito 2014-2015 field trial",
               "uneven_maturity_elora2014": "TRUE if the genotype showed uneven maturity at Elora 2014 (seed increased in Puerto Rico, winter 2015)",
-              "variety": "Variety, cultivar, breeding line or landrace of the individual (plants)"
+              "variety": "Variety, cultivar, breeding line or landrace of the individual (plants)",
+              "variety_type": "How the variety was obtained: landrace, conventional (conventional breeding), participatory plant breeding, participatory varietal selection, or check (control variety)"
             }
           }
         ],
         "label": [
           {
-            "d": "EGOZpiP86zsDP86w4PDc-HQA7_MxCw70i3s_0AXu5_fq",
-            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "d": "EF8FINhGBbv94SVBxt55rKOyRaGGj8uilQEPmXvdjGiY",
+            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
-              "breeding_category": "breeding_category",
               "country": "country",
               "daylight_sensitive_elora2014": "daylight_sensitive_elora2014",
               "genotyping_technology": "genotyping_technology",
@@ -112,15 +111,16 @@
               "trial_elora_2015": "trial_elora_2015",
               "trial_yorito_2014_2015": "trial_yorito_2014_2015",
               "uneven_maturity_elora2014": "uneven_maturity_elora2014",
-              "variety": "variety"
+              "variety": "variety",
+              "variety_type": "variety_type"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EH9k2gcH19g58BmdFtGmMNCxW8i4MDZN7lal07E4JQwO",
-            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "d": "EHKpL84SHbb5wOKOkJcTI2q0BNKcStTkXYt2Zz_sKjCJ",
+            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",
@@ -133,20 +133,20 @@
   },
   "extensions": {
     "adc": {
-      "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z": {
-        "d": "EP-QqTxT54eowT_EYLzjqV18H0ioXduj1CnUJDVdFTex",
+      "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE": {
+        "d": "EOySNEKsJQ5NFNDx4ijBYd9xeKmqOXyubDnnk7eLlctl",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EPnvS-4S-3rDdNRIj-wzbNndiFGm59FOfdZwmBXRp3cu",
-            "capture_base": "EAvxPJEgDY-pX6JwMGKn14MBLciw3oxp_YknH_eFWd1z",
+            "d": "ECnn6aEUQongv0encokUIvRkXeunwsijRSZTYbd6EzCn",
+            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
               "variety",
-              "breeding_category",
+              "variety_type",
               "market_class",
               "pedigree",
               "sampling_location",
