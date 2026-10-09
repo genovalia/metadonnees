@@ -1,12 +1,12 @@
 {
-  "d": "EDr3xG9-kUb6BxTJ8V-_scABLNZjpBdVr8vNa5vPB0Ts",
+  "d": "EBwUv1-cm7an760arlyHKtc5BknKc-Ud5XD2-5qNGFee",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0010e3_",
-      "d": "EADtjS9WneKMAuVyETaD3aTJkzpdUS16oIbh7-V18tCq",
+      "v": "OCAS11JSON0011c3_",
+      "d": "EBX-eeb3vDC3fx2x4gdBEQPWV8Tq05aGkX2rXHWFRSR1",
       "capture_base": {
-        "d": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+        "d": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -18,6 +18,7 @@
           "longitude": "Numeric",
           "organism": "Text",
           "population_status": "Text",
+          "publication_code": "Text",
           "sample_tissue": "Text",
           "sampling_location": "Text",
           "sampling_year": "Numeric",
@@ -30,8 +31,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EP_dbKefptjK0a31e6rZKXVa1CuovvD1v_XfqKDmBIZc",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "EEF4iwsBQsI-Hfqh3QQzKqmFW9GqjBQhAy-53yayh3Ej",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -56,8 +57,8 @@
           }
         ],
         "entry_code": {
-          "d": "EHPvmlPjk-Tc1JPl7lh0nxf-utP0VxR7MRuLrhSSiVwD",
-          "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+          "d": "ECFH8_0khqW8Mn-VZP2zozXQMu5j6zZ5axqrSwHl-t3_",
+          "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -81,8 +82,8 @@
         },
         "information": [
           {
-            "d": "EG6ub7dey2TX_ViyEwvkd9ubF1h64StQ9eBg3EYaQsNY",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "EBtq3vlvZy6SKKnWIIRmj2fFRhhWFEpXl3_VFjfmcRiK",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -95,6 +96,7 @@
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "population_status": "Biogeographic status of the sampled population, such as native or introduced.",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sampling_year": "Year in which the sample was collected",
@@ -105,8 +107,8 @@
         ],
         "label": [
           {
-            "d": "EBrDnbGQNHyNPF7GQsH30rHub12tegMgvA_IAo2JJMah",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "ELUoxlfcQOWpBhq9yWDdqbVBHldyBxInXYPunIDRfCVu",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -120,6 +122,7 @@
               "longitude": "longitude",
               "organism": "organism",
               "population_status": "population_status",
+              "publication_code": "publication_code",
               "sample_tissue": "sample_tissue",
               "sampling_location": "sampling_location",
               "sampling_year": "sampling_year",
@@ -131,8 +134,8 @@
         ],
         "meta": [
           {
-            "d": "EEAOS2rwVYLdIiMy9-2lff_-bSMkfJl69t-5bFNz05Y5",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "EDoLmwLg-fO7RyZ2WamS_hNAIQNzGlPYX_JHuhm-sPRd",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 2 768 SNPs for 490 Asian longhorned beetles (Anoplophora glabripennis): individuals from invasive infestations in the United States and Canada and from the native range in China and South Korea.",
@@ -140,8 +143,8 @@
           }
         ],
         "unit": {
-          "d": "ELCt9gtUspjv8dYMiBLAl5vJETQ7S0dv1RygA4H3DBdw",
-          "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+          "d": "EHPyg7XB2MjrfE1XX7YHjKsUMcKegM0uXDt3G7TUVAGo",
+          "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -154,13 +157,13 @@
   },
   "extensions": {
     "adc": {
-      "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR": {
-        "d": "EI4v6EKSMAA0cKuHuEpZ3b-F5rjaWZELr42DzTxGPZPo",
+      "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf": {
+        "d": "EI0uyfx4pO0Cja1wz6KRqN7WMZk0Hn0HV1ItDoT1AqZj",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ENQdj0lufhAHvc1vnLD0WW0rOLFREQ3HTwgF027cZ4He",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "EN3QZYzS8di0lKWzI2hwtae7k4FQg8fZVTYpEYq98do_",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -168,6 +171,7 @@
               "country",
               "latitude",
               "longitude",
+              "publication_code",
               "sampling_location",
               "population_status",
               "sampling_year",
@@ -199,8 +203,8 @@
             }
           },
           "unit_framing": {
-            "d": "ENwkNBhECHF61ji7SzFDmQR4aFUgWRyVCXxoIBXdG6jQ",
-            "capture_base": "EGMTnLVSAlV93h10KyLeFLTnDNNh5Ta0CoSZ83MgrARR",
+            "d": "EPx01Tym2ye7JVK1M6Bru5ejLVNjXYdbs74m3JetBXVo",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

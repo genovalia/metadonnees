@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/picgla3",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "picgla3",
-  "dcterms:issued": "2026-10-08",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of white spruce from Quebec, selected and unselected trees",
   "dcterms:description": "This dataset contains SNP chip genotypes at 1 134 SNPs from 709 expressed genes for 142 white spruce (Picea glauca) trees of the Quebec breeding program (Canada): trees selected for height growth (top 13% of tested families, with a top 5% subset) and unselected trees from the same natural provenances.",
