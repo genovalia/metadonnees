@@ -1,12 +1,12 @@
 {
-  "d": "ENCT9f3OHjFEOMM58XAiGwAdZTrctxsb-Nv-CS-AmG-b",
+  "d": "EKCMgOdIvNnlYjimuCLgu07hT8WjXgAmnAAZHNQ9uhI-",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ced_",
-      "d": "EBQ99iD62lQ0d7FbY0JaaTKjtwxigd_oiWXzhJFbTY6z",
+      "v": "OCAS11JSON000b88_",
+      "d": "EGp5JV67hdGjKmhK8EdCix9C8aUj5pOY2t4m40AUcMqi",
       "capture_base": {
-        "d": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+        "d": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -14,7 +14,6 @@
           "id": "Text",
           "organism": "Text",
           "sampling_location": "Text",
-          "section": "Text",
           "sequenced_molecule": "Text",
           "site_type": "Text"
         },
@@ -24,8 +23,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EIwfUlV_2Ztm4xwh1zNlYgqSnqWkV7RRBe2HGfMGfipC",
-            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+            "d": "EAc4aRrglXVi7sTjI-Vhir9xe3kqouxlBAOlp0xqV4gs",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -36,19 +35,13 @@
                 "targeted sequencing": "targeted sequencing",
                 "targeted SNP assay": "targeted SNP assay",
                 "RNA sequencing": "RNA sequencing"
-              },
-              "section": {
-                "H20_S1": "Highway 20 section 1",
-                "H20_S2": "Highway 20 section 2",
-                "H20_S3": "Highway 20 section 3",
-                "IBNP": "Iles-de-Boucherville National Park"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EMPlAk9JOlzBXVjWuSdw_JQIlnoVxnm7dUyj-FQbbfqw",
-          "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+          "d": "EPPivP1gxt6bJJs7ziruyTHh0d4WB2b8oQ-u4B2RXcA3",
+          "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -58,19 +51,13 @@
               "targeted sequencing",
               "targeted SNP assay",
               "RNA sequencing"
-            ],
-            "section": [
-              "H20_S1",
-              "H20_S2",
-              "H20_S3",
-              "IBNP"
             ]
           }
         },
         "information": [
           {
-            "d": "EBlZ-2KTpQwdoO9bp3wCPAHtM6HH7yVaUPYmOsMuNPXW",
-            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+            "d": "EKeaYNjmCVCc10x0HWAITezm-hpN4IDF3VfDhX8zePHd",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -79,7 +66,6 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
-              "section": "Survey section: highway 20 sections 1-3 (H20_S1, H20_S2, H20_S3) or Iles-de-Boucherville National Park (IBNP)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "site_type": "General environmental or habitat category of the sampling site"
             }
@@ -87,8 +73,8 @@
         ],
         "label": [
           {
-            "d": "EI4hNidA1O82MCBVPm4S7I4m_8vJlMeyd8jmkDwJ5wfy",
-            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+            "d": "EBJyOza7rdelQn-XEq17xBbuUzdebbO3yQkWYcdO7NeE",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -98,7 +84,6 @@
               "id": "id",
               "organism": "organism",
               "sampling_location": "sampling_location",
-              "section": "section",
               "sequenced_molecule": "sequenced_molecule",
               "site_type": "site_type"
             },
@@ -107,8 +92,8 @@
         ],
         "meta": [
           {
-            "d": "EGqkw9W9a5--sWLGeSVLk14plQ6YlwDPWIx1_NnxlVJR",
-            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+            "d": "EAwdqvNY1OX1SM0X5Zkahn4ukIBjBmn_P9MPbBJsSZ6B",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
@@ -121,19 +106,18 @@
   },
   "extensions": {
     "adc": {
-      "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H": {
-        "d": "EBCB0CdiEuLFYkWxwEaXyFBaOeuELy-WFfKutpj8Zhp6",
+      "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA": {
+        "d": "ECUnmhYypVme69p39mRkbiLe-H7Yus0g4ydV2_Ue1u9B",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EIQeTneHJTBqrGHz7YG76Bkj63hI-Q6NmxkXp5ffCNDY",
-            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
+            "d": "EDPlY9OJ09skQ3E9tx0_3qN-0djI2rfaNOGTn3r2WarO",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
-              "section",
               "sampling_location",
               "site_type",
               "sequenced_molecule",
@@ -147,12 +131,6 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
-              ],
-              "section": [
-                "H20_S1",
-                "H20_S2",
-                "H20_S3",
-                "IBNP"
               ]
             }
           }
