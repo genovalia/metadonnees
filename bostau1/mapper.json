@@ -54,7 +54,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 190 vaches (Bos taurus) de race Canadienne, une race laitière rustique du Québec, génotypées à l’aide de 312 257 SNP."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 190 vaches (Bos taurus) de race Canadienne, une race laitière rustique du Québec, génotypées à l’aide de 311 829 SNP."
     },
     "theme": {
       "type": "literal",
