@@ -1,0 +1,141 @@
+{
+  "d": "EKCMgOdIvNnlYjimuCLgu07hT8WjXgAmnAAZHNQ9uhI-",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000b88_",
+      "d": "EGp5JV67hdGjKmhK8EdCix9C8aUj5pOY2t4m40AUcMqi",
+      "capture_base": {
+        "d": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "site_type": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EAc4aRrglXVi7sTjI-Vhir9xe3kqouxlBAOlp0xqV4gs",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EPPivP1gxt6bJJs7ziruyTHh0d4WB2b8oQ-u4B2RXcA3",
+          "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EKeaYNjmCVCc10x0HWAITezm-hpN4IDF3VfDhX8zePHd",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "site_type": "General environmental or habitat category of the sampling site"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBJyOza7rdelQn-XEq17xBbuUzdebbO3yQkWYcdO7NeE",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "site_type": "site_type"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EAwdqvNY1OX1SM0X5Zkahn4ukIBjBmn_P9MPbBJsSZ6B",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
+            "name": "phragmites_australis_reproduction"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA": {
+        "d": "ECUnmhYypVme69p39mRkbiLe-H7Yus0g4ydV2_Ue1u9B",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EDPlY9OJ09skQ3E9tx0_3qN-0djI2rfaNOGTn3r2WarO",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sampling_location",
+              "site_type",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

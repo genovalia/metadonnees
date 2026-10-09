@@ -10,14 +10,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam1",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/sacpar1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "salnam1",
-  "dcterms:issued": "2026-09-29",
+  "dcterms:identifier": "sacpar1",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
-  "dcterms:title": "Genotyping-by-sequencing dataset of lake trout from Quebec with environmental data",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 7 201 SNPs for 673 lake trout (Salvelinus namaycush) from lakes across the species’ range in Quebec, with environmental data.",
-  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam1",
+  "dcterms:title": "Whole genome sequencing dataset of wild Saccharomyces paradoxus yeasts from southern Ontario",
+  "dcterms:description": "This dataset contains whole genome sequencing genotypes at 442 376 bi-allelic SNPs without missing data for 91 strains of the wild yeast Saccharomyces paradoxus from a mixed hardwood forest of southern Ontario, Canada.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/sacpar1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",
@@ -32,61 +32,70 @@
     }
   },
   "dcat:keyword": [
-    "lake trout",
-    "Salvelinus namaycush",
-    "genotyping-by-sequencing",
-    "genomics",
-    "Quebec"
+    "Saccharomyces paradoxus",
+    "wild yeast",
+    "population genetics",
+    "whole genome sequencing",
+    "microbial ecology",
+    "Ontario"
   ],
-  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8040/",
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/27291/",
   "dcat:distribution": [],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2003"
+      "time:inXSDgYear": "2014"
     },
     "time:hasEnd": {
       "@type": "time:Instant",
-      "time:inXSDgYear": "2013"
+      "time:inXSDgYear": "2015"
     }
   },
-  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcterms:spatial": "https://sws.geonames.org/6093943/",
+  "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
-    "@id": "https://orcid.org/0000-0002-8085-9709",
     "@type": "foaf:Person",
-    "foaf:name": "Louis Bernatchez"
+    "foaf:name": "Linda M. Kohn"
   },
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "principalInvestigator"
-      ],
       "prov:agent": {
-        "@id": "https://orcid.org/0000-0002-8085-9709",
         "@type": "prov:Person",
-        "foaf:name": "Louis Bernatchez"
-      }
+        "foaf:name": "Linda M. Kohn"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
     },
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "pointOfContact",
-        "collaborator"
-      ],
       "prov:agent": {
-        "@id": "https://orcid.org/0000-0001-5820-9374",
         "@type": "prov:Person",
-        "foaf:name": "Charles Perrier"
-      }
+        "foaf:name": "Wenjing Xia"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-7332-8435",
+        "@type": "prov:Person",
+        "foaf:name": "James B. Anderson"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
     }
   ],
-  "dcat:version": "1.4.0",
   "dct:relation": [
-    "https://doi.org/10.1111/mec.14361",
-    "https://doi.org/10.5061/dryad.2b8f1"
+    "https://doi.org/10.1111/mec.13954",
+    "https://doi.org/10.5061/dryad.th865"
   ]
 }

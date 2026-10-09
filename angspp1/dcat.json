@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/angspp1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "angspp1",
+  "dcterms:issued": "2026-10-09",
+  "dcterms:language": "en",
+  "dcterms:title": "Whole genome sequencing dataset of European and American eels and their hybrids from the North Atlantic",
+  "dcterms:description": "This dataset contains whole genome sequencing genotypes at 835 600 SNPs for 78 North Atlantic eels: European eels (Anguilla anguilla), American eels (A. rostrata) and hybrids, from Europe (mostly Iceland), North Africa, North America and the Sargasso Sea.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/angspp1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "European eel",
+    "American eel",
+    "Anguilla anguilla",
+    "Anguilla rostrata",
+    "hybridization",
+    "introgression",
+    "whole genome sequencing"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7935/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2001"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2017"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/3411923/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-5372-4828",
+    "@type": "foaf:Person",
+    "foaf:name": "Michael M. Hansen"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5372-4828",
+        "@type": "prov:Person",
+        "foaf:name": "Michael M. Hansen"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-2525-159X",
+        "@type": "prov:Person",
+        "foaf:name": "Aja Noersgaard Buur Tengstedt"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-5037-8840",
+        "@type": "prov:Person",
+        "foaf:name": "José Martín Pujolar"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/mec.17664",
+    "https://doi.org/10.5061/dryad.x0k6djhvh"
+  ]
+}

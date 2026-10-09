@@ -1,0 +1,165 @@
+{
+  "d": "EMp0RYhz4jzy8BRTtHZRfP8f8xe15yWWh7ubDrS8TwgY",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000e45_",
+      "d": "EE1t14Tsn3ueGJ_P8u9caxEmQ81glAe8sATQaCoDPUP2",
+      "capture_base": {
+        "d": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "block": "Numeric",
+          "country": "Text",
+          "family": "Text",
+          "genetic_test": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "selection_group": "Text",
+          "sequenced_molecule": "Text",
+          "tree_number": "Numeric"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EGIAqgHrDh20dixMb4eugjQx2jjUu4WBckLpizLU9uqU",
+            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "selection_group": {
+                "selected": "selected (breeding population)",
+                "unselected": "unselected control"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EMaFlTGv7z0sUroMncy1PgxxiLFCG84V2-B1hN34tTm7",
+          "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "selection_group": [
+              "selected",
+              "unselected"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EJX2eWiKKhZ0hT0FJ10HKeTLLrGuYUh-F17H8vkrY4t1",
+            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "block": "Block (replication) of the field or progeny test where the individual grows",
+              "country": "Country of origin of the individuals sampled",
+              "family": "Family (progeny) the individual belongs to",
+              "genetic_test": "Identifier of the genetic (provenance-progeny) test where the tree grows",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "selection_group": "Selection status of the tree: selected (family selected for height growth, breeding population; case in the source file) or unselected (unselected family of the same provenances; control in the source file)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "tree_number": "Tree number within the family and block"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EDnsaXPZWb8Ljj2ZjN7sXpt-e9V7qNniyG2U2-P3WxNt",
+            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "block": "block",
+              "country": "country",
+              "family": "family",
+              "genetic_test": "genetic_test",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "selection_group": "selection_group",
+              "sequenced_molecule": "sequenced_molecule",
+              "tree_number": "tree_number"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "ECsPlBUGJ7CTPfesAukQlKdDrJ6EizpLHIhpRq3k-eNf",
+            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 1 134 SNPs from 709 expressed genes for 142 white spruce (Picea glauca) trees of the Quebec breeding program (Canada): trees selected for height growth (top 13% of tested families, with a top 5% subset) and unselected trees from the same natural provenances.",
+            "name": "picea_glauca_artificial_selection"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ": {
+        "d": "EOPKHqrI1cZjmJl1-AsfHEEDQlbPVhZuT-25sc1jDjgj",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EA_acHmNvfT87dnWOjQsQHdF3Q9WmMiOPe0u2vIYmtbu",
+            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "selection_group",
+              "genetic_test",
+              "block",
+              "family",
+              "tree_number",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "selection_group": [
+                "selected",
+                "unselected"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

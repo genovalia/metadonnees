@@ -1,0 +1,141 @@
+{
+  "d": "EBOB3VYnunABe2cnR4I4sENHDNyAwSX1RHX1H_UU3L7b",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000bfe_",
+      "d": "EDD0bUmLISMJANEgZHvS0zZ1a-7daXmZ6d7w5W2YeB7K",
+      "capture_base": {
+        "d": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "host_tree": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EPpCgzwHJY_KR7BAMxDkDf-Q-vc2WusjPAPay5A7_gk1",
+            "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EEY4pSk7pqRN18UhASpqr5FAtKR8ienrrZVu_ZZdlqWL",
+          "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EOoNQfYnOEOKYrQIJixgppJpOExUp1idxgqBdIlWXnl1",
+            "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "host_tree": "Tree around which the strain was isolated, deduced with the sampling year from the prefix of the strain ID: WX = oak, 2014; R = oak, 2015; B = beech, 2015; M = maple, 2015 (to be confirmed with the article)",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EFf8KnVdSLU5GSKt9luO1bC_Q1n8bWZxLJVaYEpj3AB2",
+            "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "host_tree": "host_tree",
+              "id": "id",
+              "organism": "organism",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EEAU7Ai1YRpxa2jCclyLTcJz03pIlWWZrHV6ttfuCwS3",
+            "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains whole genome sequencing genotypes at 442 376 bi-allelic SNPs without missing data for 91 strains of the wild yeast Saccharomyces paradoxus from a mixed hardwood forest of southern Ontario, Canada.",
+            "name": "saccharomyces_paradoxus_host_tree_structure"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR": {
+        "d": "EHeyB_GG-ZvZc8AT61L6WGKu2GmAz3bxlNbHIFV6stHi",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EJhAvSdovi-QCOgB8SZd8BrRE9_8psA5MsRiRgnxiI-E",
+            "capture_base": "EH27gjl_PLzQOko1lGLfWtHamK0w7HSQp314v_c58kwR",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sampling_year",
+              "host_tree",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

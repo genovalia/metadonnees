@@ -1,21 +1,24 @@
 {
-  "d": "EG-mhmy-1I6GsDsgAPM-aC8nhcRNjeUSFA_yT8G-rBuO",
+  "d": "ECHgvUzxjH7LNHmb8DCLcfm3RZ326c1baXasXXqL6dPA",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000caa_",
-      "d": "EH6QYMGNXwo2tbZtqMrgtqjY9UT-it4nYeivjXkQNWnZ",
+      "v": "OCAS11JSON000ee5_",
+      "d": "ECVtrqMTykvMjXwxjGjBljx63r9tNu1LQPHGvSKJwbZJ",
       "capture_base": {
-        "d": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+        "d": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
         "type": "spec/capture_base/1.1",
         "attributes": {
+          "biosample_accession": "Text",
           "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
-          "lake_area": "Numeric",
           "latitude": "Numeric",
+          "life_stage": "Text",
           "longitude": "Numeric",
           "organism": "Text",
+          "sampling_location": "Text",
+          "sampling_year": "Numeric",
           "sequenced_molecule": "Text"
         },
         "classification": "RDF106",
@@ -24,70 +27,76 @@
       "overlays": {
         "entry": [
           {
-            "d": "EGgfi9I3-y0CwjnRUN3dCmaOp1Ntcc1pUdc5RXYSUEdb",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "ELe7O6SBRalE9ANwWARhBhJtvv-kC32mh3hZSNFBEj7Y",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ECe-IPrVtVWXfuHtT3qtgFHMh2ckux-SnCOVhX79mnmO",
-          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+          "d": "EC4CPpLQuE84AQ_fQEK7hIqrb1vIx90Zf0V0AGuF7FZp",
+          "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
             ]
           }
         },
         "information": [
           {
-            "d": "EOuLCm4uS60feXJfg0LEPNB1Nzl_NuzrlEWW6j-ihsdG",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "ECrvaWOWOnnO_aQYtjjozhWn2ezOIT1B3pfAKKXA1eLu",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
+              "biosample_accession": "Accession number of the sequenced sample in the BioSample database of NCBI (shared with EBI and DDBJ), which links to its public raw sequence data",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
-              "lake_area": "Surface area of the lake",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "life_stage": "Life stage of the sampled individual, such as egg, larva, juvenile or adult",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],
         "label": [
           {
-            "d": "EEBUjAE8GOvlXNPDIRPqqGLXS-sfUzAwO9_iYYEedpQe",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EDrWKUjKMGdOwNYYA7yqysacEs2UmA0rpSYcTFzfmTiR",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
+              "biosample_accession": "biosample_accession",
               "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
-              "lake_area": "lake_area",
               "latitude": "latitude",
+              "life_stage": "life_stage",
               "longitude": "longitude",
               "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sampling_year": "sampling_year",
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
@@ -95,20 +104,19 @@
         ],
         "meta": [
           {
-            "d": "EMIWVAGu13QG0fDQekRD8V9J1EcXiF3PT4-7jKi9FV9T",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EHzs9djbX7a8Qg15a97PcOQ8Wu5jYAf1wTI0PCaTv_h_",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypic data from lake trout (Salvelinus namaycush) individuals sampled across the species' natural range in the province of Quebec. A total of 673 individuals were genotyped at 7201 SNPs using a genotyping-by-sequencing approach.",
-            "name": "Salvelinus_namaycush"
+            "description": "This dataset contains whole genome sequencing genotypes at 835 600 SNPs for 78 North Atlantic eels: European eels (Anguilla anguilla), American eels (A. rostrata) and hybrids, from Europe (mostly Iceland), North Africa, North America and the Sargasso Sea.",
+            "name": "anguilla_spp_hybridization"
           }
         ],
         "unit": {
-          "d": "EGYVW4sJEfYQ1S2v2dWHtQApaovnHQWOBypjH8GJEBor",
-          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+          "d": "EAjaLLsUzcEhTAu3oMNqKsAJiLiV6MljCGTS4xd28FcH",
+          "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "lake_area": "hectare",
             "latitude": "decimal degree",
             "longitude": "decimal degree"
           }
@@ -119,13 +127,13 @@
   },
   "extensions": {
     "adc": {
-      "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH": {
-        "d": "EKcdbXhnmtGMTQ92O71bmGIMdKhjbC8GSdOparbmNU1R",
+      "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF": {
+        "d": "ELVgug-H6EAOWUXKE69rBxn_iObeFoWFqWPArkf87xff",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ENsG0m9k9WDoDd_GnSwErjEF8VcfmSYEQT0pyQnrDBaA",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EC1aYzVSAq6LFCisz9iQUvRwpdwaOsDZtc6dis5kHHVf",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -133,7 +141,10 @@
               "country",
               "latitude",
               "longitude",
-              "lake_area",
+              "sampling_location",
+              "sampling_year",
+              "life_stage",
+              "biosample_accession",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -149,8 +160,8 @@
             }
           },
           "unit_framing": {
-            "d": "EA3etrjyH6kfEPmU2rzjyHZ1iNZlTd5H2UVTmKHQN26t",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EJp4-owfoBLJ0N-FdTlZSXXOtasub1YkUtZsIlZ25qXX",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
@@ -163,11 +174,6 @@
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"
-              },
-              "hectare": {
-                "framing_justification": "semapv:ManualMappingCuration",
-                "predicate_id": "skos:exactMatch",
-                "term_id": "har"
               }
             }
           }

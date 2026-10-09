@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla2",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "anogla2",
+  "dcterms:issued": "2026-10-09",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of Asian longhorned beetle from North America and East Asia",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 768 SNPs for 490 Asian longhorned beetles (Anoplophora glabripennis): individuals from invasive infestations in the United States and Canada and from the native range in China and South Korea.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla2",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Asian longhorned beetle",
+    "Anoplophora glabripennis",
+    "invasive species",
+    "biosurveillance",
+    "genotyping-by-sequencing",
+    "population genetics"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/217634/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "1999"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2018"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6295630/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-9344-6348",
+    "@type": "foaf:Person",
+    "foaf:name": "Ilga Mercedes Porth"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-9344-6348",
+        "@type": "prov:Person",
+        "foaf:name": "Ilga Mercedes Porth"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-8111-6555",
+        "@type": "prov:Person",
+        "foaf:name": "Mingming Cui"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/eva.70036",
+    "https://doi.org/10.5061/dryad.280gb5n05",
+    "https://doi.org/10.1111/eva.13381",
+    "https://doi.org/10.5683/SP3/JSFBFN"
+  ]
+}
