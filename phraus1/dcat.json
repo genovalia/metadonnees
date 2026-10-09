@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/phraus1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "phraus1",
-  "dcterms:issued": "2026-10-08",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of common reed from Quebec",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",

@@ -1,25 +1,26 @@
 {
-  "d": "EI9Etc8ZPaqZGmLcATMxD4fOT2r6x4hq5rM5sAXyoIib",
+  "d": "EH8lfkgca0ZnWQPJ_BE5fTFamuRQJXEtsDRV3NdIm-oW",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001063_",
-      "d": "EOsquhKVFFNntpcTat5AwXPuoSmVlYIsU9wHQBYfou6X",
+      "v": "OCAS11JSON0010f4_",
+      "d": "EGgu4dDe1uc2wLs7hbHUI8a9wA0LR8fXnILWrAQc1lo9",
       "capture_base": {
-        "d": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+        "d": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "birth_year": "Numeric",
           "body_mass": "Numeric",
           "country": "Text",
           "genotyping_technology": "Text",
-          "horn_base_circumference_cm": "Numeric",
-          "horn_length_cm": "Numeric",
+          "horn_base_circumference": "Numeric",
+          "horn_length": "Numeric",
           "id": "Text",
           "n_body_mass_measures": "Numeric",
           "n_horn_base_measures": "Numeric",
           "n_horn_length_measures": "Numeric",
           "organism": "Text",
+          "sampling_location": "Text",
           "sequenced_molecule": "Text",
           "sex": "Text"
         },
@@ -29,8 +30,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHXMDZa490LZVQhLvBbDPTjYPdZL2bCftHJgR4bH19lC",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "EGKn8rb3192OZySQFFGe9pEL2Yqt56CY51j0NU1HpjpE",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -51,8 +52,8 @@
           }
         ],
         "entry_code": {
-          "d": "ENCsIj6tjuQCqo3ZQN1xXnJLm_0_nAaRD2pD_Wo35b1V",
-          "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+          "d": "EHSyJ0BigK5NySn9AlxggU0Q34CJi2GxjNfoKXRy94VW",
+          "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -72,8 +73,8 @@
         },
         "information": [
           {
-            "d": "EGe1_aM1sRB8a1o_qvvBWyohM3PTlZK9nHMIphCIx5um",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "EBom5FXiGs4me-Cktl77o1cElY9T3hG3er8rxymtjyuD",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -81,13 +82,14 @@
               "body_mass": "Body mass of the individual",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
-              "horn_base_circumference_cm": "Mean of the repeated horn base circumference measurements (average of left and right horn) deposited for this individual",
-              "horn_length_cm": "Mean of the repeated horn length measurements (average of left and right horn) deposited for this individual",
+              "horn_base_circumference": "Mean of the repeated horn base circumference measurements (average of left and right horn) deposited for this individual",
+              "horn_length": "Mean of the repeated horn length measurements (average of left and right horn) deposited for this individual",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "n_body_mass_measures": "Number of repeated body mass measurements averaged",
               "n_horn_base_measures": "Number of repeated horn base circumference measurements averaged",
               "n_horn_length_measures": "Number of repeated horn length measurements averaged",
               "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex of the individual: female, male or unknown"
             }
@@ -95,8 +97,8 @@
         ],
         "label": [
           {
-            "d": "EJcyO-MGEqtNzUWRpqIDg96pnkAPSRLTetlopsT-DYml",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "EFq36kEHzDJIYZ2aQsKhhiBCdZAFlu0vkVDG4gWXoewr",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -105,13 +107,14 @@
               "body_mass": "body_mass",
               "country": "country",
               "genotyping_technology": "genotyping_technology",
-              "horn_base_circumference_cm": "horn_base_circumference_cm",
-              "horn_length_cm": "horn_length_cm",
+              "horn_base_circumference": "horn_base_circumference",
+              "horn_length": "horn_length",
               "id": "id",
               "n_body_mass_measures": "n_body_mass_measures",
               "n_horn_base_measures": "n_horn_base_measures",
               "n_horn_length_measures": "n_horn_length_measures",
               "organism": "organism",
+              "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule",
               "sex": "sex"
             },
@@ -120,8 +123,8 @@
         ],
         "meta": [
           {
-            "d": "EC1JL87zKScc9C8a28YOUGoIH9CJOJ3_oyKM_LU-6x3D",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "EEnm_EtGt64BRyGUaPIDAct1MCj_gqILYCfwa-fZ8Jo2",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 3 775 autosomal SNPs for 76 bighorn sheep (Ovis canadensis) from a long-term individually monitored population in Alberta, Canada, with phenotypic data.",
@@ -129,13 +132,13 @@
           }
         ],
         "unit": {
-          "d": "EGR5KMg5pxhUf9a2fCpQzB09lPXyvQ7bR_IUbYFUdHdk",
-          "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+          "d": "EA6123JFnK0aKx1kgNLg5tfd5CdBaqtDFfXb6GzjBkhi",
+          "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "body_mass": "gram",
-            "horn_base_circumference_cm": "centimeter",
-            "horn_length_cm": "centimeter"
+            "horn_base_circumference": "centimeter",
+            "horn_length": "centimeter"
           }
         }
       }
@@ -144,25 +147,26 @@
   },
   "extensions": {
     "adc": {
-      "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi": {
-        "d": "EH5IQAHpOHrTLPoXaPIPe2pzcYFfPNZjohnvJLdBJLcd",
+      "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys": {
+        "d": "EC7jV1Wgla_UtOPjn_NuyfYJ_z84L2gLP0QoSxnMQUEK",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAkQ7LZ2PORrI96W8GzH6R9xYSJIf2rpY8qRKds429lY",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "EM9_W0lY8FtztEcAnlp91EVZAnAWYz9zm6YXUxN-Bd9k",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
+              "sampling_location",
               "sex",
               "birth_year",
               "body_mass",
               "n_body_mass_measures",
-              "horn_length_cm",
+              "horn_length",
               "n_horn_length_measures",
-              "horn_base_circumference_cm",
+              "horn_base_circumference",
               "n_horn_base_measures",
               "sequenced_molecule",
               "genotyping_technology"
@@ -184,8 +188,8 @@
             }
           },
           "unit_framing": {
-            "d": "EPeRY-iwVTJHaeN4V1gurhZviNACeApuzZBrC56jIpId",
-            "capture_base": "EH49qajsk0M9PFtpcyM4IXM2AHg9D7vtysPHtbb5fwTi",
+            "d": "ENeYxPSqykjDzMql1if-GidwGwOLjobr_mrjIfxQr9qD",
+            "capture_base": "EBkmhbDTS7qR3bNfz59NqEbr9d7wauFouDvQU2BCIEys",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

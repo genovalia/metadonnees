@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/ovican2",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "ovican2",
-  "dcterms:issued": "2026-10-08",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of bighorn sheep from Alberta with horn and body mass measurements",
   "dcterms:description": "This dataset contains SNP chip genotypes at 3 775 autosomal SNPs for 76 bighorn sheep (Ovis canadensis) from a long-term individually monitored population in Alberta, Canada, with phenotypic data.",

@@ -1,18 +1,19 @@
 {
-  "d": "ELTpR3rz1-5bFJNoXsWeka-bIRWXpD_9ayU-hIS-rS1D",
+  "d": "ENCT9f3OHjFEOMM58XAiGwAdZTrctxsb-Nv-CS-AmG-b",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c3e_",
-      "d": "ENixORgY31QU_r-W3DvP2i3BOas9fpcgMVe_ZKlGK7W6",
+      "v": "OCAS11JSON000ced_",
+      "d": "EBQ99iD62lQ0d7FbY0JaaTKjtwxigd_oiWXzhJFbTY6z",
       "capture_base": {
-        "d": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+        "d": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
           "organism": "Text",
+          "sampling_location": "Text",
           "section": "Text",
           "sequenced_molecule": "Text",
           "site_type": "Text"
@@ -23,8 +24,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "ED-UABroYRstWv67XIzxLzyi2KMXaLnTZ4SjNlWnym4d",
-            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "d": "EIwfUlV_2Ztm4xwh1zNlYgqSnqWkV7RRBe2HGfMGfipC",
+            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -46,8 +47,8 @@
           }
         ],
         "entry_code": {
-          "d": "EI8Vrhnb262zCNKIgGFVVAy1cs0yj40L0BtEe4FXokRD",
-          "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+          "d": "EMPlAk9JOlzBXVjWuSdw_JQIlnoVxnm7dUyj-FQbbfqw",
+          "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -68,8 +69,8 @@
         },
         "information": [
           {
-            "d": "EBedBcmumwZRvF87CRvE0udPbrkjUAiHtKtQzVG32ONW",
-            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "d": "EBlZ-2KTpQwdoO9bp3wCPAHtM6HH7yVaUPYmOsMuNPXW",
+            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -77,6 +78,7 @@
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "section": "Survey section: highway 20 sections 1-3 (H20_S1, H20_S2, H20_S3) or Iles-de-Boucherville National Park (IBNP)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "site_type": "General environmental or habitat category of the sampling site"
@@ -85,8 +87,8 @@
         ],
         "label": [
           {
-            "d": "EHkL8tiAm5O97yTRK9upJCJ07a4xz5s1m8X1nWixEc3f",
-            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "d": "EI4hNidA1O82MCBVPm4S7I4m_8vJlMeyd8jmkDwJ5wfy",
+            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -95,6 +97,7 @@
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "organism": "organism",
+              "sampling_location": "sampling_location",
               "section": "section",
               "sequenced_molecule": "sequenced_molecule",
               "site_type": "site_type"
@@ -104,8 +107,8 @@
         ],
         "meta": [
           {
-            "d": "EGyHy7joKsGu8Qt33AAUjIft5pPSZYXF_VA1bqQ9KiGv",
-            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "d": "EGqkw9W9a5--sWLGeSVLk14plQ6YlwDPWIx1_NnxlVJR",
+            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
@@ -118,19 +121,20 @@
   },
   "extensions": {
     "adc": {
-      "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5": {
-        "d": "ECQZrWXcjuioZKTo7Z8dCu2dP2O7qcuoXdVZWdT7SnSz",
+      "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H": {
+        "d": "EBCB0CdiEuLFYkWxwEaXyFBaOeuELy-WFfKutpj8Zhp6",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EH_03e3xfHCFMs3AAfkCva4lkMp3Jz95ubOJhs6nP-MP",
-            "capture_base": "EIjdzlxavUlHmb5Qv7dyc44f8c_3TgLb7AS8OcfJ2GU5",
+            "d": "EIQeTneHJTBqrGHz7YG76Bkj63hI-Q6NmxkXp5ffCNDY",
+            "capture_base": "EPUWVPCWb347wI0F1CHthCG0uWhDdnxB11m-1hPpNO2H",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
               "section",
+              "sampling_location",
               "site_type",
               "sequenced_molecule",
               "genotyping_technology"
