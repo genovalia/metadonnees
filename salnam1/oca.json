@@ -1,10 +1,10 @@
 {
-  "d": "EFrKkHeLbV9v0qcJMw9FPKmUBOXYko_u37L87yXeNBhy",
+  "d": "EG-mhmy-1I6GsDsgAPM-aC8nhcRNjeUSFA_yT8G-rBuO",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
       "v": "OCAS11JSON000caa_",
-      "d": "ELXLdB_E027x0nGVWcFkFKHd31QebAOVHfCTwvp3FdiQ",
+      "d": "EH6QYMGNXwo2tbZtqMrgtqjY9UT-it4nYeivjXkQNWnZ",
       "capture_base": {
         "d": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
         "type": "spec/capture_base/1.1",
@@ -75,7 +75,7 @@
         ],
         "label": [
           {
-            "d": "EOK5fp4TpGAzZQ79MpNbSPFGcuDjY-4ciw4j18Vn0F_O",
+            "d": "EEBUjAE8GOvlXNPDIRPqqGLXS-sfUzAwO9_iYYEedpQe",
             "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
@@ -84,7 +84,7 @@
               "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
-              "lake_area": "lake_size",
+              "lake_area": "lake_area",
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
