@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/angspp1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "angspp1",
-  "dcterms:issued": "2026-10-08",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
   "dcterms:title": "Whole genome sequencing dataset of European and American eels and their hybrids from the North Atlantic",
   "dcterms:description": "This dataset contains whole genome sequencing genotypes at 835 600 SNPs for 78 North Atlantic eels: European eels (Anguilla anguilla), American eels (A. rostrata) and hybrids, from Europe (mostly Iceland), North Africa, North America and the Sargasso Sea.",

@@ -1,15 +1,15 @@
 {
-  "d": "EJNEdbMAVC-DNGK1zhccpklIbxJe_zP3nxMfytItXu9T",
+  "d": "ECHgvUzxjH7LNHmb8DCLcfm3RZ326c1baXasXXqL6dPA",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e5f_",
-      "d": "EJYGZkfrd0KJVMsIpC0-BKvwvmUbWPj2RBZno-w2pRSw",
+      "v": "OCAS11JSON000ee5_",
+      "d": "ECVtrqMTykvMjXwxjGjBljx63r9tNu1LQPHGvSKJwbZJ",
       "capture_base": {
-        "d": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+        "d": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
         "type": "spec/capture_base/1.1",
         "attributes": {
-          "biosample": "Text",
+          "biosample_accession": "Text",
           "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
@@ -27,8 +27,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHE3yQQjM4ys3k41W6Lt_iqlVOICKiuOu6R3QkB6wacE",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "ELe7O6SBRalE9ANwWARhBhJtvv-kC32mh3hZSNFBEj7Y",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -44,8 +44,8 @@
           }
         ],
         "entry_code": {
-          "d": "EN4DpHucC8v7mOKz_u2o-K1jdJ37HYAZ2ddBdocfPtwZ",
-          "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+          "d": "EC4CPpLQuE84AQ_fQEK7hIqrb1vIx90Zf0V0AGuF7FZp",
+          "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -60,12 +60,12 @@
         },
         "information": [
           {
-            "d": "ELVHd2O1gPhfCRXekaWjmCzQYhIwpE1XZrlUARJVhoCk",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "ECrvaWOWOnnO_aQYtjjozhWn2ezOIT1B3pfAKKXA1eLu",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "biosample": "NCBI BioSample accession of the sequenced individual",
+              "biosample_accession": "Accession number of the sequenced sample in the BioSample database of NCBI (shared with EBI and DDBJ), which links to its public raw sequence data",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
@@ -81,13 +81,13 @@
         ],
         "label": [
           {
-            "d": "EJirmZfh_jQ_mjGYDfDJn4Yb-1iDBCVseTb8_NUT8fkA",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "EDrWKUjKMGdOwNYYA7yqysacEs2UmA0rpSYcTFzfmTiR",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
-              "biosample": "biosample",
+              "biosample_accession": "biosample_accession",
               "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
@@ -104,8 +104,8 @@
         ],
         "meta": [
           {
-            "d": "EIzHCT7lk3NayIqf-p6MGWwR-Jd-LYZ2sO9eRGGbFrKT",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "EHzs9djbX7a8Qg15a97PcOQ8Wu5jYAf1wTI0PCaTv_h_",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains whole genome sequencing genotypes at 835 600 SNPs for 78 North Atlantic eels: European eels (Anguilla anguilla), American eels (A. rostrata) and hybrids, from Europe (mostly Iceland), North Africa, North America and the Sargasso Sea.",
@@ -113,8 +113,8 @@
           }
         ],
         "unit": {
-          "d": "EA_Oj3LJ7ex7-nyClFRCrtignZemAn4-xvY-Y2wljRJH",
-          "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+          "d": "EAjaLLsUzcEhTAu3oMNqKsAJiLiV6MljCGTS4xd28FcH",
+          "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -127,13 +127,13 @@
   },
   "extensions": {
     "adc": {
-      "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC": {
-        "d": "EOnf0pzCdR_dpY18g02zsLeYT8FvbauV5BAGmRnjm6sP",
+      "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF": {
+        "d": "ELVgug-H6EAOWUXKE69rBxn_iObeFoWFqWPArkf87xff",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ELyDXziEfOyRMWiy4ONyt6cQAJlEBcLV-LHDHNIE8D-e",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "EC1aYzVSAq6LFCisz9iQUvRwpdwaOsDZtc6dis5kHHVf",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -144,7 +144,7 @@
               "sampling_location",
               "sampling_year",
               "life_stage",
-              "biosample",
+              "biosample_accession",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -160,8 +160,8 @@
             }
           },
           "unit_framing": {
-            "d": "EOMNaOWxBjPWzPgO7dnfr2HzYtobvrfxGCcPhWqYe_IW",
-            "capture_base": "EGb6dzUGmEU3MfL4bjKbR54T0SuYaiiP6x_uXPJiKeKC",
+            "d": "EJp4-owfoBLJ0N-FdTlZSXXOtasub1YkUtZsIlZ25qXX",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
