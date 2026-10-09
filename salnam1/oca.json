@@ -1,18 +1,18 @@
 {
-  "d": "EFWID_8BkDsxC3mdf8shm_vwdeQMMt25mN4LB0Ru-GIJ",
+  "d": "EFrKkHeLbV9v0qcJMw9FPKmUBOXYko_u37L87yXeNBhy",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000948_",
-      "d": "EPoMpUl8RgcBm0JVWClq4rhprnjnPBbr2_cp8m35nt62",
+      "v": "OCAS11JSON000caa_",
+      "d": "ELXLdB_E027x0nGVWcFkFKHd31QebAOVHfCTwvp3FdiQ",
       "capture_base": {
-        "d": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+        "d": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
-          "lake_size": "Numeric",
+          "lake_area": "Numeric",
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
@@ -22,17 +22,50 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EGgfi9I3-y0CwjnRUN3dCmaOp1Ntcc1pUdc5RXYSUEdb",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ECe-IPrVtVWXfuHtT3qtgFHMh2ckux-SnCOVhX79mnmO",
+          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EF9Th5_9fKbcAIvJYwcrUOj407FFvYKIg4Jv0vmPThFC",
-            "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+            "d": "EOuLCm4uS60feXJfg0LEPNB1Nzl_NuzrlEWW6j-ihsdG",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
-              "lake_size": "Surface area of the lake",
+              "lake_area": "Surface area of the lake",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
@@ -42,8 +75,8 @@
         ],
         "label": [
           {
-            "d": "EOypQpegw79so3AoNjL8wkB_eYekKCTmPjPRs0ddhbba",
-            "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+            "d": "EOK5fp4TpGAzZQ79MpNbSPFGcuDjY-4ciw4j18Vn0F_O",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -51,7 +84,7 @@
               "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
-              "lake_size": "lake_size",
+              "lake_area": "lake_size",
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
@@ -62,8 +95,8 @@
         ],
         "meta": [
           {
-            "d": "EFl1v7Q5s3dMbjWjT8_Z4e1tUqZgVFwh2KRhBUbeDoCa",
-            "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+            "d": "EMIWVAGu13QG0fDQekRD8V9J1EcXiF3PT4-7jKi9FV9T",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic data from lake trout (Salvelinus namaycush) individuals sampled across the species' natural range in the province of Quebec. A total of 673 individuals were genotyped at 7201 SNPs using a genotyping-by-sequencing approach.",
@@ -71,11 +104,11 @@
           }
         ],
         "unit": {
-          "d": "ELuhEiTya8sdhsSWkBkpyHoGQSZDtGxlU77f0UqkrLQo",
-          "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+          "d": "EGYVW4sJEfYQ1S2v2dWHtQApaovnHQWOBypjH8GJEBor",
+          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "lake_size": "hectare",
+            "lake_area": "hectare",
             "latitude": "decimal degree",
             "longitude": "decimal degree"
           }
@@ -86,13 +119,13 @@
   },
   "extensions": {
     "adc": {
-      "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO": {
-        "d": "EO5i_WpBw_GwprXO9BSsdknc-8ToRybqnItIkjTdwbsv",
+      "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH": {
+        "d": "EKcdbXhnmtGMTQ92O71bmGIMdKhjbC8GSdOparbmNU1R",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EItnLKBiSUvBZmvFtCukxS3mCP5BE1wu_OrvNuJ2DkoY",
-            "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+            "d": "ENsG0m9k9WDoDd_GnSwErjEF8VcfmSYEQT0pyQnrDBaA",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -100,15 +133,24 @@
               "country",
               "latitude",
               "longitude",
-              "lake_size",
+              "lake_area",
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
-            "d": "ELEVYVfTjigP2iLSowmRhwfkdclU38emnIfNv7wLumOV",
-            "capture_base": "EOEfqAPGcuY0DSzjU0FkarEL_6Oc7MHeXXOLfov06lxO",
+            "d": "EA3etrjyH6kfEPmU2rzjyHZ1iNZlTd5H2UVTmKHQN26t",
+            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

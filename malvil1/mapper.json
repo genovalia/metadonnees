@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données génotypiques pour l’étude de l’adaptation locale au milieu marin chez le capelan"
+      "value": "Données de génotypage par séquençage de capelan de l’est du Canada"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes de 1 360 individus de capelan (Mallotus villosus) échantillonnés dans l’est du Canada afin d’étudier comment l’histoire démographique, le polymorphisme ancestral partagé et le flux de gènes entre les lignées glaciaires contribuent à l’adaptation locale aux conditions marines. Les génotypes ont été obtenus à l’aide d’une approche de génotypage par séquençage (GbS)."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 360 capelans (Mallotus villosus) provenant de l’est du Canada, génotypés à l’aide de 17 436 SNP."
     },
     "theme": {
       "type": "literal",

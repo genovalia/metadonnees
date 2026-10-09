@@ -1,10 +1,10 @@
 {
-  "d": "EO9tTAySSv9Ped7ohAQI9NCeYFCJEUMoq9gmsnfEkusr",
+  "d": "EOdDE_sMdwbOgrBOgJX9SEPYXX1juHj3wznMtGWyQtYD",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001343_",
-      "d": "ECHHuFVqzk9pfWK7wUThBrWCOSTLdnwfDrydLZQogvq3",
+      "v": "OCAS11JSON0016b8_",
+      "d": "EKKO-pSDk4_bMHywj2vubb4YTYNLbivy71XR_olflor2",
       "capture_base": {
         "d": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
         "type": "spec/capture_base/1.1",
@@ -36,9 +36,42 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "ENdsQfMmqn699St-hBzfzujFpD0KhBVAVzsxsqere4pe",
+            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGBPDEssgj26p5QVy_X_D18B5dcZPfqgwbATT0HFsook",
+          "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EKU0cG8WyoM6WG51VFjClTwXPNwgmQSULGviXOpeUA9r",
+            "d": "EGFQ-CzS01ZfCg9ORQnS_FGacygiRDNAPXH1PRAoGicx",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -51,7 +84,7 @@
               "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
               "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "height_1986": "Individual height measured in 1986",
               "height_1992": "Individual height measured in 1992",
               "height_1997": "Individual height measured in 1997",
@@ -61,7 +94,7 @@
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "recovery_2_years_2002": "Growth recovery (basal area increment) 2 years following drought (2002 episode), calculated according to Lloret et al. 2011",
-              "rel_resil_2_years_2002": "Ralative growth resilience (basal area increment) 2 years following drought (2002 episode)",
+              "rel_resil_2_years_2002": "Relative growth resilience (basal area increment) 2 years following drought (2002 episode)",
               "resilience_2_years_2002": "Growth resilience (basal area increment) 2 years following drought (2002 episode)",
               "resist_2_years_2002": "Growth resistance (basal area increment) 2 years following drought (2002 episode)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
@@ -113,11 +146,11 @@
           }
         ],
         "unit": {
-          "d": "EFaoZXzLofttAMAmxCjPGPqqNnPxJwjm_2IJytcfcSVc",
+          "d": "ECW_wAp5DexJN6cX8JYZDgAcdNlRY7xazV9bKkIh0K1e",
           "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "avg_density": "kg/m3",
+            "avg_density": "kilogram per cubic meter",
             "avg_radial_diameter": "micrometer",
             "avg_wall_thickness": "micrometer",
             "cwr_radial": "micrometer",
@@ -139,11 +172,11 @@
   "extensions": {
     "adc": {
       "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY": {
-        "d": "EIEpjcXeurboS4iTQjNIGpgI2GWzv_FeRSRy2FXYoIwx",
+        "d": "ECVLT_dAoECqLmTeXMalNyZVEKZ0NB3W4xmfGOQoDhoy",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EJdUQJpy-07jzhF32mmH25M7o4HkNWA3pyUw3nMXhAKT",
+            "d": "EHcR23l5UEOBHX950cNMuk_4O9MKHo3A-uvlD4h-EUBb",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -170,10 +203,19 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
-            "d": "EJWh-BUuc_CY2JUHSCTKaeRSPMfPS8UcRoehZiMrro4M",
+            "d": "EI2zo8xAFpdcZx1xRgh29_LpzQeNbBGy_1XnYIN2v9Ay",
             "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
@@ -193,7 +235,7 @@
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"
               },
-              "kg/m3": {
+              "kilogram per cubic meter": {
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "kg/m3"

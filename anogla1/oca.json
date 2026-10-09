@@ -1,10 +1,10 @@
 {
-  "d": "EIvKXRCus-Q5s7sVf8XLJ4EywrlvwW5xzGBCKb2gTuXI",
+  "d": "EDmrWLb4bw0rbq4kJANO5Spddw19FceHOk6xHnPDTbP2",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000a02_",
-      "d": "EDl2l7W3qGNcubaIbm3vZgJyloa5Zna7sI-usYm0YF3m",
+      "v": "OCAS11JSON000d64_",
+      "d": "EEKv8oz3KdryHdZoQ7tbLSozYB3v6NC2XMoGMKgaYSnW",
       "capture_base": {
         "d": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
         "type": "spec/capture_base/1.1",
@@ -23,18 +23,51 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EN9jrKSIK8RGL8w-xYsfnQWzRUEfQvOSGp-6EDSDoDDK",
+            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EItZ2qwTyZoeqxFrGf6TyIqn_GEsLV3Pm9dHqq_D8mqw",
+          "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "ECMD-q3jYyQyJDba05C467QgE3N9jHVfpCbZYZoaeWPt",
+            "d": "EOB_QEjRscevcKEKTCjaloYHMzTHC9xHOf6dZrXbgdf_",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
-              "life_stage": "Developmental stage of an organism, such as larva, pupa, juvenile, adult...",
+              "life_stage": "Life stage of the sampled individual, such as egg, larva, juvenile or adult",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_year": "Year in which the sample was collected",
@@ -89,11 +122,11 @@
   "extensions": {
     "adc": {
       "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP": {
-        "d": "EOegl--AmecWv2douqUQcuK9oBdeUWDxfpjNpw-DDwRr",
+        "d": "ENR2qIGI9VB0uNfG5PLaC3beLs-tZYnUAR8WUtaf7P7t",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EPeXPlUvH0ekK9Sb-uDswZMpfGm3oBhiz1WL8PbOilg9",
+            "d": "EGsdk7OUYxBVDDnu29W9r-5gn8J4jvjX4C_UVPyl1OX1",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -107,7 +140,16 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
             "d": "ENga1lzKdX51P7TehKteewhflgL4IDMH81r74dGXNdku",

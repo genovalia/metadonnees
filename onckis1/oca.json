@@ -1,10 +1,10 @@
 {
-  "d": "EKg-g9yRmTkofU0Gb0o8cwBaalEW9UyWz06aIIhtrwGx",
+  "d": "EAIn3tJuizXtPmBowTSoS6NeR_LDJyqTfSM3rvGEqH9r",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000a42_",
-      "d": "EJHgYeC41pAKK0MxdMDbCJlXORo09r2SeIhTWFNa-OGj",
+      "v": "OCAS11JSON000da4_",
+      "d": "EOh2FBcAugn_DCF9Fm758qC-Tg5aSrbCyM6zZ6uSETHq",
       "capture_base": {
         "d": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
         "type": "spec/capture_base/1.1",
@@ -24,16 +24,49 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EHSHsNqrxwn29QHAi_9iuXrBNwJz-525jehRSTOEaYkJ",
+            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGrj2qr8ZhERy-ewxMUuYaXQybqEnstth4uVCzCZ4rGJ",
+          "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "ECAutedJpcotgrz_ZBTTqfd5eHTbjx96FMuA3-IExiPK",
+            "d": "EO0vHzCqF_zhe-QhOsi1ChbH407roVD5pHoLxEOrTlBV",
             "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "geology": "Nature of the underlying bedrock",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
@@ -94,11 +127,11 @@
   "extensions": {
     "adc": {
       "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55": {
-        "d": "EO7jyQ5TtAqi6cTgDCBPIh73drmFMg55Yo-IpoYYfQXn",
+        "d": "EDbzkyau1_6wjKJaffCzwjjNvt2L5H3AMDqYig-qt-F-",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EJggYDyK6RMSbMaS8FFlem01xm8vJp8j3Yk6yMr9S6kx",
+            "d": "ELiHohFglMRD7WUmwWHt86td7yZwS_tzyaiqJKjSO78b",
             "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -113,7 +146,16 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
           },
           "unit_framing": {
             "d": "EMyq1zqyBsxKsfH9YzGD-Bf_-9eGFpjvC7exA-1tbwd7",

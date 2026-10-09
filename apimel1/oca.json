@@ -1,10 +1,10 @@
 {
-  "d": "EDwCMaQ0yguUTw3aCmSWHIOb98I-2bK3j30yITXs-3dW",
+  "d": "EK-z2DvuFXR-QnWKWDTMyJHkwGRvOmanvHGaeseRcKZC",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00080c_",
-      "d": "EOUiibQJgyIGF9JQRmV-bgYVlUvhts1FfL3gIROQEgV8",
+      "v": "OCAS11JSON000c20_",
+      "d": "ENGGbhGKa3EeZhSdoWb1Fj1FJxCvMMO7yxrXKBwnf42s",
       "capture_base": {
         "d": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
         "type": "spec/capture_base/1.1",
@@ -22,21 +22,64 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EAiQ6UJ0JlX6own4bQobdfGRgpgcpNlPx_vD7B3vCFbW",
+            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ED7It80PStri5Tp79m0vAAIAMPg-LcwKOf6EVsRDV-O-",
+          "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EEYpHRRC-15NYR0XAPM9ueFttYHI23IAiec_vPiV1bNW",
+            "d": "ENiFOcQ_mVHmcSGDwGBsRO-bSowyG1wznGjfXYqBavzt",
             "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
-              "pedigree": "Record of the individual's ancestry and/or parentage",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           }
         ],
@@ -77,11 +120,11 @@
   "extensions": {
     "adc": {
       "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo": {
-        "d": "EHsLDUnp1e1U6eRaVzZvHxAeYVtNNiN2QUBPQlVM15JC",
+        "d": "EPOeRa2MdkwYVtmYikcS6rhfT2649b1bgpCzjzzsB-AV",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EEYbKqiUwGLLZ5etY8tJTeyX48kalrylEtQHbCJYk9IZ",
+            "d": "EL8izZtIcyyC1MHMsXDuLuB6BwyDorab3A1x_XYf7q_f",
             "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -94,7 +137,21 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ]
+            }
           }
         }
       }

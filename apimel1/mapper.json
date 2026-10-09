@@ -56,11 +56,11 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Jeu de données génotypiques d’abeilles domestiques évaluées pour leur rusticité hivernale, productivité et résistance aux maladies"
+      "value": "Données génotypiques de puce de SNP d’abeilles domestiques du Canada"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient des données génotypiques provenant d’échantillons d’abeilles femelles de diverses lignées génétiques, utilisées pour produire des populations d’abeilles domestiques résistantes à l’hiver, productives et résistantes aux maladies."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 94 abeilles domestiques femelles (Apis mellifera) provenant de lignées d’élevage canadiennes, génotypées à l’aide de 69 800 SNP, ainsi que des données de pedigree."
     },
     "theme": {
       "type": "literal",

@@ -1,10 +1,10 @@
 {
-  "d": "EGT2PY417YYWFWixwUahBPASHz9uCnxewYysIFa9Qjxl",
+  "d": "EEUlVsxhvBa9BReHCVtaNmbkhtDpSdZla9PzVQhAifxr",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011a4_",
-      "d": "ENJapwRqH6VDeMmqvvPayikRucKWGrnzakC1nCEDfUq5",
+      "v": "OCAS11JSON001b41_",
+      "d": "EKr2aKAGqcj7x0YVMPcIc5mloSGdjflBRR6VuWRV1Aqj",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -25,41 +25,141 @@
         "flagged_attributes": []
       },
       "overlays": {
+        "entry": [
+          {
+            "d": "EMDYySaTzbLN_Mf0wOSh7PeLyCqDyGIykVT0GxTbcU7D",
+            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "ecotype": {
+                "forest-dwelling": "forest-dwelling",
+                "migratory": "migratory",
+                "mountain": "mountain"
+              },
+              "genotyping_technology": {
+                "RNA sequencing": "RNA sequencing",
+                "SNP chip": "SNP chip",
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "targeted sequencing": "targeted sequencing",
+                "whole genome sequencing": "whole genome sequencing"
+              },
+              "sample_tissue": {
+                "ear punch": "ear punch",
+                "feces": "feces",
+                "hair": "hair",
+                "metatarsal punch": "metatarsal punch",
+                "serum": "serum"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "ENldrTD_zh7ZjNwjG71qcturJSz2S0-yeEmbjIE89dJo",
+            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "ecotype": {
+                "forest-dwelling": "forestier",
+                "migratory": "migrateur",
+                "mountain": "montagnard"
+              },
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "génotypage de SNP ciblés",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sample_tissue": {
+                "ear punch": "poinçon d’oreille",
+                "feces": "fèces",
+                "hair": "poils",
+                "metatarsal punch": "poinçon de métatarse",
+                "serum": "sérum"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EFavyimbFz8w36t7otl4g3tUCgvU2pm1JnUW_x7HPym9",
+          "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "ecotype": [
+              "forest-dwelling",
+              "migratory",
+              "mountain"
+            ],
+            "genotyping_technology": [
+              "RNA sequencing",
+              "SNP chip",
+              "genotyping-by-sequencing",
+              "targeted SNP assay",
+              "targeted sequencing",
+              "whole genome sequencing"
+            ],
+            "sample_tissue": [
+              "ear punch",
+              "feces",
+              "hair",
+              "metatarsal punch",
+              "serum"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ]
+          }
+        },
         "information": [
           {
-            "d": "EISOVuiLH7UtijQHJs3VmUOPtPfLUjzzjYmNOf08RgXu",
+            "d": "EHUbIkb6psAh3X9k65mZannsW9CQik372qEL2nuzYN18",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions",
-              "genotyping_technology": "Genotyping technology used to obtain genotypes, such as whole genome sequencing, genotyping-by-sequencing or SNP chip.",
+              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions, such as anadromous or freshwater resident",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA extraction",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex: female, male, unknown"
+              "sex": "Sex of the individual: female, male or unknown"
             }
           },
           {
-            "d": "EI_UCbsn_vviZ_waNx-F14oCoCwHiJlqFF_jQT5qWmGP",
+            "d": "EPJ2ZAIxSzW8h8FlBFp3xAy8phu3ayw9EVAwIF9StBxR",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
             "attribute_information": {
               "ecotype": "Écotype: forestier, montagnard, migrateur",
-              "genotyping_technology": "technologie de génotypage: GBS, WGS, puce de génotypage",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : genotyping-by-sequencing (génotypage par séquençage), SNP chip (puce de SNP), whole genome sequencing (séquençage du génome entier), targeted sequencing (séquençage ciblé), targeted SNP assay (génotypage de SNP ciblés) ou RNA sequencing (séquençage de l’ARN).",
               "id": "ID utilisé dans le fichier de génotypage",
               "latitude": "Latitude en degré décimaux: Ex: -42.23452",
               "longitude": "Longitude en degré décimaux: Ex: -42.23452",
               "organism": "Nom de l'espèce en Latin en suivant la classification de Linnée",
-              "sample_tissue": "Tissu échantillonné pour extraire l'ADN ou l'ARN ou...",
+              "sample_tissue": "Tissu échantillonné pour extraire l’ADN ou l’ARN.",
               "sampling_year": "année de l'échantillonnage",
-              "sequenced_molecule": "Molécule séquencée: ADN, ARN,...",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
               "sex": "Sexe: Male, Femelle, inconnnu"
             }
           }
@@ -142,11 +242,11 @@
   "extensions": {
     "adc": {
       "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP": {
-        "d": "EP1wz-dtHH4D3MJ8aOHlAti3sKIAaQcCebuLMAyaRWun",
+        "d": "EH09EbHiWLaoog_xkdr12_7YS5S4p73KBFgQBFkAcyGo",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHlwDcV_NcoPXHigz7YvjzItR6BTvUwEnOWcLfKo7pBX",
+            "d": "EDmyfp80BgMpcOqJ7DLZAFLEJuovytHUOgsLkbhFvneG",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -162,7 +262,33 @@
               "sequenced_molecule",
               "genotyping_technology"
             ],
-            "entry_code_ordering": {}
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "ecotype": [
+                "forest-dwelling",
+                "migratory",
+                "mountain"
+              ],
+              "sample_tissue": [
+                "ear punch",
+                "metatarsal punch",
+                "hair",
+                "serum",
+                "feces"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ]
+            }
           },
           "unit_framing": {
             "d": "EADbZ4O0MyZpRNwLSloHwTimS5agyo7j4jBtNzAKATFs",
