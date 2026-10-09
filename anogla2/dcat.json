@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/anogla2",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "anogla2",
-  "dcterms:issued": "2026-10-08",
+  "dcterms:issued": "2026-10-09",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of Asian longhorned beetle from North America and East Asia",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 768 SNPs for 490 Asian longhorned beetles (Anoplophora glabripennis): individuals from invasive infestations in the United States and Canada and from the native range in China and South Korea.",
