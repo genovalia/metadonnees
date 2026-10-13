@@ -1,0 +1,157 @@
+{
+  "d": "EOFp1C5SQ4hbFOwrt-UvLKg4pvWT3oaif93ec8gOmTZu",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000ca0_",
+      "d": "EFy4xAJYaBTsI-ihH-NM5sEvhEVsZUMrEnxbQ5LiKzV0",
+      "capture_base": {
+        "d": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "breeding_status": "Text",
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "technical_replicate": "Boolean"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EGjY86ofjMrClyBdFeEhc04-b5Iusj84roE7lGw9mJG2",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "breeding_status": {
+                "breeding": "Breeding",
+                "unknown": "Unknown"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EFE5YDr8-Du2-xatE7qTyOOeFkEeTVA1yUSC78nAJPTy",
+          "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "breeding_status": [
+              "breeding",
+              "unknown"
+            ],
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EMZpLNzpDN9r_-LnorSRYvikrA4rg7Vm9rKLWDbNc-TA",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "breeding_status": "Individual status (breeding or unknown)",
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EJHEDmmQYd7CDIX01A0IEhROb_rrDzLW37OspkpqQ9oD",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breeding_status": "breeding_status",
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "technical_replicate": "technical_replicate"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EJwdQbgQnhMDmxtDL3WxYjZDH8OeM8vALOeuxzOURbon",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 5 912 SNPs for 100 ivory gull (Pagophila eburnea) samples from breeding colonies in the Arctic (Canada, Greenland and Svalbard).",
+            "name": "pagophila_eburnea_demographic_decline"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_": {
+        "d": "ENbEKDvhxaqi5jC2k2FobE_69RC6xKvDKtU_HoQNQE99",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EK-X7viag2HTLKc0WIVctBzgUm8bqKaUXIk6HAhfY9Zn",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sampling_location",
+              "breeding_status",
+              "technical_replicate",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "breeding_status": [
+                "breeding",
+                "unknown"
+              ],
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
