@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/apocal1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "apocal1",
-  "dcterms:issued": "2026-10-09",
+  "dcterms:issued": "2026-10-13",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of giant California sea cucumber from British Columbia and southeastern Alaska",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 718 SNPs for 717 giant California sea cucumbers (Apostichopus californicus, syn. Parastichopus californicus) from the coast of British Columbia (Canada) and southeastern Alaska (United States), Northeast Pacific.",
@@ -40,6 +40,17 @@
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/2032702/",
   "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2014"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2015"
+    }
+  },
   "dcterms:spatial": "https://sws.geonames.org/4030875/",
   "dcat:version": "1.0.0",
   "dcterms:license": "",
@@ -47,7 +58,7 @@
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0002-9935-1366",
     "@type": "foaf:Person",
-    "foaf:name": "Marie‐Josée Fortin"
+    "foaf:name": "Marie-Josée Fortin"
   },
   "dcat:qualifiedAttribution": [
     {
@@ -55,7 +66,7 @@
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-9935-1366",
         "@type": "prov:Person",
-        "foaf:name": "Marie‐Josée Fortin"
+        "foaf:name": "Marie-Josée Fortin"
       },
       "dcat:hadRole": [
         "principalInvestigator",
