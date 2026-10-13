@@ -41,7 +41,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Quebec, Canada"
+      "value": "Quebec and Ontario, Canada"
     },
     "creators": {
       "type": "jsonpath",
@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Québec, Canada"
+      "value": "Québec et Ontario, Canada"
     },
     "creators": {
       "type": "jsonpath",

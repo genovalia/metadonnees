@@ -42,7 +42,7 @@
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3330/",
   "dcat:distribution": [],
-  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcterms:spatial": "https://sws.geonames.org/6251999/",
   "dcat:version": "1.0.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
