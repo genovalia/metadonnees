@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/helspp1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "helspp1",
-  "dcterms:issued": "2026-10-09",
+  "dcterms:issued": "2026-10-14",
   "dcterms:language": "en",
   "dcterms:title": "RNA sequencing dataset of three wild sunflower species from the United States",
   "dcterms:description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States.",

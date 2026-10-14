@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/popspp2",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "popspp2",
-  "dcterms:issued": "2026-10-09",
+  "dcterms:issued": "2026-10-14",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of black cottonwood and other Populus species from North America",
   "dcterms:description": "This dataset contains SNP chip genotypes at 32 679 SNPs designed for black cottonwood (Populus trichocarpa) for 72 accessions from North America: wild P. trichocarpa trees and accessions of other Populus species and of Salix sitchensis.",
