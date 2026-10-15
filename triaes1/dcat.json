@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/triaes1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "triaes1",
-  "dcterms:issued": "2026-10-09",
+  "dcterms:issued": "2026-10-15",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of synthetic hexaploid-derived wheat lines from Ontario",
   "dcterms:description": "This dataset contains SNP chip genotypes at 37 684 SNPs for 187 CIMMYT spring synthetic hexaploid-derived wheat (Triticum aestivum) lines grown in field trials in Ontario, Canada, with phenotypic data.",
