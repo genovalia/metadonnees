@@ -1,10 +1,10 @@
 {
-  "d": "EFjYT7uRZJBriQMWxCEoWX_pnxvpBki_GH2SqmZIRXfR",
+  "d": "EIqhXG7w2vub9nV80qlRiDpEl2RokadOQs1kFaRAklWd",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000cf4_",
-      "d": "EH_3rpRkr9PcGQjhbszcug6jKtPAYYhnDR8p0v6wlSWk",
+      "v": "OCAS11JSON000ca6_",
+      "d": "EAD73e2fIfi3YuAm_L4rP9jkqNzghYKtKmQSwSs3aIma",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -95,11 +95,11 @@
         ],
         "meta": [
           {
-            "d": "EMun8HU2UlWC3yKvVwx4AKWMob6M5qlbLeQPuv3yMgEx",
+            "d": "EBCAo5GdCmMsMjkjZ_2_mT7TfugPGXnircxgztC_dCHO",
             "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 309 SNPs for 43 soft coral colonies of the genus Alcyonium (Alcyonium spp.) from the Southern Ocean, mostly from the West Antarctic Peninsula with a few colonies from southern South America.",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 309 SNPs for 20 colonies of the soft coral Alcyonium antarcticum from two sites of the West Antarctic Peninsula.",
             "name": "alcyonium_spp_phylogeography"
           }
         ],

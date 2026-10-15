@@ -3,7 +3,7 @@
   "en": {
     "theme": {
       "type": "literal",
-      "value": "Alcyonium spp."
+      "value": "Alcyonium antarcticum"
     },
     "publisher": {
       "name": {
@@ -27,7 +27,7 @@
     },
     "species": {
       "type": "literal",
-      "value": "Alcyonium spp."
+      "value": "Alcyonium antarcticum"
     },
     "temporal": {
       "year_begin": {
@@ -41,7 +41,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Southern South America and West Antarctic Peninsula"
+      "value": "West Antarctic Peninsula"
     },
     "creators": {
       "type": "jsonpath",
@@ -56,15 +56,15 @@
   "fr": {
     "title": {
       "type": "literal",
-      "value": "Données de génotypage par séquençage de coraux mous Alcyonium du sud de l’Amérique du Sud et de l’ouest de la péninsule Antarctique"
+      "value": "Données de génotypage par séquençage du corail mou Alcyonium antarcticum de l’ouest de la péninsule Antarctique"
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 43 colonies de coraux mous du genre Alcyonium (Alcyonium spp.) provenant de l’océan Austral, surtout de l’ouest de la péninsule Antarctique et quelques-unes du sud de l’Amérique du Sud, génotypées à l’aide de 2 309 SNP."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 20 colonies du corail mou Alcyonium antarcticum provenant de deux sites de l’ouest de la péninsule Antarctique, génotypées à l’aide de 2 309 SNP."
     },
     "theme": {
       "type": "literal",
-      "value": "Alcyonium spp."
+      "value": "Alcyonium antarcticum"
     },
     "publisher": {
       "name": {
@@ -88,7 +88,7 @@
     },
     "species": {
       "type": "literal",
-      "value": "Alcyonium spp."
+      "value": "Alcyonium antarcticum"
     },
     "temporal": {
       "year_begin": {
@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Sud de l’Amérique du Sud et ouest de la péninsule Antarctique"
+      "value": "Ouest de la péninsule Antarctique"
     },
     "creators": {
       "type": "jsonpath",
