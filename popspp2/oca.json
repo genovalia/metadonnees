@@ -1,10 +1,10 @@
 {
-  "d": "EAshZ0FksRcz1s70arbSwa2ZMeMoDRWBjppnp2hm28fB",
+  "d": "EDcLrMDt5X9avvJHecom8wL-JnMXxt5dplAZhN5aiLVV",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000d5e_",
-      "d": "EI0dWTQOWWdgD0t-bB_3MQx-X_5UvchSGoocwtEvTcgv",
+      "v": "OCAS11JSON000e3e_",
+      "d": "EBw3RLKKQ9LI03quSQTHRVSOlEbtxeztclpS5S0n7Iy6",
       "capture_base": {
         "d": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
         "type": "spec/capture_base/1.1",
@@ -57,12 +57,12 @@
         },
         "information": [
           {
-            "d": "EOhGdFpwbPj6bYMKhpoOIDru1hM1NzvtoqfqJxqqj0N9",
+            "d": "EK2lXbwuaEqdQayV8Pp0yavqPVijS2O0gs6tBIQGQeag",
             "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "accession": "Accession name or number of the tree in its source collection, as given in Supplementary Table 1 of the source article (differs from the sample ID for 30 accessions)",
+              "accession": "Accession name or number of the tree in its source collection, as given in Supplementary Table 1 of Geraldes et al. 2013 (same as the sample ID for field-collected trees and clone collections). Collections named in the article: UBC Botanical Garden, Morden Research Centre Arboretum, Alice Holt Research Station and the BESC collection; the source collection of each accession is not given",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
