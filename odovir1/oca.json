@@ -1,10 +1,10 @@
 {
-  "d": "EIs4mODnILkC1dmLrxDTa8p1iZ3m-SAPTloa1jU7duxg",
+  "d": "EKAXmD9v2UQx2YTYd0ROGB41aF2dmWcRe7WBdzO3mJLU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
       "v": "OCAS11JSON00174c_",
-      "d": "EDqruxRzsjDJhmSdmTU9Iz_tkeGqE81dqowjUAjuUOZk",
+      "d": "EFqhW8kC69qRp95rigRp5F1BzOzFrBc33GoFImY5SnMH",
       "capture_base": {
         "d": "EFg9PsPgJqKStz_AzTRIhRXuZKr8Pgu41F5Q7qcxBqHm",
         "type": "spec/capture_base/1.1",
@@ -171,7 +171,7 @@
           }
         ],
         "unit": {
-          "d": "EHpGJbJBdGLt0ErkqNnbzc3GzaOoFe6xF7uLUN1NB3q8",
+          "d": "EC40X0kevC61nBT9DEeECuPKdr7WLVmw77lgT_S_BrVr",
           "capture_base": "EFg9PsPgJqKStz_AzTRIhRXuZKr8Pgu41F5Q7qcxBqHm",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
@@ -190,9 +190,9 @@
             "rumpfat5": "centimeter",
             "rumpfat_mean": "centimeter",
             "spike_length": "centimeter",
-            "tail_length": "centimeter",
+            "tail_length": "millimeter",
             "thorax_girth": "centimeter",
-            "total_length": "centimeter"
+            "total_length": "millimeter"
           }
         }
       }

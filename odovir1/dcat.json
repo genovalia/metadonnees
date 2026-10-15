@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/odovir1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "odovir1",
-  "dcterms:issued": "2026-10-14",
+  "dcterms:issued": "2026-10-15",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of white-tailed deer from Anticosti Island with morphometric measurements",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 10 596 SNPs for 441 white-tailed deer (Odocoileus virginianus) from Anticosti Island (Quebec, Canada), where the species was introduced about 120 years ago, with phenotypic data.",
