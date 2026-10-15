@@ -10,14 +10,14 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "time": "http://www.w3.org/2006/time#"
   },
-  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcspp1",
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcant1",
   "@type": "dcat:Dataset",
-  "dcterms:identifier": "alcspp1",
+  "dcterms:identifier": "alcant1",
   "dcterms:issued": "2026-10-15",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of the soft coral Alcyonium antarcticum from the West Antarctic Peninsula",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 309 SNPs for 20 colonies of the soft coral Alcyonium antarcticum from two sites of the West Antarctic Peninsula.",
-  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcspp1",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/alcant1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
     "@type": "foaf:Organization",

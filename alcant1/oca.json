@@ -1,10 +1,10 @@
 {
-  "d": "EIqhXG7w2vub9nV80qlRiDpEl2RokadOQs1kFaRAklWd",
+  "d": "EPXATR-fAwdrLRqM8-Xiq11rD-oKMoVQ2CFd6EozfXMU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ca6_",
-      "d": "EAD73e2fIfi3YuAm_L4rP9jkqNzghYKtKmQSwSs3aIma",
+      "v": "OCAS11JSON000cae_",
+      "d": "EKUDFaO9HQWrdRZkh8IWq-UzFtaObfXKx2vNKs3RBXur",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -95,12 +95,12 @@
         ],
         "meta": [
           {
-            "d": "EBCAo5GdCmMsMjkjZ_2_mT7TfugPGXnircxgztC_dCHO",
+            "d": "EEh4kIsY-SBUyPsv1GSpJrsjLVZp1fZUUeTtiwSV1BIV",
             "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 2 309 SNPs for 20 colonies of the soft coral Alcyonium antarcticum from two sites of the West Antarctic Peninsula.",
-            "name": "alcyonium_spp_phylogeography"
+            "name": "alcyonium_antarcticum_phylogeography"
           }
         ],
         "unit": {
