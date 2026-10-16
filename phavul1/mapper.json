@@ -1,0 +1,117 @@
+{
+  "id": "phavul1",
+  "en": {
+    "theme": {
+      "type": "literal",
+      "value": "Phaseolus vulgaris"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Phaseolus vulgaris"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Honduras (field trials in Honduras and Ontario, Canada)"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Données génotypiques de puce de SNP de haricot commun du Honduras"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions de haricot commun (Phaseolus vulgaris) d’un panel hondurien (variétés locales, variétés issues de sélection participative, variétés conventionnelles honduriennes et témoins nord-américains), génotypées à l’aide de 4 560 SNP, ainsi que des données de pedigree et d’essais au champ."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Phaseolus vulgaris"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Phaseolus vulgaris"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Honduras (essais au Honduras et en Ontario, Canada)"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}
