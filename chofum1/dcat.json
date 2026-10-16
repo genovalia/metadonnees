@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/chofum1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "chofum1",
-  "dcterms:issued": "2026-10-15",
+  "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of spruce budworm from across North America",
   "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 3 650 SNPs for 1 975 spruce budworms (Choristoneura fumiferana) from across Canada and the United States.",

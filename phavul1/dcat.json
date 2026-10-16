@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/phavul1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "phavul1",
-  "dcterms:issued": "2026-10-09",
+  "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of common bean from Honduras",
   "dcterms:description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",

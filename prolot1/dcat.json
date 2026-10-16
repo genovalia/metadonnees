@@ -13,7 +13,7 @@
   "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/prolot1",
   "@type": "dcat:Dataset",
   "dcterms:identifier": "prolot1",
-  "dcterms:issued": "2026-10-14",
+  "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "Targeted sequencing dataset of common raccoon from Central Europe and Florida (immune genes)",
   "dcterms:description": "This dataset contains targeted sequencing genotypes at 428 SNPs in immune-related genes for 87 common raccoons (Procyon lotor) from the native range in Florida (USA) and from two invasive genetic clusters in Central Europe (Germany/Poland and Czech Republic).",
