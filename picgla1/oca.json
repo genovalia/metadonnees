@@ -1,10 +1,10 @@
 {
-  "d": "EH6U4haa2_aVyPlWHUnQm6E_N91EqQR2NztRZJ1y5C0r",
+  "d": "EA72Qr_P3fWoU3Axnc1Ei-aHUEiHTmOTt6AOhfba2rAC",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0017b2_",
-      "d": "EH2rXaXKTXyJ6bBlMjc-t0KKZhxNRlOP1Medbxcqhbqs",
+      "v": "OCAS11JSON0017df_",
+      "d": "EBF7UUAe9d18Z00ahVawIJIFn0asKS7PthJGyBz7OGNt",
       "capture_base": {
         "d": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
         "type": "spec/capture_base/1.1",
@@ -71,13 +71,13 @@
         },
         "information": [
           {
-            "d": "EJADBzL7oIhtC-TWPyJju2mCZBuUCp1vY3aDcae299JD",
+            "d": "EMVCZ4-f9XuX2SzK37BrRVAhq4pbUXHXKGAimn7llgcF",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "cwr_radial": "Cell wall reinforcement",
+              "cwr_radial": "Radial cell wall reinforcement of the wood cells (tracheids) of the tree, a ratio without unit",
               "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
               "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
@@ -146,11 +146,10 @@
           }
         ],
         "unit": {
-          "d": "EHv3Nw_pjL8a28sM2lQE38OeONyn5nFVJXAkeiOFrnq_",
+          "d": "EKtaJ80BMmqvudvvfS1KDLpqqXbhjwcSXLJst5wI-hA1",
           "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "cwr_radial": "micrometer",
             "dbh_1997": "centimeter",
             "dbh_2017": "centimeter",
             "elevation": "meter",
