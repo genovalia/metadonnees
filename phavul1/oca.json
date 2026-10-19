@@ -1,16 +1,16 @@
 {
-  "d": "ENMNFZiR8vHtrsO8Y8YFm8eAq9tdSv1umSGHTeUGpxWu",
+  "d": "EDKXJyOHTy_idjn0EEmDlD1bs1BabJqiTAOzsdnQ2fZg",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011e7_",
-      "d": "EBSdUEWdP50XhxrAVPIFDltxoEKEatke_k8wpI4HlkWk",
+      "v": "OCAS11JSON0011ef_",
+      "d": "EBmW2bsVehzNAJkA8IBXFuBmSQF3E93EvQwIOVqQCfUd",
       "capture_base": {
-        "d": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+        "d": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
-          "daylight_sensitive_elora2014": "Boolean",
+          "daylight_sensitive_elora_2014": "Boolean",
           "genotyping_technology": "Text",
           "id": "Text",
           "market_class": "Text",
@@ -22,7 +22,7 @@
           "trial_elora_2014": "Boolean",
           "trial_elora_2015": "Boolean",
           "trial_yorito_2014_2015": "Boolean",
-          "uneven_maturity_elora2014": "Boolean",
+          "uneven_maturity_elora_2014": "Boolean",
           "variety": "Text",
           "variety_type": "Text"
         },
@@ -32,8 +32,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EFsql-sNX3WnauKmv4EhDLE8QXl3-2Aiwufhilmm6ai3",
-            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+            "d": "EPGwcM3erEQTgcWgLhDMTcCCNkuFUx_7nj9X3IroCqb7",
+            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -49,8 +49,8 @@
           }
         ],
         "entry_code": {
-          "d": "EIOhGe941hY8S2kB0WZlzScFbTRVeHT2k69ASJP0PoW0",
-          "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+          "d": "EOiuVo46FVbvg9yKpS1bgApyyA-n4D3b6P5_-eYnv-LK",
+          "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -65,13 +65,13 @@
         },
         "information": [
           {
-            "d": "EKtu7PbAUWU6Y0cdtjOBiiP8LZ3hSQdOhzpRb8WU6OQL",
-            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+            "d": "EG6I3_BHBcY6IoRtmpHBsCijbL9SI8OGSYLKpcxrQ5Hx",
+            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "daylight_sensitive_elora2014": "TRUE if the genotype showed day-length sensitivity at Elora 2014",
+              "daylight_sensitive_elora_2014": "TRUE if the genotype showed day-length sensitivity at Elora 2014",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "market_class": "Seed market class (small red, black, navy, ...)",
@@ -83,7 +83,7 @@
               "trial_elora_2014": "TRUE if the entry was in the Elora 2014 field trial",
               "trial_elora_2015": "TRUE if the entry was in the Elora 2015 field trial",
               "trial_yorito_2014_2015": "TRUE if the entry was in the Yorito 2014-2015 field trial",
-              "uneven_maturity_elora2014": "TRUE if the genotype showed uneven maturity at Elora 2014 (seed increased in Puerto Rico, winter 2015)",
+              "uneven_maturity_elora_2014": "TRUE if the genotype showed uneven maturity at Elora 2014 (seed increased in Puerto Rico, winter 2015)",
               "variety": "Variety, cultivar, breeding line or landrace of the individual (plants)",
               "variety_type": "How the variety was obtained: landrace, conventional (conventional breeding), participatory plant breeding, participatory varietal selection, or check (control variety)"
             }
@@ -91,14 +91,14 @@
         ],
         "label": [
           {
-            "d": "EF8FINhGBbv94SVBxt55rKOyRaGGj8uilQEPmXvdjGiY",
-            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+            "d": "EKiGDZmZCai6iutZkau3ngdegopFnBNFRGAouC8hWocc",
+            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "country": "country",
-              "daylight_sensitive_elora2014": "daylight_sensitive_elora2014",
+              "daylight_sensitive_elora_2014": "daylight_sensitive_elora_2014",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "market_class": "market_class",
@@ -110,7 +110,7 @@
               "trial_elora_2014": "trial_elora_2014",
               "trial_elora_2015": "trial_elora_2015",
               "trial_yorito_2014_2015": "trial_yorito_2014_2015",
-              "uneven_maturity_elora2014": "uneven_maturity_elora2014",
+              "uneven_maturity_elora_2014": "uneven_maturity_elora_2014",
               "variety": "variety",
               "variety_type": "variety_type"
             },
@@ -119,8 +119,8 @@
         ],
         "meta": [
           {
-            "d": "EHKpL84SHbb5wOKOkJcTI2q0BNKcStTkXYt2Zz_sKjCJ",
-            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+            "d": "EAUZcD4t-73zwJ7ET7LsBp82S_hZZ4bwnnF_KOXgrhIi",
+            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",
@@ -133,13 +133,13 @@
   },
   "extensions": {
     "adc": {
-      "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE": {
-        "d": "EOySNEKsJQ5NFNDx4ijBYd9xeKmqOXyubDnnk7eLlctl",
+      "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ": {
+        "d": "EM4mPjY_xmbreAZpYuansh_8yVFqYmUAMdKilf15dBxB",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ECnn6aEUQongv0encokUIvRkXeunwsijRSZTYbd6EzCn",
-            "capture_base": "ENycwcmMOvHK1dFg1ff3944KlF7jmm6jYiozBdcoGQgE",
+            "d": "EAiddIAtHrc1AD4IhNKA1A3xi97JyrXRI9hAnWjvZj8I",
+            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -153,8 +153,8 @@
               "trial_elora_2014",
               "trial_yorito_2014_2015",
               "trial_elora_2015",
-              "uneven_maturity_elora2014",
-              "daylight_sensitive_elora2014",
+              "uneven_maturity_elora_2014",
+              "daylight_sensitive_elora_2014",
               "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
