@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-10-13",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of eastern oyster from the Gulf of St. Lawrence",
-  "dcterms:description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada).",
+  "dcterms:description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada). The temporal coverage is the year of the funding grant application (2016); the sampling dates are not published.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/cravir1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -41,8 +41,19 @@
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6565/",
   "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2016"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2016"
+    }
+  },
   "dcterms:spatial": "https://sws.geonames.org/3831546/",
-  "dcat:version": "1.0.0",
+  "dcat:version": "1.1.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {

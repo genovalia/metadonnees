@@ -1,10 +1,10 @@
 {
-  "d": "EMp0RYhz4jzy8BRTtHZRfP8f8xe15yWWh7ubDrS8TwgY",
+  "d": "EKwf8d3Ouz2gFsgPL1HHVY1w0hDXBMLEibqWkIOKGZDm",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e45_",
-      "d": "EE1t14Tsn3ueGJ_P8u9caxEmQ81glAe8sATQaCoDPUP2",
+      "v": "OCAS11JSON000eb7_",
+      "d": "EFFvqHVfk6M0ssl3TKLbEHLl4TyfQUg5FjrUA3Vn31Fb",
       "capture_base": {
         "d": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
         "type": "spec/capture_base/1.1",
@@ -109,11 +109,11 @@
         ],
         "meta": [
           {
-            "d": "ECsPlBUGJ7CTPfesAukQlKdDrJ6EizpLHIhpRq3k-eNf",
+            "d": "EHCGQh5U0vth95d-FHz1uKEvjmCx02zLDVeutp_Ra4s1",
             "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains SNP chip genotypes at 1 134 SNPs from 709 expressed genes for 142 white spruce (Picea glauca) trees of the Quebec breeding program (Canada): trees selected for height growth (top 13% of tested families, with a top 5% subset) and unselected trees from the same natural provenances.",
+            "description": "This dataset contains SNP chip genotypes at 1 134 SNPs from 709 expressed genes for 142 white spruce (Picea glauca) trees of the Quebec breeding program (Canada): trees selected for height growth (top 13% of tested families, with a top 5% subset) and unselected trees from the same natural provenances. The temporal coverage is the publication year of the source article (2012); the sampling dates are not published.",
             "name": "picea_glauca_artificial_selection"
           }
         ]

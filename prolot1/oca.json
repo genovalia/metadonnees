@@ -1,0 +1,188 @@
+{
+  "d": "EA11V-VbERjUG2fXLUJsqhpM094WcRh36BYEqRTw3FJ5",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000e1a_",
+      "d": "EHB-TBUutkfz530SXb4ilTFknsDBBiX89xSbml5ry6ND",
+      "capture_base": {
+        "d": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "population_status": "Text",
+          "possible_duplicate_of": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ELh7owQRzqelwN5TlDwwNw71aG5EHHXVWsgJkqRU0v8j",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "population_status": {
+                "native": "native",
+                "introduced": "introduced"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EAt1L6ruI3P3HTxASJ8Ri5ysXWFZ1QDDkx7N36B16LvU",
+          "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "population_status": [
+              "native",
+              "introduced"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EFiqNsF5zSUwQKFoIV0SBCdoo7Sm-nTuplGSdOZmRGo_",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "population_status": "Biogeographic status of the sampled population, such as native or introduced.",
+              "possible_duplicate_of": "ID of another sample with nearly identical genotypes (likely the same individual)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "ECKKx0j3cRY5i-tGdfYwFn6BlGuorD28a6YGgNWFogDY",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "population_status": "population_status",
+              "possible_duplicate_of": "possible_duplicate_of",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EBANRrUNJc__J7Ys_hd9W5npBIrQKVtoHFfsAuSGX5u5",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains targeted sequencing genotypes at 428 SNPs in immune-related genes for 87 common raccoons (Procyon lotor) from the native range in Florida (USA) and from two invasive genetic clusters in Central Europe (Germany/Poland and Czech Republic).",
+            "name": "procyon_lotor_immune_genes"
+          }
+        ],
+        "unit": {
+          "d": "EMc4eX6ZJqQQ5bPslvKWkK2itcmU9JXYO2glaLrdiUXj",
+          "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx": {
+        "d": "ECSfuX5eLHPETRzkouyb1MBMlUF41beYtYVrC9zpFA7Z",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EHWJzUuRRBRn-AAHt2f-PlHvOkWgn_Zuq9nKk6SEXVt6",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "population_status",
+              "possible_duplicate_of",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "population_status": [
+                "native",
+                "introduced"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EPIoZ8_IZvQXSBRCCCyk7Q_xtLNeFVyMDbLD67mvD7hM",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

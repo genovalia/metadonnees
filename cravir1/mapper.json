@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, non imputés, de 486 huîtres américaines (Crassostrea virginica) provenant du golfe du Saint-Laurent (Nouveau-Brunswick, Nouvelle-Écosse et Île-du-Prince-Édouard, Canada), génotypées à l’aide de 11 321 SNP."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, non imputés, de 486 huîtres américaines (Crassostrea virginica) provenant du golfe du Saint-Laurent (Nouveau-Brunswick, Nouvelle-Écosse et Île-du-Prince-Édouard, Canada), génotypées à l’aide de 11 321 SNP. La couverture temporelle est l’année de la demande de subvention (2016) ; les dates d’échantillonnage ne sont pas publiées."
     },
     "theme": {
       "type": "literal",

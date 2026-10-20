@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/popspp2",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "popspp2",
+  "dcterms:issued": "2026-10-19",
+  "dcterms:language": "en",
+  "dcterms:title": "SNP chip dataset of black cottonwood and other Populus species from North America",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 32 679 SNPs designed for black cottonwood (Populus trichocarpa) for 72 accessions from North America: wild P. trichocarpa trees and accessions of other Populus species and of Salix sitchensis. The temporal coverage is the publication year of the source article (2013); the sampling dates are not published.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/popspp2",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "black cottonwood",
+    "Populus trichocarpa",
+    "poplar",
+    "SNP chip",
+    "species identification",
+    "hybridization"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3689/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6255149/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0003-0106-1289",
+    "@type": "foaf:Person",
+    "foaf:name": "Gerald A. Tuskan"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-0106-1289",
+        "@type": "prov:Person",
+        "foaf:name": "Gerald A. Tuskan"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-7239-4529",
+        "@type": "prov:Person",
+        "foaf:name": "Armando Geraldes"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-8547-1589",
+        "@type": "prov:Person",
+        "foaf:name": "Carl J. Douglas"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/1755-0998.12056",
+    "https://doi.org/10.5061/dryad.1051d",
+    "https://doi.org/10.5683/SP2/DBYAW3"
+  ]
+}
