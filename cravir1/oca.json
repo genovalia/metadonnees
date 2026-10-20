@@ -1,10 +1,10 @@
 {
-  "d": "ECAkrfxay2pTmPy1paoEZnVfrNrWXy7UkY7DBUxhhQRB",
+  "d": "EP7B23HLlFUNXHHiHQrrXpP9BS_GN9b3hf0ad6S_kEpo",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ce3_",
-      "d": "ECpV3xiU040fXd3C8gRmC0OvJaI04gFaCoLWK0vWKHE1",
+      "v": "OCAS11JSON000d54_",
+      "d": "EJ_wdkmrrN1b903lQM7EmwfxoE37dX-PL8Kn4jBzKv9u",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -95,11 +95,11 @@
         ],
         "meta": [
           {
-            "d": "EKbnMJshtMmss88-Ysluyr5s516_fqr9h-lT6NUbBJYw",
+            "d": "EJsyUSTSIQCCHg5tNxAnB5KN-4CfoodLj8CHvEOTCuTa",
             "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada).",
+            "description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada). The temporal coverage is the year of the funding grant application (2016); the sampling dates are not published.",
             "name": "crassostrea_virginica_seascape_genomics"
           }
         ],

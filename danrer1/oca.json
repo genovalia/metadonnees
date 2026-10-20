@@ -1,0 +1,199 @@
+{
+  "d": "EB1GsS7L10sdFE68faiRDhxweIdIcG2EhMOnP8xIALTA",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000f9e_",
+      "d": "EGSvE2PgApX0aR3vEeApQdqf4x0D-MRNwSkGJz_1SHqL",
+      "capture_base": {
+        "d": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "population_type": "Text",
+          "publication_code": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "strain": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EKV8w04tHEx8Q1pcxQQOZKaYCOJ51Nx3ERH56-xnbT1C",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "population_type": {
+                "wild": "wild",
+                "hatchery": "hatchery",
+                "domesticated": "domesticated"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ELSoLXwBRkKBXhLdnqhxwtvvwgUn-BFtUTvciMivUl7q",
+          "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "population_type": [
+              "wild",
+              "hatchery",
+              "domesticated"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EPTFXA2Z4-1pDnU6ucom-7OSOB4HRDA3uGWGOsz959u_",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "population_type": "General category describing the origin or management status of the population",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "strain": "Laboratory or microbial strain of the individual"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EC7aSxZ0yOHQToE3dhEMwUTEQZfqkOtxRooJSoAUD1Zx",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "population_type": "population_type",
+              "publication_code": "publication_code",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "strain": "strain"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EIpRFRjbdJ6YikBF-IHogu8oMXnvDDzoThuciDhp8XNY",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1). The temporal coverage is the period of the funding grant (2007–2009); the sampling dates are not published.",
+            "name": "danio_rerio_wild_lab_population_genomics"
+          }
+        ],
+        "unit": {
+          "d": "EKUIzyF112QfROOS3bs1O78INGF3Q4z331F6bAGSjNPB",
+          "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25": {
+        "d": "EKd-fut1fVLgyrLT-iuNNvMlY2X76QkWBhx8-zTDgbGx",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EMXOOF3WdRk7LpWnErMrFshV3pBqID3K8MS4OeuPBEYp",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "publication_code",
+              "sampling_location",
+              "population_type",
+              "strain",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "population_type": [
+                "wild",
+                "hatchery",
+                "domesticated"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EGBXlK3tdzEqAQrQbT8r-ohifBgNtP3l6dY3UeVWjXEk",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

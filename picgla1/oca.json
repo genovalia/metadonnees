@@ -1,17 +1,14 @@
 {
-  "d": "EOdDE_sMdwbOgrBOgJX9SEPYXX1juHj3wznMtGWyQtYD",
+  "d": "EA72Qr_P3fWoU3Axnc1Ei-aHUEiHTmOTt6AOhfba2rAC",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0016b8_",
-      "d": "EKKO-pSDk4_bMHywj2vubb4YTYNLbivy71XR_olflor2",
+      "v": "OCAS11JSON0017df_",
+      "d": "EBF7UUAe9d18Z00ahVawIJIFn0asKS7PthJGyBz7OGNt",
       "capture_base": {
-        "d": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+        "d": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
         "type": "spec/capture_base/1.1",
         "attributes": {
-          "avg_density": "Numeric",
-          "avg_radial_diameter": "Numeric",
-          "avg_wall_thickness": "Numeric",
           "country": "Text",
           "cwr_radial": "Numeric",
           "dbh_1997": "Numeric",
@@ -25,6 +22,9 @@
           "id": "Text",
           "latitude": "Numeric",
           "longitude": "Numeric",
+          "mean_cell_radial_diameter": "Numeric",
+          "mean_cell_wall_thickness": "Numeric",
+          "mean_wood_density": "Numeric",
           "organism": "Text",
           "recovery_2_years_2002": "Numeric",
           "rel_resil_2_years_2002": "Numeric",
@@ -38,8 +38,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "ENdsQfMmqn699St-hBzfzujFpD0KhBVAVzsxsqere4pe",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EM0EBw-vIivmptXA0bKXmx8j8uNil6SmPhzDc45_PtUM",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -55,8 +55,8 @@
           }
         ],
         "entry_code": {
-          "d": "EGBPDEssgj26p5QVy_X_D18B5dcZPfqgwbATT0HFsook",
-          "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+          "d": "EPOm5BDr5WpnzTeouus_C2NlxeucL7mB-fOsaXau-HFc",
+          "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -71,16 +71,13 @@
         },
         "information": [
           {
-            "d": "EGFQ-CzS01ZfCg9ORQnS_FGacygiRDNAPXH1PRAoGicx",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EMVCZ4-f9XuX2SzK37BrRVAhq4pbUXHXKGAimn7llgcF",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "avg_density": "Average wood density in kg /m-3",
-              "avg_radial_diameter": "Average radial diameter in micrometers",
-              "avg_wall_thickness": "Average cell wall thickness measured in micrometers",
               "country": "Country of origin of the individuals sampled",
-              "cwr_radial": "Cell wall reinforcement",
+              "cwr_radial": "Radial cell wall reinforcement of the wood cells (tracheids) of the tree, a ratio without unit",
               "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
               "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
@@ -92,6 +89,9 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "mean_cell_radial_diameter": "Mean radial diameter of the wood cells (tracheids) of the tree (average value given in the source data)",
+              "mean_cell_wall_thickness": "Mean cell wall thickness of the wood cells (tracheids) of the tree (average value given in the source data)",
+              "mean_wood_density": "Mean wood density of the tree (average value given in the source data)",
               "organism": "Species name in latin according to the Linneaus classification",
               "recovery_2_years_2002": "Growth recovery (basal area increment) 2 years following drought (2002 episode), calculated according to Lloret et al. 2011",
               "rel_resil_2_years_2002": "Relative growth resilience (basal area increment) 2 years following drought (2002 episode)",
@@ -103,15 +103,12 @@
         ],
         "label": [
           {
-            "d": "EIMmLSLSCbxd5xrteuR9Hf5x6MLJX_-rMqRHLX-TGVMe",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EP-SydnhOGgBmoG43HU2akEBKGOUzyKjRCivhbE8NZ2p",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
-              "avg_density": "avg_density",
-              "avg_radial_diameter": "avg_radial_diameter",
-              "avg_wall_thickness": "avg_wall_thickness",
               "country": "country",
               "cwr_radial": "cwr_radial",
               "dbh_1997": "dbh_1997",
@@ -125,6 +122,9 @@
               "id": "id",
               "latitude": "latitude",
               "longitude": "longitude",
+              "mean_cell_radial_diameter": "mean_cell_radial_diameter",
+              "mean_cell_wall_thickness": "mean_cell_wall_thickness",
+              "mean_wood_density": "mean_wood_density",
               "organism": "organism",
               "recovery_2_years_2002": "recovery_2_years_2002",
               "rel_resil_2_years_2002": "rel_resil_2_years_2002",
@@ -137,8 +137,8 @@
         ],
         "meta": [
           {
-            "d": "EFsnE8VBldSs1mnstTzzFC30vTpD-07QTQsuWhgot4XQ",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EKoT3PXaVETYpqO1TvrQE2plzjs19n2WvK029FaxW9u-",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity, as well as environmental data for 1473 trees sampled in 43 natural populations from the province of Quebec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
@@ -146,14 +146,10 @@
           }
         ],
         "unit": {
-          "d": "ECW_wAp5DexJN6cX8JYZDgAcdNlRY7xazV9bKkIh0K1e",
-          "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+          "d": "EKtaJ80BMmqvudvvfS1KDLpqqXbhjwcSXLJst5wI-hA1",
+          "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "avg_density": "kilogram per cubic meter",
-            "avg_radial_diameter": "micrometer",
-            "avg_wall_thickness": "micrometer",
-            "cwr_radial": "micrometer",
             "dbh_1997": "centimeter",
             "dbh_2017": "centimeter",
             "elevation": "meter",
@@ -162,7 +158,10 @@
             "height_1997": "meter",
             "height_2017": "meter",
             "latitude": "decimal degree",
-            "longitude": "decimal degree"
+            "longitude": "decimal degree",
+            "mean_cell_radial_diameter": "micrometer",
+            "mean_cell_wall_thickness": "micrometer",
+            "mean_wood_density": "kilogram per cubic meter"
           }
         }
       }
@@ -171,13 +170,13 @@
   },
   "extensions": {
     "adc": {
-      "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY": {
-        "d": "ECVLT_dAoECqLmTeXMalNyZVEKZ0NB3W4xmfGOQoDhoy",
+      "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET": {
+        "d": "EFhcGxkR6wjw6PvqvqvFdjNbiMy70k1yBrJyJFv_gCbN",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHcR23l5UEOBHX950cNMuk_4O9MKHo3A-uvlD4h-EUBb",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EPzLk6jYyXVMo7Lr890EWl7j70uGmBi1S7KEvDILTokr",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -192,10 +191,10 @@
               "height_2017",
               "dbh_1997",
               "dbh_2017",
-              "avg_density",
-              "avg_wall_thickness",
+              "mean_wood_density",
+              "mean_cell_wall_thickness",
               "cwr_radial",
-              "avg_radial_diameter",
+              "mean_cell_radial_diameter",
               "recovery_2_years_2002",
               "resilience_2_years_2002",
               "rel_resil_2_years_2002",
@@ -215,8 +214,8 @@
             }
           },
           "unit_framing": {
-            "d": "EI2zo8xAFpdcZx1xRgh29_LpzQeNbBGy_1XnYIN2v9Ay",
-            "capture_base": "EF2zMfrw1kb3ujxpPFZgPXabruKUy3YuROfxvzRBZgLY",
+            "d": "EEEM_-wjzeuHx4fTQHxqiaVbqTfYlmKvD-aF7nqm-8Q5",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

@@ -1,0 +1,299 @@
+{
+  "d": "EKbTWbeC6QxE_uq-O4NwQsATXqKN0hPSK6OdpDyMQXry",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON0017f1_",
+      "d": "EMyTn3Vqg8D8yfoTEfpbYEHStogc6Hp_NyJaVucuNFCI",
+      "capture_base": {
+        "d": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "age": "Numeric",
+          "age_capped": "Numeric",
+          "antler_length": "Numeric",
+          "antler_mainbeam_diameter": "Numeric",
+          "antler_points": "Numeric",
+          "antler_spread": "Numeric",
+          "body_mass": "Numeric",
+          "country": "Text",
+          "foot_length": "Numeric",
+          "genotyping_technology": "Text",
+          "head_body_length": "Numeric",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "peroneus_muscle": "Numeric",
+          "rumpfat10": "Numeric",
+          "rumpfat5": "Numeric",
+          "rumpfat_mean": "Numeric",
+          "sampling_location": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text",
+          "sex": "Text",
+          "spike_length": "Numeric",
+          "tail_length": "Numeric",
+          "thorax_girth": "Numeric",
+          "total_length": "Numeric"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EHSwHoFA3WPB22IhpWAkb3oLfh1xajGB74Sco2vRtTLK",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EBnVSDJHqb7LUYT-jrLGajh9w_qLi9J5ba6B6uWvwrAE",
+          "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EOARMKpBt3fWnAgfpdr9d0m3OYPgWOt64V3Xs9m5K-ks",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "age": "Age of the individual",
+              "age_capped": "Estimated age capped at 9 years (column age2 of the deposit; 9 = 9 years or older)",
+              "antler_length": "Antler length",
+              "antler_mainbeam_diameter": "Diameter of the left antler main beam",
+              "antler_points": "Number of points per antler (> 2.5 cm)",
+              "antler_spread": "Maximum distance between the two antlers (column dist_mainbeam; also filled for some females, meaning unconfirmed)",
+              "body_mass": "Body mass of the individual",
+              "country": "Country of origin of the individuals sampled",
+              "foot_length": "Length of the left hind leg",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "head_body_length": "Length of the head and body of the individual, from the tip of the nose to the base of the tail (tail excluded)",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "peroneus_muscle": "Mass of the peroneus muscle of the left hind leg",
+              "rumpfat10": "Subcutaneous rump fat thickness 10 cm from the pelvic bone",
+              "rumpfat5": "Subcutaneous rump fat thickness 5 cm from the pelvic bone",
+              "rumpfat_mean": "Mean of the two rump fat thicknesses (column rumpfat510 of the deposit, described there as a ratio)",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "sex": "Sex of the individual: female, male or unknown",
+              "spike_length": "Spike length for deer with a single point",
+              "tail_length": "Length of the tail of the individual",
+              "thorax_girth": "Chest girth",
+              "total_length": "Total length of the individual, including the tail"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBpafzZsefJfJYCpdcnViMMEIMZ-TU88SyqP5JGOwjSc",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "age": "age",
+              "age_capped": "age_capped",
+              "antler_length": "antler_length",
+              "antler_mainbeam_diameter": "antler_mainbeam_diameter",
+              "antler_points": "antler_points",
+              "antler_spread": "antler_spread",
+              "body_mass": "body_mass",
+              "country": "country",
+              "foot_length": "foot_length",
+              "genotyping_technology": "genotyping_technology",
+              "head_body_length": "head_body_length",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "peroneus_muscle": "peroneus_muscle",
+              "rumpfat10": "rumpfat10",
+              "rumpfat5": "rumpfat5",
+              "rumpfat_mean": "rumpfat_mean",
+              "sampling_location": "sampling_location",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex",
+              "spike_length": "spike_length",
+              "tail_length": "tail_length",
+              "thorax_girth": "thorax_girth",
+              "total_length": "total_length"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EDdQh0S9Ri7vrhEXrOXvXbUiJqw541ZIZywYva1n6xWa",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 10 596 SNPs for 441 white-tailed deer (Odocoileus virginianus) from Anticosti Island (Quebec, Canada), where the species was introduced about 120 years ago, with phenotypic data.",
+            "name": "odocoileus_virginianus_founder_effect"
+          }
+        ],
+        "unit": {
+          "d": "EAAQN1KAzZ0nzG9QdMmNshX1ArmxXZkN-RKXt5E6v9dY",
+          "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "age": "year",
+            "age_capped": "year",
+            "antler_length": "centimeter",
+            "antler_mainbeam_diameter": "centimeter",
+            "antler_spread": "centimeter",
+            "body_mass": "gram",
+            "foot_length": "centimeter",
+            "head_body_length": "millimeter",
+            "latitude": "decimal degree",
+            "longitude": "decimal degree",
+            "peroneus_muscle": "gram",
+            "rumpfat10": "centimeter",
+            "rumpfat5": "centimeter",
+            "rumpfat_mean": "centimeter",
+            "spike_length": "centimeter",
+            "tail_length": "millimeter",
+            "thorax_girth": "centimeter",
+            "total_length": "millimeter"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF": {
+        "d": "ECdZ4WVFnlpbA3poucJj1kOxoqXj_rveerIW79rnC3Fp",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "ELHT8BW2jZF8Xmi4Plolmd6v5NdoOs-mhJpRb4w-y4iP",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "sampling_year",
+              "sex",
+              "age",
+              "age_capped",
+              "body_mass",
+              "total_length",
+              "head_body_length",
+              "tail_length",
+              "foot_length",
+              "thorax_girth",
+              "rumpfat10",
+              "rumpfat5",
+              "rumpfat_mean",
+              "peroneus_muscle",
+              "antler_length",
+              "antler_points",
+              "antler_mainbeam_diameter",
+              "antler_spread",
+              "spike_length",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EFeNa66QWBql1eWZaqdJnS3LCKYExgxVGpxoAsF8PswT",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "centimeter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "cm"
+              },
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              },
+              "gram": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "g"
+              },
+              "millimeter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "mm"
+              },
+              "year": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "a"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
