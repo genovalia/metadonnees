@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 142 épinettes blanches (Picea glauca) du programme d’amélioration du Québec (Canada), génotypées à l’aide de 1 134 SNP répartis dans 709 gènes exprimés : arbres sélectionnés pour la croissance en hauteur (13 % meilleures familles testées, avec un sous-ensemble des 5 % meilleures) et arbres non sélectionnés des mêmes provenances naturelles."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 142 épinettes blanches (Picea glauca) du programme d’amélioration du Québec (Canada), génotypées à l’aide de 1 134 SNP répartis dans 709 gènes exprimés : arbres sélectionnés pour la croissance en hauteur (13 % meilleures familles testées, avec un sous-ensemble des 5 % meilleures) et arbres non sélectionnés des mêmes provenances naturelles. La couverture temporelle est l’année de publication de l’article source (2012) ; les dates d’échantillonnage ne sont pas publiées."
     },
     "theme": {
       "type": "literal",

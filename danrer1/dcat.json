@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of zebrafish from Nepal, India and Bangladesh and laboratory strains",
-  "dcterms:description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1).",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1). The temporal coverage is the period of the funding grant (2007–2009); the sampling dates are not published.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/danrer1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -41,6 +41,17 @@
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7955/",
   "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2007"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2009"
+    }
+  },
   "dcterms:spatial": "https://sws.geonames.org/6255147/",
   "dcat:version": "1.0.0",
   "dcterms:license": "",

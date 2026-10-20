@@ -1,10 +1,10 @@
 {
-  "d": "ECAaJTwC7RPD_TsIS_p1IL5lMwDPG81Ah3wKMLbLvz5v",
+  "d": "EB1GsS7L10sdFE68faiRDhxweIdIcG2EhMOnP8xIALTA",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f30_",
-      "d": "EM5MOQHrEmGUolxLI7cO5-GK0QiCaQlCVWiyH6fODvuO",
+      "v": "OCAS11JSON000f9e_",
+      "d": "EGSvE2PgApX0aR3vEeApQdqf4x0D-MRNwSkGJz_1SHqL",
       "capture_base": {
         "d": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
         "type": "spec/capture_base/1.1",
@@ -114,11 +114,11 @@
         ],
         "meta": [
           {
-            "d": "EHeL6o1ZmDrlPH6artMT8DVhbOAR_kYRH4zLmoV-ze3c",
+            "d": "EIpRFRjbdJ6YikBF-IHogu8oMXnvDDzoThuciDhp8XNY",
             "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1).",
+            "description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1). The temporal coverage is the period of the funding grant (2007–2009); the sampling dates are not published.",
             "name": "danio_rerio_wild_lab_population_genomics"
           }
         ],

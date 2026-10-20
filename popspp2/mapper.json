@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions provenant d’Amérique du Nord, génotypées à l’aide de 32 679 SNP conçus pour le peuplier de l’Ouest (Populus trichocarpa) : arbres sauvages de P. trichocarpa et accessions d’autres espèces de Populus et de Salix sitchensis."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions provenant d’Amérique du Nord, génotypées à l’aide de 32 679 SNP conçus pour le peuplier de l’Ouest (Populus trichocarpa) : arbres sauvages de P. trichocarpa et accessions d’autres espèces de Populus et de Salix sitchensis. La couverture temporelle est l’année de publication de l’article source (2013) ; les dates d’échantillonnage ne sont pas publiées."
     },
     "theme": {
       "type": "literal",

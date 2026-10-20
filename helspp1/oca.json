@@ -1,10 +1,10 @@
 {
-  "d": "EGwlgEwS6UUizfRtr3EhAh9XlFgRogjWtf5A1n-s6bXz",
+  "d": "EBkfdN5UBgSOKMd92rIWFxGBBjfHzrDMemFEC07Dh7DK",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000efd_",
-      "d": "ELgU_r25uIPjGYzvn3S4wZwWdhQZ3XqOD5dAKEl4Fb2x",
+      "v": "OCAS11JSON000f6f_",
+      "d": "EG4lCz3WWTBfyhpGccMbM6UjTXr58u8CpSf08OJTf-_V",
       "capture_base": {
         "d": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
         "type": "spec/capture_base/1.1",
@@ -104,11 +104,11 @@
         ],
         "meta": [
           {
-            "d": "EGWMuCdLpiJkBl7_HVvys0SjrFyfwKv58xp9ky4xFVxp",
+            "d": "EHzb2Sv-q2i9rEyjO1_77SYcwUd4vK1KPZGEwfrI0FmK",
             "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States.",
+            "description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States. The temporal coverage is the publication year of the source article (2012); the sampling dates are not published.",
             "name": "helianthus_rnaseq_population_genomics"
           }
         ],

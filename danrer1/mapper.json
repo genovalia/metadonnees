@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 219 poissons-zèbres (Danio rerio) provenant de populations sauvages du Népal, de l’Inde et du Bangladesh et de trois souches de laboratoire courantes (AB, SJA, TM1), génotypés à l’aide de 3 157 SNP."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 219 poissons-zèbres (Danio rerio) provenant de populations sauvages du Népal, de l’Inde et du Bangladesh et de trois souches de laboratoire courantes (AB, SJA, TM1), génotypés à l’aide de 3 157 SNP. La couverture temporelle est la période de la subvention (2007–2009) ; les dates d’échantillonnage ne sont pas publiées."
     },
     "theme": {
       "type": "literal",
