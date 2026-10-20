@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par séquençage de l’ARN, de 27 tournesols sauvages de trois espèces (Helianthus annuus, H. petiolaris et H. debilis) provenant des États-Unis, génotypés à l’aide de 433 257 SNP dans un transcriptome de référence du tournesol. La couverture temporelle est l’année de publication de l’article source (2012) ; les dates d’échantillonnage ne sont pas publiées."
+      "value": "Ce jeu de données contient les génotypes, obtenus par séquençage de l’ARN, de 27 tournesols sauvages de trois espèces (Helianthus annuus, H. petiolaris et H. debilis) provenant des États-Unis, génotypés à l’aide de 433 257 SNP dans un transcriptome de référence du tournesol. L’ARN a été extrait de plantules. La couverture temporelle est l’année de publication de l’article source (2012) ; les dates d’échantillonnage ne sont pas publiées."
     },
     "theme": {
       "type": "literal",

@@ -1,12 +1,12 @@
 {
-  "d": "EBkfdN5UBgSOKMd92rIWFxGBBjfHzrDMemFEC07Dh7DK",
+  "d": "EOCf1-3jHtytV6cZIrJ1xZkFYz2eskiE99aq3ALAqKUn",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f6f_",
-      "d": "EG4lCz3WWTBfyhpGccMbM6UjTXr58u8CpSf08OJTf-_V",
+      "v": "OCAS11JSON000ef6_",
+      "d": "EOvqlvFvT-I3tqDoG0x_A1PMpN25E02WQ_sh0YCq4n4p",
       "capture_base": {
-        "d": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+        "d": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "accession": "Text",
@@ -16,7 +16,6 @@
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
-          "sample_tissue": "Text",
           "sampling_location": "Text",
           "sequenced_molecule": "Text",
           "subspecies": "Text"
@@ -27,8 +26,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EPoh4J7hyPTO5H6e6-YB3QLZmemg40ABgmivdV3vdN05",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "EMyyP1ed88uv2Y5qFPiFIHNlCz-E927guaZdI7ayade7",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -44,8 +43,8 @@
           }
         ],
         "entry_code": {
-          "d": "EKmvfk6jNOAC_Xx14csXJEF_Rdfsvh-ymgg2K74nfY_M",
-          "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+          "d": "ED4ScOrkQ13gh34sIbVJ-uM6RHzOhp9NlIE6vlGYB8in",
+          "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -60,8 +59,8 @@
         },
         "information": [
           {
-            "d": "EOQPha9iA_A9cPrrbvfaCBP468iy2QLr_MXOTg-EI2ci",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "EFoernK53iBAXXTEsIE02IMIWQ406dEdvL0J60kxVCCD",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -72,7 +71,6 @@
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "subspecies": "Subspecies as given in Table 2 of the source paper (praecox for H. debilis subsp. praecox)"
@@ -81,8 +79,8 @@
         ],
         "label": [
           {
-            "d": "EPhNUG-dTNpY_FEbPFUYCvoPF0F9iS1vOJQJ4Kz9MA5_",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "EBIe1HXm2djy70NUOnCB3q_NLe0YsS-bslrRt82J9k8i",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -94,7 +92,6 @@
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
-              "sample_tissue": "sample_tissue",
               "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule",
               "subspecies": "subspecies"
@@ -104,17 +101,17 @@
         ],
         "meta": [
           {
-            "d": "EHzb2Sv-q2i9rEyjO1_77SYcwUd4vK1KPZGEwfrI0FmK",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "ECQesq2Jd_LCrX1QpVvj9wZmcK_LHDne95FXsZuaCa_u",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States. The temporal coverage is the publication year of the source article (2012); the sampling dates are not published.",
+            "description": "This dataset contains RNA sequencing genotypes at 433 257 SNPs in a sunflower reference transcriptome for 27 wild sunflowers of three species (Helianthus annuus, H. petiolaris and H. debilis) from the United States. RNA was extracted from seedlings. The temporal coverage is the publication year of the source article (2012); the sampling dates are not published.",
             "name": "helianthus_rnaseq_population_genomics"
           }
         ],
         "unit": {
-          "d": "EB-Y9FfEeGipiA5gjQbNHSPvQaO7r4ACreIsW3bwN3P6",
-          "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+          "d": "EK8Fj6IiqVx36-K34DyrmXnc9g_QRFFf11hjQt4-yIQ1",
+          "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -127,13 +124,13 @@
   },
   "extensions": {
     "adc": {
-      "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT": {
-        "d": "EPFwPC9VO8utDaVBOW3-2PWUJhU8u7Gt80v1vHGHwhUU",
+      "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e": {
+        "d": "ENQOKpEujH8lofl2xRO3eAS9RkJbOeaGxVHqELz-zy4A",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EBXeOi-x-2dnYAo73L8xg-axP5bJvCYbWaDu88T8Q45q",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "EAEfXjhvjmbwQOeKFI2qGHzh6mwGFIKkU4u69fW3iZCE",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -144,7 +141,6 @@
               "sampling_location",
               "latitude",
               "longitude",
-              "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -160,8 +156,8 @@
             }
           },
           "unit_framing": {
-            "d": "EM78b3enhRsaSPPM_f_94JrzW2v7mJZxRDc6wV0tlfrT",
-            "capture_base": "ENM4YNsOZZi-Yw0rU8sp70WmGo3enB9Wzju-iwKJLxXT",
+            "d": "EMd-Tgcl5-RBXjjZz_HKY7bMAw2F-geQYr-aOjjxGvQL",
+            "capture_base": "ENHjVdOx54rz-Rwv0ncJ2DSbIMVrd_UyVY1znSAN-Q_e",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

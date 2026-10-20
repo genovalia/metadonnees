@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 717 grandes holothuries de Californie (Apostichopus californicus, syn. Parastichopus californicus) provenant de la côte de la Colombie-Britannique (Canada) et du sud-est de l’Alaska (États-Unis), dans le Pacifique Nord-Est, génotypées à l’aide de 2 718 SNP."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 717 grandes holothuries de Californie (Apostichopus californicus, syn. Parastichopus californicus) provenant de la côte de la Colombie-Britannique (Canada) et du sud-est de l’Alaska (États-Unis), dans le Pacifique Nord-Est, génotypées à l’aide de 2 718 SNP. L’ADN a été extrait de fragments de papille dorsale (environ 1 cm)."
     },
     "theme": {
       "type": "literal",

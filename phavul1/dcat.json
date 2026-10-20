@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "SNP chip dataset of common bean from Honduras",
-  "dcterms:description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data. DNA was extracted from leaves.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/phavul1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -53,7 +53,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/3608932/",
-  "dcat:version": "1.0.0",
+  "dcat:version": "1.1.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
