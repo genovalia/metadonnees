@@ -1,15 +1,16 @@
 {
-  "d": "ED2NqqpuxE4C4Su2dkG3fC3R7DHRpyw4chXaTCBnsbtV",
+  "d": "ELpKTHRlMaB_hS-v1FasPMtzqPd9qInuSNGslAnDrMsk",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000eb0_",
-      "d": "EH3XX00BTHXnG3frnkpND-SS-Yveon5FHxRPfYttFMPx",
+      "v": "OCAS11JSON000f0e_",
+      "d": "EBF71siugk3vBT9w87YvC2pShyUgEWtrHvCH0lv9PHoL",
       "capture_base": {
-        "d": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+        "d": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "accession": "Text",
+          "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
           "latitude": "Numeric",
@@ -24,8 +25,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EBkt6h4fCwbgmRqHaYy3giMXxISXrRoUvlVVPINkTxmI",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EA13FUroUnrAIFkRbsRVB_Z2StgKtgInmnJfi3DDF87y",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -41,8 +42,8 @@
           }
         ],
         "entry_code": {
-          "d": "EM1MuzxeagYwqL3oe8H8JjpBmN5w77RY6c2s81xR9KLS",
-          "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+          "d": "EDkfUJP9EzCQOtxCr6yyyELBt98AjORQCUe5sXxvnxh5",
+          "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -57,12 +58,13 @@
         },
         "information": [
           {
-            "d": "EK2lXbwuaEqdQayV8Pp0yavqPVijS2O0gs6tBIQGQeag",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EOdSthaIoW5_dm9ZUvIJvWXdwWHQo9lGDQuCQux0b9iu",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "accession": "Accession name or number of the tree in its source collection, as given in Supplementary Table 1 of Geraldes et al. 2013 (same as the sample ID for field-collected trees and clone collections). Collections named in the article: UBC Botanical Garden, Morden Research Centre Arboretum, Alice Holt Research Station and the BESC collection; the source collection of each accession is not given",
+              "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
@@ -75,13 +77,14 @@
         ],
         "label": [
           {
-            "d": "EFva_2m2T4QEJwyb9TJEVd11lj_O3oIsgN_A-i0N25XC",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EAwTQOM2twwH8jeizS2HSxidxEQqiASlzK0XjMU6pFtN",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "accession": "accession",
+              "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "latitude": "latitude",
@@ -95,8 +98,8 @@
         ],
         "meta": [
           {
-            "d": "ELaLfn5xiQ4vcZNZKPqfHTcn0Szh3hGJ6qEeYM1Kbmjk",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EMgvMRnk2SnF6Ksi8qQj20qseTlrA8di8f1ur1eGz-gp",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 32 679 SNPs designed for black cottonwood (Populus trichocarpa) for 72 accessions from North America: wild P. trichocarpa trees and accessions of other Populus species and of Salix sitchensis. The temporal coverage is the publication year of the source article (2013); the sampling dates are not published.",
@@ -104,8 +107,8 @@
           }
         ],
         "unit": {
-          "d": "EJj3OURUrSxfPv2PBYqV74gxiTX3qn7XK28A_IeqKa62",
-          "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+          "d": "ELQz-qF1eXw2Y_jZLF_1QeEnGKFiQpyi-K-V6_tQGfpg",
+          "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -118,17 +121,18 @@
   },
   "extensions": {
     "adc": {
-      "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam": {
-        "d": "EIM5Ea_b1JtBXke7bl3CovmQr_FXuOCUft9g5k-SAVnC",
+      "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl": {
+        "d": "ELKwa3S2iBcniK0uWBgKzH2I1ghr5w4qjg0buwrKyY2I",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EE_frOWL_vcH8eN1io_4AHxwrq05Vi1ZJaMcMKEOeuXO",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EOTzkvrtnrvZ7YZE-Gkdlq9_3ONffvL8s5coSiTHdMfK",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
+              "country",
               "accession",
               "sampling_location",
               "latitude",
@@ -148,8 +152,8 @@
             }
           },
           "unit_framing": {
-            "d": "ECNa3G0Ok4L6jY1ApiPlziMBECXT22TB5UotTbinw6gJ",
-            "capture_base": "EEHut22EOHi88nL8hFvUWfmi_9PvSEACYJaqyUF6Evam",
+            "d": "EOBTHinE_eW5v_IB61aa3I7NCHsZ3XEA_CmTfXk2Bewp",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
