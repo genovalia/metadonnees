@@ -1,0 +1,141 @@
+{
+  "d": "EFH5GD9RG-ZfmpF1gjiviKE7S4euW9nkiEty6ILofxug",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000b81_",
+      "d": "ELhD7uSr5Q_nrGDPfwFvYYWYkvwpYJAh4i63tW-23-2U",
+      "capture_base": {
+        "d": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "region": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EPHR9jeTwozAA7ssVZ3vHADsEoCGx9e4LBVQEFwNICiB",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EDAz6YD_R63NGKQTcIZzB39jvrGw9_5rzNg_OroK0FMk",
+          "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EFMGHvI_eGwEt-ELa684bK1r6BpNsQUXtlztXmk1Gfy_",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "region": "Regional grouping of the sampling sites used in the source study, such as a management, biogeographic or genetic region",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBoxRRNQb9MEnvl1JNIk5av0FPZX1em-2iuarkSzEEOu",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "region": "region",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EH0YHwQnCjiLFzOfcADht1K3qJcUKlQfRsn9Ic4RGpo1",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 1 887 SNPs for 596 juvenile and adult Atlantic cod (Gadus morhua) from the Northwest Atlantic off Newfoundland and adjacent areas (Canada).",
+            "name": "gadus_morhua_northern_cod_life_stage"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef": {
+        "d": "EMB_ALKtM8AMANHniR_OnyDfPBPAC-BEFBtDGZpniZCQ",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "ENr3URIwgmR_PWH7ScSce-eLkpz6sOPS-FrvMZ-yGxUH",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "region",
+              "sampling_year",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

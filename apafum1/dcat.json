@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/apafum1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "apafum1",
+  "dcterms:issued": "2026-10-26",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of the spruce budworm parasitoid Apanteles fumiferanae from Quebec",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 1 056 SNPs for 279 adult females of Apanteles fumiferanae (Hymenoptera: Braconidae), a larval parasitoid of the spruce budworm, reared from budworm larvae collected in 2014 within and around outbreak areas in Quebec (Canada).",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/apafum1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Apanteles fumiferanae",
+    "spruce budworm",
+    "parasitoid",
+    "landscape genomics",
+    "genotyping-by-sequencing"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/380175/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2014"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2014"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6115047/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-7639-7217",
+    "@type": "foaf:Person",
+    "foaf:name": "Patrick M. A. James"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-7639-7217",
+        "@type": "prov:Person",
+        "foaf:name": "Patrick M. A. James"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-3687-0759",
+        "@type": "prov:Person",
+        "foaf:name": "Simon Legault"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6148-7877",
+        "@type": "prov:Person",
+        "foaf:name": "Jacques Brodeur"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/mec.16160",
+    "https://doi.org/10.1093/ee/nvy113",
+    "https://doi.org/10.5061/dryad.rn8pk0pbj"
+  ]
+}
