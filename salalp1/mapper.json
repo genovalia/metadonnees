@@ -1,0 +1,117 @@
+{
+  "id": "salalp1",
+  "en": {
+    "theme": {
+      "type": "literal",
+      "value": "Salvelinus alpinus"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Salvelinus alpinus"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Cambridge Bay region, Nunavut, Canada"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Données de génotypage par séquençage d’ombles chevaliers anadromes de la région de Cambridge Bay (Nunavut)"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 448 ombles chevaliers anadromes (Salvelinus alpinus) provenant de la région de Cambridge Bay (Nunavut, Canada), génotypés à l’aide de 6 132 SNP, ainsi que des données phénotypiques et environnementales. L’ADN a été extrait de fragments de nageoire."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Salvelinus alpinus"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Salvelinus alpinus"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Région de Cambridge Bay, Nunavut, Canada"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/picabi1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "picabi1",
+  "dcterms:issued": "2026-10-26",
+  "dcterms:language": "en",
+  "dcterms:title": "SNP chip dataset of Norway spruce from northern and central Europe",
+  "dcterms:description": "This dataset contains SNP chip genotypes at 445 SNPs for 312 haploid megagametophytes of Norway spruce (Picea abies) trees from northern and central Europe, plus a Brewer spruce (Picea breweriana) outgroup. The temporal coverage is the year of the funding grant application (2007); the sampling dates are not published.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/picabi1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Norway spruce",
+    "Picea abies",
+    "clinal variation",
+    "bud set",
+    "candidate gene",
+    "conifer",
+    "SNP chip"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3329/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2007"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2007"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6255148/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0003-1699-9042",
+    "@type": "foaf:Person",
+    "foaf:name": "Martin Lascoux"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-1699-9042",
+        "@type": "prov:Person",
+        "foaf:name": "Martin Lascoux"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-3187-7668",
+        "@type": "prov:Person",
+        "foaf:name": "Jun Chen"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-2440-0677",
+        "@type": "prov:Person",
+        "foaf:name": "Ulf Lagercrantz"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1534/genetics.112.140749",
+    "https://doi.org/10.5061/dryad.82201"
+  ]
+}

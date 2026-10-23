@@ -1,0 +1,197 @@
+{
+  "d": "EPfm5tHp5hk1UAy6EDXytfXx64agwH5OKGZ6wvBt90Kc",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON001004_",
+      "d": "EIVNnlNWTZ0mCKLc67Bq4wKMWvWuPJ_KsR3Z6mBmmf2R",
+      "capture_base": {
+        "d": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "outbreak_area": "Text",
+          "publication_code": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EHBAxIu14VpkObgTAI4uHhmnbooJOFv3lWFsUGQYFMzz",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "outbreak_area": {
+                "Abitibi-Témiscamingue": "outbreak area I",
+                "Mauricie": "outbreak area II",
+                "Saguenay–Lac-Saint-Jean": "outbreak area III",
+                "Bas-Saint-Laurent": "outbreak area IV",
+                "Côte-Nord": "outbreak area V"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGadYzUrip76G_7rk3V0MrTnXiLa_FiZtxChWm_1SUqs",
+          "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "outbreak_area": [
+              "Abitibi-Témiscamingue",
+              "Mauricie",
+              "Saguenay–Lac-Saint-Jean",
+              "Bas-Saint-Laurent",
+              "Côte-Nord"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EHmfBnO8u2LDlbrw4Ri04zM6Zqaw2vEFCugqboie9EYH",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "outbreak_area": "Spruce budworm outbreak area the sampling site belongs to, named as in the source article (Legault et al. 2021, Table 1; Roman numerals I to VI in its Figure 2a: I Abitibi-Témiscamingue, II Mauricie, III Saguenay–Lac-Saint-Jean, IV Bas-Saint-Laurent, V Côte-Nord, VI Basse-Côte-Nord)",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EINETChtvIwi-TaoPG_JA_nh2O7KIqRc3HocY9NdkPNC",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "outbreak_area": "outbreak_area",
+              "publication_code": "publication_code",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EEAU6GTdnF3gAm1MkCh1o9cBDSHqUXcjXPDDfnP0nIfK",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 1 056 SNPs for 279 adult females of Apanteles fumiferanae (Hymenoptera: Braconidae), a larval parasitoid of the spruce budworm, reared from budworm larvae collected in 2014 within and around outbreak areas in Quebec (Canada).",
+            "name": "apanteles_fumiferanae_landscape_connectivity"
+          }
+        ],
+        "unit": {
+          "d": "EBf86x-CCY-1KXhOS3Ba-IG-8Pl6nCexgDabBXfpmFh9",
+          "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4": {
+        "d": "EGQAP_xGp11V9Jwg5w_WfH3Z0oPNQSqfLAoLQ0wHeDhc",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "ENuUhOp7cE64txXmDcpmJPtDWbaE3b1D3evubP8YnO6M",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "publication_code",
+              "outbreak_area",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "outbreak_area": [
+                "Abitibi-Témiscamingue",
+                "Mauricie",
+                "Saguenay–Lac-Saint-Jean",
+                "Bas-Saint-Laurent",
+                "Côte-Nord"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EMpmDKW80sPka0KAakCI60xYPv9lTRE2Soa96EkkEgyn",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

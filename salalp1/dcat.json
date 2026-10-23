@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/salalp1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "salalp1",
+  "dcterms:issued": "2026-10-26",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of anadromous Arctic char from the Cambridge Bay region, Nunavut",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 6 132 SNPs for 448 anadromous Arctic char (Salvelinus alpinus) from the Cambridge Bay region (Nunavut, Canada), with phenotypic and environmental data. DNA was extracted from fin clips.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/salalp1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Arctic char",
+    "Salvelinus alpinus",
+    "telemetry",
+    "migration",
+    "local adaptation",
+    "genotyping-by-sequencing",
+    "dispersal"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8036/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "1988"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2014"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6091732/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-8085-9709",
+    "@type": "foaf:Person",
+    "foaf:name": "Louis Bernatchez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-3353-3730",
+        "@type": "prov:Person",
+        "foaf:name": "Jean-Sébastien Moore"
+      },
+      "dcat:hadRole": [
+        "collaborator",
+        "pointOfContact"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/mec.14393",
+    "https://doi.org/10.5061/dryad.f3sm9"
+  ]
+}
