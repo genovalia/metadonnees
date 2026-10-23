@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions de haricot commun (Phaseolus vulgaris) d’un panel hondurien (variétés locales, variétés issues de sélection participative, variétés conventionnelles honduriennes et témoins nord-américains), génotypées à l’aide de 4 560 SNP, ainsi que des données de pedigree et d’essais au champ."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions de haricot commun (Phaseolus vulgaris) d’un panel hondurien (variétés locales, variétés issues de sélection participative, variétés conventionnelles honduriennes et témoins nord-américains), génotypées à l’aide de 4 560 SNP, ainsi que des données de pedigree et d’essais au champ. L’ADN a été extrait de feuilles."
     },
     "theme": {
       "type": "literal",

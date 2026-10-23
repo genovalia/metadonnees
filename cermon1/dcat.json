@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-10-19",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of rhinoceros auklet from the North Pacific",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 19 045 SNPs for 113 rhinoceros auklet samples (Cerorhinca monocerata), including technical replicates, from breeding colonies of the western (Japan) and eastern (Alaska to California) North Pacific.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 19 045 SNPs for 113 rhinoceros auklet samples (Cerorhinca monocerata), including technical replicates, from breeding colonies of the western (Japan) and eastern (Alaska to California) North Pacific. DNA was extracted from blood samples.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/cermon1",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -53,7 +53,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/4030875/",
-  "dcat:version": "1.0.0",
+  "dcat:version": "1.1.0",
   "dcterms:license": "",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
