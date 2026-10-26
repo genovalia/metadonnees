@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/perman1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "perman1",
+  "dcterms:issued": "2026-10-26",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of deer mouse from Ontario with morphological and behavioural phenotypes",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 105 067 SNPs for 294 deer mice (Peromyscus maniculatus) from island and mainland populations in northwestern Ontario, Canada, with phenotypic data.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/perman1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "deer mouse",
+    "Peromyscus maniculatus",
+    "island rule",
+    "heritability",
+    "population structure",
+    "behavioural ecology",
+    "genotyping-by-sequencing"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10042/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2015"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6251999/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-0419-7125",
+    "@type": "foaf:Person",
+    "foaf:name": "Denis Réale"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-0419-7125",
+        "@type": "prov:Person",
+        "foaf:name": "Denis Réale"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-4019-7675",
+        "@type": "prov:Person",
+        "foaf:name": "Joshua M. Miller"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1038/s41437-021-00492-z",
+    "https://doi.org/10.5061/dryad.7m0cfxpw3"
+  ]
+}

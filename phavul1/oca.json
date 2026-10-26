@@ -1,12 +1,12 @@
 {
-  "d": "EDKXJyOHTy_idjn0EEmDlD1bs1BabJqiTAOzsdnQ2fZg",
+  "d": "ENO2PCLHUkTdxY1r84M6k0F8qUfR8go_f5DqV3u3x_Qn",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011ef_",
-      "d": "EBmW2bsVehzNAJkA8IBXFuBmSQF3E93EvQwIOVqQCfUd",
+      "v": "OCAS11JSON001173_",
+      "d": "EHeyc0Bmf2W8lBj9QkVDGBqk9qeo0qY6cERAJXWbdBnh",
       "capture_base": {
-        "d": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+        "d": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -16,7 +16,6 @@
           "market_class": "Text",
           "organism": "Text",
           "pedigree": "Text",
-          "sample_tissue": "Text",
           "sampling_location": "Text",
           "sequenced_molecule": "Text",
           "trial_elora_2014": "Boolean",
@@ -32,8 +31,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EPGwcM3erEQTgcWgLhDMTcCCNkuFUx_7nj9X3IroCqb7",
-            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+            "d": "EOb2i3rND7skqGx1aUCrvdt_fxHjEJMQl4E7-ls2vHiA",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -49,8 +48,8 @@
           }
         ],
         "entry_code": {
-          "d": "EOiuVo46FVbvg9yKpS1bgApyyA-n4D3b6P5_-eYnv-LK",
-          "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+          "d": "ENvrK6VzJb2_vXJHSmNGwr3VPJ3VexZg6bg-mH-psahg",
+          "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -65,8 +64,8 @@
         },
         "information": [
           {
-            "d": "EG6I3_BHBcY6IoRtmpHBsCijbL9SI8OGSYLKpcxrQ5Hx",
-            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+            "d": "ELajcSTs3LDJpDdcmwqOFTynvKJi0Nmy4Bq4CWsaWlp2",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -77,7 +76,6 @@
               "market_class": "Seed market class (small red, black, navy, ...)",
               "organism": "Species name in latin according to the Linneaus classification",
               "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "trial_elora_2014": "TRUE if the entry was in the Elora 2014 field trial",
@@ -91,8 +89,8 @@
         ],
         "label": [
           {
-            "d": "EKiGDZmZCai6iutZkau3ngdegopFnBNFRGAouC8hWocc",
-            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+            "d": "EGQomj2nhybCkmIL4mM1W4fUXZSU4QdaTzgbQFiTbKOg",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -104,7 +102,6 @@
               "market_class": "market_class",
               "organism": "organism",
               "pedigree": "pedigree",
-              "sample_tissue": "sample_tissue",
               "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule",
               "trial_elora_2014": "trial_elora_2014",
@@ -119,11 +116,11 @@
         ],
         "meta": [
           {
-            "d": "EAUZcD4t-73zwJ7ET7LsBp82S_hZZ4bwnnF_KOXgrhIi",
-            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+            "d": "ELATXGjSSdFdLvCNEcdMJpNpktoY9QX597wSbgF-vvX3",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data.",
+            "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data. DNA was extracted from leaves.",
             "name": "phaseolus_vulgaris_honduran_panel"
           }
         ]
@@ -133,13 +130,13 @@
   },
   "extensions": {
     "adc": {
-      "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ": {
-        "d": "EM4mPjY_xmbreAZpYuansh_8yVFqYmUAMdKilf15dBxB",
+      "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM": {
+        "d": "EBjWbgpDcllWruBMQUN30zNYL81aAqThWDzPgu2un-vO",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAiddIAtHrc1AD4IhNKA1A3xi97JyrXRI9hAnWjvZj8I",
-            "capture_base": "EMfXGqnTRbOOr6wFWD9b0Z1zhbcjwwrYvSiojrNQKwhJ",
+            "d": "EBcBORJe_b3DOVtke4KsZ5hIlpA0zzc-7exxrg4hNJjp",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -155,7 +152,6 @@
               "trial_elora_2015",
               "uneven_maturity_elora_2014",
               "daylight_sensitive_elora_2014",
-              "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
             ],

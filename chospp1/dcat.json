@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/chospp1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "chospp1",
+  "dcterms:issued": "2026-10-26",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of Choristoneura budworms from western Canada (parental taxa and hybrids)",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 1 195 SNPs for 698 Choristoneura budworms from western Canada (Alberta and British Columbia): parental Choristoneura occidentalis biennis, C. o. occidentalis and C. fumiferana, and individuals from the hybrid zones between C. o. biennis and each of the two other taxa. The taxon of each individual is the genetic assignment of the source study: parental taxa and advanced hybrids are named, and Choristoneura sp. marks individuals not assigned to a taxon, most of them from the hybrid zones.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/chospp1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "spruce budworm",
+    "Choristoneura",
+    "hybrid zone",
+    "introgression",
+    "genomic cline",
+    "genotyping-by-sequencing"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7140/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "1987"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2013"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6251999/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-5148-4226",
+    "@type": "foaf:Person",
+    "foaf:name": "Felix A. H. Sperling"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5148-4226",
+        "@type": "prov:Person",
+        "foaf:name": "Felix A. H. Sperling"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-9112-5121",
+        "@type": "prov:Person",
+        "foaf:name": "Gwylim S. Blackburn"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8925-8803",
+        "@type": "prov:Person",
+        "foaf:name": "Lisa M. Lumley"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/mec.14386",
+    "https://doi.org/10.1111/syen.12211",
+    "https://doi.org/10.5061/dryad.9c50s"
+  ]
+}
