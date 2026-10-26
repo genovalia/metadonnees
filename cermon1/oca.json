@@ -1,12 +1,12 @@
 {
-  "d": "EGJ_Iw-OoQ8IxawtFuqZaUvHMowmLg6kEBWvoEbINjQJ",
+  "d": "EPdbBWvM6BbOBy9Hp8_JsNsLMrvunOkorHc_pM--vMyn",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001086_",
-      "d": "EMhJYPcYcezaGwTGvacDpQzMoGYg2PIaO-AYcR5PEUhn",
+      "v": "OCAS11JSON001011_",
+      "d": "EJg99u9vNT2mEvxbqJ_a3n16pO4OVZqjGiJIIgLtjtVc",
       "capture_base": {
-        "d": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+        "d": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -17,7 +17,6 @@
           "organism": "Text",
           "publication_code": "Text",
           "region": "Text",
-          "sample_tissue": "Text",
           "sampling_location": "Text",
           "sequenced_molecule": "Text",
           "technical_replicate": "Boolean"
@@ -28,8 +27,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EH3J1stfGVTVCC71DueKJuZM-lUMron4pRQUWvMhuiWH",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EEIdfjbW3ApIQwOPwYqx3QtlOlUEp9NJNenMCkuWUa5r",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -49,8 +48,8 @@
           }
         ],
         "entry_code": {
-          "d": "EBhWECgE8VMBKrVA6nswU9CEc1_H7wYrOUBLMDbHs26y",
-          "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+          "d": "EH7xzZmE_SGRm6tuqKpj00K04kZ1eW9whvRgWH7Rs5I6",
+          "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -69,8 +68,8 @@
         },
         "information": [
           {
-            "d": "ECjc5S8B24p_Ry3vGKLDsVtbIrmEHul3vja_aCvIJDNp",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EFV7adNpiub8wWhuIrIvq_xfygNSuxZqIMRoz-C9Zxwv",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -82,7 +81,6 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
               "region": "Regional grouping of the sampling sites used in the source study, such as a management, biogeographic or genetic region",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
@@ -91,8 +89,8 @@
         ],
         "label": [
           {
-            "d": "EH2Xpr14M3LjR741wzxFTFzgj8zjexg990K5d4_pst63",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EFZBymvOV4KZuxGnnNMKg-18dZzJnxlml8U7mmtL6nt-",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -105,7 +103,6 @@
               "organism": "organism",
               "publication_code": "publication_code",
               "region": "region",
-              "sample_tissue": "sample_tissue",
               "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule",
               "technical_replicate": "technical_replicate"
@@ -115,17 +112,17 @@
         ],
         "meta": [
           {
-            "d": "EDoVt_dX-DR68pRK-OvRuvlolQKRpMH2TxUa8tsJ0OIN",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EK71pjpXxENMzKpOHTxXfoQ30Efr8GSePEpjbdvexFiX",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotyping-by-sequencing genotypes at 19 045 SNPs for 113 rhinoceros auklet samples (Cerorhinca monocerata), including technical replicates, from breeding colonies of the western (Japan) and eastern (Alaska to California) North Pacific.",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 19 045 SNPs for 113 rhinoceros auklet samples (Cerorhinca monocerata), including technical replicates, from breeding colonies of the western (Japan) and eastern (Alaska to California) North Pacific. DNA was extracted from blood samples.",
             "name": "cerorhinca_monocerata_genetic_environment"
           }
         ],
         "unit": {
-          "d": "ELsWuPrNMU2vcisRUmgdusetd0_RiTf0ji8MzSPrPz2C",
-          "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+          "d": "EFoxSufLXxEc3QWzEwcmR5n5UTw8WnllS7l1bdsy4BJA",
+          "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -138,13 +135,13 @@
   },
   "extensions": {
     "adc": {
-      "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB": {
-        "d": "EI7DZEwKY-DGbV2J5qUZRKM3Gcb0v1MLRZ0_cSjzs6bi",
+      "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE": {
+        "d": "EOq05_mWVYz7KK82MBDE1ldU90L2UdDRW_tbh4aLI8ba",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EOyT913YC5vBMwJq-0aN1PXc8rnV6BwS5_-TJWdmGxN_",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EOmvEWHuYhnlaVQOtlad9xh_7N_UioLGzt5Y65duM3yz",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -156,7 +153,6 @@
               "sampling_location",
               "region",
               "technical_replicate",
-              "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -176,8 +172,8 @@
             }
           },
           "unit_framing": {
-            "d": "EJoKMS6D5BvJGuwVA4xBWLZScqiufesYBrvOg_6bifzJ",
-            "capture_base": "EFYv7Tl7q5c9BfnUvUCitE6z8pcYLECeV-QNVtVntWyB",
+            "d": "EMDJoeVDeEP89c566W37l_oxjmTX9SqUvOFAyo7PXFqI",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
