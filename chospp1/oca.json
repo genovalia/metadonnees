@@ -1,0 +1,133 @@
+{
+  "d": "EHhZkAv2kABF7Vn7MV9Dtq6TU0_a2KUkABVqiSmbFfET",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000bbf_",
+      "d": "EKN109l3ky-la2ob4MSYxjwh2R6SpVGHCrblETvJhx3k",
+      "capture_base": {
+        "d": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EPlyNvbEPjn5P1z0S_ZS8XexcTcxdWSajjE_Cv2yTNNJ",
+            "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EDNfx4V9kF8GCg8_bwDN0NnsMxF3p2-dd5ii_PoAAXhl",
+          "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EH9hEny6PV15mM3YfkbczXzKTJkuc212n4Mub5Bo8mgu",
+            "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EGon-hVekjVMHDXoDLEH4h7bM-hqbyKB_KWi5AcY8FaV",
+            "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EKfYKNiW0aJ7bkG4f1UPISOTs1aI-JNPySUWbGsJZlVQ",
+            "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 1 195 SNPs for 698 Choristoneura budworms from western Canada (Alberta and British Columbia): parental Choristoneura occidentalis biennis, C. o. occidentalis and C. fumiferana, and individuals from the hybrid zones between C. o. biennis and each of the two other taxa. The taxon of each individual is the genetic assignment of the source study: parental taxa and advanced hybrids are named, and Choristoneura sp. marks individuals not assigned to a taxon, most of them from the hybrid zones.",
+            "name": "choristoneura_hybrid_zones"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB": {
+        "d": "EPirZ3XZAcHikL-cuwFbUiR1ahVp2HNOAXBpgU203q_A",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EOmRD8H0uwZ46TYxSGMe7akKc6k-yEF6LR6B5Hir1YtC",
+            "capture_base": "EOnPNV0XLFub5Dzj0G61ZS3HDy5PfYKrOuSGSuG1IhoB",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

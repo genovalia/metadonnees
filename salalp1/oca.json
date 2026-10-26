@@ -1,0 +1,246 @@
+{
+  "d": "EKIfPE2snpwy-JY8bOoic4CgON38d3Ln8RClici7sYuG",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON0012d0_",
+      "d": "EEvoR59SjstLjev4NDBFLXemLfDB3D7sLeqWciWwlhAo",
+      "capture_base": {
+        "d": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "acoustic_tag": "Boolean",
+          "country": "Text",
+          "elevation_gain": "Numeric",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "overwinter_2013": "Text",
+          "overwinter_2014": "Text",
+          "overwinter_2015": "Text",
+          "river_length": "Numeric",
+          "sampling_location": "Text",
+          "sampling_season": "Text",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EJgvYE-6t1zEOLVkKtZ0Y52JFU4sKISOxxmraGsMnuuR",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "acoustic_tag": {
+                "false": "sampled for DNA analysis only",
+                "true": "acoustic telemetry tag"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sampling_season": {
+                "spring": "spring",
+                "summer": "summer",
+                "fall": "fall",
+                "winter": "winter"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EEtKPdehXydOt5NPo5XCj9uG4Si39OPfxlUDuvS7NHkQ",
+          "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "acoustic_tag": [
+              false,
+              true
+            ],
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sampling_season": [
+              "spring",
+              "summer",
+              "fall",
+              "winter"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EP22Vl38XCGATt5SetuS3GPi5z9h3Jlwg_9pwZyCKu3O",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "acoustic_tag": "TRUE if the fish was fitted with an acoustic transmitter (tagged), FALSE if sampled for DNA only (baseline)",
+              "country": "Country of origin of the individuals sampled",
+              "elevation_gain": "Elevation gain along the river, Table 1 of the source preprint",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "overwinter_2013": "Overwintering river inferred from acoustic telemetry in 2013 (Table S1)",
+              "overwinter_2014": "Overwintering river inferred from acoustic telemetry in 2014 (Table S1)",
+              "overwinter_2015": "Overwintering river inferred from acoustic telemetry in 2015 (Table S1)",
+              "river_length": "Length of the river (migration distance), Table 1 of the source preprint",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_season": "Season in which the sample was collected: spring, summer, fall or winter",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EAA7VPuWLCpnOVGNgce2LTIXI9bho26SnD5zObxedXfC",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "acoustic_tag": "acoustic_tag",
+              "country": "country",
+              "elevation_gain": "elevation_gain",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "overwinter_2013": "overwinter_2013",
+              "overwinter_2014": "overwinter_2014",
+              "overwinter_2015": "overwinter_2015",
+              "river_length": "river_length",
+              "sampling_location": "sampling_location",
+              "sampling_season": "sampling_season",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EOEhoJUz33ZJYVkSt9YIlOlrRX3X668Ixk4aEL2KCOQb",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 6 132 SNPs for 448 anadromous Arctic char (Salvelinus alpinus) from the Cambridge Bay region (Nunavut, Canada), with phenotypic and environmental data. DNA was extracted from fin clips.",
+            "name": "salvelinus_alpinus_migration"
+          }
+        ],
+        "unit": {
+          "d": "EJzW0ke6vCbZfMWqvolE9YrKzjCkhrj_dNPa7XiaMy40",
+          "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "elevation_gain": "meter",
+            "latitude": "decimal degree",
+            "longitude": "decimal degree",
+            "river_length": "kilometer"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO": {
+        "d": "EKrEOt3Y9ZdeKtIbXaZr0ddWsJTiC0CJOD-Fj3uWp-2f",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EALL6o2_zYODnCgXmuYfZS0RsI6pw75xgK2-jH9y6HJZ",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "river_length",
+              "elevation_gain",
+              "sampling_year",
+              "sampling_season",
+              "acoustic_tag",
+              "overwinter_2013",
+              "overwinter_2014",
+              "overwinter_2015",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "acoustic_tag": [
+                false,
+                true
+              ],
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sampling_season": [
+                "spring",
+                "summer",
+                "fall",
+                "winter"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EG1CDMqJCYN60AVmgW-URV0aI4Q3QPFm543fnlRO73bi",
+            "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              },
+              "kilometer": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "km"
+              },
+              "meter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "m"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

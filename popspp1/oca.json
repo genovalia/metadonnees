@@ -1,0 +1,141 @@
+{
+  "d": "EMw4FrGVslb0kqa-PxBlnLDvwB9CRMdwCPVDDy1k58Eg",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000c13_",
+      "d": "EIEy8ww__Kf13mDGlHDvQFPUQfNws0gEEg7qNo-Vtq49",
+      "capture_base": {
+        "d": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "herbarium": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sequenced_molecule": "Text",
+          "voucher": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EM0ZdlQj-0eEE3r20J_9gIzkiddYqC3r9fvBqSCDw23F",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ECbuZHrAgB7X3XPf8GjEsT8fohBHt65BcWOE7pFxnKZq",
+          "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EAdcsdxbxMC7rx6_1A6smF6lC-isvFOouw1eEHKALZlf",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "herbarium": "Herbarium code prefix of the voucher (e.g. QFA, DAO, GH)",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "voucher": "Herbarium voucher number of the specimen, when available"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBw5K6rRogA1H2SUFxEJVa7L2lb7dhLz6rDEeQmzPJK9",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "herbarium": "herbarium",
+              "id": "id",
+              "organism": "organism",
+              "sequenced_molecule": "sequenced_molecule",
+              "voucher": "voucher"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "ED47kIX5RmVu3XEFShd0ooc0Wks1BVjrXsdhKfaXnY19",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains targeted SNP assay genotypes at 36 SNPs from 28 gene regions, diagnostic of eight poplar species (P. angustifolia, P. balsamifera, P. deltoides, P. fremontii, P. laurifolia, P. maximowiczii, P. nigra, P. trichocarpa), for 448 reference specimens of 14 poplar species (Populus). The temporal coverage is the publication year of the source article (2013); the sampling dates are not published.",
+            "name": "populus_diagnostic_snp_assay"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k": {
+        "d": "EH7pZZCTUGn9966p6AzbxyFu7wE9ij0wJSDCorQ63qct",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EGEh3zGBMHDoZEYEwOPSZKm0ZlmyGoSHA6yXA8qzGTHN",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "voucher",
+              "herbarium",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
