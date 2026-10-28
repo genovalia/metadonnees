@@ -1,10 +1,10 @@
 {
-  "d": "ECHgvUzxjH7LNHmb8DCLcfm3RZ326c1baXasXXqL6dPA",
+  "d": "ELwI8prluZLY0kTUIUay3vfmNzjnMlSdDf4gQnb44_8D",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ee5_",
-      "d": "ECVtrqMTykvMjXwxjGjBljx63r9tNu1LQPHGvSKJwbZJ",
+      "v": "OCAS11JSON000f57_",
+      "d": "EOzspL4V0w520QguBaRoaBk8cPkwlKz6e5bbB4bTcb_y",
       "capture_base": {
         "d": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "ELe7O6SBRalE9ANwWARhBhJtvv-kC32mh3hZSNFBEj7Y",
+            "d": "EPu9gUDU-o9aeJrNy8MEY0HXWMpUkTW4FuKlFzpQviUi",
             "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -39,12 +39,17 @@
                 "targeted sequencing": "targeted sequencing",
                 "targeted SNP assay": "targeted SNP assay",
                 "RNA sequencing": "RNA sequencing"
+              },
+              "life_stage": {
+                "larva": "larva",
+                "glass eel": "glass eel",
+                "adult": "adult"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EC4CPpLQuE84AQ_fQEK7hIqrb1vIx90Zf0V0AGuF7FZp",
+          "d": "EHBrxuDJFGeewdK_ApC7G-tN2jhmKObQRGY4K2vHxyJY",
           "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -55,6 +60,11 @@
               "targeted sequencing",
               "targeted SNP assay",
               "RNA sequencing"
+            ],
+            "life_stage": [
+              "larva",
+              "glass eel",
+              "adult"
             ]
           }
         },
@@ -128,11 +138,11 @@
   "extensions": {
     "adc": {
       "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF": {
-        "d": "ELVgug-H6EAOWUXKE69rBxn_iObeFoWFqWPArkf87xff",
+        "d": "EMOtrFypA8FDlzeyE3C4y3u85jVp-oWC341XXQXdubNM",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EC1aYzVSAq6LFCisz9iQUvRwpdwaOsDZtc6dis5kHHVf",
+            "d": "EMQqmE-q8HK5NUkbOvaQliztDUGR4kTcd_kKJw6kiJA6",
             "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -156,6 +166,11 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "life_stage": [
+                "larva",
+                "glass eel",
+                "adult"
               ]
             }
           },
