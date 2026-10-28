@@ -1,10 +1,10 @@
 {
-  "d": "EK-z2DvuFXR-QnWKWDTMyJHkwGRvOmanvHGaeseRcKZC",
+  "d": "ELnsDyE8PSoHrKa4evcoiHZ1XmIXLacsBR9857DWD2nL",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c20_",
-      "d": "ENGGbhGKa3EeZhSdoWb1Fj1FJxCvMMO7yxrXKBwnf42s",
+      "v": "OCAS11JSON000c76_",
+      "d": "EA7hWrFtH4AZN9kNZwVWn82BRW3lc6O5k8pQZTnwIHI-",
       "capture_base": {
         "d": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
         "type": "spec/capture_base/1.1",
@@ -67,7 +67,7 @@
         },
         "information": [
           {
-            "d": "ENiFOcQ_mVHmcSGDwGBsRO-bSowyG1wznGjfXYqBavzt",
+            "d": "EOpHSA7pBb1hX87Jr6EiiMhHo0k8HX-0UWty8QnDfiUy",
             "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -79,7 +79,7 @@
               "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],

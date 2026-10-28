@@ -1,10 +1,10 @@
 {
-  "d": "EKbTWbeC6QxE_uq-O4NwQsATXqKN0hPSK6OdpDyMQXry",
+  "d": "EH0v_jAUcmDxVDcecdl49jcYgp8F4XJVkUKITtfFVG8S",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0017f1_",
-      "d": "EMyTn3Vqg8D8yfoTEfpbYEHStogc6Hp_NyJaVucuNFCI",
+      "v": "OCAS11JSON001847_",
+      "d": "EE34g3vG6KIVUsbSL2yD6P4iygqFUZ9tSR0suQeOg-wN",
       "capture_base": {
         "d": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
         "type": "spec/capture_base/1.1",
@@ -86,7 +86,7 @@
         },
         "information": [
           {
-            "d": "EOARMKpBt3fWnAgfpdr9d0m3OYPgWOt64V3Xs9m5K-ks",
+            "d": "ECgWnieV8N4LMCjYufG3-z4xGJbBT9tOzdi4m3E4s78G",
             "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -113,7 +113,7 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown",
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it",
               "spike_length": "Spike length for deer with a single point",
               "tail_length": "Length of the tail of the individual",
               "thorax_girth": "Chest girth",

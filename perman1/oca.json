@@ -1,10 +1,10 @@
 {
-  "d": "EOuvSCMnQtBfV-vS224e1Iiri4Q3Heuk1elUs-qBcIo4",
+  "d": "EL5PApFC3XnQlif86w6XCWw1C3NztdOD6JVn44VccrOG",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0013c7_",
-      "d": "EFC5as8Gsm3rcGFeDz_3DPU_Mm9qlgbE3h7uw-vO_ZuM",
+      "v": "OCAS11JSON00141d_",
+      "d": "EOSb5xej1Ju6XHpAPEXNRXwdmVPwoMc_QwMsOlxWX64o",
       "capture_base": {
         "d": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
         "type": "spec/capture_base/1.1",
@@ -94,7 +94,7 @@
         },
         "information": [
           {
-            "d": "EGcDo39_y1-jhD9BBrMshPZnjuNdmAKA72cGJ4sGLjNQ",
+            "d": "EGZx789PCyrbliv1F6Wj0AgiQiKwxLg3l5mt9tZHDRTp",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -113,7 +113,7 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown",
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it",
               "site_type": "General environmental or habitat category of the sampling site",
               "tail_length": "Length of the tail of the individual"
             }

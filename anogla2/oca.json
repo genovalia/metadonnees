@@ -1,10 +1,10 @@
 {
-  "d": "EBwUv1-cm7an760arlyHKtc5BknKc-Ud5XD2-5qNGFee",
+  "d": "EOrlNOf2WYQz-fzcLcNoNwLqwG06MqOnuvsJDdQfn3FU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011c3_",
-      "d": "EBX-eeb3vDC3fx2x4gdBEQPWV8Tq05aGkX2rXHWFRSR1",
+      "v": "OCAS11JSON001219_",
+      "d": "EAqMAkcMpkiwCmXVIKNiKh033AlUiR4Zz596QTXm-jI3",
       "capture_base": {
         "d": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
         "type": "spec/capture_base/1.1",
@@ -82,7 +82,7 @@
         },
         "information": [
           {
-            "d": "EBtq3vlvZy6SKKnWIIRmj2fFRhhWFEpXl3_VFjfmcRiK",
+            "d": "EIxtzEKwyUI2ScSI0JSWGsnvMZCuydG0viaoVnfFw0jc",
             "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -101,7 +101,7 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],

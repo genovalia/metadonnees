@@ -1,10 +1,10 @@
 {
-  "d": "EE1e0eQdgjG8zfjtwHHhZFERrEJ7ruCTfEQm6M0AS7mH",
+  "d": "EB6T7diAkXRjRQOAoq5Mbbvx2y-8Fci4jgepaJBRiCMC",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c37_",
-      "d": "EJMFTuTT2ObxfcaqTjz98gLaAQZNhAl35mnLE4new45H",
+      "v": "OCAS11JSON000c8d_",
+      "d": "EHWBDV9pLIk7QrWjQJVin2XWJTHHbGz_AbBd4XhkV1wq",
       "capture_base": {
         "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
         "type": "spec/capture_base/1.1",
@@ -67,7 +67,7 @@
         },
         "information": [
           {
-            "d": "EBSSGU9lbcGbYZVG0dBFcZhF2kpwTWHNrnlC6qwHmjwB",
+            "d": "EA87YmulaEwbl6DnNNi4LvwUSNGVmmdj4kAityiYpLZe",
             "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -79,7 +79,7 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],

@@ -1,10 +1,10 @@
 {
-  "d": "EDlYyUSYf0HX87p3e7IAf95LdtSFRnzPSlxv0Qgy6zLQ",
+  "d": "EFPzG9dnwNf83fKkl1-ZyNoM1w6NvG7xTlLEjL1Xhs4k",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00119c_",
-      "d": "ED6ivlFL4JaWDCZAktP8IeZcUk0l8ed3OUC7MBsv0G9O",
+      "v": "OCAS11JSON0011f2_",
+      "d": "EMdZzc1gK2ByWWAjtpo-y--h7eWo16jGunjsZkK2kdKw",
       "capture_base": {
         "d": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
         "type": "spec/capture_base/1.1",
@@ -72,7 +72,7 @@
         },
         "information": [
           {
-            "d": "EJQ3Ckac2pHIkJpmwqYA3_yGdmAOHE44a5lzCHq21Z9h",
+            "d": "EM2Ohc_IuJPq541_wkvOIo_tnGRfA0u28ku701cpEbEb",
             "capture_base": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -89,7 +89,7 @@
               "n_horn_length_measures": "Number of repeated horn length measurements averaged",
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],
