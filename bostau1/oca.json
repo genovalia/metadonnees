@@ -1,22 +1,19 @@
 {
-  "d": "EE1e0eQdgjG8zfjtwHHhZFERrEJ7ruCTfEQm6M0AS7mH",
+  "d": "EKsjIIg-Fb0L_-K2d-_YEhr71m866xFuSy-NWSq1UljU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c37_",
-      "d": "EJMFTuTT2ObxfcaqTjz98gLaAQZNhAl35mnLE4new45H",
+      "v": "OCAS11JSON000aa3_",
+      "d": "EKD-WMwXwnrvaVhPv-kvC4h7CDkfZjLj8w432UUacSiK",
       "capture_base": {
-        "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+        "d": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
         "type": "spec/capture_base/1.1",
         "attributes": {
-          "breed": "Text",
           "country": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
           "organism": "Text",
-          "sample_tissue": "Text",
-          "sequenced_molecule": "Text",
-          "sex": "Text"
+          "sequenced_molecule": "Text"
         },
         "classification": "RDF402",
         "flagged_attributes": []
@@ -24,8 +21,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EEWhtn7Et0czCDPtOAjIHJ-r_X0dUZSM4CnYfUMIfIL6",
-            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "d": "ELcN4MmAWA0u4b_FU8hHbOg1sylkb5T9Q-BA8rpO5YlK",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -36,18 +33,13 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
-              },
-              "sex": {
-                "female": "female",
-                "male": "male",
-                "unknown": "unknown"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ED61iSNmDvbA7MjGSdSmjtr1Mo0_NbTokffBYp2QNO3h",
-          "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+          "d": "EDNjJtwAQNgTU4lp3zDtTZpjPtskusXMA8vWVn5ltx7H",
+          "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -57,56 +49,45 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
-            ],
-            "sex": [
-              "female",
-              "male",
-              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "EBSSGU9lbcGbYZVG0dBFcZhF2kpwTWHNrnlC6qwHmjwB",
-            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "d": "EMVuzDhsntBn-JSlaG36ZLUk6laG8u924QVXRZrALmfA",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "breed": "Breed of the individual (animals)",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
-              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],
         "label": [
           {
-            "d": "EGasfUhfJNtn4lLoqObH612nHUZiBUeJwq8YUj4HEeeW",
-            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "d": "EK9_RE_xH_jskd1-69KKhgp1P2NWm0OWptOR4TnyW3da",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
-              "breed": "breed",
               "country": "country",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "organism": "organism",
-              "sample_tissue": "sample_tissue",
-              "sequenced_molecule": "sequenced_molecule",
-              "sex": "sex"
+              "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EMVVOGz7ZFP3Yaj-s1GhoRKdFK0K5ZOfqsYkF4Z-ODsv",
-            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "d": "EGDzEqbwCeAdXCvghoVU8uCSJugkZlHzHjsRBXFyCyRX",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
@@ -119,21 +100,18 @@
   },
   "extensions": {
     "adc": {
-      "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1": {
-        "d": "EN88mPtt9r1LboYtALq3DlVB8J8EcfzqpoI2WYnG8G99",
+      "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8": {
+        "d": "EArS8B-t4WhU_Ik5C9IQBUpKfn5OU9-WJFxtj79IRXUF",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EKn239HyirM2NJ4D0mR1KjLNoUdyUDXjBCs3N4AfnISZ",
-            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "d": "EMEub37Tn9yOJIk67OiKS0IKab1qFPPeZIj90v32OLU-",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
-              "sex",
-              "breed",
-              "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -145,11 +123,6 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
-              ],
-              "sex": [
-                "female",
-                "male",
-                "unknown"
               ]
             }
           }
