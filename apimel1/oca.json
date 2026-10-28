@@ -1,12 +1,12 @@
 {
-  "d": "ELnsDyE8PSoHrKa4evcoiHZ1XmIXLacsBR9857DWD2nL",
+  "d": "EKneD7Lf-8PXwsCGQJfdkJdkHmwjOvRUyPW2unq-8HEe",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c76_",
-      "d": "EA7hWrFtH4AZN9kNZwVWn82BRW3lc6O5k8pQZTnwIHI-",
+      "v": "OCAS11JSON000ad7_",
+      "d": "EK8WJDcCzOxuQO2wAo1pxHsct2bdYkwseS133YROlkWb",
       "capture_base": {
-        "d": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+        "d": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -14,9 +14,7 @@
           "id": "Text",
           "organism": "Text",
           "pedigree": "Text",
-          "sample_tissue": "Text",
-          "sequenced_molecule": "Text",
-          "sex": "Text"
+          "sequenced_molecule": "Text"
         },
         "classification": "RDF106",
         "flagged_attributes": []
@@ -24,8 +22,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAiQ6UJ0JlX6own4bQobdfGRgpgcpNlPx_vD7B3vCFbW",
-            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "d": "EJj1AlKIa3f3tMIPpCkAQyf36Uwvs8LShCNn9_3Ls_Be",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -36,18 +34,13 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
-              },
-              "sex": {
-                "female": "female",
-                "male": "male",
-                "unknown": "unknown"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ED7It80PStri5Tp79m0vAAIAMPg-LcwKOf6EVsRDV-O-",
-          "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+          "d": "EG8xmrxo-AHbq-NrMgKZLq53cjv6Jzq7BCaaadLPvSsp",
+          "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -57,18 +50,13 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
-            ],
-            "sex": [
-              "female",
-              "male",
-              "unknown"
             ]
           }
         },
         "information": [
           {
-            "d": "EOpHSA7pBb1hX87Jr6EiiMhHo0k8HX-0UWty8QnDfiUy",
-            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "d": "EGyspHrjK0Lcghp3kEMOMikXUiBnDzoSVWrFBZlVKPy4",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -77,16 +65,14 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
-              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
-              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],
         "label": [
           {
-            "d": "EKFl9FpTwd1yak1i1fHoOHtxQSulRUO9unVxWypYN7jP",
-            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "d": "EM9ck_RrjnVZ_7jGYoed1OgvpEYBMeGgmwXf4Lbz6srM",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -96,17 +82,15 @@
               "id": "id",
               "organism": "organism",
               "pedigree": "pedigree",
-              "sample_tissue": "sample_tissue",
-              "sequenced_molecule": "sequenced_molecule",
-              "sex": "sex"
+              "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EDw2lPFV7tFM7YvHiVoSSrHBeKY8cqUPpyWF3Xk4_gSi",
-            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "d": "EEb-TF3fJ7hI2ak1j38EtYoHzHQFril0ROSZWnyYKHDl",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic data from female bee samples of various pedigree used to produce honeybee stock that is winter hardy, productive and disease resistant. ",
@@ -119,21 +103,19 @@
   },
   "extensions": {
     "adc": {
-      "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo": {
-        "d": "EPOeRa2MdkwYVtmYikcS6rhfT2649b1bgpCzjzzsB-AV",
+      "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o": {
+        "d": "EMOFjfFRYyMk5_B_o6KtTpAlsMRxiJX-xWK2-6iW_doT",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EL8izZtIcyyC1MHMsXDuLuB6BwyDorab3A1x_XYf7q_f",
-            "capture_base": "EMBM90e1ruV9w4otmm6UxDHtOX7yeLQYO0Zj3JNrKRuo",
+            "d": "EB8_RgpYXqZMsPURYMEa9PVLOydSbxIT8TBS-uRDBHKY",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
               "pedigree",
-              "sex",
-              "sample_tissue",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -145,11 +127,6 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
-              ],
-              "sex": [
-                "female",
-                "male",
-                "unknown"
               ]
             }
           }
