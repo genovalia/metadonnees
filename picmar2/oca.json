@@ -1,0 +1,227 @@
+{
+  "d": "EMpgZENnC3GbFGcGZy_IWQuV3iGeoEzIfXm0xvDu_xaI",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON0010aa_",
+      "d": "ELZ7QN6mTpuWP2RII5_vrk3eEZpkcnsGafrExQya5mI3",
+      "capture_base": {
+        "d": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "common_garden": "Text",
+          "country": "Text",
+          "elevation": "Numeric",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "provenance": "Text",
+          "sample_tissue": "Text",
+          "sequenced_molecule": "Text",
+          "technical_replicate": "Boolean"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EEkR35tKKJC822bHxA4W8g9-_Qjghs-sS2f0eC1f-LM5",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "common_garden": {
+                "CH": "Chibougamau (QC)",
+                "AC": "Acadia (NB)",
+                "ML": "Mont-Laurier (QC)",
+                "PR": "Peace River (AB)",
+                "VL": "Valcartier (QC)"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EEL-gvzlDTS5VGYrEd96SjYUEMlq-aDa2DSDEvXfeQm9",
+          "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "common_garden": [
+              "CH",
+              "AC",
+              "ML",
+              "PR",
+              "VL"
+            ],
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EBvqg7cwGHEUiQyovNvkp4UfGbwd1EPRAFgruJ--TTCz",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "common_garden": "Common garden where the tree was sampled (CH: Chibougamau, AC: Acadia, ML: Mont-Laurier, PR: Peace River, VL: Valcartier)",
+              "country": "Country of origin of the individuals sampled",
+              "elevation": "Elevation at the sites where individuals were collected (in meters)",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "provenance": "Provenance (seed source population) code of the tree in the Range-Wide Provenance Study; latitude and longitude are those of the provenance",
+              "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EC_RRcm2w2olUds0sykfMvjLGNOJawqmvGHXDbae1NMc",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "common_garden": "common_garden",
+              "country": "country",
+              "elevation": "elevation",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "provenance": "provenance",
+              "sample_tissue": "sample_tissue",
+              "sequenced_molecule": "sequenced_molecule",
+              "technical_replicate": "technical_replicate"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EJP1XZLr2a3jaZdqM_gcVmEzXg6HKF9vCzDcS3lJsAwh",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 30 071 SNPs for 1 495 black spruce (Picea mariana) trees from rangewide provenance trials representing provenances from Canada and the USA, plus a red spruce (Picea rubens) outgroup.",
+            "name": "picea_mariana_genomic_offset"
+          }
+        ],
+        "unit": {
+          "d": "EPbMNjSqhUU-cOjKX_gCz0VS62igYgiLZee2xEdeGRmv",
+          "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "elevation": "meter",
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4": {
+        "d": "EAgQT8DadTrP9pv9FIBaEUZDISyyHJ5i9vo7sHdBaLR3",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EAVEDxYsBzP2RDMGPTU1Iz1qhZgf8uU3smlwIVE2tYie",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "provenance",
+              "common_garden",
+              "technical_replicate",
+              "sample_tissue",
+              "elevation",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "common_garden": [
+                "CH",
+                "AC",
+                "ML",
+                "PR",
+                "VL"
+              ],
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EMGTMHlN-HuetsIdRCl3BfzsAYaajMxEOtKWJ5gYBdVO",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              },
+              "meter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "m"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

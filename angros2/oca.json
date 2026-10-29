@@ -1,0 +1,153 @@
+{
+  "d": "EC5a9xU-hWLq6C3Z9ORhkbyINYib1CUD6vPnq6fnSn9a",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000c18_",
+      "d": "ENCc1oEfnZXMbQ-UZ77BXlojTEiMH89BOoWr1l_9HSNt",
+      "capture_base": {
+        "d": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "ecotype": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EC-ZzlW8r5ChMB7c_m1TAe4vwDJgC35kGGIo-SAbgb7y",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EAok6W-pSH2CAOAVrJXnzkzYEb5DIJhlI9bnPNP5W3-C",
+          "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EGHrdJq8bpl7hPNbd_fYCB2pVVbq7xou6M43k88xprZ6",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "ecotype": "Distinct population within a species that is adapted to specific environmental conditions, such as anadromous or freshwater resident",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EKI6-HOBfD-wioRTAwOFmeMsJQG_Tfp5jjney3-C_2JI",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "ecotype": "ecotype",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EIXcT3AMiR3Hm2lqasBfieNx-j6l4bCF9_P7dZcCQ0j1",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 42 424 SNPs for 379 American eels (Anguilla rostrata) from eastern Canada, reared in freshwater or in brackish or saltwater habitats.",
+            "name": "anguilla_rostrata_habitat_ecotypes"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8": {
+        "d": "EGh-4Hl5W2Qz8Q0QAPoFrZjX98G0G75IWwrtaeLwYIHl",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EBJmxoHrKGkuEOpMgVs-ld5CUryS5LdC4cP8ZenKgLTo",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sampling_location",
+              "ecotype",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/onctsh1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "onctsh1",
+  "dcterms:issued": "2026-11-02",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of introduced and native Chinook salmon from Patagonia and the Pacific Northwest",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 11 759 SNPs for 356 Chinook salmon (Oncorhynchus tshawytscha) from introduced populations in Patagonia (Chile) and native populations in the Pacific Northwest (United States). The temporal coverage spans the years of the funding grant applications (2009–2010); the sampling dates are not published.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/onctsh1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Chinook salmon",
+    "Oncorhynchus tshawytscha",
+    "invasive species",
+    "Patagonia",
+    "genotyping-by-sequencing",
+    "population genetics"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/74940/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2009"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2010"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6295630/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-8085-9709",
+    "@type": "foaf:Person",
+    "foaf:name": "Louis Bernatchez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-7470-7485",
+        "@type": "prov:Person",
+        "foaf:name": "Shawn R. Narum"
+      },
+      "dcat:hadRole": [
+        "collaborator",
+        "pointOfContact"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/eva.12464",
+    "https://doi.org/10.5061/dryad.2f050"
+  ]
+}

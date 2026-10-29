@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/prusal1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "prusal1",
+  "dcterms:issued": "2026-11-02",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of Japanese plum from Ontario",
+  "dcterms:description": "This dataset contains imputed genotyping-by-sequencing genotypes at 20 633 SNPs for 200 Japanese plum (Prunus salicina) cultivars and breeding selections grown at the Vineland Research Station (Ontario, Canada), with pedigree data.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/prusal1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "Japanese plum",
+    "Prunus salicina",
+    "black knot",
+    "disease resistance",
+    "GWAS",
+    "genotyping-by-sequencing"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/88123/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2015"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2015"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6093943/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-1236-6240",
+    "@type": "foaf:Person",
+    "foaf:name": "Jayasankar Subramanian"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-1236-6240",
+        "@type": "prov:Person",
+        "foaf:name": "Jayasankar Subramanian"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0009-0009-8275-8467",
+        "@type": "prov:Person",
+        "foaf:name": "Chloe Shum"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-6323-550X",
+        "@type": "prov:Person",
+        "foaf:name": "Walid El Kayal"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1002/pei3.70016",
+    "https://doi.org/10.3390/horticulturae11050482",
+    "https://doi.org/10.5683/SP3/YXK7V3"
+  ]
+}

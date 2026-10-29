@@ -1,0 +1,117 @@
+{
+  "id": "picmar2",
+  "en": {
+    "theme": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "North America"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Données de génotypage par séquençage d’épinette noire provenant de tests de provenances nord-américains"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 495 épinettes noires (Picea mariana) provenant de tests de provenances couvrant l’aire de répartition de l’espèce au Canada et aux États-Unis et d’un groupe externe d’épinette rouge (Picea rubens), génotypées à l’aide de 30 071 SNP."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Picea mariana"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Amérique du Nord"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}

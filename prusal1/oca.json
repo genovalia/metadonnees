@@ -1,0 +1,161 @@
+{
+  "d": "EEzHw2-XU5_ux4xenb64AxEgH9FgtKzSgdJWo1qe88Y7",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000d4c_",
+      "d": "EGc9rECUPYz5eIkkvnXNzIk3dmcK8fsr7z2HrakGB3oY",
+      "capture_base": {
+        "d": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "cross_id": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "orchard_row": "Numeric",
+          "orchard_tree": "Numeric",
+          "organism": "Text",
+          "plant_material_type": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EO0KIwv-miRWG4xxQwT3orbJcrsmwjFRSOK2QN8fJyZC",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGiKft86M018yS9MvrQzf7pBdnfF99E217DBmxOgJZEY",
+          "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EF3AP4uJ1DNa98DqlztrmUm8H47fk2SiYwIW2PF7LVff",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "cross_id": "Breeding cross identifier parsed from the accession code (e.g. 20005 in 20005-R1T59)",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "orchard_row": "Orchard row of the tree, parsed from the accession code",
+              "orchard_tree": "Tree number within the orchard row, parsed from the accession code",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "plant_material_type": "Type of plant material: breeding selection (sample ID in the cross-row-tree format) or named cultivar or selection (any other sample ID)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EA50tnHuBgYH5K2zHS9q08eNkZkhySPzNUr_WNdrsnps",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "cross_id": "cross_id",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "orchard_row": "orchard_row",
+              "orchard_tree": "orchard_tree",
+              "organism": "organism",
+              "plant_material_type": "plant_material_type",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EHD9YKUVeClsKMMJQ9ekwbPh2Q1ufhKtHL4SZfovWsRe",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains imputed genotyping-by-sequencing genotypes at 20 633 SNPs for 200 Japanese plum (Prunus salicina) cultivars and breeding selections grown at the Vineland Research Station (Ontario, Canada), with pedigree data.",
+            "name": "prunus_salicina_black_knot"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq": {
+        "d": "EB1VKCDLYGsTsqFFcyiZshYM4BrAkUKm7YrmPiEbcUjO",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "ECbx6YNZQ3_cX3vb4WgC-HzNQyu7x1FHvTXcY95dobuw",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "plant_material_type",
+              "cross_id",
+              "orchard_row",
+              "orchard_tree",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
