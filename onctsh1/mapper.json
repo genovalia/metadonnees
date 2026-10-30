@@ -1,0 +1,117 @@
+{
+  "id": "onctsh1",
+  "en": {
+    "theme": {
+      "type": "literal",
+      "value": "Oncorhynchus tshawytscha"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Oncorhynchus tshawytscha"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Patagonia (Chile) and Pacific Northwest (USA), introduced and native range"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Données de génotypage par séquençage de saumons chinook introduits et indigènes de Patagonie et du Nord-Ouest du Pacifique"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 356 saumons chinook (Oncorhynchus tshawytscha) provenant de populations introduites en Patagonie (Chili) et de populations indigènes du Nord-Ouest du Pacifique (États-Unis), génotypés à l’aide de 11 759 SNP. La couverture temporelle correspond aux années des demandes de subvention (2009–2010) ; les dates d’échantillonnage ne sont pas publiées."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Oncorhynchus tshawytscha"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Oncorhynchus tshawytscha"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Patagonie (Chili) et Nord-Ouest Pacifique (États-Unis), aires introduite et indigène"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}

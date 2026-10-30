@@ -1,0 +1,153 @@
+{
+  "d": "ELd9uJmo07vPKGxG_C3qC5NjqtGjb7tSJpUZpJ05PoQ8",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON000bd1_",
+      "d": "EPQmXUOseTfLjMJrSx5DP7tdSp4MgjUils-usJsYF-WT",
+      "capture_base": {
+        "d": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "site_type": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ECgtTzESMlx1J9WWlw2K_tLiyKp0R7SbcpAnBTIsiAgz",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "ELDiF0I2LnQgsM4yy_1xGgBVhz7kAF7--FW9uMjJdjCx",
+          "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EKeaYNjmCVCc10x0HWAITezm-hpN4IDF3VfDhX8zePHd",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "site_type": "General environmental or habitat category of the sampling site"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EBJyOza7rdelQn-XEq17xBbuUzdebbO3yQkWYcdO7NeE",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "site_type": "site_type"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EAiVkoDWOHPPkqiEFuUX4JRVUo3QPMuTVtd9juitIihK",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 17 503 SNPs for 249 Murray River rainbowfish (Melanotaenia fluviatilis) from the Murray-Darling Basin (Australia).",
+            "name": "melanotaenia_fluviatilis_riverscape_genomics"
+          }
+        ]
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA": {
+        "d": "EDyFuXU7Gy2HNcUuPZVh9y_7hrENXrsdY0NJ9InwEkDi",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EAaS-BvJtBB8QT-7CeMfXWaROGOuCPQj_E4Ojmiqw4GE",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "sampling_location",
+              "site_type",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
