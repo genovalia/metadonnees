@@ -1,10 +1,10 @@
 {
-  "d": "EPMK1huEjMizLERW3OKch23NfE0VBdA5XDLPBGgpcwkG",
+  "d": "EGqTYsp63HoUg7SxOkY3klpIHVUovL9jUmRwl3w4Xt9F",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0012b0_",
-      "d": "ED8vEx2WoTtAizjCyInQYfrqEoi4gZC6HZGWCW-nk0cB",
+      "v": "OCAS11JSON001302_",
+      "d": "EBiAi3UqW3Tguj2_t7hZPzviu8z9rVmjdE1EDtpsjN6a",
       "capture_base": {
         "d": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
         "type": "spec/capture_base/1.1",
@@ -30,7 +30,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EP1iv-Bh-OPoYofduQX29kZto-K6bgP6rG4hjU-00o53",
+            "d": "EISK7kbSxSQ9fkXf8kQV5eEnHFRKvWvKwXnwdjdkIBSr",
             "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -59,6 +59,10 @@
                 "mid-depth": "50 to 100 meters",
                 "shallow": "<50 meters"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -68,7 +72,7 @@
           }
         ],
         "entry_code": {
-          "d": "EEr9E3pWsfFSEZNSW2-kVTt8TyiX4GEMtCt0ssa3rTAD",
+          "d": "EO9e7uhCQ-8QjIYzVGe0stvoM3405aO0mQkphPFobZxT",
           "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -95,6 +99,10 @@
               "deep",
               "mid-depth",
               "shallow"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "sex": [
               "female",
@@ -182,11 +190,11 @@
   "extensions": {
     "adc": {
       "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU": {
-        "d": "EKe2dMeM8AtDJgxgsRjRrneMQa5LAQa-FBBY1wRo52zu",
+        "d": "EPZRjBktCAMI1HrUPI0OuF4mPK8_pAZDD_hhLvYZ3q7a",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ELDuzGzn1W2lW_lC_wwmOiucv17bJ4zCEFLzq4_SpO4c",
+            "d": "EAjjgTbeu7kr9jUJVEUbXslJaGPqS00syq2CpABkHTJc",
             "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -206,16 +214,6 @@
               "genotyping_technology"
             ],
             "entry_code_ordering": {
-              "sampling_depth_class": [
-                "shallow",
-                "mid-depth",
-                "deep"
-              ],
-              "maturity": [
-                "mature",
-                "immature",
-                "unknown"
-              ],
               "ecotype": [
                 "siscowet",
                 "humper",
@@ -229,6 +227,20 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "maturity": [
+                "mature",
+                "immature",
+                "unknown"
+              ],
+              "sampling_depth_class": [
+                "shallow",
+                "mid-depth",
+                "deep"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "sex": [
                 "female",

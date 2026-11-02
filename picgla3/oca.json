@@ -1,10 +1,10 @@
 {
-  "d": "EKwf8d3Ouz2gFsgPL1HHVY1w0hDXBMLEibqWkIOKGZDm",
+  "d": "EM-eRHRjYZUFXDSj7n6GxgyvDGTJrxwVodZ7Z6ityY5b",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000eb7_",
-      "d": "EFFvqHVfk6M0ssl3TKLbEHLl4TyfQUg5FjrUA3Vn31Fb",
+      "v": "OCAS11JSON000f09_",
+      "d": "ED4_CgXQZ0ZfoBi-Wnrtlb3DxMzx68pUtzqd2uoE304H",
       "capture_base": {
         "d": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
         "type": "spec/capture_base/1.1",
@@ -26,7 +26,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EGIAqgHrDh20dixMb4eugjQx2jjUu4WBckLpizLU9uqU",
+            "d": "EG7KAmXDITJTXJhbu_8QyJo54SueVZy353xCBYGvev19",
             "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -42,12 +42,16 @@
               "selection_group": {
                 "selected": "selected (breeding population)",
                 "unselected": "unselected control"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EMaFlTGv7z0sUroMncy1PgxxiLFCG84V2-B1hN34tTm7",
+          "d": "EB-MA7SBQwMaD4H6BtAOwX6XZQgXqWSGM_lbPf5K_J_q",
           "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -62,6 +66,10 @@
             "selection_group": [
               "selected",
               "unselected"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -124,11 +132,11 @@
   "extensions": {
     "adc": {
       "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ": {
-        "d": "EOPKHqrI1cZjmJl1-AsfHEEDQlbPVhZuT-25sc1jDjgj",
+        "d": "EL3or19Gd7-L4eSJqGcj5CrQhPEPpkWAH6g-Ypbu6L6X",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EA_acHmNvfT87dnWOjQsQHdF3Q9WmMiOPe0u2vIYmtbu",
+            "d": "EHFLQHksTbZ-qkW7GTVjmXdWomddvCmelUo3iwG6dqqR",
             "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -155,6 +163,10 @@
               "selection_group": [
                 "selected",
                 "unselected"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           }

@@ -1,10 +1,10 @@
 {
-  "d": "EB1GsS7L10sdFE68faiRDhxweIdIcG2EhMOnP8xIALTA",
+  "d": "EKkgJhL5O6lRU8PjlTeCchprDi6oJU0oaD4QcMKqRVLh",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f9e_",
-      "d": "EGSvE2PgApX0aR3vEeApQdqf4x0D-MRNwSkGJz_1SHqL",
+      "v": "OCAS11JSON000ff0_",
+      "d": "EOYOJga3e_4BzZz7vmoRIVNtJsO1HGdo_9-1U3PaXZgf",
       "capture_base": {
         "d": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EKV8w04tHEx8Q1pcxQQOZKaYCOJ51Nx3ERH56-xnbT1C",
+            "d": "ENVBD3J8XLPmh-a2KGAc1ab9XeUpKBriWKOETHaykyyR",
             "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -44,12 +44,16 @@
                 "wild": "wild",
                 "hatchery": "hatchery",
                 "domesticated": "domesticated"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "ELSoLXwBRkKBXhLdnqhxwtvvwgUn-BFtUTvciMivUl7q",
+          "d": "EMvgvd1xKkhGdXRgCg_keRp-TV4AivEnJ497R3F2FgvS",
           "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -65,6 +69,10 @@
               "wild",
               "hatchery",
               "domesticated"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -138,11 +146,11 @@
   "extensions": {
     "adc": {
       "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25": {
-        "d": "EKd-fut1fVLgyrLT-iuNNvMlY2X76QkWBhx8-zTDgbGx",
+        "d": "EAzlIf7DO4hAuqTkCVjVdoQicmy-bK0Jym6pvvN5j-fA",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EMXOOF3WdRk7LpWnErMrFshV3pBqID3K8MS4OeuPBEYp",
+            "d": "EKaGr6qSmiGNYCYPVyNFdH0locb-qTjkSMWZjOP09Q3q",
             "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -171,6 +179,10 @@
                 "wild",
                 "hatchery",
                 "domesticated"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },
