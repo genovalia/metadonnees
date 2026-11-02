@@ -1,10 +1,10 @@
 {
-  "d": "EEUlVsxhvBa9BReHCVtaNmbkhtDpSdZla9PzVQhAifxr",
+  "d": "EGulHfiWn0uHykktAqgQb5ErM8Yh-14J8cRQF_BfvSjk",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001b41_",
-      "d": "EKr2aKAGqcj7x0YVMPcIc5mloSGdjflBRR6VuWRV1Aqj",
+      "v": "OCAS11JSON001b97_",
+      "d": "ECDC3YRmOpSaBAhG5zL-N50JKDdtXzBY-h1OT7PiNtxb",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -127,7 +127,7 @@
         },
         "information": [
           {
-            "d": "EHUbIkb6psAh3X9k65mZannsW9CQik372qEL2nuzYN18",
+            "d": "EL55z7hqw6u5uAEqjHhDUjPgzrrhx_9GLUybVNxy3VJ8",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -142,7 +142,7 @@
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           },
           {

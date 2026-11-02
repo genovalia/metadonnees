@@ -1,10 +1,10 @@
 {
-  "d": "ENX4sf-SYP1DLXYTkCqhCXkDL8RQzzruXmob1KRFLTAg",
+  "d": "EKkA63RLlImhRZPlBiqPzosmOu0htdQajKipVlxTSr7C",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c3e_",
-      "d": "EFYgw4EoTB4H2HDpth4jOshsMatfk318okj7e82pW4OS",
+      "v": "OCAS11JSON000c39_",
+      "d": "EOUhf3XVMQvvh9ElsRTQOFLyvLh9LXB4MC6r_j6uQz5X",
       "capture_base": {
         "d": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
         "type": "spec/capture_base/1.1",
@@ -92,11 +92,11 @@
         ],
         "meta": [
           {
-            "d": "EBjPLkfLUxKs-eiZ7YqhX-Ax9uXVBJMjx9GDIc3r4hsB",
+            "d": "EDG5sMuz29zaQ2p3Ym7zJb0RVPR-yV56qIZvr14Dohe4",
             "capture_base": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotyping-by-sequencing genotypes at 14 534 single-copy SNPs for 1 081 American lobsters (Homarus americanus) sampled in 2016 in the southern Gulf of St. Lawrence, Canada. DNA was extracted from walking legs.",
+            "description": "This dataset contains targeted sequencing genotypes at 14 534 single-copy SNPs for 1 081 American lobsters (Homarus americanus) sampled in 2016 in the southern Gulf of St. Lawrence, Canada. DNA was extracted from walking legs.",
             "name": "homarus_americanus_temperature_association"
           }
         ],

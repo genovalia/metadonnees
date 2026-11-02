@@ -1,10 +1,10 @@
 {
-  "d": "EMxoufisKhsU2Rp3w7nvraeFx9QPtLYiH6IzgIYGUTPf",
+  "d": "EPMK1huEjMizLERW3OKch23NfE0VBdA5XDLPBGgpcwkG",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00125a_",
-      "d": "EO6-Ozvd9jnSCYX_Gcliu6N0ADlkPd11qKitDsIEp_VP",
+      "v": "OCAS11JSON0012b0_",
+      "d": "ED8vEx2WoTtAizjCyInQYfrqEoi4gZC6HZGWCW-nk0cB",
       "capture_base": {
         "d": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
         "type": "spec/capture_base/1.1",
@@ -105,7 +105,7 @@
         },
         "information": [
           {
-            "d": "EF4pS9HHQgXzz29865jar6E34qTINJWrN1GG0xE0sn5e",
+            "d": "EG3aGCI3e0J05FyMjTShh9mZRDS_MxpZz7s8v2VLPVc5",
             "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -123,7 +123,7 @@
               "sample_weight_in_water": "Weight of the sampled individual measured while immersed in water",
               "sampling_depth_class": "Depth class at which the sample was collected: shallow (< 50 m), mid-depth (50-100 m) or deep (> 100 m)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],
