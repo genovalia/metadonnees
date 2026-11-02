@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/corclu1",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "corclu1",
+  "dcterms:issued": "2026-11-02",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of dwarf and normal Lake Whitefish species pairs from North American lakes",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 3 388 SNPs for 195 Lake Whitefish (Coregonus clupeaformis) from North American lakes, each containing a sympatric dwarf (limnetic) and normal (benthic) species pair.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/corclu1",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "lake whitefish",
+    "Coregonus clupeaformis",
+    "speciation",
+    "genomic islands",
+    "genotyping-by-sequencing",
+    "species pair"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/59861/",
+  "dcat:distribution": [],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2010"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2010"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/4977402/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0002-8085-9709",
+    "@type": "foaf:Person",
+    "foaf:name": "Louis Bernatchez"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-1908-3235",
+        "@type": "prov:Person",
+        "foaf:name": "Pierre-Alexandre Gagnaire"
+      },
+      "dcat:hadRole": [
+        "collaborator",
+        "pointOfContact"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/evo.12075",
+    "https://doi.org/10.5061/dryad.f7125"
+  ]
+}
