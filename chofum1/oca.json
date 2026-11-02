@@ -1,10 +1,10 @@
 {
-  "d": "EBIpamGz1YVwYL8qqa0iFx9SvUbcPcQ37C-bmnefOk_8",
+  "d": "EOKD0hYsUhMr8DHxPeTDh_fGc4j76thoC4tVzdUxS7S7",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000fc5_",
-      "d": "EMNWmwNiSsU1SYjzDxqDJOVB8kIht_TuU7q_BZw-WN8X",
+      "v": "OCAS11JSON001069_",
+      "d": "ENNqB5uG6_HFUFjUJdS4HOZYAfsAcf9-G1NRu-PlrKJg",
       "capture_base": {
         "d": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
         "type": "spec/capture_base/1.1",
@@ -29,7 +29,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EFkaAybW5r1dn-mNtKm5pTvsxEUqDVMb7SJylddOmcnm",
+            "d": "EMchxRbW7VkOWNXbydPii8sQts3iiXXSrM6qR8t2aj7S",
             "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -42,6 +42,10 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "RNA sequencing": "RNA sequencing"
               },
+              "life_stage": {
+                "larva": "larva",
+                "adult": "adult"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -51,7 +55,7 @@
           }
         ],
         "entry_code": {
-          "d": "EEPoeraCHOI7zIJEklxHIMe1BDWUYdzl1bNUBJYy_0m8",
+          "d": "EATx77GokioKiailbproG1xOUenAJ5gIPibJu887mcr4",
           "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -63,6 +67,10 @@
               "targeted SNP assay",
               "RNA sequencing"
             ],
+            "life_stage": [
+              "larva",
+              "adult"
+            ],
             "sex": [
               "female",
               "male",
@@ -72,7 +80,7 @@
         },
         "information": [
           {
-            "d": "EG9MeKhhM7TZGmZzRlYUYZDe7EnAIortx5IGI5Fn-CUg",
+            "d": "EA5woo5TDIv9aEaOOPUr-SgLmC2eIKJhDzAQSBh9M_M_",
             "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -89,7 +97,7 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
           }
         ],
@@ -144,11 +152,11 @@
   "extensions": {
     "adc": {
       "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-": {
-        "d": "EOzZ7tw_Qj8Js4h3vfLpT6ENCWz2Anz_Xdz58TLslMws",
+        "d": "ENw7ue3T7Twzn4Xzxze3gSQQZyWD5tPJ6JZsveYrjykl",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EC6mtvWXGLCa_onUHwtg8zCEfd0SowbYLrZavJIarw2T",
+            "d": "EBNPVQxzMYm9Ap74vrTmFXjkzlJHH5c3PTu2PT3go6KW",
             "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -174,6 +182,10 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "life_stage": [
+                "larva",
+                "adult"
               ],
               "sex": [
                 "female",

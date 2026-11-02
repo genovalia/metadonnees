@@ -1,10 +1,10 @@
 {
-  "d": "EOuvSCMnQtBfV-vS224e1Iiri4Q3Heuk1elUs-qBcIo4",
+  "d": "ENOKdRwCKhyB_t1qFsqEB7SzYqnQ-56at7qIgY-49f28",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0013c7_",
-      "d": "EFC5as8Gsm3rcGFeDz_3DPU_Mm9qlgbE3h7uw-vO_ZuM",
+      "v": "OCAS11JSON00141d_",
+      "d": "ELRBLZDzYGUwVZJVwfvPSTGHoJxKEHPYxCmfN3U5y1xI",
       "capture_base": {
         "d": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
         "type": "spec/capture_base/1.1",
@@ -33,7 +33,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EA9vzIAPCloJt86XhFwOK1oU4b7luIJ26kUVaYv8CVW0",
+            "d": "EGWftVi1Vzf-CM48PfjCuAiupVBv_Jm8S78o1KqrYGu0",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -47,9 +47,9 @@
                 "RNA sequencing": "RNA sequencing"
               },
               "life_stage": {
-                "adult": "Adult",
-                "juvenile": "Juvenile",
-                "subadult": "Subadult"
+                "juvenile": "juvenile",
+                "subadult": "subadult",
+                "adult": "adult"
               },
               "sex": {
                 "female": "female",
@@ -64,7 +64,7 @@
           }
         ],
         "entry_code": {
-          "d": "EPOryECoY-AHXKSlpNWoOHr76PMpJOsUhp5vpffA1N3k",
+          "d": "EF9vZuBqmS1CoMixkn_JBqo_F_pGSew57JmQOyt50Jkn",
           "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -77,9 +77,9 @@
               "RNA sequencing"
             ],
             "life_stage": [
-              "adult",
               "juvenile",
-              "subadult"
+              "subadult",
+              "adult"
             ],
             "sex": [
               "female",
@@ -94,7 +94,7 @@
         },
         "information": [
           {
-            "d": "EGcDo39_y1-jhD9BBrMshPZnjuNdmAKA72cGJ4sGLjNQ",
+            "d": "EGZx789PCyrbliv1F6Wj0AgiQiKwxLg3l5mt9tZHDRTp",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
@@ -113,7 +113,7 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown",
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it",
               "site_type": "General environmental or habitat category of the sampling site",
               "tail_length": "Length of the tail of the individual"
             }
@@ -177,11 +177,11 @@
   "extensions": {
     "adc": {
       "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu": {
-        "d": "ENDda95_y_9zEjLV1nFgP96m1FxWOTLuzQ1Buhb13NUN",
+        "d": "EPraBLCNWjGeyjkq3WQu3gu-3UVV6Sqb_NkNa-IdMJds",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAe7ntL4RnlEiaVT4K3Kzavx6DlZrbX1gFRqcxqJRnR4",
+            "d": "EF2Fdc--_d03swUlarbimsy2IbmQ3hHNSDFol3Q3CBz3",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -213,9 +213,9 @@
                 "RNA sequencing"
               ],
               "life_stage": [
-                "adult",
                 "juvenile",
-                "subadult"
+                "subadult",
+                "adult"
               ],
               "sex": [
                 "female",
