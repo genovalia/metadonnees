@@ -1,10 +1,10 @@
 {
-  "d": "EPdbBWvM6BbOBy9Hp8_JsNsLMrvunOkorHc_pM--vMyn",
+  "d": "EGfPKzoLIQ5RswJhSI10prO-JO4PYcg7jLZ2YUKhwFkD",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001011_",
-      "d": "EJg99u9vNT2mEvxbqJ_a3n16pO4OVZqjGiJIIgLtjtVc",
+      "v": "OCAS11JSON001063_",
+      "d": "EEFYQhHr7bLvzmPqKbP3-BvKs1kvjY0tkCwHqHapQTlj",
       "capture_base": {
         "d": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EEIdfjbW3ApIQwOPwYqx3QtlOlUEp9NJNenMCkuWUa5r",
+            "d": "EHXyFc37Wn6OOIPD1tfXV8PcekWQAwcc19mNitHMqCWG",
             "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -43,12 +43,16 @@
               "region": {
                 "Western Pacific": "Western Pacific Ocean (Japan)",
                 "Eastern Pacific": "Eastern Pacific Ocean (Alaska to California)"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EH7xzZmE_SGRm6tuqKpj00K04kZ1eW9whvRgWH7Rs5I6",
+          "d": "ENlWjwZuaQgPUDWCn3KbNB7fUspxUk7nz6bv4QKwU47I",
           "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -63,6 +67,10 @@
             "region": [
               "Western Pacific",
               "Eastern Pacific"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -136,11 +144,11 @@
   "extensions": {
     "adc": {
       "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE": {
-        "d": "EOq05_mWVYz7KK82MBDE1ldU90L2UdDRW_tbh4aLI8ba",
+        "d": "ECx32Pj0kpBGQeMVFQGrDyTUEGHKuAUgFqzu8icB0CMd",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EOmvEWHuYhnlaVQOtlad9xh_7N_UioLGzt5Y65duM3yz",
+            "d": "EKrBhKdhWHy4Cxmq84F7_YGY3p9omEeqyniNze3lBeMZ",
             "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -168,6 +176,10 @@
               "region": [
                 "Western Pacific",
                 "Eastern Pacific"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

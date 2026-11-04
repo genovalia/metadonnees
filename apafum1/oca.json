@@ -1,10 +1,10 @@
 {
-  "d": "EPfm5tHp5hk1UAy6EDXytfXx64agwH5OKGZ6wvBt90Kc",
+  "d": "EF98hu0FtSDRpQ9GS__K7kGIFvgIBCyiIfWucmkeTUwX",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001004_",
-      "d": "EIVNnlNWTZ0mCKLc67Bq4wKMWvWuPJ_KsR3Z6mBmmf2R",
+      "v": "OCAS11JSON001056_",
+      "d": "EF8tjBQpcD2-F_nkpN83aP_zl43AX2oU4_1My-_bLbu5",
       "capture_base": {
         "d": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
         "type": "spec/capture_base/1.1",
@@ -25,7 +25,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHBAxIu14VpkObgTAI4uHhmnbooJOFv3lWFsUGQYFMzz",
+            "d": "EJThYncV_WYvxzaInmHWViv1EVn06UXavxiznZPvYTYo",
             "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -44,12 +44,16 @@
                 "Saguenay–Lac-Saint-Jean": "outbreak area III",
                 "Bas-Saint-Laurent": "outbreak area IV",
                 "Côte-Nord": "outbreak area V"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EGadYzUrip76G_7rk3V0MrTnXiLa_FiZtxChWm_1SUqs",
+          "d": "EEmnjvQ2k8KvIe4AAKLVGyvwrha49Zk6G7jQxqAa4A0i",
           "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -67,6 +71,10 @@
               "Saguenay–Lac-Saint-Jean",
               "Bas-Saint-Laurent",
               "Côte-Nord"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -136,11 +144,11 @@
   "extensions": {
     "adc": {
       "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4": {
-        "d": "EGQAP_xGp11V9Jwg5w_WfH3Z0oPNQSqfLAoLQ0wHeDhc",
+        "d": "EF72kV7J0lhF6yZYELcRplPxFXngBAKMHupe3nOx9buM",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ENuUhOp7cE64txXmDcpmJPtDWbaE3b1D3evubP8YnO6M",
+            "d": "EJGf8Le8cYV_dRvJ4c2JcouwJTB7MXXoBs_JiC4NvS39",
             "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -169,6 +177,10 @@
                 "Saguenay–Lac-Saint-Jean",
                 "Bas-Saint-Laurent",
                 "Côte-Nord"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

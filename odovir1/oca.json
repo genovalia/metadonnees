@@ -1,10 +1,10 @@
 {
-  "d": "EH0v_jAUcmDxVDcecdl49jcYgp8F4XJVkUKITtfFVG8S",
+  "d": "EESeTqAa5-A-CfTDtAfO7vIuJOkRRe6mHehOm6-OjCJg",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001847_",
-      "d": "EE34g3vG6KIVUsbSL2yD6P4iygqFUZ9tSR0suQeOg-wN",
+      "v": "OCAS11JSON001899_",
+      "d": "ENsrBNie16Uo4NCmdSwYv7fkkMgFJE-4_205UBfw6rz7",
       "capture_base": {
         "d": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
         "type": "spec/capture_base/1.1",
@@ -43,7 +43,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHSwHoFA3WPB22IhpWAkb3oLfh1xajGB74Sco2vRtTLK",
+            "d": "EKoju3g9lybw3owUmQ28jFgf7OdHMNHOcIEdJK1Ewlfx",
             "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -56,6 +56,10 @@
                 "targeted SNP assay": "targeted SNP assay",
                 "RNA sequencing": "RNA sequencing"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -65,7 +69,7 @@
           }
         ],
         "entry_code": {
-          "d": "EBnVSDJHqb7LUYT-jrLGajh9w_qLi9J5ba6B6uWvwrAE",
+          "d": "EOcxcdmto29LWHXVyLq78FM4RZT76T6UwKsiOe-LoEOr",
           "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -76,6 +80,10 @@
               "targeted sequencing",
               "targeted SNP assay",
               "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "sex": [
               "female",
@@ -202,11 +210,11 @@
   "extensions": {
     "adc": {
       "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF": {
-        "d": "ECdZ4WVFnlpbA3poucJj1kOxoqXj_rveerIW79rnC3Fp",
+        "d": "ELQGZMJK9vf-FU63jTJZ1mTtP63O9s2mA5dPcmOIplEG",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ELHT8BW2jZF8Xmi4Plolmd6v5NdoOs-mhJpRb4w-y4iP",
+            "d": "EE7wHtdAOFo4w9l1ydXjLx11jqTn21u2PwiQPCWjTdV_",
             "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -246,6 +254,10 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "sex": [
                 "female",
