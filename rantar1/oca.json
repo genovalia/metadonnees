@@ -1,10 +1,10 @@
 {
-  "d": "EGulHfiWn0uHykktAqgQb5ErM8Yh-14J8cRQF_BfvSjk",
+  "d": "EOD6uZ21VTdbwna5aXwL8rTiIqI_kaXX18W5sD7_G0nx",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001b97_",
-      "d": "ECDC3YRmOpSaBAhG5zL-N50JKDdtXzBY-h1OT7PiNtxb",
+      "v": "OCAS11JSON001c18_",
+      "d": "EKjUxK-8njJMEzT4bXsGxruh2t4RyHAMRcbnM3MCWvpi",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EMDYySaTzbLN_Mf0wOSh7PeLyCqDyGIykVT0GxTbcU7D",
+            "d": "EHFHHSE0U-h98d2b8thCgf__tAX6csuYIRS2sVRGD42p",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -52,6 +52,10 @@
                 "metatarsal punch": "metatarsal punch",
                 "serum": "serum"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -60,7 +64,7 @@
             }
           },
           {
-            "d": "ENldrTD_zh7ZjNwjG71qcturJSz2S0-yeEmbjIE89dJo",
+            "d": "EEuIWoMOHfcxR1bT__TGmfb1HAAVTEGlu0H7UGnhsgWy",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "fra",
@@ -85,6 +89,10 @@
                 "metatarsal punch": "poinçon de métatarse",
                 "serum": "sérum"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "femelle",
                 "male": "mâle",
@@ -94,7 +102,7 @@
           }
         ],
         "entry_code": {
-          "d": "EFavyimbFz8w36t7otl4g3tUCgvU2pm1JnUW_x7HPym9",
+          "d": "EEro8uTw1GGJs4QaQlExxC6lYy2pV00RL-XANv6knuHY",
           "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -117,6 +125,10 @@
               "hair",
               "metatarsal punch",
               "serum"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "sex": [
               "female",
@@ -242,11 +254,11 @@
   "extensions": {
     "adc": {
       "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP": {
-        "d": "EH09EbHiWLaoog_xkdr12_7YS5S4p73KBFgQBFkAcyGo",
+        "d": "EEJW6yPe6Dqpxyn3MjzrfLJuyGe6HEf5gATG3BLNW3SF",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EDmyfp80BgMpcOqJ7DLZAFLEJuovytHUOgsLkbhFvneG",
+            "d": "EN55Wzzb9ShdnzbE6yIuU2Fq_KM0c8Hdug05D8SxIXYO",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -263,6 +275,11 @@
               "genotyping_technology"
             ],
             "entry_code_ordering": {
+              "ecotype": [
+                "forest-dwelling",
+                "migratory",
+                "mountain"
+              ],
               "genotyping_technology": [
                 "genotyping-by-sequencing",
                 "SNP chip",
@@ -271,17 +288,16 @@
                 "targeted SNP assay",
                 "RNA sequencing"
               ],
-              "ecotype": [
-                "forest-dwelling",
-                "migratory",
-                "mountain"
-              ],
               "sample_tissue": [
                 "ear punch",
                 "metatarsal punch",
                 "hair",
                 "serum",
                 "feces"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "sex": [
                 "female",

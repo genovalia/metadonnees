@@ -1,10 +1,10 @@
 {
-  "d": "EA11V-VbERjUG2fXLUJsqhpM094WcRh36BYEqRTw3FJ5",
+  "d": "EL-jVYOkEh-0PsOZz3Q7Cf5yw_wSyp7-GHPWSYoziERO",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e1a_",
-      "d": "EHB-TBUutkfz530SXb4ilTFknsDBBiX89xSbml5ry6ND",
+      "v": "OCAS11JSON000e6c_",
+      "d": "EFQBiRZgS6Zol49eYxTNMWZR_hHCYP2qUyxZ_kge9Buf",
       "capture_base": {
         "d": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
         "type": "spec/capture_base/1.1",
@@ -25,7 +25,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "ELh7owQRzqelwN5TlDwwNw71aG5EHHXVWsgJkqRU0v8j",
+            "d": "ELd050sbtWMPlxS2Xm8HN5cebRvifkx0zg1XkUHWTQ4S",
             "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -41,12 +41,16 @@
               "population_status": {
                 "native": "native",
                 "introduced": "introduced"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EAt1L6ruI3P3HTxASJ8Ri5ysXWFZ1QDDkx7N36B16LvU",
+          "d": "EIeoMyrpryt_fUWFew5mOmJuRhjygoYPQP2mfiupVw2M",
           "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -61,6 +65,10 @@
             "population_status": [
               "native",
               "introduced"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -130,11 +138,11 @@
   "extensions": {
     "adc": {
       "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx": {
-        "d": "ECSfuX5eLHPETRzkouyb1MBMlUF41beYtYVrC9zpFA7Z",
+        "d": "EMjaEc6gwA7tcwf58aDLldT3cwsb8iq3ceDrBi-c0_C4",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHWJzUuRRBRn-AAHt2f-PlHvOkWgn_Zuq9nKk6SEXVt6",
+            "d": "EHZvS5Tpor4g7EfAY6MnCRcS8_QuCP3GVfEXhdiJhnTs",
             "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -160,6 +168,10 @@
               "population_status": [
                 "native",
                 "introduced"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

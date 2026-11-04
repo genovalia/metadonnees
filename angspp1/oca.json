@@ -1,10 +1,10 @@
 {
-  "d": "ELwI8prluZLY0kTUIUay3vfmNzjnMlSdDf4gQnb44_8D",
+  "d": "EEtTZ_vpIbOTHEvVsCyZcIslJmXmM-uNMCyjUY7F9Tw6",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f57_",
-      "d": "EOzspL4V0w520QguBaRoaBk8cPkwlKz6e5bbB4bTcb_y",
+      "v": "OCAS11JSON000fa9_",
+      "d": "EKFQ6GpFj6_5lMBaA1nolXISIHYbBGTWh2IeJaOJTKO7",
       "capture_base": {
         "d": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
         "type": "spec/capture_base/1.1",
@@ -27,7 +27,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EPu9gUDU-o9aeJrNy8MEY0HXWMpUkTW4FuKlFzpQviUi",
+            "d": "EHh3j9Iy7fyBPjNAGvczP2XNWvCuJzICyHQMKb3muB61",
             "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -44,12 +44,16 @@
                 "larva": "larva",
                 "glass eel": "glass eel",
                 "adult": "adult"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EHBrxuDJFGeewdK_ApC7G-tN2jhmKObQRGY4K2vHxyJY",
+          "d": "EBKjEs_B4RNcXwqaPu6dwIcQDKyJ1o6hwaj1CsXG4MZu",
           "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -65,6 +69,10 @@
               "larva",
               "glass eel",
               "adult"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -138,11 +146,11 @@
   "extensions": {
     "adc": {
       "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF": {
-        "d": "EMOtrFypA8FDlzeyE3C4y3u85jVp-oWC341XXQXdubNM",
+        "d": "ECgGyASpi-1myS4KqioXKa_2YW3-0I8klFFHLtZXtDnn",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EMQqmE-q8HK5NUkbOvaQliztDUGR4kTcd_kKJw6kiJA6",
+            "d": "EIInT8nM6f282zaqsfnM8aoLBDSx2_GmvbU33SZ_GIdH",
             "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -171,6 +179,10 @@
                 "larva",
                 "glass eel",
                 "adult"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

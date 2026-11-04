@@ -1,10 +1,10 @@
 {
-  "d": "ENOKdRwCKhyB_t1qFsqEB7SzYqnQ-56at7qIgY-49f28",
+  "d": "EA31KbDWKOZZHm4-k3zPtzGKrfmKtgRpP3RNtngoMtMf",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00141d_",
-      "d": "ELRBLZDzYGUwVZJVwfvPSTGHoJxKEHPYxCmfN3U5y1xI",
+      "v": "OCAS11JSON00146f_",
+      "d": "EEMlkGxEXwHtSBPgoQvDhUyVhXZB_R-LRpvaSpJG7FUw",
       "capture_base": {
         "d": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
         "type": "spec/capture_base/1.1",
@@ -33,7 +33,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EGWftVi1Vzf-CM48PfjCuAiupVBv_Jm8S78o1KqrYGu0",
+            "d": "EIcUf8aoFOWicgeccUQ3eK0Y5Ro2kxwN5hjnaTM4kTLc",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -51,6 +51,10 @@
                 "subadult": "subadult",
                 "adult": "adult"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -64,7 +68,7 @@
           }
         ],
         "entry_code": {
-          "d": "EF9vZuBqmS1CoMixkn_JBqo_F_pGSew57JmQOyt50Jkn",
+          "d": "EAyCV9tgLC9CcU-Zp2adB0uBGbFrlviRbKl9dersCiz0",
           "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -80,6 +84,10 @@
               "juvenile",
               "subadult",
               "adult"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "sex": [
               "female",
@@ -177,11 +185,11 @@
   "extensions": {
     "adc": {
       "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu": {
-        "d": "EPraBLCNWjGeyjkq3WQu3gu-3UVV6Sqb_NkNa-IdMJds",
+        "d": "EJqd7LUag369lCvTIleSw9kZzz4U8lq5r7JX3ZMTRn3K",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EF2Fdc--_d03swUlarbimsy2IbmQ3hHNSDFol3Q3CBz3",
+            "d": "EDGsRR3NGIUqA2pEja30QVRMwbVWGpNuuc13zmcg8u2k",
             "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -216,6 +224,10 @@
                 "juvenile",
                 "subadult",
                 "adult"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "sex": [
                 "female",

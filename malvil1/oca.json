@@ -1,10 +1,10 @@
 {
-  "d": "EKAakzTMDKE6H5vfVHLz9kYr3p7oTKvY2gCM2fMscOQp",
+  "d": "ENqLjfrGXuG0Yz9GxQA6QOvs0bWVrDlpJfFhj2kbzTQp",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ded_",
-      "d": "EGC-8aD0MsQCDATVY0OfXw33HBPrMhOBnFsdFNBzQaeD",
+      "v": "OCAS11JSON000e3f_",
+      "d": "EFYKRh632zhQsFA5kZI5Pl86D3I9MrzGPld2Df4EFMxF",
       "capture_base": {
         "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
         "type": "spec/capture_base/1.1",
@@ -24,7 +24,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "ENbuWa9pJWnb8z3HEV9fzewV7_euwb0LpDRFeS_1m2yq",
+            "d": "EHOdwV2bkeAq-vfW0WmMBAImu1yfQMb0twmEGm6niniW",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -37,6 +37,10 @@
                 "targeted sequencing": "targeted sequencing",
                 "whole genome sequencing": "whole genome sequencing"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "site_type": {
                 "beach": "beach",
                 "deep-water demersal": "deep-water demersal",
@@ -47,7 +51,7 @@
           }
         ],
         "entry_code": {
-          "d": "EAs-Iqa-91HCK-YiBkh6pDutAGY0CNbmUESg2bYgyC9k",
+          "d": "EBT3xyl4pBTZC5M_USNqeqm0YqGTCiJKJx51zc3jo4v7",
           "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -58,6 +62,10 @@
               "targeted SNP assay",
               "targeted sequencing",
               "whole genome sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "site_type": [
               "beach",
@@ -131,11 +139,11 @@
   "extensions": {
     "adc": {
       "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
-        "d": "EPQQoauAZNmgWesIElts3G3gn0XeX_RJ6ph5f_6rotUp",
+        "d": "EE5RpuKhNE_iOJTYtXVhy8s7RQZ98k2NAaCzPAxVdlkd",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EEz0m17oNCqtVrJT-qPrauDw6oht8qRQhZpmkWgw01eh",
+            "d": "EJb8IpgaHNPCGMmKBWv677vBuuuID5__92P529jw55s5",
             "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -156,6 +164,10 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "site_type": [
                 "beach",

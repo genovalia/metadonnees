@@ -1,10 +1,10 @@
 {
-  "d": "EFH5GD9RG-ZfmpF1gjiviKE7S4euW9nkiEty6ILofxug",
+  "d": "EGebODunHSanoWDSPAUbK1ytD1Ghc1Vg7sBdCg2u90r5",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000b81_",
-      "d": "ELhD7uSr5Q_nrGDPfwFvYYWYkvwpYJAh4i63tW-23-2U",
+      "v": "OCAS11JSON000bd3_",
+      "d": "EHb4VPjB8dR5krtS3UPA36Rg-RGr4aku6jiFsKODMN-F",
       "capture_base": {
         "d": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
         "type": "spec/capture_base/1.1",
@@ -23,7 +23,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EPHR9jeTwozAA7ssVZ3vHADsEoCGx9e4LBVQEFwNICiB",
+            "d": "EPjcgIg9EUH-ZJEu0VvrerGM-mUTZEsYG8j6zvvqHRSy",
             "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -35,12 +35,16 @@
                 "targeted sequencing": "targeted sequencing",
                 "targeted SNP assay": "targeted SNP assay",
                 "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EDAz6YD_R63NGKQTcIZzB39jvrGw9_5rzNg_OroK0FMk",
+          "d": "EJyZknS1Hbb-CjhfO3i2nPGB9xukE4AUNPIPFGVfgXSk",
           "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -51,6 +55,10 @@
               "targeted sequencing",
               "targeted SNP assay",
               "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -107,11 +115,11 @@
   "extensions": {
     "adc": {
       "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef": {
-        "d": "EMB_ALKtM8AMANHniR_OnyDfPBPAC-BEFBtDGZpniZCQ",
+        "d": "EFd2qlNeoCksCww0SKoyqwxxHUMktWhYN-HscvJqhUrO",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ENr3URIwgmR_PWH7ScSce-eLkpz6sOPS-FrvMZ-yGxUH",
+            "d": "EAMxFhivz5XtngzCBlRLb3XWD5ceb4noLZjvOMvqhvHc",
             "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -131,6 +139,10 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           }

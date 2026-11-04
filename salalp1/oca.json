@@ -1,10 +1,10 @@
 {
-  "d": "EKIfPE2snpwy-JY8bOoic4CgON38d3Ln8RClici7sYuG",
+  "d": "EFPQ7v8BX_-2tG9i9gPNoNcuVC_z4JO3WvjI45tdnlNO",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0012d0_",
-      "d": "EEvoR59SjstLjev4NDBFLXemLfDB3D7sLeqWciWwlhAo",
+      "v": "OCAS11JSON001322_",
+      "d": "EGYNxICZ2Kr9qZA9oxW5K3Cttp1lyoyBZQ8LpuMJBY96",
       "capture_base": {
         "d": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
         "type": "spec/capture_base/1.1",
@@ -32,7 +32,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EJgvYE-6t1zEOLVkKtZ0Y52JFU4sKISOxxmraGsMnuuR",
+            "d": "EM6vvZAa6ySDxqPCy3WE3D6uN1-EJGhHmfDmmagba8lN",
             "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -54,12 +54,16 @@
                 "summer": "summer",
                 "fall": "fall",
                 "winter": "winter"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EEtKPdehXydOt5NPo5XCj9uG4Si39OPfxlUDuvS7NHkQ",
+          "d": "EBRejGPbHCbO23G5BYr3Aiu-9ozHhgB1GNQDXuq2SQmr",
           "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -80,6 +84,10 @@
               "summer",
               "fall",
               "winter"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -165,11 +173,11 @@
   "extensions": {
     "adc": {
       "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO": {
-        "d": "EKrEOt3Y9ZdeKtIbXaZr0ddWsJTiC0CJOD-Fj3uWp-2f",
+        "d": "EDIQkl0fiYPhVpaVDGxCBQj9cqoMxktR_oZhIkAwhWL6",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EALL6o2_zYODnCgXmuYfZS0RsI6pw75xgK2-jH9y6HJZ",
+            "d": "EHg1BHuNLcxaU0_GQySOPo8G9D1iROUq34RMBMOT6LcF",
             "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -208,6 +216,10 @@
                 "summer",
                 "fall",
                 "winter"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

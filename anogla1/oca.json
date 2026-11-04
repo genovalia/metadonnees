@@ -1,10 +1,10 @@
 {
-  "d": "EOeSebeK_qQHxwXfKAfYhhbnlRY4fLkbKoNZuGw7bHNO",
+  "d": "EKr6WwTveDaop84FRF77caxYUFotkCRQallmfbCp1vtF",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000db2_",
-      "d": "ENkym4mO9inM_BgJMJdLCgWxJX2BHp976WuFwX2pdI0R",
+      "v": "OCAS11JSON000e04_",
+      "d": "EGQM35YtctaoyBMzf7zF2CiVcDzvMpxTFeUOUmbSkuNP",
       "capture_base": {
         "d": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
         "type": "spec/capture_base/1.1",
@@ -25,7 +25,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EASLBBS3UnQSqEc_B_gUxz7eU8FdL7CBNJwmZWMEgUFJ",
+            "d": "EAKVfdZHUpaOpqV3PC27qDSV180tFg4lAHDVrGdhh6lp",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -41,12 +41,16 @@
               "life_stage": {
                 "larva": "larva",
                 "adult": "adult"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EOaWXiieVmk1sKWTnht92lpqz1GZnQkZYMTEzgneE_Eq",
+          "d": "EMOzPk2CLgaWgfYJSwmBgLjb0kK9q9_s-9mKCzsoNToV",
           "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -61,6 +65,10 @@
             "life_stage": [
               "larva",
               "adult"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -130,11 +138,11 @@
   "extensions": {
     "adc": {
       "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP": {
-        "d": "EE5kfMGErJkroePsP8V87Gmg0k-5166R1Z6jziWJy0d7",
+        "d": "EDYJ914PEhDHBTkJ0fN9LhSYnx9rWXnOZdn19cFnpH-V",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAX1zXzHZqRVxmA9gYCdUi4ggYmtzM7KYlsvSjKpesDc",
+            "d": "ENluUveEsH-yCDhC4U51Af6CfejVoU_HJOYb_oR2oU59",
             "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -160,6 +168,10 @@
               "life_stage": [
                 "larva",
                 "adult"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

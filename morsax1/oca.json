@@ -1,10 +1,10 @@
 {
-  "d": "EBQn94Hm11wA9PnxDIdklb6SbliK-cPHBFlgcPyczevr",
+  "d": "EKVcMZENPWOm4IPgupXUwhb5V-dNorPqlYV61HdQgMJo",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e58_",
-      "d": "EO41aQzsJx80o0WEpyM7H25n1ZdZGTQaFhrgQyqmk91t",
+      "v": "OCAS11JSON000eaa_",
+      "d": "EBWTHoQKYv-fxWG4GDWUJWXvJHLobq-dFd8N_TPDLw3k",
       "capture_base": {
         "d": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
         "type": "spec/capture_base/1.1",
@@ -26,7 +26,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "EFdsHjQVcdQq4iw7dKLZI3kx3gDfhNmJPd_TONtnSmiZ",
+            "d": "ENBjXUJQgr_6D84IE5-IgkQETj78ZmrtB00ZlAPjTzlc",
             "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -42,12 +42,16 @@
               "life_stage": {
                 "juvenile": "juvenile",
                 "adult": "adult"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EBi8o5E52HBdiVmSZHwKZB8O1iRiHq9Q9O-AdCNR_S99",
+          "d": "EMvwsc8zOWpgmMQ3uWtC7_YlW7KrVRAzVWur2noCFrk_",
           "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -62,6 +66,10 @@
             "life_stage": [
               "juvenile",
               "adult"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ]
           }
         },
@@ -133,11 +141,11 @@
   "extensions": {
     "adc": {
       "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX": {
-        "d": "EKIdK56blvvwW0VEzTAKKuCdDQbJEKjeBQi4QhKF01lg",
+        "d": "EActabZdZCIbUM3Y31WSa1c2m6y-01JTa2XJRG2_K2H6",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ECr9NDGU4HN1zTmuW_pXgtZ3IfkJ538fTCux1n8nDMQr",
+            "d": "ELOgjI5tWDbizsARu_K44_g8AovhFDw-J5PPTXQLOX_K",
             "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -164,6 +172,10 @@
               "life_stage": [
                 "juvenile",
                 "adult"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ]
             }
           },

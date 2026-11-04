@@ -1,10 +1,10 @@
 {
-  "d": "EEplJtmS4CKUyfQ8UvozuAvD7tNys_oHD9LKPcJOA6j3",
+  "d": "EDskNNgMlVp4bal5p0hXmXGndltlV7gbikyDgu1Z0erm",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0012b2_",
-      "d": "EIUObMPXVWLSov6DF9r8o_NFfLVnQvuxy322Y3-heBur",
+      "v": "OCAS11JSON001304_",
+      "d": "EOaRX2QR3asasw40vmhUCWJZkzsiARUmkWbuWkXqGuhv",
       "capture_base": {
         "d": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
         "type": "spec/capture_base/1.1",
@@ -31,7 +31,7 @@
       "overlays": {
         "entry": [
           {
-            "d": "ELS3vaaQ_ANmePg5381yLr3UJQi3VagZFyeJMhoXep8R",
+            "d": "EG-6M-MkYpLCyN9-QJ1VGLThNbj8RoOzPR1V8APdXBCE",
             "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
@@ -54,6 +54,10 @@
                 "native": "native",
                 "introduced": "introduced"
               },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
               "sex": {
                 "female": "female",
                 "male": "male",
@@ -63,7 +67,7 @@
           }
         ],
         "entry_code": {
-          "d": "EMrjqNy3WWpIZZ1FwN0Z9wuNSpqg7Ehx17yNnpMpvJ8l",
+          "d": "EAL5aczxyK0fv6dm28Sb3iORxQ-6LTaOMoZ865X-Cb0Z",
           "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
@@ -84,6 +88,10 @@
             "population_status": [
               "native",
               "introduced"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
             ],
             "sex": [
               "female",
@@ -170,11 +178,11 @@
   "extensions": {
     "adc": {
       "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf": {
-        "d": "ENtC7piB4bfajd0G0dix8NB0hII34s0csxx3jhDKdHAN",
+        "d": "EAIEPl0_LQ6ucxqmWSb06Zxzw0WFq_5sUWefZXN019N-",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EH5f8Zuzpv_uCMkveG4-Ys6eiJetEx48VUOPQ3BYAe48",
+            "d": "EIiV8r9Leiu3cFXh3Mzmi2ddBpfZYxzgXqywe0xjRsGZ",
             "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -212,6 +220,10 @@
               "population_status": [
                 "native",
                 "introduced"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
               ],
               "sex": [
                 "female",
