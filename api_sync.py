@@ -13,7 +13,9 @@ catalog.json is PUT to /catalog when it differs from the API's.
 
 Datasets in the API with no folder here are reported, never deleted.
 
-Reads are public, so a dry run needs no API key; writes need an admin key.
+Reads are public, so a dry run needs no credentials; writes need a Keycloak
+access token carrying the API's admin role, from a service-account client
+(client_credentials, see ClientCredentials).
 """
 import os
 from dataclasses import dataclass, field
@@ -267,11 +269,37 @@ def report(plans, catalog_plan, orphans, language_actions, base_url, dry_run):
     return "\n".join(lines) + "\n"
 
 
-def run(datasets, catalog, base_url, api_key, dry_run):
+class ClientCredentials(httpx.Auth):
+    """A Keycloak client_credentials token on every request. Fetched on first
+    use and again whenever the API answers 401: an access token lasts minutes,
+    a sync can take longer."""
+
+    requires_response_body = True
+
+    def __init__(self, token_url, client_id, client_secret):
+        self.token_url = token_url
+        self.form = {"grant_type": "client_credentials", "client_id": client_id, "client_secret": client_secret}
+        self.token = None
+
+    def _store(self, response):
+        response.raise_for_status()
+        self.token = response.json()["access_token"]
+
+    def auth_flow(self, request):
+        if self.token is None:
+            self._store((yield httpx.Request("POST", self.token_url, data=self.form)))
+        request.headers["Authorization"] = f"Bearer {self.token}"
+        response = yield request
+        if response.status_code == 401:
+            self._store((yield httpx.Request("POST", self.token_url, data=self.form)))
+            request.headers["Authorization"] = f"Bearer {self.token}"
+            yield request
+
+
+def run(datasets, catalog, base_url, auth, dry_run):
     """Sync and print the report. Returns True if every dataset and the
     catalog succeeded."""
-    headers = {"X-API-Key": api_key} if api_key else {}
-    with httpx.Client(base_url=base_url, headers=headers, timeout=30) as client:
+    with httpx.Client(base_url=base_url, auth=auth, timeout=30) as client:
         plans, catalog_plan, orphans, language_actions = sync(client, datasets, catalog, dry_run)
 
     text = report(plans, catalog_plan, orphans, language_actions, base_url, dry_run)
