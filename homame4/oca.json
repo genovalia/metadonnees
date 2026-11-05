@@ -1,12 +1,12 @@
 {
-  "d": "ECzZzaoHD91GqpFos14LHqkUYLN51nM58GFaJIidxjE2",
+  "d": "ELava_dWeuCgEfiVRawRCYfZCAjZmiHvy9dR6nXiPz9W",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000dce_",
-      "d": "EN82yIkvQMT-akpNJSV1cHQUKq3CIS13FxZB34ZJWLah",
+      "v": "OCAS11JSON000dba_",
+      "d": "EAk8PMNSFo9te9fl22PsuepdIgUC6VZmUT39icf9umCa",
       "capture_base": {
-        "d": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+        "d": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -15,8 +15,8 @@
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
-          "sampling_date": "DateTime",
           "sampling_location": "Text",
+          "sampling_month": "Numeric",
           "sequenced_molecule": "Text"
         },
         "classification": "RDF106",
@@ -25,8 +25,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EH5fitvqRprgaaYWJm2dHMANDbhLtbRI1AtKIdcZrZrW",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "EIQW0K0f6TULWvHwFmTNHIsfCd3pla3TPCFl2HnYvlK-",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -46,8 +46,8 @@
           }
         ],
         "entry_code": {
-          "d": "ENHIYJQbV9Mw_pqwAHShGDR3P4h7gy3a1RHwE6KrH0Mt",
-          "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+          "d": "EL9BFAPUrA5VhYV959RepPmaSpFWMgtaGlD7PvbFphdh",
+          "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -66,8 +66,8 @@
         },
         "information": [
           {
-            "d": "EE3136jCJNWJ9GO0tqx0ZN302IhaHMbAjrZpOizYvc4y",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "ELC77BwdV3T_y8_Icu_yGNu-ffbFrpj1nKUIA2B_l1It",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -77,16 +77,16 @@
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
-              "sampling_date": "Date on which the sample was collected, in the ISO 8601 format YYYY-MM-DD, or YYYY-MM when the day is unknown",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_month": "Month in which the sample was collected, as a number from 1 (January) to 12 (December)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           }
         ],
         "label": [
           {
-            "d": "ELutTdPFLyVi0EHmbBzvc1BjgdpGkXBoTxBwSjXlsDtg",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "ED06PcfNgWokELkZ8VX0yzvtjTxlnUspWA1eG4AsNTca",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -97,8 +97,8 @@
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
-              "sampling_date": "sampling_date",
               "sampling_location": "sampling_location",
+              "sampling_month": "sampling_month",
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
@@ -106,8 +106,8 @@
         ],
         "meta": [
           {
-            "d": "EHvZX3pvsSRq5GwuWs3alt9eSQI6X7vm5Y6_5pc3XR95",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "EB3nyha5k-ua73PsRmrtkYkgAZhVsTg7oadBmXNDidZ4",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 10 156 SNPs for 586 American lobsters (Homarus americanus) from across much of the species range in Canada and the United States.",
@@ -115,8 +115,8 @@
           }
         ],
         "unit": {
-          "d": "EFlcjZAiJ2Fc47oCW0panOR9wbDj1rMg1sn1CTdFk6IK",
-          "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+          "d": "EKiL9XYgM1iI31ayDu4tnLOW7_jx5oZiwjithNw7kDgC",
+          "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -129,13 +129,13 @@
   },
   "extensions": {
     "adc": {
-      "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r": {
-        "d": "EMCYy6jrcchIytMr2JeQZRAl6p9MqNcUmyeWWH8zQbqY",
+      "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO": {
+        "d": "ENAFo0Rmj_7In71cp8Emb_bjbdJRfDpD2VlBm38YHt-b",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EILA7V6Dc8EoIUPL7rcGRumBFTZbB5lgmAruWSYIx0bP",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "EMUKsqfynlBPO98TAdwjmShv_7jKlCcXg4xWL8qCO1m4",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -144,7 +144,7 @@
               "latitude",
               "longitude",
               "sampling_location",
-              "sampling_date",
+              "sampling_month",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -164,8 +164,8 @@
             }
           },
           "unit_framing": {
-            "d": "EMZFUV8-1ERtURUYXm4n_fn3oISOJwwLB6fR0OV-M8cj",
-            "capture_base": "EHPqAGC2uPD6F4wTN8zo6MrJhW1rqIENnEqJyWJT-25r",
+            "d": "EA6L4ztrtsesGaSR5Zcv3b_MT1QpS0Di330Bppo9pO-V",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
