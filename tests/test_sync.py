@@ -5,7 +5,7 @@ import re
 import httpx
 import pytest
 
-from api_sync import DatasetPlan, report, sync, translations_from_mapper
+from api_sync import ClientCredentials, DatasetPlan, report, sync, translations_from_mapper
 
 DCAT = {
     "dcterms:identifier": "ds1",
@@ -85,7 +85,7 @@ class FakeApi:
         method, path = request.method, request.url.path
         body = json.loads(request.content) if request.content else None
         if method != "GET":
-            assert request.headers.get("X-API-Key") == "key"
+            assert request.headers.get("Authorization") == "Bearer token"
             self.writes.append((method, path))
 
         if path == "/languages":
@@ -145,7 +145,7 @@ def api():
 
 def run_sync(api, datasets, dry_run=False, catalog=CATALOG):
     transport = httpx.MockTransport(api.handler)
-    with httpx.Client(base_url="http://api", headers={"X-API-Key": "key"}, transport=transport) as client:
+    with httpx.Client(base_url="http://api", headers={"Authorization": "Bearer token"}, transport=transport) as client:
         return sync(client, datasets, copy.deepcopy(catalog), dry_run)
 
 
@@ -311,3 +311,23 @@ def test_failed_catalog_write_is_reported(api):
     plans, catalog_plan, orphans, languages = run_sync(api, {}, catalog={**CATALOG, "dcterms:title": "New"})
     assert "400 bad catalog" in catalog_plan.errors[0]
     assert "| `catalog.json` | **error**" in report(plans, catalog_plan, orphans, languages, "http://api", dry_run=False)
+
+
+def test_client_credentials_fetches_a_token_and_refetches_it_on_401():
+    tokens = iter(["expired", "fresh"])
+    seen = []
+
+    def handler(request):
+        if request.url.path == "/token":
+            assert b"grant_type=client_credentials" in request.content
+            assert b"client_secret=s3cret" in request.content
+            return httpx.Response(200, json={"access_token": next(tokens)})
+        seen.append(request.headers["Authorization"])
+        return httpx.Response(401 if seen[-1] == "Bearer expired" else 201)
+
+    auth = ClientCredentials("http://kc/token", "sedna-metadata-api-ci", "s3cret")
+    with httpx.Client(base_url="http://api", auth=auth, transport=httpx.MockTransport(handler)) as client:
+        assert client.post("/languages", json={"code": "en"}).status_code == 201
+        assert client.post("/languages", json={"code": "fr"}).status_code == 201
+
+    assert seen == ["Bearer expired", "Bearer fresh", "Bearer fresh"]

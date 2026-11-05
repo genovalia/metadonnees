@@ -56,8 +56,8 @@ poetry run python catalogue_cli.py validate
 Add `--warnings` to also list missing recommended fields (license, distribution).
 
 ### Syncing to the API
-The **Sync** action runs `catalogue_cli.py sync` on every push to `dev` (dev API) and `main` (prod API), with the admin key from the GitHub Environment of the same name. It creates missing datasets, updates changed ones and the catalog description, and lists datasets the API has but the repo doesn't, without deleting them. To preview it locally (reads need no key):
+The **Sync** action runs `catalogue_cli.py sync` on every push to `dev` (dev API) and `main` (prod API), with the Keycloak service account from the GitHub Environment of the same name. It creates missing datasets, updates changed ones and the catalog description, and lists datasets the API has but the repo doesn't, without deleting them. To preview it locally (reads need no credentials):
 ```bash
 poetry run python catalogue_cli.py sync --dry-run --base-url https://metadata-api-dev.apps.genovalia.ulaval.ca
 ```
-For a real run, set `METADATA_API_KEY` to an admin key. See [AGENTS.md](./AGENTS.md#how-the-catalog-reaches-the-api) for what is synced and which fields the API uses.
+For a real run, set `KEYCLOAK_TOKEN_URL` (e.g. `https://auth.apps.genovalia.ulaval.ca/realms/dev/protocol/openid-connect/token`), `METADATA_API_CLIENT_ID` and `METADATA_API_CLIENT_SECRET` to a service-account client whose token carries the API's `admin` role (`sedna-metadata-api-ci`). See [AGENTS.md](./AGENTS.md#how-the-catalog-reaches-the-api) for what is synced and which fields the API uses.

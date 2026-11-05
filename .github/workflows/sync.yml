@@ -54,7 +54,9 @@ jobs:
       - name: Sync to the API
         env:
           METADATA_API_URL: ${{ vars.METADATA_API_URL }}
-          METADATA_API_KEY: ${{ secrets.METADATA_API_KEY }}
+          KEYCLOAK_TOKEN_URL: ${{ vars.KEYCLOAK_TOKEN_URL }}
+          METADATA_API_CLIENT_ID: ${{ vars.METADATA_API_CLIENT_ID }}
+          METADATA_API_CLIENT_SECRET: ${{ secrets.METADATA_API_CLIENT_SECRET }}
         run: |
           poetry run python catalogue_cli.py sync ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 

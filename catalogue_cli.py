@@ -219,11 +219,16 @@ def validate(args):
     if total_errors:
         sys.exit(1)
 
+# The Keycloak service-account client the sync writes with: its token carries
+# the admin role of the API's own client.
+CREDENTIAL_VARS = ("KEYCLOAK_TOKEN_URL", "METADATA_API_CLIENT_ID", "METADATA_API_CLIENT_SECRET")
+
+
 def sync(args):
     """Bring the API at --base-url in line with the dataset folders."""
-    api_key = os.environ.get("METADATA_API_KEY")
-    if not args.dry_run and not api_key:
-        sys.exit("METADATA_API_KEY must be set (or use --dry-run, which needs no key).")
+    credentials = [os.environ.get(name) for name in CREDENTIAL_VARS]
+    if not args.dry_run and not all(credentials):
+        sys.exit(f"{', '.join(CREDENTIAL_VARS)} must be set (or use --dry-run, which needs no credentials).")
     if not args.base_url:
         sys.exit("Pass --base-url or set METADATA_API_URL.")
 
@@ -237,7 +242,8 @@ def sync(args):
     if errors:
         sys.exit(f"{CATALOG_FILE} doesn't validate; run `validate` first.")
 
-    if not api_sync.run(datasets, catalog, args.base_url.rstrip("/"), api_key, args.dry_run):
+    auth = None if args.dry_run else api_sync.ClientCredentials(*credentials)
+    if not api_sync.run(datasets, catalog, args.base_url.rstrip("/"), auth, args.dry_run):
         sys.exit(1)
 
 def main():
@@ -254,9 +260,9 @@ def main():
     validate_parser.set_defaults(func=validate)
 
     # sync command
-    sync_parser = subparsers.add_parser("sync", help="Create or update the datasets and the catalog in a Metadata API (admin key in METADATA_API_KEY)")
+    sync_parser = subparsers.add_parser("sync", help="Create or update the datasets and the catalog in a Metadata API (Keycloak service account in KEYCLOAK_TOKEN_URL, METADATA_API_CLIENT_ID, METADATA_API_CLIENT_SECRET)")
     sync_parser.add_argument("--base-url", default=os.environ.get("METADATA_API_URL"), help="API to sync, e.g. https://metadata-api-dev.apps.genovalia.ulaval.ca (default: $METADATA_API_URL)")
-    sync_parser.add_argument("--dry-run", action="store_true", help="Only report what would change; needs no API key")
+    sync_parser.add_argument("--dry-run", action="store_true", help="Only report what would change; needs no credentials")
     sync_parser.set_defaults(func=sync)
 
     args = parser.parse_args()
