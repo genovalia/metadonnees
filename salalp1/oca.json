@@ -1,10 +1,10 @@
 {
-  "d": "EFPQ7v8BX_-2tG9i9gPNoNcuVC_z4JO3WvjI45tdnlNO",
+  "d": "EIWSio5M57Ljl5IgKTBhcHanRoeQ_i6SNAwsx0qZ6-Jr",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001322_",
-      "d": "EGYNxICZ2Kr9qZA9oxW5K3Cttp1lyoyBZQ8LpuMJBY96",
+      "v": "OCAS11JSON001326_",
+      "d": "EGnvpWg4mkCRfIMx3U6k22uDrNPVGDtcCoKaHsBjgCgQ",
       "capture_base": {
         "d": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
         "type": "spec/capture_base/1.1",
@@ -63,13 +63,13 @@
           }
         ],
         "entry_code": {
-          "d": "EBRejGPbHCbO23G5BYr3Aiu-9ozHhgB1GNQDXuq2SQmr",
+          "d": "EL-OmryYK6PTa4qvFvwnKn4UwqFrB4ASiMgpwKFVrL9u",
           "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "acoustic_tag": [
-              false,
-              true
+              "false",
+              "true"
             ],
             "genotyping_technology": [
               "genotyping-by-sequencing",
@@ -93,12 +93,12 @@
         },
         "information": [
           {
-            "d": "EP22Vl38XCGATt5SetuS3GPi5z9h3Jlwg_9pwZyCKu3O",
+            "d": "ELBzAR5lwM1MHVIOXYQvcOhhAp2QlIWL5qRw-_Rh66cr",
             "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "acoustic_tag": "TRUE if the fish was fitted with an acoustic transmitter (tagged), FALSE if sampled for DNA only (baseline)",
+              "acoustic_tag": "true if the fish was fitted with an acoustic transmitter (tagged), false if sampled for DNA only (baseline)",
               "country": "Country of origin of the individuals sampled",
               "elevation_gain": "Elevation gain along the river, Table 1 of the source preprint",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
@@ -173,11 +173,11 @@
   "extensions": {
     "adc": {
       "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO": {
-        "d": "EDIQkl0fiYPhVpaVDGxCBQj9cqoMxktR_oZhIkAwhWL6",
+        "d": "ECrd4fXnW-rMKzd7EPT3u-iwHBzr93dvv9OWCokBeQC0",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHg1BHuNLcxaU0_GQySOPo8G9D1iROUq34RMBMOT6LcF",
+            "d": "ENP_e24gvSoGndlcm5aM-Ve03A1pF_rYUlsosNamxRog",
             "capture_base": "EFaZaofHXhUgAVw_HzQ8AIPQ1QDlbf6jeZEdZkmlpIiO",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
@@ -200,8 +200,8 @@
             ],
             "entry_code_ordering": {
               "acoustic_tag": [
-                false,
-                true
+                "false",
+                "true"
               ],
               "genotyping_technology": [
                 "genotyping-by-sequencing",

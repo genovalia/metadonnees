@@ -2,6 +2,7 @@
   "@context": {
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "prov": "http://www.w3.org/ns/prov#",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
@@ -48,7 +49,22 @@
 
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/131567/",
 
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:language": "en",
+      "dcat:accessURL": {
+        "@id": "https://wagtail.apps.genovalia.ulaval.ca/documents/26/Data_Access_Form_cB_GQ_FINAL.pdf"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "dct:language": "fr",
+      "dcat:accessURL": {
+        "@id": "https://wagtail.apps.genovalia.ulaval.ca/documents/25/Formulaire_Acces_cB_GQ_FINAL.pdf"
+      }
+    }
+  ],
 
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
