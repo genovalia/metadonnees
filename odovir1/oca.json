@@ -1,10 +1,10 @@
 {
-  "d": "EESeTqAa5-A-CfTDtAfO7vIuJOkRRe6mHehOm6-OjCJg",
+  "d": "EPjd_aiRP6nhzmFNkiKLhfdSet01og3aoORngTAUG3nV",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001899_",
-      "d": "ENsrBNie16Uo4NCmdSwYv7fkkMgFJE-4_205UBfw6rz7",
+      "v": "OCAS11JSON002b25_",
+      "d": "EMy_zsmYSr82pvLbbH8ByaQle6WDadQwyO8SSwOaSR1Z",
       "capture_base": {
         "d": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
         "type": "spec/capture_base/1.1",
@@ -64,6 +64,31 @@
                 "female": "female",
                 "male": "male",
                 "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "EHq0roByi7ArSCFUtwmGFk4jL5pa8aUjcoSCYCfETh1J",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
@@ -127,6 +152,41 @@
               "thorax_girth": "Chest girth",
               "total_length": "Total length of the individual, including the tail"
             }
+          },
+          {
+            "d": "EGZfA-xkOeVhRlwRhljFJzLvj6OB30O86Ir5gTYgN_hV",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "age": "Âge de l’individu",
+              "age_capped": "Âge estimé plafonné à 9 ans (colonne age2 du dépôt; 9 = 9 ans ou plus)",
+              "antler_length": "Longueur du bois",
+              "antler_mainbeam_diameter": "Diamètre du merrain du bois gauche",
+              "antler_points": "Nombre de pointes par bois (> 2,5 cm)",
+              "antler_spread": "Distance maximale entre les deux bois (colonne dist_mainbeam; aussi remplie pour certaines femelles, ce qui signifie que la valeur n’est pas confirmée)",
+              "body_mass": "Masse corporelle de l’individu",
+              "country": "Pays d’origine des individus échantillonnés",
+              "foot_length": "Longueur de la patte arrière gauche",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "head_body_length": "Longueur de la tête et du corps de l’individu, du bout du nez à la base de la queue (queue exclue)",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "peroneus_muscle": "Masse du muscle péronier de la patte arrière gauche",
+              "rumpfat10": "Épaisseur du gras sous-cutané de la croupe à 10 cm de l’os pelvien",
+              "rumpfat5": "Épaisseur du gras sous-cutané de la croupe à 5 cm de l’os pelvien",
+              "rumpfat_mean": "Moyenne des deux épaisseurs de gras de croupe (colonne rumpfat510 du dépôt, qui y est décrite comme un rapport)",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas",
+              "spike_length": "Longueur de la dague chez les cerfs n’ayant qu’une seule pointe",
+              "tail_length": "Longueur de la queue de l’individu",
+              "thorax_girth": "Tour de poitrine",
+              "total_length": "Longueur totale de l’individu, queue comprise"
+            }
           }
         ],
         "label": [
@@ -166,6 +226,43 @@
               "total_length": "total_length"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ELph4mgN_EG7pu7y4i8B2bGwaztF_x0R1evkyZeH3h9u",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "age": "âge",
+              "age_capped": "âge_plafonné",
+              "antler_length": "longueur_bois",
+              "antler_mainbeam_diameter": "diamètre_merrain",
+              "antler_points": "nombre_pointes_bois",
+              "antler_spread": "écartement_bois",
+              "body_mass": "masse_corporelle",
+              "country": "pays",
+              "foot_length": "longueur_patte_arrière",
+              "genotyping_technology": "technologie_génotypage",
+              "head_body_length": "longueur_tête_corps",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "peroneus_muscle": "muscle_péronier",
+              "rumpfat10": "gras_croupe_10_cm",
+              "rumpfat5": "gras_croupe_5_cm",
+              "rumpfat_mean": "gras_croupe_moyen",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe",
+              "spike_length": "longueur_dague",
+              "tail_length": "longueur_queue",
+              "thorax_girth": "tour_poitrine",
+              "total_length": "longueur_totale"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -175,6 +272,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 10 596 SNPs for 441 white-tailed deer (Odocoileus virginianus) from Anticosti Island (Quebec, Canada), where the species was introduced about 120 years ago, with phenotypic data.",
+            "name": "odocoileus_virginianus_founder_effect"
+          },
+          {
+            "d": "EFJQh-CQqjRVU8Nzs39yMXBveyWWkM940bc0-g6iL6wv",
+            "capture_base": "EGwU-ZXlTy_Xj2mrt9IyIXd4sXwzVhWuKGMKVJd4bnoF",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 441 cerfs de Virginie (Odocoileus virginianus) provenant de l’île d’Anticosti (Québec, Canada), où l’espèce a été introduite il y a environ 120 ans, génotypés à l’aide de 10 596 SNP, ainsi que des données phénotypiques.",
             "name": "odocoileus_virginianus_founder_effect"
           }
         ],

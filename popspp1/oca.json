@@ -1,10 +1,10 @@
 {
-  "d": "EGAOeFHBNssGtLjoLO3aN92VGSOlqgHvBYdP5z67XfXY",
+  "d": "EKvDHDkTDRwDflBO8tEu3mtyQbCJ2LufegmZEwyRNAq9",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c65_",
-      "d": "EI6Sh9OW-EI6ZW7uoLW4EyOzE4Y4U2TFvUhsxsnhaXjh",
+      "v": "OCAS11JSON0016b7_",
+      "d": "EEoO8oZnMTPKBr8qaX_toA3KwEXU1qOtCI-Y_85ITQ5M",
       "capture_base": {
         "d": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
         "type": "spec/capture_base/1.1",
@@ -39,6 +39,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EOcHHYQJ7NTVDB_AHpck9qKTt7aT3e6lKuSTkwoELsPU",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -77,6 +97,21 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "voucher": "Herbarium voucher number of the specimen, when available"
             }
+          },
+          {
+            "d": "EHR4hyuEx4XXhXztGKHL4RUCP8a2j-OOUyO9tZonNEiV",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "herbarium": "Préfixe du code d’herbier du spécimen de référence (p. ex. QFA, DAO, GH)",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "voucher": "Numéro du spécimen de référence d’herbier, lorsque disponible"
+            }
           }
         ],
         "label": [
@@ -96,6 +131,23 @@
               "voucher": "voucher"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EI4EZobNCCQzuyits9OF5RCzrx1vFCb-vuJjF2irYf0Q",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "herbarium": "herbier",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée",
+              "voucher": "spécimen_référence"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -105,6 +157,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains targeted SNP assay genotypes at 36 SNPs from 28 gene regions, diagnostic of eight poplar species (P. angustifolia, P. balsamifera, P. deltoides, P. fremontii, P. laurifolia, P. maximowiczii, P. nigra, P. trichocarpa), for 448 reference specimens of 14 poplar species (Populus). The temporal coverage is the publication year of the source article (2013); the sampling dates are not published.",
+            "name": "populus_diagnostic_snp_assay"
+          },
+          {
+            "d": "EBvlBnM9kj_XuD9aD0qe7hAfmHoKSJzFupEAt15zIwBO",
+            "capture_base": "EFV7q_LHGZ3z8-E8lkj9V9OoQtpl7sqkb52gRaNisS8k",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage de SNP ciblés, de 448 spécimens de référence de 14 espèces de peupliers (Populus), génotypés à l’aide de 36 SNP répartis dans 28 régions géniques, diagnostiques de huit espèces de peupliers (P. angustifolia, P. balsamifera, P. deltoides, P. fremontii, P. laurifolia, P. maximowiczii, P. nigra, P. trichocarpa). La couverture temporelle est l’année de publication de l’article source (2013) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "populus_diagnostic_snp_assay"
           }
         ]

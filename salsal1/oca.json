@@ -1,12 +1,12 @@
 {
-  "d": "EHSuFHajVGRyo5Wpqhd38Fcq3Ixlix2nFe-TlfbxODlm",
+  "d": "EG-XJ0vZWeeJ5kiEOOJwJdbRZlKmim0FiPKezWMd9MZ9",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000b5b_",
-      "d": "EA3UJ6k6cOdwOegcMQoDvPZcah5CMoaDPM34dkmEFwEv",
+      "v": "OCAS11JSON0018d6_",
+      "d": "EMXjSh-3q7ZBamL1U7RaqZKa88KEdrfkkny_t7Qy4uUF",
       "capture_base": {
-        "d": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+        "d": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -14,6 +14,9 @@
           "id": "Text",
           "organism": "Text",
           "population_type": "Text",
+          "publication_code": "Text",
+          "sampling_location": "Text",
+          "sampling_year": "Numeric",
           "sequenced_molecule": "Text"
         },
         "classification": "RDF106",
@@ -22,38 +25,73 @@
       "overlays": {
         "entry": [
           {
-            "d": "EB1aWbWYMAoGep6jXhuhwPd5PIBb6RvVPutkNkM7RKpH",
-            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "d": "EI8zixOWrV9Bb6ZmFU4qn95VIWfCsw5RK5ftDgmkafmq",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "population_type": {
+                "wild": "wild",
+                "hatchery": "hatchery",
+                "domesticated": "domesticated"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "EAtzmTAIC0F38xawBzjZNIHW9qJ7Lyzo0iINJSnsgsNf",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "population_type": {
+                "wild": "sauvage",
+                "hatchery": "pisciculture",
+                "domesticated": "domestiqué"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "ECLAQn9pvVw7VRa07nFTcE4h8ZHjj1FTnxcIb1GnpDYR",
-          "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+          "d": "ELXMuRxIWNvCNwUNE7E18U2mA8xKaZiUxeIAN1eCMmQW",
+          "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "population_type": [
+              "wild",
+              "hatchery",
+              "domesticated"
             ],
             "sequenced_molecule": [
               "DNA",
@@ -63,8 +101,8 @@
         },
         "information": [
           {
-            "d": "EJvA3StKI4d4Xu94X2K32n75wXLBK0IliJZMckAaEula",
-            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "d": "EOOVOf8VzcCIL69k5o50a7FQpDtUPb2baL8_vOfqSidX",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -73,14 +111,34 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
               "population_type": "General category describing the origin or management status of the population",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EAIJ3Al-q__wVjnHIINpDhWRB0rOd2VSScz8clm6L9xh",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "population_type": "Catégorie générale décrivant l’origine ou le mode de gestion de la population",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
             }
           }
         ],
         "label": [
           {
-            "d": "EJ-Y9V2X_B-wdXTOTmT6ekzksPqWP3ZGP-VxU0VG4zoI",
-            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "d": "EGrBhoIrBikUTSaeee7Mz73VBKF_NrTxfTlWOoHthvF8",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -90,18 +148,48 @@
               "id": "id",
               "organism": "organism",
               "population_type": "population_type",
+              "publication_code": "publication_code",
+              "sampling_location": "sampling_location",
+              "sampling_year": "sampling_year",
               "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EKWdLQuczzs2GkYxETDRcM5Ate8gaSgaP76Nf0zQKzCP",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "population_type": "type_population",
+              "publication_code": "code_publication",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "ECaoq-nvlMCL_ICK9xfVZUqSNVsqHuGNL9ZSPzDCrU4v",
-            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "d": "EItH8kxqNlknlb7b7Od0nAwfnbNg2k9Un2X8TzXEXK8f",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset includes genotypic data from 165 Atlantic salmon (Salmo salar) individuals from 2 wild and 2 domesticated Canadian and Scottish populations, comprising 151,509 SNPs genotyped using a 200K SNP array.",
+            "description": "This dataset contains SNP chip genotypes at 151 509 SNPs for 165 Atlantic salmon (Salmo salar) from wild and domesticated populations of Canada and Scotland.",
+            "name": "salmo_salar_domestication"
+          },
+          {
+            "d": "EIXToDOlJ0eADUaeWw0h9_wtROlLwHSo096QyDSjhFyF",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 165 saumons atlantiques (Salmo salar) provenant de populations sauvages et domestiquées du Canada et d’Écosse, génotypés à l’aide de 151 509 SNP.",
             "name": "salmo_salar_domestication"
           }
         ]
@@ -111,19 +199,22 @@
   },
   "extensions": {
     "adc": {
-      "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J": {
-        "d": "EMj8urJI0FHLYsmLsjaY9rwQ74A6ON-UiDU2C6y5YkSR",
+      "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa": {
+        "d": "ENWBrcyDn0ONhuhRMCgX2GotLkk81EIPTEQkaRaq08E9",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EFbjlUdWQzUW99TjpQ5PAUnSh6QrolaYFxF2LvLe2ZsD",
-            "capture_base": "EJ3No6MlMIxhNbJu38hZG2wAOr-kjFDjUIxe9erZEa-J",
+            "d": "EBMIsCeulsGNbjFNv9vINzVCOuAKPMUe6N6u6cYPRT-f",
+            "capture_base": "EDsBJzY0dSnQrsf-y-3ZohupspC0DfazEAsXqyNo_-qa",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
+              "sampling_location",
               "population_type",
+              "publication_code",
+              "sampling_year",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -135,6 +226,11 @@
                 "targeted sequencing",
                 "targeted SNP assay",
                 "RNA sequencing"
+              ],
+              "population_type": [
+                "wild",
+                "hatchery",
+                "domesticated"
               ],
               "sequenced_molecule": [
                 "DNA",

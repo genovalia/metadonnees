@@ -1,10 +1,10 @@
 {
-  "d": "EKHnu1kxa1w8kTFAeYAS8FdkpRZTEnnZHq1zTmxn7c5I",
+  "d": "EMtZXnZd5GngftwLHVeRkv-wWGXU5NaTHEUNsaXcy4A9",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000da0_",
-      "d": "EOQSs_kUG3sdL9WrI8E6XaFUCf5UmKVn1mvOPrLR1k99",
+      "v": "OCAS11JSON0017f0_",
+      "d": "EHUH3l55hYO339CznqY3eNs7eRay6GXFfDPsDPLlemPj",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -40,6 +40,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EEBTWOQJMSxUvaxL4um-4R7NrcVMtGlXzRUwb7c6iruW",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -79,6 +99,22 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EM8La2XjRtXqVMnd2IThsxfkeAuErwc0jRlsdAPgF4Af",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -99,6 +135,24 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKKZRoDboGFIfwPQX65bwm9h-OTXGoMt1vz6BsQ-xog8",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -108,6 +162,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 2 718 SNPs for 717 giant California sea cucumbers (Apostichopus californicus, syn. Parastichopus californicus) from the coast of British Columbia (Canada) and southeastern Alaska (United States), Northeast Pacific. DNA was extracted from dorsal papilla clips (about 1 cm).",
+            "name": "apostichopus_californicus_connectivity"
+          },
+          {
+            "d": "ECP7nTubhcQdXxB3QFR-m40TOvGcERgpY8TcQ_deU7Uo",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 717 grandes holothuries de Californie (Apostichopus californicus, syn. Parastichopus californicus) provenant de la côte de la Colombie-Britannique (Canada) et du sud-est de l’Alaska (États-Unis), dans le Pacifique Nord-Est, génotypées à l’aide de 2 718 SNP. L’ADN a été extrait de fragments de papille dorsale (environ 1 cm).",
             "name": "apostichopus_californicus_connectivity"
           }
         ],

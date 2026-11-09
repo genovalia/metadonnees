@@ -1,10 +1,10 @@
 {
-  "d": "EHo2M4Sgm7oErUltapLNRe5WX8uuUdNpD1ai-Cq9ISa1",
+  "d": "EAEZWityyjCK6-ZE3AzgiNVGdNY0zAnZ04-qbXmrI8sV",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000af5_",
-      "d": "ELD9QyyXjVaSIVZf1mgHrjj5qFluDRvj7C7gv4-lT08-",
+      "v": "OCAS11JSON00133e_",
+      "d": "EHK4Q1vkQhylGedP1y6RjB5gcK7AdSBvQTVdRoAJ_fAW",
       "capture_base": {
         "d": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
         "type": "spec/capture_base/1.1",
@@ -37,6 +37,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "ELJddR1cSvAoSUhEi01GGyO6vgituSExhUWXkP9Y_3uo",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -73,6 +93,19 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EIcDXrloj96t9xYRFVfk3tR7vWVR2RrAvFcptkofTA4i",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -90,6 +123,21 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EHQoJ6VTbYYc_ulQ6n_FTZQ3WtL-vzk0C9AFFQkmq7ea",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -99,6 +147,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "The Canadienne is a small, hardy dairy cattle breed originating in Canada, particularly Québec, known for producing milk rich in butterfat and protein relative to its body size and for its adaptation to cold climates. This dataset contains 190 cow samples genotyped for 312257 SNPs.",
+            "name": "bos_taurus"
+          },
+          {
+            "d": "EEaSDfdkMHjiUw0smggZjJb5t3oNELDAO4cwWET8h3NM",
+            "capture_base": "ELgT2-uOMta11yFoXUzByeAOAqZfg0yWvLXcbmuuhGl8",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 190 vaches (Bos taurus) de race Canadienne, une race laitière rustique du Québec, génotypées à l’aide de 311 829 SNP. L’ADN a été extrait de follicules pileux.",
             "name": "bos_taurus"
           }
         ]

@@ -1,10 +1,10 @@
 {
-  "d": "EGfPKzoLIQ5RswJhSI10prO-JO4PYcg7jLZ2YUKhwFkD",
+  "d": "EA9L-6td29dmdKuwi8WDMhlp2ix7BnVrAeUK9NSPIAag",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001063_",
-      "d": "EEFYQhHr7bLvzmPqKbP3-BvKs1kvjY0tkCwHqHapQTlj",
+      "v": "OCAS11JSON001d5d_",
+      "d": "EMnKSG4vapQpRDK21jn0cf4eRftl7PhNw5dLVKY8JlIF",
       "capture_base": {
         "d": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
         "type": "spec/capture_base/1.1",
@@ -47,6 +47,30 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EHNI1Qd66Ln6dKSKZjcB1EI96h0R-IZvSy2HyTq6Ovu7",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "region": {
+                "Western Pacific": "Océan Pacifique Ouest (Japon)",
+                "Eastern Pacific": "Océan Pacifique Est (de l’Alaska à la Californie)"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -93,6 +117,25 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
             }
+          },
+          {
+            "d": "EKqaTAAIC-juimohlX3xIzK1ogLFv1GJv5lgWOWC_QRE",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "technical_replicate": "TRUE si cet échantillon est un réplicat technique d’un autre échantillon du jeu de données"
+            }
           }
         ],
         "label": [
@@ -116,6 +159,27 @@
               "technical_replicate": "technical_replicate"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ENKe_JeO2w_GyJfa7jCvdib4v6qqYnDkI41mGtTWCCvi",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "publication_code": "code_publication",
+              "region": "région",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "technical_replicate": "réplicat_technique"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -125,6 +189,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 19 045 SNPs for 113 rhinoceros auklet samples (Cerorhinca monocerata), including technical replicates, from breeding colonies of the western (Japan) and eastern (Alaska to California) North Pacific. DNA was extracted from blood samples.",
+            "name": "cerorhinca_monocerata_genetic_environment"
+          },
+          {
+            "d": "EB7rmy4Sl9xkfxG3gsafty-5OYgs-kOpxrV6_JwR_Nn0",
+            "capture_base": "EM1RNERbHI6gS6xMCyH7sNPSIIuMJ1au7W2o6IIoVrhE",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 113 échantillons de macareux rhinocéros (Cerorhinca monocerata), y compris des réplicats techniques, provenant de colonies de nidification du Pacifique Nord occidental (Japon) et oriental (de l’Alaska à la Californie), génotypés à l’aide de 19 045 SNP. L’ADN a été extrait d’échantillons de sang.",
             "name": "cerorhinca_monocerata_genetic_environment"
           }
         ],

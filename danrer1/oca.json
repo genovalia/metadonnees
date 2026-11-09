@@ -1,10 +1,10 @@
 {
-  "d": "EKkgJhL5O6lRU8PjlTeCchprDi6oJU0oaD4QcMKqRVLh",
+  "d": "EMS3ZgAOobA2MxyJvKLk1hHZSqnLUZiRf0ibac82gld0",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ff0_",
-      "d": "EOYOJga3e_4BzZz7vmoRIVNtJsO1HGdo_9-1U3PaXZgf",
+      "v": "OCAS11JSON001c57_",
+      "d": "EO1yTIly3HjEqH5KB_S-NXXttPfbunTZjn42mzjtGgNJ",
       "capture_base": {
         "d": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
         "type": "spec/capture_base/1.1",
@@ -48,6 +48,31 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EMP9FNjqsuK7IVzZaGeiGMltWp2X_9Qk28NmdqloXXOX",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "population_type": {
+                "wild": "sauvage",
+                "hatchery": "pisciculture",
+                "domesticated": "domestiqué"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -95,6 +120,25 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "strain": "Laboratory or microbial strain of the individual"
             }
+          },
+          {
+            "d": "ELPSkaJmk79n3uOJMFTaEwzEaqRs7-DE8Qgk-gIcY8vw",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "population_type": "Catégorie générale décrivant l’origine ou le mode de gestion de la population",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "strain": "Souche de laboratoire ou microbienne de l’individu"
+            }
           }
         ],
         "label": [
@@ -118,6 +162,27 @@
               "strain": "strain"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EJ5wxMql_Kx_Pqm4Pt8Ove_oH-04rSXyYDHAptmDBVKJ",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "population_type": "type_population",
+              "publication_code": "code_publication",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "strain": "souche"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -127,6 +192,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 3 157 SNPs for 219 zebrafish (Danio rerio) from wild populations in Nepal, India and Bangladesh and from three common laboratory strains (AB, SJA, TM1). The temporal coverage is the period of the funding grant (2007–2009); the sampling dates are not published.",
+            "name": "danio_rerio_wild_lab_population_genomics"
+          },
+          {
+            "d": "EHrCim-i9on1OlRcW1caPFlOlt9JgfFH0kC6Aqz5Er08",
+            "capture_base": "EPEkNFa-a5hu7-c6P6i632Y8QsuVRpC6pyvnhML7OB25",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 219 poissons-zèbres (Danio rerio) provenant de populations sauvages du Népal, de l’Inde et du Bangladesh et de trois souches de laboratoire courantes (AB, SJA, TM1), génotypés à l’aide de 3 157 SNP. La couverture temporelle est la période de la subvention (2007–2009) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "danio_rerio_wild_lab_population_genomics"
           }
         ],

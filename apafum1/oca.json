@@ -1,10 +1,10 @@
 {
-  "d": "EF98hu0FtSDRpQ9GS__K7kGIFvgIBCyiIfWucmkeTUwX",
+  "d": "EHEYAyWsbmtA-Bpu47n3D7jBExagIbQ-j6QzIkHE10d5",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001056_",
-      "d": "EF8tjBQpcD2-F_nkpN83aP_zl43AX2oU4_1My-_bLbu5",
+      "v": "OCAS11JSON001d5c_",
+      "d": "EDu2Kdtm3eaE3F5cauVmBQnrnOAfNdJ87WK6_5OWGhfC",
       "capture_base": {
         "d": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
         "type": "spec/capture_base/1.1",
@@ -48,6 +48,33 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EIKt7JaT0RNOnf6d8RYILgvQQn1yvwGxzy2InRb4uDNI",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "outbreak_area": {
+                "Abitibi-Témiscamingue": "zone d’épidémie I",
+                "Mauricie": "zone d’épidémie II",
+                "Saguenay–Lac-Saint-Jean": "zone d’épidémie III",
+                "Bas-Saint-Laurent": "zone d’épidémie IV",
+                "Côte-Nord": "zone d’épidémie V"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -95,6 +122,23 @@
               "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EGRyTOhk0gMlRar8fIoPCiwdfxwmTRzzr_OayLlnXbcu",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "outbreak_area": "Zone d’épidémie de la tordeuse des bourgeons de l’épinette à laquelle appartient le site d’échantillonnage, nommée comme dans l’article source (Legault et al. 2021, tableau 1; chiffres romains I à VI dans sa figure 2a : I Abitibi-Témiscamingue, II Mauricie, III Saguenay–Lac-Saint-Jean, IV Bas-Saint-Laurent, V Côte-Nord, VI Basse-Côte-Nord)",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -116,6 +160,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EGt9Az3Jn9oOSVc2YCSTgWIZYCDF0iHVgrppAx4PuEbE",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "outbreak_area": "zone_épidémie",
+              "publication_code": "code_publication",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -125,6 +188,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 1 056 SNPs for 279 adult females of Apanteles fumiferanae (Hymenoptera: Braconidae), a larval parasitoid of the spruce budworm, reared from budworm larvae collected in 2014 within and around outbreak areas in Quebec (Canada).",
+            "name": "apanteles_fumiferanae_landscape_connectivity"
+          },
+          {
+            "d": "ENE3fMQTqa0bxW32XKFuj_9Lp4W9xNYV0GrvRbxoFV5-",
+            "capture_base": "EBHFmuJ6yZ8EIRSSoGmFD_IYDj09PyIvbyZYtiXUbrV4",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 279 femelles adultes d’Apanteles fumiferanae (Hymenoptera : Braconidae), parasitoïde larvaire de la tordeuse des bourgeons de l’épinette, élevées à partir de larves de tordeuse récoltées en 2014 dans et autour de zones d’épidémie au Québec (Canada), génotypées à l’aide de 1 056 SNP.",
             "name": "apanteles_fumiferanae_landscape_connectivity"
           }
         ],

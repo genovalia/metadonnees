@@ -1,10 +1,10 @@
 {
-  "d": "EEU5ayCw1KQiHOTPYtQqEny8qy5xVOHZQxerHLZ-TBAL",
+  "d": "EFO9f8egYLULliz-WmN0soHJ31qm-HO2MH2u_jCgJJ42",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ea2_",
-      "d": "EBcTcNpovPETKaDl0YdqZjb4iv4vKltdBUd_ZLWI-WCE",
+      "v": "OCAS11JSON0019c2_",
+      "d": "EDIrtVuvaUOZf4EOaGvsYTQ3lHPtIk9DJZlG_3SXfYcm",
       "capture_base": {
         "d": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
         "type": "spec/capture_base/1.1",
@@ -46,6 +46,30 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EMSeGrj4WVveVuFAa3mJXOAm1JJnahWUhlH5m0ckEl7Y",
+            "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "juvenile": "juvénile",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -91,6 +115,24 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "ELWS16MOvgh-APO8iN2vkHG_ZLL8xlX7R6fdeDtxvPTt",
+            "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sample_tissue": "Type de tissu prélevé sur l’individu et utilisé pour l’extraction de l’ADN ou de l’ARN",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -113,6 +155,26 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EN2WGZxS63J_Z2DMRq_kknYlWbbmql7JyhVlfOnnpBWn",
+            "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sample_tissue": "tissu_échantillonné",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -122,6 +184,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 7 057 SNPs for 171 striped bass (Morone saxatilis) from New Brunswick and Nova Scotia (Canada) and North Carolina (United States), including admixed fish.",
+            "name": "morone_saxatilis_3_populations_gwas"
+          },
+          {
+            "d": "EOjPxOyzkYWhQZWFDwU9ghF4PCyqDhuHtOV2dNA2JLF_",
+            "capture_base": "EN96jVbP89nXgDSSROMD4D8RTq9X1PerZDvWvTSYBEgX",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 171 bars rayés (Morone saxatilis), dont des poissons introgressés, provenant du Nouveau-Brunswick et de la Nouvelle-Écosse (Canada) et de la Caroline du Nord (États-Unis), génotypés à l’aide de 7 057 SNP.",
             "name": "morone_saxatilis_3_populations_gwas"
           }
         ],

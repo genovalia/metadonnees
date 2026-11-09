@@ -1,10 +1,10 @@
 {
-  "d": "EHG5yK7ZnIwbjp0Trc8drh4IunGQNQA5d4DV4UuwtjsL",
+  "d": "EAx0Md1b_Kn09WucaGcurTjasKZnihk_qQES_B3KUL-7",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000fce_",
-      "d": "EKvuIThUUfgHL0WuKhPtIEe8G83B6EFa2ATJ8d4j0Ajg",
+      "v": "OCAS11JSON001c72_",
+      "d": "EHRUxVkaLaUPEZwfDG46W5ESWpxW-6OnfaUNRpSNmze8",
       "capture_base": {
         "d": "EKBNJLjlpX-D07Sh6782mL6R64kLL7qpAHMrNjP3xFh4",
         "type": "spec/capture_base/1.1",
@@ -48,6 +48,30 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EE-lPY3cSBQ-e84kV7vB5xePT8sYnK1U9Y__oyOAyAuT",
+            "capture_base": "EKBNJLjlpX-D07Sh6782mL6R64kLL7qpAHMrNjP3xFh4",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "parr": "tacon",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -95,6 +119,26 @@
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EMLBvTpWHeZBA-goV3nEKvNpO07MHlphjJSkIyI7UYJD",
+            "capture_base": "EKBNJLjlpX-D07Sh6782mL6R64kLL7qpAHMrNjP3xFh4",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "proportion_1sw": "Proportion moyenne de saumons vierges d’un hiver en mer (madeleineaux) parmi les adultes de retour de la rivière, d’après les dénombrements fédéraux et québécois de saumons; phénotype au niveau de la population, et non l’âge en mer de l’individu",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -119,6 +163,28 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKzcGtiOztumUPQthVGQlZYAaxW66rezhItIoTtm59bH",
+            "capture_base": "EKBNJLjlpX-D07Sh6782mL6R64kLL7qpAHMrNjP3xFh4",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "proportion_1sw": "proportion_madeleineaux",
+              "region": "région",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -128,6 +194,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 97 566 SNPs for 658 Atlantic salmon (Salmo salar) from eastern Canada, with phenotypic data.",
+            "name": "salmo_salar_age_at_maturity"
+          },
+          {
+            "d": "EErAcaNvxN_1aAdMUp8N4ggBqrCYH19ajOFgZyymiTeD",
+            "capture_base": "EKBNJLjlpX-D07Sh6782mL6R64kLL7qpAHMrNjP3xFh4",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 658 saumons atlantiques (Salmo salar) provenant de l’est du Canada, génotypés à l’aide de 97 566 SNP, ainsi que des données phénotypiques.",
             "name": "salmo_salar_age_at_maturity"
           }
         ],

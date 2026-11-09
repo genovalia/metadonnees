@@ -1,10 +1,10 @@
 {
-  "d": "EPc0ONMoYzPTYk5ud-wL-etJ5TepyDvh1O4F6lgBEV-k",
+  "d": "ECL5GSziPehFeYFoa1Z8x6BB7CrISnDQVbhs435lnToh",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c8b_",
-      "d": "ECnBnW6RL-sVVveSXyj1o_yymQ_G9Q3jRufBqNfrSmvN",
+      "v": "OCAS11JSON0015c5_",
+      "d": "EFPWRKhoAyfAaE8yUuVHSKgoCppMcbsmLYaUxN4FIqjA",
       "capture_base": {
         "d": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
         "type": "spec/capture_base/1.1",
@@ -39,6 +39,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EPc-3rXLIE8eAFTzw3oOVu8DeHboTZfizpiJ2aEZmX1g",
+            "capture_base": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -77,6 +97,21 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EHrhDwBZ1znGcFO8NV6t1J8O4RAFSJEWhJF5ujhupLkA",
+            "capture_base": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -96,6 +131,23 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EBUsMs2wI1Gm66by6veel3Vkon38NcBhasQvdItESym4",
+            "capture_base": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -105,6 +157,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains targeted sequencing genotypes at 14 534 single-copy SNPs for 1 081 American lobsters (Homarus americanus) sampled in 2016 in the southern Gulf of St. Lawrence, Canada. DNA was extracted from walking legs.",
+            "name": "homarus_americanus_temperature_association"
+          },
+          {
+            "d": "EGpJtQikpUmAqrId494wks02u8h2xuSuR3Pp0IK_VO95",
+            "capture_base": "EAxsevymw-ze1-v9xREorbzW_j4cNGoSRE8vlssh8Xnm",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par séquençage ciblé, de 1 081 homards d’Amérique (Homarus americanus) échantillonnés en 2016 dans le sud du golfe du Saint-Laurent (Canada), génotypés à l’aide de 14 534 SNP simple copie. L’ADN a été extrait de pattes marcheuses.",
             "name": "homarus_americanus_temperature_association"
           }
         ],

@@ -40,7 +40,12 @@
     "Eastern Asia"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/217634/",
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -53,7 +58,8 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/7729894/",
-  "dcterms:license": "",
+  "dcat:version": "1.6.0",
+  "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0002-9344-6348",
@@ -63,29 +69,28 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "pointOfContact",
-        "principalInvestigator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-9344-6348",
         "@type": "prov:Person",
         "foaf:name": "Ilga Porth"
-      }
+      },
+      "dcat:hadRole": [
+        "pointOfContact",
+        "principalInvestigator"
+      ]
     },
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "collaborator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0001-8111-6555",
         "@type": "prov:Person",
         "foaf:name": "Mingming Cui"
-      }
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
     }
   ],
-  "dcat:version": "1.5.0",
   "dct:relation": [
     "https://doi.org/10.1111/eva.13381",
     "https://doi.org/10.5683/SP3/JSFBFN"

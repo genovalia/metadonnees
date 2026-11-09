@@ -1,10 +1,10 @@
 {
-  "d": "EEtTZ_vpIbOTHEvVsCyZcIslJmXmM-uNMCyjUY7F9Tw6",
+  "d": "EGvCLSurzUOdn16MHB0HypbUMWtFvl-FijkMm2QHyBg5",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000fa9_",
-      "d": "EKFQ6GpFj6_5lMBaA1nolXISIHYbBGTWh2IeJaOJTKO7",
+      "v": "OCAS11JSON001c07_",
+      "d": "EECYx4NHPslJPmKKBA39lGHwXSQJkBZMRyzWyRmiKole",
       "capture_base": {
         "d": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
         "type": "spec/capture_base/1.1",
@@ -48,6 +48,31 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EEdabca19LcugEPMz_tAXv_mW08P2mnk_nyOhHgBZF0U",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "larva": "larve",
+                "glass eel": "civelle",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -95,6 +120,25 @@
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EEFuneL8jaAt4qnLsqj-eWrezIFNDEbw2F4rjYRd3NmW",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "biosample_accession": "Numéro d’accession de l’échantillon séquencé dans la base de données BioSample du NCBI (partagée avec l’EBI et la DDBJ), qui renvoie à ses données de séquences brutes publiques",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -118,6 +162,27 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EDWDGkSVb6m75iVix1mPepcZDjSrpC0IIs5sKgKdws2x",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "biosample_accession": "numéro_accession_biosample",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -127,6 +192,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains whole genome sequencing genotypes at 835 600 SNPs for 78 North Atlantic eels: European eels (Anguilla anguilla), American eels (A. rostrata) and hybrids, from Europe (mostly Iceland), North Africa, North America and the Sargasso Sea.",
+            "name": "anguilla_spp_hybridization"
+          },
+          {
+            "d": "EHtgVyVt-sn6Pep5fnMwOAA6RjtDGO-whG_lO-4FlgF8",
+            "capture_base": "EAOtIceKANwIY6lX6jvJxZAIe1A-l2HVjO5xATJYOOEF",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par séquençage du génome entier, de 78 anguilles de l’Atlantique Nord : anguilles européennes (Anguilla anguilla), anguilles d’Amérique (A. rostrata) et hybrides, provenant d’Europe (surtout d’Islande), d’Afrique du Nord, d’Amérique du Nord et de la mer des Sargasses, génotypées à l’aide de 835 600 SNP.",
             "name": "anguilla_spp_hybridization"
           }
         ],

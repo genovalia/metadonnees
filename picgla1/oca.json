@@ -1,10 +1,10 @@
 {
-  "d": "EJ5OaW2xrLsJabOa04Jvq4uwrAwPMMfCz8AC-GU6nIVF",
+  "d": "EOory2ddQXamZ7kYmN7pozbYEJ-WJb89F4EWxTHY_xJU",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001831_",
-      "d": "EDpxsyy21Nmt1B-TfetXTrJINTMTa8uFSjq1oYuBEiOB",
+      "v": "OCAS11JSON002a6c_",
+      "d": "EOveqatX5qC0XT4RCxNn9DJYoQNu0s4rx0YEv6GER2g-",
       "capture_base": {
         "d": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
         "type": "spec/capture_base/1.1",
@@ -54,6 +54,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "ECRUgna2WMpoSvUG4YAgP31-x1DAolaN-k6pggNR0DcZ",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -107,6 +127,36 @@
               "resist_2_years_2002": "Growth resistance (basal area increment) 2 years following drought (2002 episode)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EJZwv2lg9LwOvW7_HI-YrjFApu9m2WXke3UbaPupi6oL",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "cwr_radial": "Renforcement radial de la paroi des cellules du bois (trachéides) de l’arbre, un rapport sans unité",
+              "dbh_1997": "Diamètre de la tige à hauteur de poitrine (en centimètres), mesuré en 1997 (âge de l’arbre = 28 ans)",
+              "dbh_2017": "Diamètre à hauteur de poitrine (en centimètres), mesuré en 2017 (âge de l’arbre = 38 ans)",
+              "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "height_1986": "Hauteur de l’individu mesurée en 1986",
+              "height_1992": "Hauteur de l’individu mesurée en 1992",
+              "height_1997": "Hauteur de l’individu mesurée en 1997",
+              "height_2017": "Hauteur de l’individu mesurée en 2017",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "mean_cell_radial_diameter": "Diamètre radial moyen des cellules du bois (trachéides) de l’arbre (valeur moyenne fournie dans les données sources)",
+              "mean_cell_wall_thickness": "Épaisseur moyenne de la paroi des cellules du bois (trachéides) de l’arbre (valeur moyenne fournie dans les données sources)",
+              "mean_wood_density": "Densité moyenne du bois de l’arbre (valeur moyenne fournie dans les données sources)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "recovery_2_years_2002": "Récupération de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002), calculée selon Lloret et al. 2011",
+              "rel_resil_2_years_2002": "Résilience relative de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002)",
+              "resilience_2_years_2002": "Résilience de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002)",
+              "resist_2_years_2002": "Résistance de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -141,6 +191,38 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EMcE0yol7LVs3qZCxgXSxjoVHbQIB0DJpIGi7zn_bbQw",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "cwr_radial": "renforcement_radial_paroi_cellulaire",
+              "dbh_1997": "dhp_1997",
+              "dbh_2017": "dhp_2017",
+              "elevation": "altitude",
+              "genotyping_technology": "technologie_génotypage",
+              "height_1986": "hauteur_1986",
+              "height_1992": "hauteur_1992",
+              "height_1997": "hauteur_1997",
+              "height_2017": "hauteur_2017",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "mean_cell_radial_diameter": "diamètre_radial_moyen_cellules",
+              "mean_cell_wall_thickness": "épaisseur_moyenne_paroi_cellulaire",
+              "mean_wood_density": "densité_moyenne_bois",
+              "organism": "organisme",
+              "recovery_2_years_2002": "récupération_sur_2_ans_2002",
+              "rel_resil_2_years_2002": "résilience_relative_sur_2_ans_2002",
+              "resilience_2_years_2002": "résilience_sur_2_ans_2002",
+              "resist_2_years_2002": "résistance_sur_2_ans_2002",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -150,6 +232,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity, as well as environmental data for 1473 trees sampled in 43 natural populations from the province of Quebec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
+            "name": "picea_glauca_drought_adaptation"
+          },
+          {
+            "d": "EFlARbkHb9Y7oNVWCJ8qQFD3oCFGs3fyYi4Su6r-1fG6",
+            "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 153 SNP géniques, ainsi que des données phénotypiques.",
             "name": "picea_glauca_drought_adaptation"
           }
         ],

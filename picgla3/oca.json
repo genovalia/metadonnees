@@ -1,18 +1,18 @@
 {
-  "d": "EM-eRHRjYZUFXDSj7n6GxgyvDGTJrxwVodZ7Z6ityY5b",
+  "d": "EP5Jk-hwcRVXGHFsYwolsyp7tGjEQLJk5pW-Yi4CkUux",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f09_",
-      "d": "ED4_CgXQZ0ZfoBi-Wnrtlb3DxMzx68pUtzqd2uoE304H",
+      "v": "OCAS11JSON001c51_",
+      "d": "EK5Zx4SkXMWcIltqbfhw3x8cZojWrJpLRdnMCdPZVf4c",
       "capture_base": {
-        "d": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+        "d": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "block": "Numeric",
+          "common_garden": "Text",
           "country": "Text",
           "family": "Text",
-          "genetic_test": "Text",
           "genotyping_technology": "Text",
           "id": "Text",
           "organism": "Text",
@@ -26,8 +26,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EG7KAmXDITJTXJhbu_8QyJo54SueVZy353xCBYGvev19",
-            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "d": "EFGLw9pKiOaZuBslOdBT8Hl91cv14C6HXk5eVpgSvCVH",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -48,11 +48,35 @@
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "EGQgf-a3fzz3VbDFKpV3zMau43IlpSaZfPu4qWtk4KaP",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "selection_group": {
+                "selected": "sélectionné (population d’amélioration)",
+                "unselected": "témoin non sélectionné"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "EB-MA7SBQwMaD4H6BtAOwX6XZQgXqWSGM_lbPf5K_J_q",
-          "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+          "d": "EB7ix5ToCYdRBfUs1FNj4X9fG-6A9YyzKajUz0HL8yhR",
+          "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -75,15 +99,15 @@
         },
         "information": [
           {
-            "d": "EJX2eWiKKhZ0hT0FJ10HKeTLLrGuYUh-F17H8vkrY4t1",
-            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "d": "EJbfVzlVLP-ht-N6PES7q0Bm-HB5kGcaTgXR0o4AE5Cz",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "block": "Block (replication) of the field or progeny test where the individual grows",
+              "common_garden": "Common garden (provenance or progeny test plantation) where the tree was sampled",
               "country": "Country of origin of the individuals sampled",
               "family": "Family (progeny) the individual belongs to",
-              "genetic_test": "Identifier of the genetic (provenance-progeny) test where the tree grows",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
@@ -91,20 +115,38 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "tree_number": "Tree number within the family and block"
             }
+          },
+          {
+            "d": "ECKKRdt2AE1EdT0u49CExFFkNiPyERXWyUsx_GZrJB4Q",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "block": "Bloc (répétition) du test sur le terrain ou du test de descendances où pousse l’individu",
+              "common_garden": "Plantation comparative (test de provenances ou de descendances) où l’arbre a été échantillonné",
+              "country": "Pays d’origine des individus échantillonnés",
+              "family": "Famille (descendance) à laquelle appartient l’individu",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "selection_group": "Statut de sélection de l’arbre : sélectionné (famille sélectionnée pour la croissance en hauteur, population d’amélioration; case dans le fichier source) ou non sélectionné (famille non sélectionnée des mêmes provenances; control dans le fichier source)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "tree_number": "Numéro de l’arbre au sein de la famille et du bloc"
+            }
           }
         ],
         "label": [
           {
-            "d": "EDnsaXPZWb8Ljj2ZjN7sXpt-e9V7qNniyG2U2-P3WxNt",
-            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "d": "EN7cyZFnJ_8HkizI9LV7H2T16YLw2Paqx8Jwh0SYyK5t",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
               "block": "block",
+              "common_garden": "common_garden",
               "country": "country",
               "family": "family",
-              "genetic_test": "genetic_test",
               "genotyping_technology": "genotyping_technology",
               "id": "id",
               "organism": "organism",
@@ -113,15 +155,43 @@
               "tree_number": "tree_number"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EFhj5RUfWrF9hlsFjyaL6L2VVMKMdRjdSxGQS5572Eg7",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "block": "bloc",
+              "common_garden": "plantation_comparative",
+              "country": "pays",
+              "family": "famille",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "selection_group": "groupe_sélection",
+              "sequenced_molecule": "molécule_séquencée",
+              "tree_number": "numéro_arbre"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EHCGQh5U0vth95d-FHz1uKEvjmCx02zLDVeutp_Ra4s1",
-            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "d": "ENpcKugfEm0hR5Fn8klGNYLaFWrVMElSr9vUAp1m-1FU",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 1 134 SNPs from 709 expressed genes for 142 white spruce (Picea glauca) trees of the Quebec breeding program (Canada): trees selected for height growth (top 13% of tested families, with a top 5% subset) and unselected trees from the same natural provenances. The temporal coverage is the publication year of the source article (2012); the sampling dates are not published.",
+            "name": "picea_glauca_artificial_selection"
+          },
+          {
+            "d": "EIqYoiXV2Og6MA_TITLycM1YUv93T8ePs7McXJswt_Tm",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 142 épinettes blanches (Picea glauca) du programme d’amélioration du Québec (Canada), génotypées à l’aide de 1 134 SNP répartis dans 709 gènes exprimés : arbres sélectionnés pour la croissance en hauteur (13 % meilleures familles testées, avec un sous-ensemble des 5 % meilleures) et arbres non sélectionnés des mêmes provenances naturelles. La couverture temporelle est l’année de publication de l’article source (2012) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "picea_glauca_artificial_selection"
           }
         ]
@@ -131,20 +201,20 @@
   },
   "extensions": {
     "adc": {
-      "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ": {
-        "d": "EL3or19Gd7-L4eSJqGcj5CrQhPEPpkWAH6g-Ypbu6L6X",
+      "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v": {
+        "d": "EJXZ7DUncH6jE-dT0LHIcQiLvtR1T3bG6PBBMoHLxMi9",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EHFLQHksTbZ-qkW7GTVjmXdWomddvCmelUo3iwG6dqqR",
-            "capture_base": "EN9yCyTAyPWo_cwMudi4CZ5lVoS3D81pnY9mTBgNAxzQ",
+            "d": "EI7LXHoUhojhpGN0vwgfsjSSu0C2Xoh15lrf6wYKTp3S",
+            "capture_base": "EDB2pxNa3l8Gez_swFHSMgVQTDLsU0Urtk_icxys-O1v",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
               "selection_group",
-              "genetic_test",
+              "common_garden",
               "block",
               "family",
               "tree_number",

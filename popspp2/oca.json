@@ -1,10 +1,10 @@
 {
-  "d": "ENrXeg1AbxqBGTGixqRToQpows2-rpPknhiyY6_WRJBs",
+  "d": "EKyFjlep8IN8Pls7o8uNF3xmqL0SK6j_5lidJ8hxF7Ih",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f60_",
-      "d": "EHIIOcz7z83Kv9YUOl2-XYsSHkIQahTWAQhENyxFka0N",
+      "v": "OCAS11JSON001a9b_",
+      "d": "EK-SdkHyONWSNbuOdQORLodqq0qgkLKgFFABKFewjQ8P",
       "capture_base": {
         "d": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
         "type": "spec/capture_base/1.1",
@@ -43,6 +43,26 @@
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "ELboWxbNm5MStkYId3nqbWcGaHWyY9GmKH13L5idkb7-",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
@@ -66,12 +86,12 @@
         },
         "information": [
           {
-            "d": "EOdSthaIoW5_dm9ZUvIJvWXdwWHQo9lGDQuCQux0b9iu",
+            "d": "EIKQNNPH6tAR9v0dDHJ-8WThF87mpYZcpbYjcVSj_9ZA",
             "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "accession": "Accession name or number of the tree in its source collection, as given in Supplementary Table 1 of Geraldes et al. 2013 (same as the sample ID for field-collected trees and clone collections). Collections named in the article: UBC Botanical Garden, Morden Research Centre Arboretum, Alice Holt Research Station and the BESC collection; the source collection of each accession is not given",
+              "accession": "Accession number or name of the individual's source material in a reference collection (genebank, germplasm or living collection, herbarium, museum, culture collection or biobank); not a sequence-database accession (see biosample_accession)",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
@@ -80,6 +100,23 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EFrmF2e6PYknSkIpCvNVgZIMjF0zYJgMkdeyVSxo5TF4",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "accession": "Numéro ou nom d’accession du matériel d’origine de l’individu dans une collection de référence (banque de gènes, collection de germoplasme ou collection vivante, herbier, musée, collection de cultures ou biobanque) ; pas un numéro d’accession d’une base de séquences (voir biosample_accession)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
             }
           }
         ],
@@ -102,6 +139,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKsA40PUO5d7NVL1qGM_Zr0xDi2TaCY15A4qSBBsjTp6",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "accession": "accession",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -111,6 +167,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 32 679 SNPs designed for black cottonwood (Populus trichocarpa) for 72 accessions from North America: wild P. trichocarpa trees and accessions of other Populus species and of Salix sitchensis. The temporal coverage is the publication year of the source article (2013); the sampling dates are not published.",
+            "name": "populus_34k_snp_array"
+          },
+          {
+            "d": "EFlil8fXOXOXdX6V0y4iGVi3KK44BtNlXsT6rm67B1V9",
+            "capture_base": "EJBJw2S9bldisqewaLjUHbztCyP2h_QMDg4zF5ULtrpl",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions provenant d’Amérique du Nord, génotypées à l’aide de 32 679 SNP conçus pour le peuplier de l’Ouest (Populus trichocarpa) : arbres sauvages de P. trichocarpa et accessions d’autres espèces de Populus et de Salix sitchensis. La couverture temporelle est l’année de publication de l’article source (2013) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "populus_34k_snp_array"
           }
         ],

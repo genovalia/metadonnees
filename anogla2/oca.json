@@ -1,10 +1,10 @@
 {
-  "d": "EDskNNgMlVp4bal5p0hXmXGndltlV7gbikyDgu1Z0erm",
+  "d": "EG6FC0U2i1g7jDaMNDw5XvA9oiVHsIvqgFgJHL6CTdaY",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001304_",
-      "d": "EOaRX2QR3asasw40vmhUCWJZkzsiARUmkWbuWkXqGuhv",
+      "v": "OCAS11JSON00220e_",
+      "d": "EFnYU1kLBvGyQsmPq2v20fcGknpRLT63hhSDHTDIBisR",
       "capture_base": {
         "d": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
         "type": "spec/capture_base/1.1",
@@ -62,6 +62,41 @@
                 "female": "female",
                 "male": "male",
                 "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "EPAZDt9lMEcwKFpEfi4vUTovTPVm6W1EHgevPTdVTf-F",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "egg": "œuf",
+                "larva": "larve",
+                "pupa": "nymphe",
+                "adult": "adulte"
+              },
+              "population_status": {
+                "native": "indigène",
+                "introduced": "introduit"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
@@ -123,6 +158,29 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
+          },
+          {
+            "d": "EC7ov16IoiwSWOWTVte7KhpnLPazApZwUfRqZoO9bNps",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "host_plant": "Espèce de plante hôte de l’individu, comme la plante sur laquelle il a été récolté ou dont sa larve s’est nourrie",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "population_status": "Statut biogéographique de la population échantillonnée, comme indigène ou introduite.",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sample_tissue": "Type de tissu prélevé sur l’individu et utilisé pour l’extraction de l’ADN ou de l’ARN",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas"
+            }
           }
         ],
         "label": [
@@ -150,6 +208,31 @@
               "sex": "sex"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EHnw6G7FGXLqekuegfSzTebbO1hn7UPUj5xIGYvqeTb6",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "host_plant": "plante_hôte",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "population_status": "statut_population",
+              "publication_code": "code_publication",
+              "sample_tissue": "tissu_échantillonné",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -159,6 +242,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 2 768 SNPs for 490 Asian longhorned beetles (Anoplophora glabripennis): individuals from invasive infestations in the United States and Canada and from the native range in China and South Korea.",
+            "name": "anoplophora_glabripennis_invasion_tracking"
+          },
+          {
+            "d": "EOxccqJO4yhJoYzxpDO6-WmQyRvbUD19wmuEdf0VO86X",
+            "capture_base": "EMkVWLH-wJQiSq1xZt4RAqYEjC0qLge-XsJPW2GPESdf",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 490 longicornes asiatiques (Anoplophora glabripennis) : individus d’infestations invasives aux États-Unis et au Canada et individus de l’aire indigène en Chine et en Corée du Sud, génotypés à l’aide de 2 768 SNP.",
             "name": "anoplophora_glabripennis_invasion_tracking"
           }
         ],

@@ -1,10 +1,10 @@
 {
-  "d": "EJRP9ZoceKc9vMkoGAp5FsADr35rF-sQn37AH_YN4HkB",
+  "d": "EOFtk0QL2pxGESRCOGSvsiQoZbf3ZiRSlaQUvy_N5fVn",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000b29_",
-      "d": "EOgqy3RI58eU0oG4n0xaMN9ZATgx_A7ZfOTBE0cENj-o",
+      "v": "OCAS11JSON00145c_",
+      "d": "EH8xW1GlItLggwH4FPoKZU5ObIaM2V8sSRLA0ICl4O9L",
       "capture_base": {
         "d": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
         "type": "spec/capture_base/1.1",
@@ -38,6 +38,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EPHIbDqHPEWj_WMabKXC4LTkF5l-5QjLpX0RpI7c1TLL",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -75,6 +95,20 @@
               "pedigree": "Ancestry of the individual: breeding pedigree (cross formula), breeding line or reference to its registration",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EIb7kL_hNLy40Va41OE3qwyAZKEZnFrDwSpZ1l64lHJJ",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "pedigree": "Ascendance de l’individu : pedigree d’amélioration (formule de croisement), lignée d’amélioration ou référence à son enregistrement",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -93,6 +127,22 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKibU3r8VmaQGd3W5s6KjByO9mGBKaihxoR2n8gDToxV",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "pedigree": "pedigree",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -102,6 +152,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic data from female bee samples of various pedigree used to produce honeybee stock that is winter hardy, productive and disease resistant. ",
+            "name": "apis_mellifera"
+          },
+          {
+            "d": "EEq9zP5PU1qIpKwWLOUDwLOlU8VWQp2gu97mDJ0wsT5L",
+            "capture_base": "EFZF8hPuZrjF3xXdeApCg_ORvBe9l6a4QUJa34KiwX7o",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 94 abeilles domestiques femelles (Apis mellifera) provenant de lignées d’élevage canadiennes, génotypées à l’aide de 69 800 SNP, ainsi que des données de pedigree. L’ADN a été extrait d’abeilles entières.",
             "name": "apis_mellifera"
           }
         ]

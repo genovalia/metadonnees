@@ -1,10 +1,10 @@
 {
-  "d": "EOD6uZ21VTdbwna5aXwL8rTiIqI_kaXX18W5sD7_G0nx",
+  "d": "EICYoGvA417P2g9CDKIQtCcaxDnA8sRujsfmux_yxJm1",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001c18_",
-      "d": "EKjUxK-8njJMEzT4bXsGxruh2t4RyHAMRcbnM3MCWvpi",
+      "v": "OCAS11JSON001d0a_",
+      "d": "EOkGN65DLOk5qVKW-Ef03-znjAYcyJ2k8acVfFNAl7wu",
       "capture_base": {
         "d": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
         "type": "spec/capture_base/1.1",
@@ -64,7 +64,7 @@
             }
           },
           {
-            "d": "EEuIWoMOHfcxR1bT__TGmfb1HAAVTEGlu0H7UGnhsgWy",
+            "d": "EDKH_IxddfsmsWcpQG61JNO5powUlMDjGWMoqWiOZy4m",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/entry/1.1",
             "language": "fra",
@@ -78,7 +78,7 @@
                 "RNA sequencing": "séquençage de l’ARN",
                 "SNP chip": "puce de SNP",
                 "genotyping-by-sequencing": "génotypage par séquençage",
-                "targeted SNP assay": "génotypage de SNP ciblés",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
                 "targeted sequencing": "séquençage ciblé",
                 "whole genome sequencing": "séquençage du génome entier"
               },
@@ -86,12 +86,12 @@
                 "ear punch": "poinçon d’oreille",
                 "feces": "fèces",
                 "hair": "poils",
-                "metatarsal punch": "poinçon de métatarse",
+                "metatarsal punch": "poinçon métatarsien",
                 "serum": "sérum"
               },
               "sequenced_molecule": {
-                "DNA": "DNA",
-                "RNA": "RNA"
+                "DNA": "ADN",
+                "RNA": "ARN"
               },
               "sex": {
                 "female": "femelle",
@@ -158,21 +158,22 @@
             }
           },
           {
-            "d": "EPJ2ZAIxSzW8h8FlBFp3xAy8phu3ayw9EVAwIF9StBxR",
+            "d": "EObMOgg4ROjt1S7gErUlEaPx4FfC-JUM6-Qviwfwe8gn",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
             "attribute_information": {
-              "ecotype": "Écotype: forestier, montagnard, migrateur",
-              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : genotyping-by-sequencing (génotypage par séquençage), SNP chip (puce de SNP), whole genome sequencing (séquençage du génome entier), targeted sequencing (séquençage ciblé), targeted SNP assay (génotypage de SNP ciblés) ou RNA sequencing (séquençage de l’ARN).",
-              "id": "ID utilisé dans le fichier de génotypage",
-              "latitude": "Latitude en degré décimaux: Ex: -42.23452",
-              "longitude": "Longitude en degré décimaux: Ex: -42.23452",
-              "organism": "Nom de l'espèce en Latin en suivant la classification de Linnée",
-              "sample_tissue": "Tissu échantillonné pour extraire l’ADN ou l’ARN.",
-              "sampling_year": "année de l'échantillonnage",
+              "country": "Pays d’origine des individus échantillonnés",
+              "ecotype": "Population distincte au sein d’une espèce, adaptée à des conditions environnementales particulières, comme anadrome ou résidente en eau douce",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sample_tissue": "Type de tissu prélevé sur l’individu et utilisé pour l’extraction de l’ADN ou de l’ARN",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
               "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
-              "sex": "Sexe: Male, Femelle, inconnnu"
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas"
             }
           }
         ],
@@ -199,42 +200,42 @@
             "category_labels": {}
           },
           {
-            "d": "EFUGWp-NBrgjOzQJX8_l3743asotTg8Qy_aHBLw0vN85",
+            "d": "EEpWg1bxBB-Ol0gUFRSg5FNoqb_Nu4X19sMgixmod0Cb",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/label/1.1",
             "language": "fra",
             "attribute_categories": [],
             "attribute_labels": {
-              "country": "country",
-              "ecotype": "ecotype",
-              "genotyping_technology": "genotyping_technology",
-              "id": "id",
+              "country": "pays",
+              "ecotype": "écotype",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
               "latitude": "latitude",
               "longitude": "longitude",
-              "organism": "organism",
-              "sample_tissue": "sample_tissue",
-              "sampling_year": "sampling_year",
-              "sequenced_molecule": "sequenced_molecule",
-              "sex": "sex"
+              "organism": "organisme",
+              "sample_tissue": "tissu_échantillonné",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EN4v09ex0nTQOjQzfiaVPYUBZWebWfAW4VwArQAS4oTI",
-            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
-            "type": "spec/overlays/meta/1.1",
-            "language": "fra",
-            "description": "Ce jeu de données contient des génotypes de caribous provenant d’échantillons collectés par le Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, le ministère responsable de la gestion de la faune sauvage au Québec.",
-            "name": "Rangifer_tarandus"
-          },
-          {
             "d": "ELncI_wHI8MW3uVR6ntRRPN3xacPtQ-Lzrjdv9aPtqXT",
             "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains caribou genotypes from samples collected by the Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, the department responsible for wildlife management in Quebec.",
+            "name": "Rangifer_tarandus"
+          },
+          {
+            "d": "EG8dO5WLNsGHAu5d-P-DE2TGtxVPIBzltiloya--VJ3c",
+            "capture_base": "EMjv4vQw7WnVf4AnJzXYVKoNTVe1f3gBZdOQaFZRioJP",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 189 caribous (Rangifer tarandus) de plusieurs écotypes provenant de l’est du Canada, génotypés à l’aide de 56 886 SNP.",
             "name": "Rangifer_tarandus"
           }
         ],

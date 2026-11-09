@@ -1,22 +1,27 @@
 {
-  "d": "ENqLjfrGXuG0Yz9GxQA6QOvs0bWVrDlpJfFhj2kbzTQp",
+  "d": "ELcFLTxUdacFYYGPb41jEtcwlxxxvDOEX_4yMVLRMuTW",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e3f_",
-      "d": "EFYKRh632zhQsFA5kZI5Pl86D3I9MrzGPld2Df4EFMxF",
+      "v": "OCAS11JSON001f66_",
+      "d": "EIcgq7WQBkUxrS2QQiuKCCNRN3Z7DdmUi3OpZ_AgINd2",
       "capture_base": {
-        "d": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+        "d": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
         "type": "spec/capture_base/1.1",
         "attributes": {
+          "chlorophyll": "Numeric",
           "country": "Text",
           "genotyping_technology": "Text",
+          "glacial_lineage": "Text",
           "id": "Text",
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
+          "publication_code": "Text",
+          "region": "Text",
           "sequenced_molecule": "Text",
-          "site_type": "Text"
+          "site_type": "Text",
+          "temperature": "Numeric"
         },
         "classification": "RDF106",
         "flagged_attributes": []
@@ -24,112 +29,199 @@
       "overlays": {
         "entry": [
           {
-            "d": "EHOdwV2bkeAq-vfW0WmMBAImu1yfQMb0twmEGm6niniW",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EAkgpDEUothBsZZhgeTL30dHDQ_cC8ZuZfazHDfAKayY",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "glacial_lineage": {
+                "ARC": "Arctic",
+                "GRE": "Greenland",
+                "NWA": "Northwest Atlantic"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EDXfqBmduWTTXOpZVtOntO2lKdcptG7TLPfiYs2fTEgU",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
               },
-              "site_type": {
-                "beach": "beach",
-                "deep-water demersal": "deep-water demersal",
-                "offshore": "offshore",
-                "shallow-water demersal": "shallow-water demersal"
+              "glacial_lineage": {
+                "ARC": "Arctique",
+                "GRE": "Groenland",
+                "NWA": "Atlantique Nord-Ouest"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
         ],
         "entry_code": {
-          "d": "EBT3xyl4pBTZC5M_USNqeqm0YqGTCiJKJx51zc3jo4v7",
-          "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+          "d": "EP39BEb4tuj043c5N5d2ggrcjlk1q4h2jbJc7JWNgRZ3",
+          "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "glacial_lineage": [
+              "ARC",
+              "GRE",
+              "NWA"
             ],
             "sequenced_molecule": [
               "DNA",
               "RNA"
-            ],
-            "site_type": [
-              "beach",
-              "deep-water demersal",
-              "offshore",
-              "shallow-water demersal"
             ]
           }
         },
         "information": [
           {
-            "d": "EJL5qsuqpxYs46ccFqk545mCzTMcMD9Oou0eV8vRCbbr",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EDmahDD_q9BERbEggntknGNC1OywHSpF44lj78LkYAcJ",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
+              "chlorophyll": "Chlorophyll concentration at the spawning site, as a proxy for trophic productivity (site-level value used in the source article; beach spawning sites of the NWA lineage only)",
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "glacial_lineage": "Glacial lineage of the sampling site, as defined in the source article: ARC (Arctic), GRE (Greenland) or NWA (Northwest Atlantic)",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "region": "Regional grouping of the sampling sites used in the source study, such as a management, biogeographic or genetic region",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "site_type": "General environmental or habitat category of the sampling site"
+              "site_type": "General environmental or habitat category of the sampling site",
+              "temperature": "Water temperature at the spawning site (site-level value used in the source article; beach spawning sites of the NWA lineage only)"
+            }
+          },
+          {
+            "d": "ECu09GfVMJq4EhBgCoXe3KgObp3PAGc86oUlKnWof8V8",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "chlorophyll": "Concentration de chlorophylle au site de fraie, comme indicateur indirect de la productivité trophique (valeur au niveau du site utilisée dans l’article source; sites de fraie sur les plages de la lignée NWA seulement)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "glacial_lineage": "Lignée glaciaire du site d’échantillonnage, telle que définie dans l’article source : ARC (Arctique), GRE (Groenland) ou NWA (Atlantique Nord-Ouest)",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "site_type": "Catégorie générale d’environnement ou d’habitat du site d’échantillonnage",
+              "temperature": "Température de l’eau au site de fraie (valeur au niveau du site utilisée dans l’article source; sites de fraie sur les plages de la lignée NWA seulement)"
             }
           }
         ],
         "label": [
           {
-            "d": "ECtAku5_36Y6OWVi2QQhQqQA17NRdYWAZfjqIxpNLNrZ",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EP5ZnXbxHCTDUiUGwHxLxoSJ_WjoXgA6dndJLOxBdoH3",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
+              "chlorophyll": "chlorophyll",
               "country": "country",
               "genotyping_technology": "genotyping_technology",
+              "glacial_lineage": "glacial_lineage",
               "id": "id",
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
+              "publication_code": "publication_code",
+              "region": "region",
               "sequenced_molecule": "sequenced_molecule",
-              "site_type": "site_type"
+              "site_type": "site_type",
+              "temperature": "temperature"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "ECOnTbFsJGa0nWlMGCokwYi02zEi1QvqaFwFcAZ2cjDg",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "chlorophyll": "chlorophylle",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "glacial_lineage": "lignée_glaciaire",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "publication_code": "code_publication",
+              "region": "région",
+              "sequenced_molecule": "molécule_séquencée",
+              "site_type": "type_site",
+              "temperature": "température"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EEnMiN2iwtwtsglEiUnvtF3r37FSypyPBnM1szu9jhst",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EObZR2N538OCKQJLwTIZXUqWc8fIA-yhghizYkCj16Zs",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypes for 1360 capelin individuals (Mallotus villosus) sampled across eastern Canada to study how demographic history, shared ancestral polymorphism, and gene flow among glacial lineages contribute to local adaptation to sea conditions. Genotypes were obtained using a genotyping-by-sequencing approach. ",
-            "name": "mallotus_villotus_adaptation"
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 17 436 SNPs for 1 360 capelin (Mallotus villosus) from eastern Canada and Greenland.",
+            "name": "mallotus_villosus_local_adaptation"
+          },
+          {
+            "d": "ECmD7hfopPbxjlsyNB-chAvfcBD4HCoymXQR3N7rX6A2",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 360 capelans (Mallotus villosus) provenant de l’est du Canada et du Groenland, génotypés à l’aide de 17 436 SNP.",
+            "name": "mallotus_villosus_local_adaptation"
           }
         ],
         "unit": {
-          "d": "EGYkr7aqk5CzkPy2EtbUW4gR2kC6N-NeKdeueIgaGvOk",
-          "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+          "d": "EM8kgmVUtXZ0QL0kS3wBvW4dn3j9d_ravxnAGNS3Yg4W",
+          "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
+            "chlorophyll": "milligram per cubic meter",
             "latitude": "decimal degree",
-            "longitude": "decimal degree"
+            "longitude": "decimal degree",
+            "temperature": "degree Celsius"
           }
         }
       }
@@ -138,13 +230,13 @@
   },
   "extensions": {
     "adc": {
-      "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3": {
-        "d": "EE5RpuKhNE_iOJTYtXVhy8s7RQZ98k2NAaCzPAxVdlkd",
+      "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd": {
+        "d": "EKIiCcXqerrEPyHApxs0jw6869kIxGIpHuHiytSwCWRk",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EJb8IpgaHNPCGMmKBWv677vBuuuID5__92P529jw55s5",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EPYOc2ncsI3J2lXRSl5IMiv5FyBHck7QxCcdTQMitic3",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -152,7 +244,12 @@
               "country",
               "latitude",
               "longitude",
+              "region",
               "site_type",
+              "publication_code",
+              "glacial_lineage",
+              "temperature",
+              "chlorophyll",
               "sequenced_molecule",
               "genotyping_technology"
             ],
@@ -165,21 +262,20 @@
                 "targeted SNP assay",
                 "RNA sequencing"
               ],
+              "glacial_lineage": [
+                "ARC",
+                "GRE",
+                "NWA"
+              ],
               "sequenced_molecule": [
                 "DNA",
                 "RNA"
-              ],
-              "site_type": [
-                "beach",
-                "shallow-water demersal",
-                "deep-water demersal",
-                "offshore"
               ]
             }
           },
           "unit_framing": {
-            "d": "EABYTtvodumLfMfg4kN5fpTd4GXSi3LQ5GNPYfODXgwm",
-            "capture_base": "EI9kkfwRF9CkkyFWSprhVxWB1MdRUe66woi6lwxW1VY3",
+            "d": "EFluHels028fKDG9C0Rs-rffxCP_5Zync3NO8p1UHKjP",
+            "capture_base": "EDXp0TAPWLX6hSbeH_wOWoVL_QV8nUgoKkvT09LoDmqd",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
@@ -192,6 +288,16 @@
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "deg"
+              },
+              "degree Celsius": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "Cel"
+              },
+              "milligram per cubic meter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "mg/m3"
               }
             }
           }
