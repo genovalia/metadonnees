@@ -1,10 +1,10 @@
 {
-  "d": "EKuut-PNk0iFJvsHg1xnOOe5-MEeVZkO0ZdIs9ZTekV-",
+  "d": "EMDbfcBqOAXLnJ9C2RmbRZaD3UgkgQGAg6GIkWVrFb_M",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000de9_",
-      "d": "EB9DhWnBwe5ScCKe04E2cxuu8J9eXZYBnyHbXdna7_Dj",
+      "v": "OCAS11JSON001870_",
+      "d": "EPaG0OFzlq5mbcsx7oinqAbzmiAPjzhH6YvcsjTjVz9G",
       "capture_base": {
         "d": "EEatxUXFuYmPyHqB4ycuxw1xfAcufiAmmn93dfStUS0i",
         "type": "spec/capture_base/1.1",
@@ -41,6 +41,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EFiRclUahFn_GHt3yFmfyh-3s2cMVxPijxcOcF2pYwyD",
+            "capture_base": "EEatxUXFuYmPyHqB4ycuxw1xfAcufiAmmn93dfStUS0i",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -81,6 +101,23 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EPpIyWmnX9MZHCezrmO7fwpn50FGR-xykYEj4fVG9Y1h",
+            "capture_base": "EEatxUXFuYmPyHqB4ycuxw1xfAcufiAmmn93dfStUS0i",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "ecotype": "Population distincte au sein d’une espèce, adaptée à des conditions environnementales particulières, comme anadrome ou résidente en eau douce",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -102,6 +139,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EOAON3Vbm7RIv8hRZsfjRl2utF-4s8esEX5hM4wF3ucf",
+            "capture_base": "EEatxUXFuYmPyHqB4ycuxw1xfAcufiAmmn93dfStUS0i",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "ecotype": "écotype",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -111,6 +167,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 3 388 SNPs for 195 Lake Whitefish (Coregonus clupeaformis) from North American lakes, each containing a sympatric dwarf (limnetic) and normal (benthic) species pair.",
+            "name": "coregonus_clupeaformis_species_pairs"
+          },
+          {
+            "d": "EOqNz_eCicFb1XhVSR-kvAwugRLhidRxN1HAT4noiZh5",
+            "capture_base": "EEatxUXFuYmPyHqB4ycuxw1xfAcufiAmmn93dfStUS0i",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 195 grands corégones (Coregonus clupeaformis) provenant de lacs nord-américains contenant chacun une paire de formes sympatriques naine (limnétique) et normale (benthique), génotypés à l’aide de 3 388 SNP.",
             "name": "coregonus_clupeaformis_species_pairs"
           }
         ],

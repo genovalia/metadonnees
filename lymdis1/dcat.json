@@ -38,7 +38,12 @@
     "invasive species"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -51,8 +56,8 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6295630/",
-  "dcat:version": "1.5.0",
-  "dcterms:license": "",
+  "dcat:version": "1.6.0",
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0003-1436-3307",

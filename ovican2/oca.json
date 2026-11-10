@@ -1,10 +1,10 @@
 {
-  "d": "EC5UBWPJc_asXCvSrdSRR9bssuAKDMumrXi3jOV-ucrr",
+  "d": "EDSn6EXt2WvBffRg0lsp2DUMS74RR7jjPIZW2mf6QcK2",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001244_",
-      "d": "EIWoFsb8KD3gndYbXRJWVp83-htJfZNmLvZX1bpWsE3H",
+      "v": "OCAS11JSON002159_",
+      "d": "EFsffKJwtaCEdhJhltYpNNK7pP1AgPZNj6JQcn-FptV-",
       "capture_base": {
         "d": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
         "type": "spec/capture_base/1.1",
@@ -50,6 +50,31 @@
                 "female": "female",
                 "male": "male",
                 "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "EI6ed3_2O5hA-9YUEBqisxMJhhOBhZo5sRqTg1Dd9EMt",
+            "capture_base": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
@@ -99,6 +124,27 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
+          },
+          {
+            "d": "EBIxgy2Qj-mP3M9L7nTjJvYKEER2U22t_0i3MTHLY4tJ",
+            "capture_base": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "birth_year": "Année de naissance du mouflon",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "mean_body_mass": "Moyenne des mesures répétées de masse corporelle de l’individu, prises à différents âges et différentes années (nombre de mesures dans n_body_mass_measures)",
+              "mean_horn_base_circumference": "Moyenne des mesures répétées de la circonférence à la base des cornes de l’individu (moyenne des cornes gauche et droite), prises à différents âges et différentes années (nombre de mesures dans n_horn_base_measures)",
+              "mean_horn_length": "Moyenne des mesures répétées de la longueur des cornes de l’individu (moyenne des cornes gauche et droite), prises à différents âges et différentes années (nombre de mesures dans n_horn_length_measures)",
+              "n_body_mass_measures": "Nombre de mesures répétées de masse corporelle ayant servi au calcul de la moyenne",
+              "n_horn_base_measures": "Nombre de mesures répétées de la circonférence à la base des cornes ayant servi au calcul de la moyenne",
+              "n_horn_length_measures": "Nombre de mesures répétées de la longueur des cornes ayant servi au calcul de la moyenne",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas"
+            }
           }
         ],
         "label": [
@@ -124,6 +170,29 @@
               "sex": "sex"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EElY1ol7SxsptJ_mkw3hJhRsraeMhxH96zHDB6Zignlg",
+            "capture_base": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "birth_year": "année_naissance",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "mean_body_mass": "masse_corporelle_moyenne",
+              "mean_horn_base_circumference": "circonférence_moyenne_base_cornes",
+              "mean_horn_length": "longueur_moyenne_cornes",
+              "n_body_mass_measures": "nombre_mesures_masse_corporelle",
+              "n_horn_base_measures": "nombre_mesures_base_cornes",
+              "n_horn_length_measures": "nombre_mesures_longueur_cornes",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -133,6 +202,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 3 775 autosomal SNPs for 76 bighorn sheep (Ovis canadensis) from a long-term individually monitored population in Alberta, Canada, with phenotypic data.",
+            "name": "ovis_canadensis_horn_gwas"
+          },
+          {
+            "d": "ELnh1gw5MVNiT08LgeU4JAGvirGaQkbPVL81PYYCAtVq",
+            "capture_base": "EFqTD9MAE0xSJxt8v6BHKwG2wah3r_DaxZl5riU13udC",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 76 mouflons d’Amérique (Ovis canadensis) provenant d’une population suivie individuellement à long terme en Alberta (Canada), génotypés à l’aide de 3 775 SNP autosomaux, ainsi que des données phénotypiques.",
             "name": "ovis_canadensis_horn_gwas"
           }
         ],

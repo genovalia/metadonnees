@@ -1,15 +1,14 @@
 {
-  "d": "EGqTYsp63HoUg7SxOkY3klpIHVUovL9jUmRwl3w4Xt9F",
+  "d": "EDStflFGAsaU2cV17z7a0fGbU9C2ms9l1H3dY3ULrina",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001302_",
-      "d": "EBiAi3UqW3Tguj2_t7hZPzviu8z9rVmjdE1EDtpsjN6a",
+      "v": "OCAS11JSON002360_",
+      "d": "EBriGZyrTJo135Ve-8xxY3AbMnG84YqBuYpSJfvTL4O9",
       "capture_base": {
-        "d": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+        "d": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
         "type": "spec/capture_base/1.1",
         "attributes": {
-          "body_length": "Numeric",
           "body_mass": "Numeric",
           "country": "Text",
           "ecotype": "Text",
@@ -21,8 +20,11 @@
           "organism": "Text",
           "sample_weight_in_water": "Numeric",
           "sampling_depth_class": "Text",
+          "sampling_location": "Text",
+          "sampling_year": "Numeric",
           "sequenced_molecule": "Text",
-          "sex": "Text"
+          "sex": "Text",
+          "total_length": "Numeric"
         },
         "classification": "RDF106",
         "flagged_attributes": []
@@ -30,8 +32,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EISK7kbSxSQ9fkXf8kQV5eEnHFRKvWvKwXnwdjdkIBSr",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "EFrxea78uT_SHMpSM2DQ8viavReZS-g9WK6U14WE3NAa",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -42,22 +44,21 @@
                 "siscowet": "siscowet"
               },
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
               },
               "maturity": {
                 "immature": "sexual maturity not reached yet",
-                "mature": "sexual maturity reached",
-                "unknown": "sexual maturity not determined"
+                "mature": "sexual maturity reached"
               },
               "sampling_depth_class": {
-                "deep": ">100 meters",
+                "shallow": "<50 meters",
                 "mid-depth": "50 to 100 meters",
-                "shallow": "<50 meters"
+                "deep": ">100 meters"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
@@ -69,11 +70,51 @@
                 "unknown": "unknown"
               }
             }
+          },
+          {
+            "d": "EGoyR9XAQg0TH19sj3yoz4OvGgmBFDjbNN5vgvrmw2nX",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "ecotype": {
+                "humper": "humper",
+                "lean": "maigre",
+                "redfin": "redfin",
+                "siscowet": "siscowet"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "maturity": {
+                "immature": "maturité sexuelle pas encore atteinte",
+                "mature": "maturité sexuelle atteinte"
+              },
+              "sampling_depth_class": {
+                "shallow": "<50 mètres",
+                "mid-depth": "50 à 100 mètres",
+                "deep": ">100 mètres"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "EO9e7uhCQ-8QjIYzVGe0stvoM3405aO0mQkphPFobZxT",
-          "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+          "d": "EEzPL2HoJS6LZeWqpcOXOY8UiUhDgchZgHqG_U-Lsych",
+          "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "ecotype": [
@@ -83,22 +124,21 @@
               "siscowet"
             ],
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
             ],
             "maturity": [
               "immature",
-              "mature",
-              "unknown"
+              "mature"
             ],
             "sampling_depth_class": [
-              "deep",
+              "shallow",
               "mid-depth",
-              "shallow"
+              "deep"
             ],
             "sequenced_molecule": [
               "DNA",
@@ -113,12 +153,11 @@
         },
         "information": [
           {
-            "d": "EG3aGCI3e0J05FyMjTShh9mZRDS_MxpZz7s8v2VLPVc5",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "EBZZAw1smbmLfWCN5Z_npI3MigbSEqCuHevUnl3_Wll0",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "body_length": "Body length of the individual",
               "body_mass": "Body mass of the individual",
               "country": "Country of origin of the individuals sampled",
               "ecotype": "Distinct population within a species that is adapted to specific environmental conditions, such as anadromous or freshwater resident",
@@ -126,24 +165,50 @@
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
-              "maturity": "Developmental stage indicating reproductive status: mature, immature or unknown.",
+              "maturity": "Developmental stage indicating reproductive status: mature or immature; NA when not reported",
               "organism": "Species name in latin according to the Linneaus classification",
               "sample_weight_in_water": "Weight of the sampled individual measured while immersed in water",
               "sampling_depth_class": "Depth class at which the sample was collected: shallow (< 50 m), mid-depth (50-100 m) or deep (> 100 m)",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it",
+              "total_length": "Total length of the individual, including the tail"
+            }
+          },
+          {
+            "d": "EIki7MpRV1V1o4oPdYt0Y9cuMcAMcPuDUh-HBF8JHNi-",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "body_mass": "Masse corporelle de l’individu",
+              "country": "Pays d’origine des individus échantillonnés",
+              "ecotype": "Population distincte au sein d’une espèce, adaptée à des conditions environnementales particulières, comme anadrome ou résidente en eau douce",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "maturity": "Stade de développement indiquant le statut reproducteur : mature ou immature; NA lorsque non indiqué",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sample_weight_in_water": "Poids de l’individu échantillonné mesuré en immersion dans l’eau",
+              "sampling_depth_class": "Classe de profondeur à laquelle l’échantillon a été prélevé : peu profond (< 50 m), profondeur moyenne (50-100 m) ou profond (> 100 m)",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas",
+              "total_length": "Longueur totale de l’individu, queue comprise"
             }
           }
         ],
         "label": [
           {
-            "d": "EODtnGYu88GsxkNQD5Xy-U9rjvqT_t5GlQif1uxBZiIG",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "ECzKr989jDTnW-cd28Y7jIQeYqUeDeHAw3PGajC82O_r",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
-              "body_length": "body_length",
               "body_mass": "body_mass",
               "country": "country",
               "ecotype": "ecotype",
@@ -155,32 +220,69 @@
               "organism": "organism",
               "sample_weight_in_water": "sample_weight_in_water",
               "sampling_depth_class": "sampling_depth_class",
+              "sampling_location": "sampling_location",
+              "sampling_year": "sampling_year",
               "sequenced_molecule": "sequenced_molecule",
-              "sex": "sex"
+              "sex": "sex",
+              "total_length": "total_length"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EKQtsSJkkz0okBMyJtHOkpghA60wzAMzcKiJfcvp7M02",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "body_mass": "masse_corporelle",
+              "country": "pays",
+              "ecotype": "écotype",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "maturity": "maturité",
+              "organism": "organisme",
+              "sample_weight_in_water": "poids_dans_eau",
+              "sampling_depth_class": "classe_profondeur",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe",
+              "total_length": "longueur_totale"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EH4A3YPbldrDVnp-TZiDzXCHo3TCRgy48HiyCaoIGE61",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "EAFOE7OJ2mIhBbtrrLLeEuSH3QLhTuovsxx8a9fSgnYW",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypic data from four lake trout (Salvelinus namaycush) ecotypes sampled in Lake Superior. A total of 484 individuals were genotyped at 6822 SNPs using a genotyping-by-sequencing approach.",
-            "name": "salvelinus_namaycush_2"
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 6 822 SNPs for 486 lake trout (Salvelinus namaycush) of four ecotypes from Lake Superior, with phenotypic data.",
+            "name": "salvelinus_namaycush_ecotypes"
+          },
+          {
+            "d": "EBRQncjs5alb5V8O1UpUquaqyRY5PjDRpCitxBA4J8lV",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 486 touladis (Salvelinus namaycush) appartenant à quatre écotypes du lac Supérieur, génotypés à l’aide de 6 822 SNP, ainsi que des données phénotypiques.",
+            "name": "salvelinus_namaycush_ecotypes"
           }
         ],
         "unit": {
-          "d": "EAnDkuT5nUB8l_CcYL5vFYTAxnX92-IRWjob1WYlax3t",
-          "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+          "d": "EMT4_a7Sr5yfuYgVod6uh0uNDxjkrwoxHR1Q4znN6JcH",
+          "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "body_length": "millimeter",
             "body_mass": "gram",
             "latitude": "decimal degree",
             "longitude": "decimal degree",
-            "sample_weight_in_water": "gram"
+            "sample_weight_in_water": "gram",
+            "total_length": "millimeter"
           }
         }
       }
@@ -189,13 +291,13 @@
   },
   "extensions": {
     "adc": {
-      "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU": {
-        "d": "EPZRjBktCAMI1HrUPI0OuF4mPK8_pAZDD_hhLvYZ3q7a",
+      "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I": {
+        "d": "EA74TpS3Bt-ttsKGLpfkpYXP9oYkV2SmpqhivQsxx72h",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EAjjgTbeu7kr9jUJVEUbXslJaGPqS00syq2CpABkHTJc",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "ELq5ZuXlAuDfXOqJDdIhVpmjXKY1OFQNJEEK4HM6ixQ2",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -203,22 +305,24 @@
               "country",
               "latitude",
               "longitude",
+              "sampling_location",
+              "sampling_year",
               "sampling_depth_class",
-              "body_length",
+              "ecotype",
+              "total_length",
               "body_mass",
               "sample_weight_in_water",
               "sex",
               "maturity",
-              "ecotype",
               "sequenced_molecule",
               "genotyping_technology"
             ],
             "entry_code_ordering": {
               "ecotype": [
-                "siscowet",
                 "humper",
                 "lean",
-                "redfin"
+                "redfin",
+                "siscowet"
               ],
               "genotyping_technology": [
                 "genotyping-by-sequencing",
@@ -229,9 +333,8 @@
                 "RNA sequencing"
               ],
               "maturity": [
-                "mature",
                 "immature",
-                "unknown"
+                "mature"
               ],
               "sampling_depth_class": [
                 "shallow",
@@ -250,8 +353,8 @@
             }
           },
           "unit_framing": {
-            "d": "EMYI8kYytBvtf3YFhh7UEiTaJslAm2oHn99S8UckMYDv",
-            "capture_base": "ELG_nigFgc3s22_zT4LUBljX22_H_IXcF4DD8uGS4GjU",
+            "d": "EC7vKy4MTbHSqhnVJYGcOs51dgb8Cd_oWY8VFrMnNRlT",
+            "capture_base": "EBNeJ5q-wXvwB8E4Si9pTgUmwi_kip6Ub0uUdKwkNd8I",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

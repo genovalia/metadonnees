@@ -1,10 +1,10 @@
 {
-  "d": "ECwwb-ClsQZt4FV9tzqHKB3IOYfCvtaQFzsicnF_o0hX",
+  "d": "EHvrO1DZLh6Ys7EEBwSThXArIxsRpSUotloOp1dDq7oB",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000cf2_",
-      "d": "EGp89EgE7-ppt-I9HfcaMmlJnITcxIm1Z2iPEYttCSk3",
+      "v": "OCAS11JSON001752_",
+      "d": "EDpAFVB9eWA5FWx9qgDXT-KZdCnFitd9CKxcMlrX49cl",
       "capture_base": {
         "d": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
         "type": "spec/capture_base/1.1",
@@ -44,6 +44,30 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EEMy1wPQ1pBYxSU-1SPLWH7FnvGcwX_q-6-F6gd_bge0",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "breeding_status": {
+                "breeding": "Reproducteur",
+                "unknown": "Inconnu"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -87,6 +111,22 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
             }
+          },
+          {
+            "d": "EHutHqN7ZiNBf0XkTygLNlN_tI93WnHchGprEZzCQUkp",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "breeding_status": "Statut de l’individu (reproducteur ou inconnu)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "technical_replicate": "TRUE si cet échantillon est un réplicat technique d’un autre échantillon du jeu de données"
+            }
           }
         ],
         "label": [
@@ -107,6 +147,24 @@
               "technical_replicate": "technical_replicate"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EP_APNg8s0PFyN9n9GcP-hsf4dPpJDjZ4AU1jVp--5za",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breeding_status": "statut_reproducteur",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "technical_replicate": "réplicat_technique"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -116,6 +174,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 5 912 SNPs for 100 ivory gull (Pagophila eburnea) samples from breeding colonies in the Arctic (Canada, Greenland and Svalbard).",
+            "name": "pagophila_eburnea_demographic_decline"
+          },
+          {
+            "d": "EIrO3JPhU2rzeZjEOCjy6l2LXTIie0VLMfiaWFIJWSX1",
+            "capture_base": "EFEg5rHXeIhTF0CxXqkXV-bFB7qixuwZ5194M3hl_tg_",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 100 échantillons de mouettes blanches (Pagophila eburnea) provenant de colonies de reproduction de l’Arctique (Canada, Groenland et Svalbard), génotypés à l’aide de 5 912 SNP.",
             "name": "pagophila_eburnea_demographic_decline"
           }
         ]

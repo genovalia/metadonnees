@@ -1,10 +1,10 @@
 {
-  "d": "ECbjKbfSiAuwxm979beCq5Aw8kENEnUQARthI4ukq5bK",
+  "d": "ECIijrJpDjxSiV8H-C5O_yWVpcDUIdg0u4CugM5q6SeM",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000dae_",
-      "d": "EMOSkV7hv3HtF17S5qZIx0vEcIkpnZTweW5QNMV37L81",
+      "v": "OCAS11JSON001749_",
+      "d": "EGZDZ2AflNKtsWmc3MMzY3j5BR6b0BDKAupUrgrS4M58",
       "capture_base": {
         "d": "EMWW0lrzoNWBSy0hirpWz2DOjHDTA7kPIVMPjJIcGJFm",
         "type": "spec/capture_base/1.1",
@@ -40,6 +40,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EPpllr5kMH33S7LhPELf7ANjx32EIZQ6c6usLoxX7O7Z",
+            "capture_base": "EMWW0lrzoNWBSy0hirpWz2DOjHDTA7kPIVMPjJIcGJFm",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -79,6 +99,22 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "ED0q8mZCuiAAu3mbl-EjTam91xQNQbm1pGe-wUE5ILzb",
+            "capture_base": "EMWW0lrzoNWBSy0hirpWz2DOjHDTA7kPIVMPjJIcGJFm",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -99,6 +135,24 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EGrF8R_eSenCfjnSJ0KRheH7RAhVReLJOVdHa71A1w-D",
+            "capture_base": "EMWW0lrzoNWBSy0hirpWz2DOjHDTA7kPIVMPjJIcGJFm",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "elevation": "altitude",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -108,6 +162,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotypic data used to investigate climate adaptation in black spruce (Picea mariana), a widely distributed North American conifer. It includes gene SNP genotypes (4186 SNPs) for 254 trees sampled from 31 natural populations distributed across the species' transcontinental range. Geographic coordinates and elevation are provided for each sampling location.",
+            "name": "picea_mariana_cimate_adaptation"
+          },
+          {
+            "d": "EDD9gXDfm6QijvpVWbeeH7MxSPKaxJlbbvurWnrFwCpX",
+            "capture_base": "EMWW0lrzoNWBSy0hirpWz2DOjHDTA7kPIVMPjJIcGJFm",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 254 épinettes noires (Picea mariana) provenant de populations naturelles couvrant la majeure partie de l’aire de répartition transcontinentale de l’espèce, génotypées à l’aide de 4 186 SNP géniques.",
             "name": "picea_mariana_cimate_adaptation"
           }
         ],

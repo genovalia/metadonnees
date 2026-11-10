@@ -1,10 +1,10 @@
 {
-  "d": "EMpgZENnC3GbFGcGZy_IWQuV3iGeoEzIfXm0xvDu_xaI",
+  "d": "EBTIqFFqozoHgqQ-4XTJsaTuLtk_xIGUvwGpF7qjw1Id",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0010aa_",
-      "d": "ELZ7QN6mTpuWP2RII5_vrk3eEZpkcnsGafrExQya5mI3",
+      "v": "OCAS11JSON001d72_",
+      "d": "EHwEBwn7L00Sch_zAq5U4jj6j_UFM5w4k9ln6eULSxyJ",
       "capture_base": {
         "d": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
         "type": "spec/capture_base/1.1",
@@ -53,6 +53,33 @@
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "ECDavOYJHL-4y4LuQf2T2vsukOZp5SToF-FG7kYNNaSz",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "common_garden": {
+                "CH": "Chibougamau (QC)",
+                "AC": "Acadia (NB)",
+                "ML": "Mont-Laurier (QC)",
+                "PR": "Peace River (AB)",
+                "VL": "Valcartier (QC)"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
@@ -83,12 +110,12 @@
         },
         "information": [
           {
-            "d": "EBvqg7cwGHEUiQyovNvkp4UfGbwd1EPRAFgruJ--TTCz",
+            "d": "EHNXDuwhhdulfMaf00rzVXKD1rWpV6tQKa4b3ujSwpKL",
             "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
-              "common_garden": "Common garden where the tree was sampled (CH: Chibougamau, AC: Acadia, ML: Mont-Laurier, PR: Peace River, VL: Valcartier)",
+              "common_garden": "Common garden (provenance or progeny test plantation) where the tree was sampled",
               "country": "Country of origin of the individuals sampled",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
@@ -100,6 +127,26 @@
               "sample_tissue": "The type of tissue sampled from the individual and used for DNA or RNA extraction",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "technical_replicate": "TRUE if this sample is a technical replicate of another sample of the dataset"
+            }
+          },
+          {
+            "d": "EPJIhzAIwnSoEfsS_cGADs_15JzgomA9g8dOQLhmdI4X",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "common_garden": "Plantation comparative (test de provenances ou de descendances) où l’arbre a été échantillonné",
+              "country": "Pays d’origine des individus échantillonnés",
+              "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "provenance": "Code de provenance (population source des semences) de l’arbre dans la Range-Wide Provenance Study; la latitude et la longitude sont celles de la provenance",
+              "sample_tissue": "Type de tissu prélevé sur l’individu et utilisé pour l’extraction de l’ADN ou de l’ARN",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "technical_replicate": "TRUE si cet échantillon est un réplicat technique d’un autre échantillon du jeu de données"
             }
           }
         ],
@@ -125,6 +172,28 @@
               "technical_replicate": "technical_replicate"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EP5PNLyXcA1Lko_myn7AfCB5QOEoOTRCFkVzE9pKGV_b",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "common_garden": "plantation_comparative",
+              "country": "pays",
+              "elevation": "altitude",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "provenance": "provenance",
+              "sample_tissue": "tissu_échantillonné",
+              "sequenced_molecule": "molécule_séquencée",
+              "technical_replicate": "réplicat_technique"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -134,6 +203,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 30 071 SNPs for 1 495 black spruce (Picea mariana) trees from rangewide provenance trials representing provenances from Canada and the USA, plus a red spruce (Picea rubens) outgroup.",
+            "name": "picea_mariana_genomic_offset"
+          },
+          {
+            "d": "EBcw-0p8oID6DtRoVXdWTfQO2wFzY8ImeqrZO-TP8n0X",
+            "capture_base": "EEXEy_nlLQm0MPsTVrqdILx7UcD612lKWNWjfgSRxDp4",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 495 épinettes noires (Picea mariana) provenant de tests de provenances couvrant l’aire de répartition de l’espèce au Canada et aux États-Unis et d’un groupe externe d’épinette rouge (Picea rubens), génotypées à l’aide de 30 071 SNP.",
             "name": "picea_mariana_genomic_offset"
           }
         ],

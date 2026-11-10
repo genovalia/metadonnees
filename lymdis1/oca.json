@@ -1,10 +1,10 @@
 {
-  "d": "EH-i5hevbNgnDndkG650KMDosZrZYlAFFwbMMcHpLjpc",
+  "d": "EIkl_N-DiPbZeVLJsrV92uvV2SHSdVhXZRnW4ba9XAAp",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000d24_",
-      "d": "EKLMUe1hoGUr2qFsYHMH6eaWYHHm-jDyuvzSbVxtjlk3",
+      "v": "OCAS11JSON001734_",
+      "d": "EKAhC61nH9nlmTlMVmoZV-dFONlOB075o6tuyroRDaP9",
       "capture_base": {
         "d": "EHjKoJyKvQkJQIrEEl7oZbW1McBpP58ZbZMeemCuIp76",
         "type": "spec/capture_base/1.1",
@@ -40,6 +40,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EPxhTiOvMeElSo6-Bw9oadR-EQFhkoYf8o3XRKvFyLBf",
+            "capture_base": "EHjKoJyKvQkJQIrEEl7oZbW1McBpP58ZbZMeemCuIp76",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -79,6 +99,22 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EHWhH4wqcTSGfw9qJrdQ9CRIYV0bHjGnj1XqPBLAN32e",
+            "capture_base": "EHjKoJyKvQkJQIrEEl7oZbW1McBpP58ZbZMeemCuIp76",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "date_of_birth": "Date de naissance de l’individu, exprimée selon le format standard ISO 8601 AAAA-MM-JJ",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -99,6 +135,24 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EIs1m3nnWFqx1BxDVK14q2D8RF2i1PAhMU8RE3cNjM3b",
+            "capture_base": "EHjKoJyKvQkJQIrEEl7oZbW1McBpP58ZbZMeemCuIp76",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "date_of_birth": "date_naissance",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -108,6 +162,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This is a range-wide sampling of Asian Spongy Moth populations from North America to Japan via Eurasia. The dataset includes a total of 1156 samples and 280 SNPs diagnostic of provenances identified using the genotyping-by-sequencing technology.",
+            "name": "Lymantria_dispar"
+          },
+          {
+            "d": "EPNIYjgW7mrwCf2V6HcVc9eBj3TsP20d4gWo2Ojf5ak8",
+            "capture_base": "EHjKoJyKvQkJQIrEEl7oZbW1McBpP58ZbZMeemCuIp76",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 156 spongieuses (Lymantria dispar) provenant de l’ensemble de l’aire de répartition de l’espèce, de l’Amérique du Nord au Japon, génotypées à l’aide de 285 SNP diagnostiques de la provenance. Tous les individus sont des mâles, d’un âge noté de 1 mois. L’ADN a été extrait de pattes.",
             "name": "Lymantria_dispar"
           }
         ],

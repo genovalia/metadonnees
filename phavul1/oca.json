@@ -1,10 +1,10 @@
 {
-  "d": "EBo73dbuWWM4T1hjcy_RQVTZEcdzAY7gozQNHKVihbym",
+  "d": "EFUhYQfYpERwpFqnTq7LES_GwVpL4hWGbEyrEUcClEE2",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0011c5_",
-      "d": "EOdux6USvY_kuUxYYpDoD41TNw1ZSmPQnw2jCOD2URs9",
+      "v": "OCAS11JSON002150_",
+      "d": "EPhuoiiZLfwroWjpUD_s0fcqKxBok1ylQck7n96mKJ1-",
       "capture_base": {
         "d": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
         "type": "spec/capture_base/1.1",
@@ -47,6 +47,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "ECmmX6KUEYiYkYA368srp7gIvOpcR9j57U4IEVVzeuWG",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -93,6 +113,29 @@
               "variety": "Variety, cultivar, breeding line or landrace of the individual (plants)",
               "variety_type": "How the variety was obtained: landrace, conventional (conventional breeding), participatory plant breeding, participatory varietal selection, or check (control variety)"
             }
+          },
+          {
+            "d": "EFNzLU29_MLOYQ9Nsrzyxq7BKxz9ZZcp6ClyQwUCepon",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "daylight_sensitive_elora_2014": "TRUE si le génotype a montré une sensibilité à la longueur du jour à Elora en 2014",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "market_class": "Classe commerciale des semences (petit rouge, noir, haricot blanc, ...)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "pedigree": "Ascendance de l’individu : pedigree d’amélioration (formule de croisement), lignée d’amélioration ou référence à son enregistrement",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "trial_elora_2014": "TRUE si l’entrée faisait partie de l’essai au champ Elora 2014",
+              "trial_elora_2015": "TRUE si l’entrée faisait partie de l’essai au champ Elora 2015",
+              "trial_yorito_2014_2015": "TRUE si l’entrée faisait partie de l’essai au champ Yorito 2014-2015",
+              "uneven_maturity_elora_2014": "TRUE si le génotype a montré une maturité inégale à Elora en 2014 (semences multipliées à Porto Rico, hiver 2015)",
+              "variety": "Variété, cultivar, lignée d’amélioration ou variété locale de l’individu (plantes)",
+              "variety_type": "Mode d’obtention de la variété : variété locale, conventionnelle (amélioration conventionnelle), sélection végétale participative, sélection variétale participative, ou témoin (variété témoin)"
+            }
           }
         ],
         "label": [
@@ -120,6 +163,31 @@
               "variety_type": "variety_type"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ELxv2sxeNZTIQtG66xbCR49Co73_3hop7dPo48XDd1AX",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "daylight_sensitive_elora_2014": "sensibilité_photopériode_elora_2014",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "market_class": "classe_commerciale",
+              "organism": "organisme",
+              "pedigree": "pedigree",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "trial_elora_2014": "essai_elora_2014",
+              "trial_elora_2015": "essai_elora_2015",
+              "trial_yorito_2014_2015": "essai_yorito_2014_2015",
+              "uneven_maturity_elora_2014": "maturité_inégale_elora_2014",
+              "variety": "variété",
+              "variety_type": "type_variété"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -129,6 +197,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 4 560 SNPs for 72 common bean (Phaseolus vulgaris) accessions of a Honduran panel (landraces, participatory plant breeding varieties, conventional Honduran varieties and North American checks), with pedigree and field trial data. DNA was extracted from leaves.",
+            "name": "phaseolus_vulgaris_honduran_panel"
+          },
+          {
+            "d": "EGnn59RIGnRgof7nyXC4BxXXREPXw_z1iQkTdL5gI1kZ",
+            "capture_base": "EKBoj8BxUWdIEef-QiLps8icA2u5275SniJA3BUDilsM",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 72 accessions de haricot commun (Phaseolus vulgaris) d’un panel hondurien (variétés locales, variétés issues de sélection participative, variétés conventionnelles honduriennes et témoins nord-américains), génotypées à l’aide de 4 560 SNP, ainsi que des données de pedigree et d’essais au champ. L’ADN a été extrait de feuilles.",
             "name": "phaseolus_vulgaris_honduran_panel"
           }
         ]

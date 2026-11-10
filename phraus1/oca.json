@@ -1,10 +1,10 @@
 {
-  "d": "EP2XbMxWSVQjzND7OPWh1Igr1EbMnp9MuwiQDFpJ7nxB",
+  "d": "EMHl-GL_7JyIA188J8c0lRTId5xw2UgCPheXy67rtwlg",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000bda_",
-      "d": "ED6ZcMfHou09sxz7Al_cEuIS--6ea_IQ8DJsohcKMkK2",
+      "v": "OCAS11JSON00156b_",
+      "d": "EJmYe7sKI720ubGATY0GUaYWlDZr3QzYk_p-uKbC6Drc",
       "capture_base": {
         "d": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
         "type": "spec/capture_base/1.1",
@@ -39,6 +39,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EDr2RKDuphER1Ox1aezIAcay1ZVvr6KkWBitwRi9xCGx",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -77,6 +97,21 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "site_type": "General environmental or habitat category of the sampling site"
             }
+          },
+          {
+            "d": "EGS83jjKUZQ-Bq-68o6tqai56O-we9WUhN7I1HgSuIb1",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "site_type": "Catégorie générale d’environnement ou d’habitat du site d’échantillonnage"
+            }
           }
         ],
         "label": [
@@ -96,6 +131,23 @@
               "site_type": "site_type"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EMWpOBTGS87PQP-DnJ_6BYMQ2Ab0EQn5RVocXcn24s9V",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "site_type": "type_site"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -105,6 +157,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 5 538 SNPs for 88 common reed (Phragmites australis) shoots, one per stand, from roadside and protected-area stands in Quebec, Canada.",
+            "name": "phragmites_australis_reproduction"
+          },
+          {
+            "d": "EJeqhvf2ML2Ws19gsIqvlWI67HOYOFtHeLhBf39b-Xiq",
+            "capture_base": "EIcASK5zzsCC2sdOflDbCkLQDCffu1sncqnm6aTDbWEA",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 88 pousses de roseau commun (Phragmites australis), une par peuplement, provenant de peuplements en bordure de route et en aire protégée du Québec (Canada), génotypées à l’aide de 5 538 SNP.",
             "name": "phragmites_australis_reproduction"
           }
         ]

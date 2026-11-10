@@ -1,10 +1,10 @@
 {
-  "d": "EGebODunHSanoWDSPAUbK1ytD1Ghc1Vg7sBdCg2u90r5",
+  "d": "EBP5LeUeEoJIFHw6Shb7EEn3zA-Nt_cNZtnEJSeEvdH6",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000bd3_",
-      "d": "EHb4VPjB8dR5krtS3UPA36Rg-RGr4aku6jiFsKODMN-F",
+      "v": "OCAS11JSON00157b_",
+      "d": "EBjP7WK2en0CFIlu7grqPTebV8CkuMd82nsd8Qed7V-F",
       "capture_base": {
         "d": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
         "type": "spec/capture_base/1.1",
@@ -39,6 +39,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EOhNpmqfwgKgC3EhaUmUOk29_qIn77K8J9nfUmmWPvvm",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -77,6 +97,21 @@
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "ECf4UlN7dCY5sYwDAqERIPmG3WwnyYe513ecpYEWQ9n6",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -96,6 +131,23 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EIxGCH5h4EPR1JIGQ8LVX4QicwbDxrXvb9cuiplpyhYq",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "region": "région",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -105,6 +157,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 1 887 SNPs for 596 juvenile and adult Atlantic cod (Gadus morhua) from the Northwest Atlantic off Newfoundland and adjacent areas (Canada).",
+            "name": "gadus_morhua_northern_cod_life_stage"
+          },
+          {
+            "d": "EJZw477Eh1DoXDOxIbKQ8wjVJvWHs8gim4u9mHdeQF8l",
+            "capture_base": "EFtGhl95logBbl34KYq5aJLvUsYQzG7gtlVVMZu0rSef",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 596 morues franches (Gadus morhua) juvéniles et adultes provenant de l’Atlantique Nord-Ouest au large de Terre-Neuve et des zones adjacentes (Canada), génotypées à l’aide de 1 887 SNP.",
             "name": "gadus_morhua_northern_cod_life_stage"
           }
         ]

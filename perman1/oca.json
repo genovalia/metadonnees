@@ -1,10 +1,10 @@
 {
-  "d": "EA31KbDWKOZZHm4-k3zPtzGKrfmKtgRpP3RNtngoMtMf",
+  "d": "EGwpMr_tub1X-1fqLQ3zEnROXyEtmW4Vm2Fk61YQjb2l",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00146f_",
-      "d": "EEMlkGxEXwHtSBPgoQvDhUyVhXZB_R-LRpvaSpJG7FUw",
+      "v": "OCAS11JSON00250f_",
+      "d": "EFz8K7si_Ju3R-TDQRM88vVOGwR-cou7ztZclBCSyjLk",
       "capture_base": {
         "d": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
         "type": "spec/capture_base/1.1",
@@ -63,6 +63,40 @@
               "site_type": {
                 "island": "Island site",
                 "mainland": "Mainland site"
+              }
+            }
+          },
+          {
+            "d": "EJyJ4LvFaRxNqXoFTKXt8B2TJKbVidbvP-uQJSaPwaTh",
+            "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "juvenile": "juvénile",
+                "subadult": "subadulte",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
+              },
+              "site_type": {
+                "island": "Site insulaire",
+                "mainland": "Site continental"
               }
             }
           }
@@ -125,6 +159,31 @@
               "site_type": "General environmental or habitat category of the sampling site",
               "tail_length": "Length of the tail of the individual"
             }
+          },
+          {
+            "d": "EN2ttwuqMNb22-a34esn7KiczS4w9FgjaAZ4O8QMe7gn",
+            "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "body_mass": "Masse corporelle de l’individu",
+              "country": "Pays d’origine des individus échantillonnés",
+              "distance_moved": "Distance totale parcourue lors du test de comportement exploratoire (champ ouvert)",
+              "field_season_day": "Jour de capture au cours de la saison de terrain, tel qu’indiqué dans le dépôt (colonne date, décrite comme calendrier julien). L’échantillonnage s’est déroulé du début juillet à la fin août chaque année (2013-2016; Juette et al. 2020, Oikos, 10.1111/oik.07249); les valeurs vont de 9 à 63. Le jour 1 du décompte n’est pas documenté : il ne s’agit pas d’un jour de l’année civile et la valeur ne peut pas être convertie en date.",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "handling_aggression_1": "Score d’agressivité à la manipulation, première mesure (test de docilité)",
+              "handling_aggression_2": "Score d’agressivité à la manipulation, deuxième mesure (test de docilité)",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas",
+              "site_type": "Catégorie générale d’environnement ou d’habitat du site d’échantillonnage",
+              "tail_length": "Longueur de la queue de l’individu"
+            }
           }
         ],
         "label": [
@@ -154,6 +213,33 @@
               "tail_length": "tail_length"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ED6aJm5dOZxOMYn1W0ODm4xaYMRxkLWdOYDRsdXU9rCz",
+            "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "body_mass": "masse_corporelle",
+              "country": "pays",
+              "distance_moved": "distance_parcourue",
+              "field_season_day": "jour_saison_terrain",
+              "genotyping_technology": "technologie_génotypage",
+              "handling_aggression_1": "agressivité_manipulation_1",
+              "handling_aggression_2": "agressivité_manipulation_2",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe",
+              "site_type": "type_site",
+              "tail_length": "longueur_queue"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -163,6 +249,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 105 067 SNPs for 294 deer mice (Peromyscus maniculatus) from island and mainland populations in northwestern Ontario, Canada, with phenotypic data.",
+            "name": "peromyscus_maniculatus_island_syndrome"
+          },
+          {
+            "d": "EJDn6uU7NyTd3-cBD76fjyZw7vuB5KdlvrfTBTcEy300",
+            "capture_base": "EGgyVUizRvveRrPuPSZj0K4a6qNErdKJyl4T030ftHhu",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 294 souris sylvestres (Peromyscus maniculatus) provenant de populations insulaires et continentales du nord-ouest de l’Ontario (Canada), génotypées à l’aide de 105 067 SNP, ainsi que des données phénotypiques.",
             "name": "peromyscus_maniculatus_island_syndrome"
           }
         ],

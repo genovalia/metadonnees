@@ -1,10 +1,10 @@
 {
-  "d": "EEzHw2-XU5_ux4xenb64AxEgH9FgtKzSgdJWo1qe88Y7",
+  "d": "EP1gf7MsGyv2ZhEW1SpwrCBRnhDBpLkH0L0QxrgqjGSl",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000d4c_",
-      "d": "EGc9rECUPYz5eIkkvnXNzIk3dmcK8fsr7z2HrakGB3oY",
+      "v": "OCAS11JSON001878_",
+      "d": "EEzjXQzUjggaqvE8qvQckMP3SNG1RDTUPpcuLBQYz-Kt",
       "capture_base": {
         "d": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
         "type": "spec/capture_base/1.1",
@@ -41,6 +41,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EJWlHRcyHD9y_5i1BO0YRSFgXR2aIRgr1swMlgF-A8NQ",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -81,6 +101,23 @@
               "plant_material_type": "Type of plant material: breeding selection (sample ID in the cross-row-tree format) or named cultivar or selection (any other sample ID)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EDk7oKNSSIiid5cmnncnibL3BCk3vcc3OVJ3HjQ5V-a_",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "cross_id": "Identifiant du croisement d’amélioration extrait du code d’accession (p. ex. 20005 dans 20005-R1T59)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "orchard_row": "Rangée du verger où se trouve l’arbre, extraite du code d’accession",
+              "orchard_tree": "Numéro de l’arbre dans la rangée du verger, extrait du code d’accession",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "plant_material_type": "Type de matériel végétal : sélection d’amélioration (identifiant d’échantillon au format croisement-rangée-arbre) ou cultivar ou sélection nommés (tout autre identifiant d’échantillon)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -102,6 +139,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EJT_5j8K70yCSsJYJWFTW95_ehmcfJnH0t-Ac_L5l25a",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "cross_id": "identifiant_croisement",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "orchard_row": "rangée_verger",
+              "orchard_tree": "arbre_dans_rangée",
+              "organism": "organisme",
+              "plant_material_type": "type_matériel_végétal",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -111,6 +167,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains imputed genotyping-by-sequencing genotypes at 20 633 SNPs for 200 Japanese plum (Prunus salicina) cultivars and breeding selections grown at the Vineland Research Station (Ontario, Canada), with pedigree data.",
+            "name": "prunus_salicina_black_knot"
+          },
+          {
+            "d": "EJVHDkjgGYhw1av5hnnI872jq5gnGbz1FPemZ8cfCnkI",
+            "capture_base": "EHwCBBreRnzlaBWSeULWvCbwtMckIJWyedLZ9wgRvqAq",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes imputés, obtenus par génotypage par séquençage, de 200 cultivars et sélections de prunier japonais (Prunus salicina) cultivés à la Vineland Research Station (Ontario, Canada), génotypés à l’aide de 20 633 SNP, ainsi que des données de pedigree.",
             "name": "prunus_salicina_black_knot"
           }
         ]

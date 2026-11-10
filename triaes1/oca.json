@@ -1,10 +1,10 @@
 {
-  "d": "ECsxXEQynuHXAiPRzQT1lN0a3kZs3xupjHgteTNkbb7r",
+  "d": "EBEil_pVwjl36aAxbv9C-4q2SIHOlFOMxvfU_wvvyyGc",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001704_",
-      "d": "EJpp1SMnMavG17dL7CmMD2Hqtd_b-fggVXDPUoNh1WXv",
+      "v": "OCAS11JSON002875_",
+      "d": "EPirEHLGNv-WSb28wIMnGu0Pc8StUIVZ1SZX9k1NOVPf",
       "capture_base": {
         "d": "EK7NLY9ZGi7XufTgjpoAZVWFxXnt4IlMiM8Behd8ts5y",
         "type": "spec/capture_base/1.1",
@@ -47,6 +47,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EKZSvAs9MmvU1K6bp27HZFziKjA2hDv27Z2_cTmxCfh9",
+            "capture_base": "EK7NLY9ZGi7XufTgjpoAZVWFxXnt4IlMiM8Behd8ts5y",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -93,6 +113,29 @@
               "organism": "Species name in latin according to the Linneaus classification",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EAk75iKV8M1mYzewm0j0vR2U65CrhryLtoLJclQvmNha",
+            "capture_base": "EK7NLY9ZGi7XufTgjpoAZVWFxXnt4IlMiM8Behd8ts5y",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "deoxynivalenol_2017": "Teneur du grain en mycotoxine désoxynivalénol (DON), valeur de parcelle pour la lignée, essai au champ 2017",
+              "deoxynivalenol_2019": "Teneur du grain en mycotoxine désoxynivalénol (DON), valeur de parcelle pour la lignée, essai au champ 2019",
+              "fusarium_damaged_kernels_2017": "Grains fusariés (FDK), nombre parmi 100 grains examinés, valeur de parcelle pour la lignée, essai au champ 2017",
+              "fusarium_damaged_kernels_2019": "Grains fusariés (FDK), nombre parmi 100 grains examinés, valeur de parcelle pour la lignée, essai au champ 2019",
+              "fusarium_head_blight_incidence_2017": "Incidence de la fusariose de l’épi (FHB), pourcentage de la parcelle qui est infecté, valeur de parcelle pour la lignée, essai au champ 2017",
+              "fusarium_head_blight_incidence_2019": "Incidence de la fusariose de l’épi (FHB), pourcentage de la parcelle qui est infecté, valeur de parcelle pour la lignée, essai au champ 2019",
+              "fusarium_head_blight_index_2017": "Indice de fusariose de l’épi (FHB), incidence x sévérité / 100, valeur de parcelle pour la lignée, essai au champ 2017",
+              "fusarium_head_blight_index_2019": "Indice de fusariose de l’épi (FHB), incidence x sévérité / 100, valeur de parcelle pour la lignée, essai au champ 2019",
+              "fusarium_head_blight_severity_2017": "Sévérité de la fusariose de l’épi (FHB), cote visuelle de 0 (faible) à 100 (sévère), valeur de parcelle pour la lignée, essai au champ 2017",
+              "fusarium_head_blight_severity_2019": "Sévérité de la fusariose de l’épi (FHB), cote visuelle de 0 (faible) à 100 (sévère), valeur de parcelle pour la lignée, essai au champ 2019",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -120,6 +163,31 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EHBIB_oiqDsLQRD3bO_fMAr4nDLeMS8-F60DHtcZHL1w",
+            "capture_base": "EK7NLY9ZGi7XufTgjpoAZVWFxXnt4IlMiM8Behd8ts5y",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "deoxynivalenol_2017": "désoxynivalénol_2017",
+              "deoxynivalenol_2019": "désoxynivalénol_2019",
+              "fusarium_damaged_kernels_2017": "grains_fusariés_2017",
+              "fusarium_damaged_kernels_2019": "grains_fusariés_2019",
+              "fusarium_head_blight_incidence_2017": "incidence_fusariose_épi_2017",
+              "fusarium_head_blight_incidence_2019": "incidence_fusariose_épi_2019",
+              "fusarium_head_blight_index_2017": "indice_fusariose_épi_2017",
+              "fusarium_head_blight_index_2019": "indice_fusariose_épi_2019",
+              "fusarium_head_blight_severity_2017": "sévérité_fusariose_épi_2017",
+              "fusarium_head_blight_severity_2019": "sévérité_fusariose_épi_2019",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -129,6 +197,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 37 684 SNPs for 187 CIMMYT spring synthetic hexaploid-derived wheat (Triticum aestivum) lines grown in field trials in Ontario, Canada, with phenotypic data.",
+            "name": "triticum_aestivum_fhb_resistance"
+          },
+          {
+            "d": "ENJhCLogxzQPGAoY_RtIG05eLlWDUm95PltQNAOXyXoK",
+            "capture_base": "EK7NLY9ZGi7XufTgjpoAZVWFxXnt4IlMiM8Behd8ts5y",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 187 lignées de blé de printemps dérivées d’hexaploïdes synthétiques du CIMMYT (Triticum aestivum), cultivées en essais au champ en Ontario (Canada), génotypées à l’aide de 37 684 SNP, ainsi que des données phénotypiques.",
             "name": "triticum_aestivum_fhb_resistance"
           }
         ],

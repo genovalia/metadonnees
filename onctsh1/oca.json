@@ -1,10 +1,10 @@
 {
-  "d": "EIqjHxtcs-Bi3cyW4ri8AJjaTfgv08ZVFOuvD4NzV5Kz",
+  "d": "EMld6WIMhUDbUI4HBWiBLYNCEty7Dyq_t0lyEq2HUtNS",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON001000_",
-      "d": "EECkS0Cv-iHwQZDxfSvRicu8g6geI72fgFDDWf4oBE7S",
+      "v": "OCAS11JSON001c2e_",
+      "d": "EFoTorFIfP_TzpZO64y5Nnn2p3_a6H8yxAH1xC5DlTPh",
       "capture_base": {
         "d": "EHIoRdh2eYutdDbDP2hJXgKpyz9sd64tlfvUYWtIX43B",
         "type": "spec/capture_base/1.1",
@@ -51,6 +51,35 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EIg3uSjhA-drYb9aLp72Or9GRr4VG0nE5lVY38qXBXMo",
+            "capture_base": "EHIoRdh2eYutdDbDP2hJXgKpyz9sd64tlfvUYWtIX43B",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "population_status": {
+                "native": "indigène",
+                "introduced": "introduit"
+              },
+              "population_type": {
+                "wild": "sauvage",
+                "hatchery": "pisciculture",
+                "domesticated": "domestiqué"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -101,6 +130,24 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EKeAK2oAwbDueDJ4EBDCHpNl2x6pcudp0yb8oo4NhU5M",
+            "capture_base": "EHIoRdh2eYutdDbDP2hJXgKpyz9sd64tlfvUYWtIX43B",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "population_status": "Statut biogéographique de la population échantillonnée, comme indigène ou introduite.",
+              "population_type": "Catégorie générale décrivant l’origine ou le mode de gestion de la population",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -123,6 +170,26 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EE3lau6gdIsyylpAVKJlnEQJHCndeqJn8-7sR-DxsLl5",
+            "capture_base": "EHIoRdh2eYutdDbDP2hJXgKpyz9sd64tlfvUYWtIX43B",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "population_status": "statut_population",
+              "population_type": "type_population",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -132,6 +199,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 11 759 SNPs for 356 Chinook salmon (Oncorhynchus tshawytscha) from introduced populations in Patagonia (Chile) and native populations in the Pacific Northwest (United States). The temporal coverage spans the years of the funding grant applications (2009–2010); the sampling dates are not published.",
+            "name": "oncorhynchus_tshawytscha_patagonia_invasion"
+          },
+          {
+            "d": "EA02eSY79Gh8QYoSs6rtkecUKA4n5PQsHbwhxBokK2Ut",
+            "capture_base": "EHIoRdh2eYutdDbDP2hJXgKpyz9sd64tlfvUYWtIX43B",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 356 saumons chinook (Oncorhynchus tshawytscha) provenant de populations introduites en Patagonie (Chili) et de populations indigènes du Nord-Ouest du Pacifique (États-Unis), génotypés à l’aide de 11 759 SNP. La couverture temporelle correspond aux années des demandes de subvention (2009–2010) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "oncorhynchus_tshawytscha_patagonia_invasion"
           }
         ],
