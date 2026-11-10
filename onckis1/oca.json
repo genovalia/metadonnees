@@ -1,14 +1,15 @@
 {
-  "d": "EKUUyaZC1kGrKvSelaT4nZzN68OvQywb4yVtV8I2w-2f",
+  "d": "ENBFPyAk4OUSOJFc7A1iufy5XfSWmzVH9ou2aotBOnLy",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000df6_",
-      "d": "ENpb6We5aIt4y5K-pc6sq2lQrbO1NuWVp3siMVv2cIqm",
+      "v": "OCAS11JSON002905_",
+      "d": "EL0xduzlM-jfF1SOBkOyAZ0gwy-w10HJOytNiCNXNiR0",
       "capture_base": {
-        "d": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+        "d": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
         "type": "spec/capture_base/1.1",
         "attributes": {
+          "conservation_unit": "Text",
           "country": "Text",
           "elevation": "Numeric",
           "genotyping_technology": "Text",
@@ -17,6 +18,8 @@
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
+          "region": "Text",
+          "sampling_location": "Text",
           "sequenced_molecule": "Text",
           "watershed_area": "Numeric"
         },
@@ -26,38 +29,187 @@
       "overlays": {
         "entry": [
           {
-            "d": "EIpVCk3rOCRadLDzU-exR354axL185vGCxDxd41XxT0e",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "EDwEBdzbZPz43DACoolEvK08oxZz77mU5jdGN-_lUSvM",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
+              "conservation_unit": {
+                "CO-01": "Boundary Bay",
+                "CO-04": "Lillooet",
+                "CO-05": "Fraser Canyon",
+                "CO-07": "Lower Thompson",
+                "CO-08": "South Thompson",
+                "CO-09": "North Thompson",
+                "CO-10": "Howe Sound-Burrard Inlet",
+                "CO-11": "Georgia Strait Mainland",
+                "CO-12": "Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords",
+                "CO-13": "East Vancouver Island-Georgia Strait",
+                "CO-14": "East Vancouver Island-Johnstone Strait-Southern Fjords",
+                "CO-15": "Nahwitti Lowland",
+                "CO-16": "Juan de Fuca-Pachena",
+                "CO-17": "West Vancouver Island",
+                "CO-18": "Clayoquot",
+                "CO-19": "Homathko-Klinaklini Rivers",
+                "CO-20": "Smith Inlet",
+                "CO-21": "Rivers Inlet",
+                "CO-22": "Bella Coola-Dean Rivers",
+                "CO-23": "Haida Gwaii-East",
+                "CO-24": "Haida Gwaii-West",
+                "CO-25": "Haida Gwaii-Graham Island Lowlands",
+                "CO-27": "Hecate Strait Mainland",
+                "CO-29": "Douglas Channel-Kitimat Arm",
+                "CO-30": "North Coastal Streams",
+                "CO-31": "Skeena Estuary",
+                "CO-32": "Lower Skeena",
+                "CO-33": "Middle Skeena",
+                "CO-34": "Upper Skeena",
+                "CO-35": "Lower Nass",
+                "CO-36": "Upper Nass",
+                "CO-37": "Portland Sound-Observatory Inlet-Portland Canal",
+                "CO-45": "Alsek River",
+                "CO-47": "Lower Fraser",
+                "CO-48": "Interior Fraser"
+              },
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "geology": {
+                "metamorphic": "metamorphic",
+                "plutonic": "plutonic",
+                "sedimentary": "sedimentary",
+                "volcanic": "volcanic"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "EA9njXGjFI84gEnTTGPbUMXOebm9S1Up6hRHNlLvy31x",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "conservation_unit": {
+                "CO-01": "Baie Boundary",
+                "CO-04": "Lillooet",
+                "CO-05": "Canyon du Fraser",
+                "CO-07": "Thompson inférieure",
+                "CO-08": "Thompson Sud",
+                "CO-09": "Thompson Nord",
+                "CO-10": "Baie Howe-inlet Burrard",
+                "CO-11": "Partie continentale du détroit de Georgia",
+                "CO-12": "Cours d’eau côtiers du Sud-détroit de la Reine-Charlotte-détroit de Johnstone-fjords du Sud",
+                "CO-13": "Est de l’île de Vancouver-détroit de Georgia",
+                "CO-14": "Est de l’île de Vancouver-détroit de Johnstone-fjords du Sud",
+                "CO-15": "Basses terres de Nahwitti",
+                "CO-16": "Juan de Fuca-Pachena",
+                "CO-17": "Ouest de l’île de Vancouver",
+                "CO-18": "Clayoquot",
+                "CO-19": "Rivières Homathko-Klinaklini",
+                "CO-20": "Inlet Smith",
+                "CO-21": "Inlet Rivers",
+                "CO-22": "Rivières Bella Coola-Dean",
+                "CO-23": "Haida Gwaii-Est",
+                "CO-24": "Haida Gwaii-Ouest",
+                "CO-25": "Haida Gwaii-basses terres de l’île Graham",
+                "CO-27": "Partie continentale du détroit d’Hécate",
+                "CO-29": "Chenal Douglas-bras Kitimat",
+                "CO-30": "Cours d’eau côtiers du Nord",
+                "CO-31": "Estuaire de la Skeena",
+                "CO-32": "Skeena inférieure",
+                "CO-33": "Skeena moyenne",
+                "CO-34": "Haute Skeena",
+                "CO-35": "Nass inférieure",
+                "CO-36": "Haute Nass",
+                "CO-37": "Portland Sound-inlet Observatory-canal Portland",
+                "CO-45": "Rivière Alsek",
+                "CO-47": "Fraser inférieur",
+                "CO-48": "Fraser intérieur"
+              },
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "geology": {
+                "metamorphic": "métamorphique",
+                "plutonic": "plutonique",
+                "sedimentary": "sédimentaire",
+                "volcanic": "volcanique"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "ENqlDRJ7L7Zj7QQcZewg0JzGdvSuRRLx93gqe03zTPfT",
-          "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+          "d": "ED9vrRAEjae1NwDiJk_t5glls5s-sK9Vihu_TQLFImjK",
+          "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
+            "conservation_unit": [
+              "CO-01",
+              "CO-04",
+              "CO-05",
+              "CO-07",
+              "CO-08",
+              "CO-09",
+              "CO-10",
+              "CO-11",
+              "CO-12",
+              "CO-13",
+              "CO-14",
+              "CO-15",
+              "CO-16",
+              "CO-17",
+              "CO-18",
+              "CO-19",
+              "CO-20",
+              "CO-21",
+              "CO-22",
+              "CO-23",
+              "CO-24",
+              "CO-25",
+              "CO-27",
+              "CO-29",
+              "CO-30",
+              "CO-31",
+              "CO-32",
+              "CO-33",
+              "CO-34",
+              "CO-35",
+              "CO-36",
+              "CO-37",
+              "CO-45",
+              "CO-47",
+              "CO-48"
+            ],
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "geology": [
+              "metamorphic",
+              "plutonic",
+              "sedimentary",
+              "volcanic"
             ],
             "sequenced_molecule": [
               "DNA",
@@ -67,32 +219,57 @@
         },
         "information": [
           {
-            "d": "EO0vHzCqF_zhe-QhOsi1ChbH407roVD5pHoLxEOrTlBV",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "EPL_gOP9cgBeTu1DEvDR7lvZTa-yTNDVZnHNNIXG7yLx",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
+              "conservation_unit": "Conservation unit (CU) of Canada's Wild Salmon Policy in which the sampling location is currently managed (Table S1 of the source article)",
               "country": "Country of origin of the individuals sampled",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
-              "geology": "Nature of the underlying bedrock",
+              "geology": "Dominant rock type of the catchment (USGS database, as used in the source article)",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
+              "region": "Regional grouping of the sampling sites used in the source study, such as a management, biogeographic or genetic region",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
-              "watershed_area": "Area of land draining into a common water body"
+              "watershed_area": "Area of the watershed upstream of the sampling location"
+            }
+          },
+          {
+            "d": "EAgb79BVY-pXMOVhtJPJQ5kpMWefFRh4xdkbMrsWLKa-",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "conservation_unit": "Unité de conservation (UC) de la Politique concernant le saumon sauvage du Canada dans laquelle le lieu d’échantillonnage est actuellement géré (tableau S1 de l’article source)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "geology": "Type de roche dominant du bassin versant (base de données de l’USGS, telle qu’utilisée dans l’article source)",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "watershed_area": "Superficie du bassin versant en amont du lieu d’échantillonnage"
             }
           }
         ],
         "label": [
           {
-            "d": "EACxKxc7fv1tv9lklSl2u-yH0DUgGVXTgtCwVh923cMo",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "ED5LiVoFjYUoieYojnQIm-ZP3OT1CSffj4IkRcRszcy6",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
             "attribute_labels": {
+              "conservation_unit": "conservation_unit",
               "country": "country",
               "elevation": "elevation",
               "genotyping_technology": "genotyping_technology",
@@ -101,31 +278,64 @@
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
+              "region": "region",
+              "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule",
               "watershed_area": "watershed_area"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EKMi4LyxTm8OmH2jQwu1zvmOtvsKVbr4yL7wGtxeHMEZ",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "conservation_unit": "unité_conservation",
+              "country": "pays",
+              "elevation": "altitude",
+              "genotyping_technology": "technologie_génotypage",
+              "geology": "géologie",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "region": "région",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "watershed_area": "superficie_bassin_versant"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EKYlHnRiQsViffZxlfbDBlBspULSldxRjnnX44sQpqUU",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "ELwrkKL-MVYd_2NqCypmccA8kPNpxI9vCmZacL1JBsS1",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset includes genotypic data from 5581 coho salmon (Oncorhynchus kisutch) individuals representative of 146 wild populations, comprising 24,542 SNPs genotyped using a genotyping-by-sequencing approach.",
-            "name": "oncorhynchus_kisutch_conservation"
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 24 542 SNPs for 5 581 coho salmon (Oncorhynchus kisutch) from wild populations of British Columbia, with environmental data.",
+            "name": "oncorhynchus_kisutch_conservation_units"
+          },
+          {
+            "d": "ELhfnB4jwoQ2wUk1WGqW3jb8orz9KLDaRYWaIPsFpiWu",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 5 581 saumons coho (Oncorhynchus kisutch) provenant de populations sauvages de Colombie-Britannique, génotypés à l’aide de 24 542 SNP, ainsi que des données environnementales.",
+            "name": "oncorhynchus_kisutch_conservation_units"
           }
         ],
         "unit": {
-          "d": "ENkxj28Qc2yovLEELQd24WSOTlUZdYPmE8YLDA6-JeuK",
-          "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+          "d": "EGvUHZHdjWoVyvT97hMYbyEnXNLYnJBhz1OIRjXHC-IW",
+          "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "elevation": "meter",
             "latitude": "decimal degree",
             "longitude": "decimal degree",
-            "watershed_area": "square meter"
+            "watershed_area": "square kilometer"
           }
         }
       }
@@ -134,13 +344,13 @@
   },
   "extensions": {
     "adc": {
-      "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55": {
-        "d": "EDjRxkErANtoxg6zgN8ve4YuCfCURL1m4-Z075hcvTqk",
+      "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3": {
+        "d": "EH1PqVH1yD-yqsc-LPIwC3kCYzlsZ3SrD_NEgrfa2sKo",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "EJLRkaeUt0tFxieaHLzY9KU8QCUtfvcUtUzvIYT_eH7l",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "EJcmHgoEIIMJZ7c1XclIO_kofHSt663J5k563BFhPGtn",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -148,6 +358,9 @@
               "country",
               "latitude",
               "longitude",
+              "sampling_location",
+              "region",
+              "conservation_unit",
               "elevation",
               "watershed_area",
               "geology",
@@ -155,6 +368,43 @@
               "genotyping_technology"
             ],
             "entry_code_ordering": {
+              "conservation_unit": [
+                "CO-01",
+                "CO-04",
+                "CO-05",
+                "CO-07",
+                "CO-08",
+                "CO-09",
+                "CO-10",
+                "CO-11",
+                "CO-12",
+                "CO-13",
+                "CO-14",
+                "CO-15",
+                "CO-16",
+                "CO-17",
+                "CO-18",
+                "CO-19",
+                "CO-20",
+                "CO-21",
+                "CO-22",
+                "CO-23",
+                "CO-24",
+                "CO-25",
+                "CO-27",
+                "CO-29",
+                "CO-30",
+                "CO-31",
+                "CO-32",
+                "CO-33",
+                "CO-34",
+                "CO-35",
+                "CO-36",
+                "CO-37",
+                "CO-45",
+                "CO-47",
+                "CO-48"
+              ],
               "genotyping_technology": [
                 "genotyping-by-sequencing",
                 "SNP chip",
@@ -163,6 +413,12 @@
                 "targeted SNP assay",
                 "RNA sequencing"
               ],
+              "geology": [
+                "metamorphic",
+                "plutonic",
+                "sedimentary",
+                "volcanic"
+              ],
               "sequenced_molecule": [
                 "DNA",
                 "RNA"
@@ -170,8 +426,8 @@
             }
           },
           "unit_framing": {
-            "d": "EMyq1zqyBsxKsfH9YzGD-Bf_-9eGFpjvC7exA-1tbwd7",
-            "capture_base": "EA1tkQC7_TcxZoCYZajmiwO7PVzmJy2s9bjBomr70C55",
+            "d": "EB5BQycebB5Rxq1Y6naskoCWkiu3x_-RwZubS8jJnxjc",
+            "capture_base": "EG2zPGKwRbZuJ0p69V3a0kVl1CV2L7maQ7tOCYegjOc3",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",
@@ -190,10 +446,10 @@
                 "predicate_id": "skos:exactMatch",
                 "term_id": "m"
               },
-              "square meter": {
+              "square kilometer": {
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
-                "term_id": "m2"
+                "term_id": "km2"
               }
             }
           }

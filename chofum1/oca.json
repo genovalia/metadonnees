@@ -1,10 +1,10 @@
 {
-  "d": "EBI7fKlE_eUtSQtu1KiNn3nMY7f1oTzIJ30NOiiWZkw4",
+  "d": "EK-5BjMda1Tb0Lg997ZMFIm5ClJ7rd9zk669o5xSWtuE",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0010bb_",
-      "d": "EARGSIGhLSCG2FExGbs8vWpeswFrLnnVyrEFrrgAzzCM",
+      "v": "OCAS11JSON001ddf_",
+      "d": "ENd-Z2Ab5lARWSW_hGy6KzHVKblfi62XAuxkggLRthro",
       "capture_base": {
         "d": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
         "type": "spec/capture_base/1.1",
@@ -54,6 +54,35 @@
                 "female": "female",
                 "male": "male",
                 "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "EMueCDwU2EkTiko7McNDulbl0Vz5hT9PLMnr1hl4c1b3",
+            "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "larva": "larve",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
@@ -107,6 +136,27 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
+          },
+          {
+            "d": "EIB2gBqbew3JZCcNjy0ue0Xrzjh8wVYTdrp5uV_jsfm6",
+            "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "collection_method": "Méthode de collecte du spécimen : piège à phéromones, ou collecte de larves (larves élevées jusqu’au stade adulte en laboratoire)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "host_plant": "Espèce de plante hôte de l’individu, comme la plante sur laquelle il a été récolté ou dont sa larve s’est nourrie",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas"
+            }
           }
         ],
         "label": [
@@ -132,6 +182,29 @@
               "sex": "sex"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ELAKm7JTg4GauKG24eNhzC_Vsao5BztsrYjAg-JZ9RWW",
+            "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "collection_method": "méthode_collecte",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "host_plant": "plante_hôte",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -141,6 +214,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 3 650 SNPs for 1 975 spruce budworms (Choristoneura fumiferana) from across Canada and the United States.",
+            "name": "choristoneura_fumiferana_phylogeography"
+          },
+          {
+            "d": "EPrYb7zM-kgYWHzWyq8w66Ft8vGF2bwMc0IZOIpRRP9S",
+            "capture_base": "EKYxbG1IdGvKllCTevyj8R835zoOKvDb1Mj8Be4-HVC-",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 975 tordeuses des bourgeons de l’épinette (Choristoneura fumiferana) provenant de l’ensemble du Canada et des États-Unis, génotypées à l’aide de 3 650 SNP.",
             "name": "choristoneura_fumiferana_phylogeography"
           }
         ],

@@ -1,10 +1,10 @@
 {
-  "d": "EJTSSTopgWh8WAa_WkSUKPHGynFpuYVgx4SXeVlgNYl6",
+  "d": "EKsRhFeQZZCJiq1IMGGhEsoFjdpb7vp48gF38XWSyuVf",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000d84_",
-      "d": "EN7KvfIjG4tR3UyYLijyWIER2tKXfPoqWHQRsWhOELRX",
+      "v": "OCAS11JSON0017ca_",
+      "d": "EGnxU9KU6BFe3dKI4Uu72cBx8WRQxxmGYqNmoXLpKaJr",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -40,6 +40,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EEBTWOQJMSxUvaxL4um-4R7NrcVMtGlXzRUwb7c6iruW",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -79,6 +99,22 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EM8La2XjRtXqVMnd2IThsxfkeAuErwc0jRlsdAPgF4Af",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -99,6 +135,24 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKKZRoDboGFIfwPQX65bwm9h-OTXGoMt1vz6BsQ-xog8",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -108,6 +162,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains targeted SNP assay genotypes at 75 coding-gene SNPs for 113 European eels (Anguilla anguilla) at the silver eel (migrating adult) stage, from Ireland, Spain and Iceland. The temporal coverage is the year of the funding grant application (2009); the sampling dates are not published.",
+            "name": "anguilla_anguilla_life_cycle_selection"
+          },
+          {
+            "d": "ELkZuRUkHFEFKYF2CS6xnEQElXFU2Myddhh8s3cIx-bX",
+            "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage de SNP ciblés, de 113 anguilles européennes (Anguilla anguilla) au stade anguille argentée (adulte migrateur), provenant d’Irlande, d’Espagne et d’Islande, génotypées à l’aide de 75 SNP de gènes codants. La couverture temporelle est l’année de la demande de subvention (2009) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "anguilla_anguilla_life_cycle_selection"
           }
         ],

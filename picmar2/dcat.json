@@ -39,7 +39,12 @@
     "common garden"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3335/",
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -52,8 +57,8 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6255149/",
-  "dcat:version": "1.0.0",
-  "dcterms:license": "",
+  "dcat:version": "1.1.0",
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0001-8621-9801",

@@ -1,10 +1,10 @@
 {
-  "d": "EL-jVYOkEh-0PsOZz3Q7Cf5yw_wSyp7-GHPWSYoziERO",
+  "d": "EK8Q-wuY3mJW1h5DBrenMX4EnlE21nm4aULEj4nhbiFj",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e6c_",
-      "d": "EFQBiRZgS6Zol49eYxTNMWZR_hHCYP2qUyxZ_kge9Buf",
+      "v": "OCAS11JSON00195a_",
+      "d": "EDWRTP-oF5VsZ1f5cPAefTAQbiyxjq839Klbs8gbo3by",
       "capture_base": {
         "d": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
         "type": "spec/capture_base/1.1",
@@ -45,6 +45,30 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EFt77oWbBPw2Z5CcH8V9becqBpjOmTLitJVEzhUJ_poc",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "population_status": {
+                "native": "indigène",
+                "introduced": "introduit"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -89,6 +113,23 @@
               "possible_duplicate_of": "ID of another sample with nearly identical genotypes (likely the same individual)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EHqIKEzEcNH2tVE3EoJ6oWvJHdHRI-22z2Fo4qsOmaAp",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "population_status": "Statut biogéographique de la population échantillonnée, comme indigène ou introduite.",
+              "possible_duplicate_of": "Identifiant d’un autre échantillon aux génotypes presque identiques (probablement le même individu)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -110,6 +151,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EP2UcrEoGyeMBwYD1_kaEXBtcdtuoF50NsYMnp2Hwu9x",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "population_status": "statut_population",
+              "possible_duplicate_of": "doublon_possible_de",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -119,6 +179,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains targeted sequencing genotypes at 428 SNPs in immune-related genes for 87 common raccoons (Procyon lotor) from the native range in Florida (USA) and from two invasive genetic clusters in Central Europe (Germany/Poland and Czech Republic).",
+            "name": "procyon_lotor_immune_genes"
+          },
+          {
+            "d": "EP3xkt62NNpkmWHbtO6TodG3x5BRhoE8TSjb5ZJs8HzE",
+            "capture_base": "EACXHIKlUQIjyDtnSo4SPYruT0V4UJe9sQv7CkEykZBx",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par séquençage ciblé, de 87 ratons laveurs (Procyon lotor) provenant de l’aire d’origine en Floride (États-Unis) et de deux groupes génétiques envahissants d’Europe centrale (Allemagne/Pologne et Tchéquie), génotypés à l’aide de 428 SNP situés dans des gènes liés à l’immunité.",
             "name": "procyon_lotor_immune_genes"
           }
         ],

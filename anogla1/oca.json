@@ -1,12 +1,12 @@
 {
-  "d": "EKr6WwTveDaop84FRF77caxYUFotkCRQallmfbCp1vtF",
+  "d": "EDs7Qlk1sX6zNatMH1pLXWSfDYh5ra1tiB-pJRgliMbH",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000e04_",
-      "d": "EGQM35YtctaoyBMzf7zF2CiVcDzvMpxTFeUOUmbSkuNP",
+      "v": "OCAS11JSON001c12_",
+      "d": "EJzESpQaG4ugiLCsAqFymfV-JvzJHEZQsKSaKdaWQ-tK",
       "capture_base": {
-        "d": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+        "d": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -16,6 +16,9 @@
           "life_stage": "Text",
           "longitude": "Numeric",
           "organism": "Text",
+          "publication_code": "Text",
+          "region": "Text",
+          "sampling_location": "Text",
           "sampling_year": "Numeric",
           "sequenced_molecule": "Text"
         },
@@ -25,18 +28,18 @@
       "overlays": {
         "entry": [
           {
-            "d": "EAKVfdZHUpaOpqV3PC27qDSV180tFg4lAHDVrGdhh6lp",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "EFLN5Qpi8v4p9yahvepEscIAZzmygTp_8qYM7Bs_5XhX",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
               },
               "life_stage": {
                 "larva": "larva",
@@ -47,20 +50,44 @@
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "EMrINWlv7UB9RnSK4AzycFfARTbbmSBfUK0u7P3qiz8l",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "life_stage": {
+                "larva": "larve",
+                "adult": "adulte"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "EMOzPk2CLgaWgfYJSwmBgLjb0kK9q9_s-9mKCzsoNToV",
-          "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+          "d": "EMuGG0VZ1e5tcsbmYxPimlXQkd-goTcP2nnf5pfB5ecl",
+          "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
             ],
             "life_stage": [
               "larva",
@@ -74,8 +101,8 @@
         },
         "information": [
           {
-            "d": "EOB_QEjRscevcKEKTCjaloYHMzTHC9xHOf6dZrXbgdf_",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "EHiKCg70dRWTXdwDGmQ2o0Jw2cmK1F1Xks1SHkIVN3zA",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -86,15 +113,38 @@
               "life_stage": "Life stage of the sampled individual, such as egg, larva, juvenile or adult",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "region": "Regional grouping of the sampling sites used in the source study, such as a management, biogeographic or genetic region",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "ELua5incgWdgzRNL-tLvUCk_b4zlo5qYacO6cHiLMYgj",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "life_stage": "Stade de vie de l’individu échantillonné, comme œuf, larve, juvénile ou adulte",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
             }
           }
         ],
         "label": [
           {
-            "d": "EA-DnZYx6DugDxT7uTQCc7t2MMl2kwZ0sBgDAIPRzMZb",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "EJ5BKv72HuD4tPIpMJChCxr0FPt9tnSDQPxEh6ucv_qF",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -106,25 +156,58 @@
               "life_stage": "life_stage",
               "longitude": "longitude",
               "organism": "organism",
+              "publication_code": "publication_code",
+              "region": "region",
+              "sampling_location": "sampling_location",
               "sampling_year": "sampling_year",
               "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EGl3xjOBr5VFmK4RLEb_8tW29BuvMp-l2svlRqxsPo01",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "life_stage": "stade_vie",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "publication_code": "code_publication",
+              "region": "région",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EC0gCRBm3shARVFxm5cu4AniLuODWMBEPg71LyoaYKCX",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "EO0SU-mhZrUG6eKn1-5NW-7ErG9JLJ9bdBXvXRbyGm8m",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypic data from the Asian longhorned beetle (Anoplophora glabripennis) generated to study the phylogeography of the species. A total of 365 individuals from China and South Korea were genotyped at 6,102 SNPs using a genotyping-by-sequencing approach.",
-            "name": "Anoplophora_glabripennis_phylogeography"
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 6 102 SNPs for 365 Asian longhorned beetles (Anoplophora glabripennis) from the native range in China and South Korea.",
+            "name": "anoplophora_glabripennis_phylogeography"
+          },
+          {
+            "d": "EPfKODXCYOeR9Ns4K2TLyI5Dw32G1LTk_IbGn__p0NxR",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 365 longicornes asiatiques (Anoplophora glabripennis) provenant de Chine et de Corée du Sud, génotypés à l’aide de 6 102 SNP.",
+            "name": "anoplophora_glabripennis_phylogeography"
           }
         ],
         "unit": {
-          "d": "ENfWwyaB2p51lvLTr-onBZ4KFNebEEMnY0X0_fEQ9Ti_",
-          "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+          "d": "EH9-cGzisJiYn5AFT7aiaq1UwjC1AvAz9K7dk1espK9l",
+          "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "latitude": "decimal degree",
@@ -137,13 +220,13 @@
   },
   "extensions": {
     "adc": {
-      "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP": {
-        "d": "EDYJ914PEhDHBTkJ0fN9LhSYnx9rWXnOZdn19cFnpH-V",
+      "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X": {
+        "d": "EHTiNeSQqFAY5s_T9GJJCxe53UHUTEF_Fi1rGzqPk9Du",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ENluUveEsH-yCDhC4U51Af6CfejVoU_HJOYb_oR2oU59",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "ENws6dRPYwVg-1Zu0EnotcRP7zBsbTN3rlAXVzu5Jjt7",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -151,6 +234,9 @@
               "country",
               "latitude",
               "longitude",
+              "sampling_location",
+              "region",
+              "publication_code",
               "sampling_year",
               "life_stage",
               "sequenced_molecule",
@@ -176,8 +262,8 @@
             }
           },
           "unit_framing": {
-            "d": "ENga1lzKdX51P7TehKteewhflgL4IDMH81r74dGXNdku",
-            "capture_base": "EA2sYiPuVScowQwMJPeXWWMyfAWUM4ZXL103Ji30uftP",
+            "d": "ELc0abGtCs6gGL_1gBuh5BFBs4PmnwOzz_JOqpUXtmBH",
+            "capture_base": "ELlmR3h1V1zZrPsKBzZJCbZqEvEqhjgZx9pf4V9xng_X",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

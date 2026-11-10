@@ -1,10 +1,10 @@
 {
-  "d": "EC5a9xU-hWLq6C3Z9ORhkbyINYib1CUD6vPnq6fnSn9a",
+  "d": "EPCgMHcpqerY2FYZZkkYjBramqtfkBZzLRDdDVWiVRdy",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000c18_",
-      "d": "ENCc1oEfnZXMbQ-UZ77BXlojTEiMH89BOoWr1l_9HSNt",
+      "v": "OCAS11JSON0015d0_",
+      "d": "EPc_O_Hew5_q5uXiwIROdKJYt8QUNXpFbQnYKhrYO-Aa",
       "capture_base": {
         "d": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
         "type": "spec/capture_base/1.1",
@@ -39,6 +39,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EHm-K1v_SAqFr0F6_IqMsdXKz_G23LepD81pHAhH6VhA",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -77,6 +97,21 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EPro4yukNZDXDvwP_ZikYt5utdPlVwl4FBikSHsIyJS1",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "ecotype": "Population distincte au sein d’une espèce, adaptée à des conditions environnementales particulières, comme anadrome ou résidente en eau douce",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -96,6 +131,23 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EKty5TIOBEBFjrh20DgTBTCBAhZG5VC3dI3flbi_gcmp",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "ecotype": "écotype",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -105,6 +157,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 42 424 SNPs for 379 American eels (Anguilla rostrata) from eastern Canada, reared in freshwater or in brackish or saltwater habitats.",
+            "name": "anguilla_rostrata_habitat_ecotypes"
+          },
+          {
+            "d": "EI8j_yY39u_ppxLLeQc-x25PA_taqaQJC70mmmGK3Grx",
+            "capture_base": "ELlN8sqTQj-6sD-UENhWzI1Rh3_z9AKRzo_YEl0iamw8",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 379 anguilles d’Amérique (Anguilla rostrata) provenant de l’est du Canada, ayant grandi en eau douce ou en eau saumâtre ou salée, génotypées à l’aide de 42 424 SNP.",
             "name": "anguilla_rostrata_habitat_ecotypes"
           }
         ]

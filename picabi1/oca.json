@@ -1,10 +1,10 @@
 {
-  "d": "EDI2nOcRcPu9W9Matum9UUn-jqgB00Qw0pvdpgB6u-d_",
+  "d": "ECyPMUy7saSdMq8gK8T8IGPcv29Smi4n0JlAC5LX29ce",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000f33_",
-      "d": "ENmGTklVo6EwkKxh4ZLbulA4Cfh0GizCsW5LIyU7AG6F",
+      "v": "OCAS11JSON001b37_",
+      "d": "EIQTbsUYjlpwBsKyltl5Yu73lq7uvv3f5pKG_0C4pNss",
       "capture_base": {
         "d": "EJxsCJmbGduQbWFdy9UXBhdFrSYi7_WkXEhRM80N-Hib",
         "type": "spec/capture_base/1.1",
@@ -43,6 +43,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EIOfwWsY2ii4st8hY8M7eZ4ecmuY-x2DV9Lg67TnIiR3",
+            "capture_base": "EJxsCJmbGduQbWFdy9UXBhdFrSYi7_WkXEhRM80N-Hib",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -85,6 +105,25 @@
               "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "EECIwadgWp0BE38i-Jp525u5eyZd75RT1ILBIwkQDpyW",
+            "capture_base": "EJxsCJmbGduQbWFdy9UXBhdFrSYi7_WkXEhRM80N-Hib",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "outgroup": "TRUE pour les arbres d’épinette de Brewer (Picea breweriana) servant de groupe externe",
+              "region": "Regroupement régional des sites d’échantillonnage utilisé dans l’étude source, comme une région de gestion, biogéographique ou génétique",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -108,6 +147,27 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "ELXYDOVEzUmKywzqOXGZ0BIG38H9dFnsUsqtxBcmV5jZ",
+            "capture_base": "EJxsCJmbGduQbWFdy9UXBhdFrSYi7_WkXEhRM80N-Hib",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "elevation": "altitude",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "outgroup": "groupe_externe",
+              "region": "région",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -117,6 +177,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains SNP chip genotypes at 445 SNPs for 312 haploid megagametophytes of Norway spruce (Picea abies) trees from northern and central Europe, plus a Brewer spruce (Picea breweriana) outgroup. The temporal coverage is the year of the funding grant application (2007); the sampling dates are not published.",
+            "name": "picea_abies_clinal_variation"
+          },
+          {
+            "d": "ENsEP6EvkzVDNApQhknbBYJgoLhRRY-iqa9IZ6AB8eP0",
+            "capture_base": "EJxsCJmbGduQbWFdy9UXBhdFrSYi7_WkXEhRM80N-Hib",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 312 mégagamétophytes haploïdes d’épinettes de Norvège (Picea abies) provenant d’Europe du Nord et d’Europe centrale, ainsi qu’un groupe externe d’épinette de Brewer (Picea breweriana), génotypés à l’aide de 445 SNP. La couverture temporelle est l’année de la demande de subvention (2007) ; les dates d’échantillonnage ne sont pas publiées.",
             "name": "picea_abies_clinal_variation"
           }
         ],

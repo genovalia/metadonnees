@@ -1,10 +1,10 @@
 {
-  "d": "EM89EBIaxUkkSg1DR8I2l51u9AKFaM5voL-FHpj8SGJZ",
+  "d": "ELDc6jHVk-BaxAAmhcNR84kWETUuyQvKcQ7pDbpBAJqx",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000ce7_",
-      "d": "EAqaF4ZNNQTll8rkSH-oHOIribocM79A2B1SsicR4-mD",
+      "v": "OCAS11JSON00167b_",
+      "d": "EP2FEazMZ9gs7nK_meHsR-ROx3xxK5YbN0ujMiTf2XhI",
       "capture_base": {
         "d": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
         "type": "spec/capture_base/1.1",
@@ -45,6 +45,31 @@
                 "female": "female",
                 "male": "male",
                 "unknown": "unknown"
+              }
+            }
+          },
+          {
+            "d": "ED0gCNhMJC8Ayg3S6r1xoQo_WqCHMgKcA5OBig6NRtLI",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "RNA sequencing": "séquençage de l’ARN",
+                "SNP chip": "puce de SNP",
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "targeted sequencing": "séquençage ciblé",
+                "whole genome sequencing": "séquençage du génome entier"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
               }
             }
           }
@@ -89,6 +114,22 @@
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
               "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it"
             }
+          },
+          {
+            "d": "EPOka_9Ht3NuU4_zUYzASU90wd-kJ_UgBW7WH_1Iy8iu",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "breed": "Race de l’individu (animaux)",
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sample_tissue": "Type de tissu prélevé sur l’individu et utilisé pour l’extraction de l’ADN ou de l’ARN",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas"
+            }
           }
         ],
         "label": [
@@ -109,6 +150,24 @@
               "sex": "sex"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EIrJ2qtX81fPwVHRgG0eTJqDtGEBgBySeXghyuTkV_xO",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "breed": "race",
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "organism": "organisme",
+              "sample_tissue": "tissu_échantillonné",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -118,6 +177,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset, generated in partnership with the Société des éleveurs de moutons de race pure du Québec, contains genotypic data from 1,536 sheep raised in Quebec. The animals were genotyped using a DNA (SNP) array developed as part of a genomic-assisted genetic merit evaluation program.",
+            "name": "ovis_aries"
+          },
+          {
+            "d": "EPa8xEZp3dkHmk-1MSvF9XvqfAV91qAgYZSSZicOuy_A",
+            "capture_base": "ENUG52hw_aF-yVcjiEbVnxXN4AP1Ha3AnALBtoCQwqh1",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 536 moutons de race pure (Ovis aries) élevés au Québec.",
             "name": "ovis_aries"
           }
         ]

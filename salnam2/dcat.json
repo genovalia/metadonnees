@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-09-29",
   "dcterms:language": "en",
   "dcterms:title": "Genotyping-by-sequencing dataset of four lake trout ecotypes from Lake Superior",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 6 822 SNPs for 484 lake trout (Salvelinus namaycush) of four ecotypes from Lake Superior, with phenotypic data.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 6 822 SNPs for 486 lake trout (Salvelinus namaycush) of four ecotypes from Lake Superior, with phenotypic data.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/salnam2",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
@@ -39,7 +39,12 @@
     "morphology"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8040/",
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -52,7 +57,8 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6255149/",
-  "dcterms:license": "",
+  "dcat:version": "1.7.0",
+  "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0002-8085-9709",
@@ -62,29 +68,28 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "principalInvestigator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-8085-9709",
         "@type": "prov:Person",
         "foaf:name": "Louis Bernatchez"
-      }
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
     },
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "pointOfContact",
-        "collaborator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-5404-8267",
         "@type": "prov:Person",
         "foaf:name": "Alysse Perreault-Payette"
-      }
+      },
+      "dcat:hadRole": [
+        "pointOfContact",
+        "collaborator"
+      ]
     }
   ],
-  "dcat:version": "1.6.0",
   "dct:relation": [
     "https://doi.org/10.1111/mec.14018",
     "https://doi.org/10.5061/dryad.k713n"

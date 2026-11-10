@@ -1,12 +1,12 @@
 {
-  "d": "EI-GWO743O2BZJqWu59wZTbKqMZa2kPdrhBFF15msfqg",
+  "d": "EICD0OfxB15iT3wwJhK6o-ucIUtFNLA_ppUeNmKAvimW",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000cfc_",
-      "d": "EGi_iV_4UnZPM3HEuf6GUuMw7uAFnhAz-UuYS_tJk_gd",
+      "v": "OCAS11JSON001988_",
+      "d": "EN0DYu5LI5G75H1wnO7VHuOXhi2R2VHMKA_YWOgm1Uuk",
       "capture_base": {
-        "d": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+        "d": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -16,6 +16,8 @@
           "latitude": "Numeric",
           "longitude": "Numeric",
           "organism": "Text",
+          "publication_code": "Text",
+          "sampling_location": "Text",
           "sequenced_molecule": "Text"
         },
         "classification": "RDF106",
@@ -24,38 +26,58 @@
       "overlays": {
         "entry": [
           {
-            "d": "EN-nGp454tD5X8ueeJIz6KXb_QQr_kehPtJTIPTb9Pbw",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EA_oOFoSOtmiWvsfA0SCWrcDPk2uRrYF1GcB6T6PcTEO",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
               }
             }
+          },
+          {
+            "d": "ELnmVbKIbwzrlLjx10zDUyKDFxYVmC_9dLY0cUi0H9Z9",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
           }
         ],
         "entry_code": {
-          "d": "EPlcS7bqE06H0HCyoJiveUdsvyhKV_cFXYc3OOG5kR0A",
-          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+          "d": "EDc0u92BPpFxbKSOQ0yB01_S_G7G1n6XozgJN12pTopB",
+          "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
             ],
             "sequenced_molecule": [
               "DNA",
@@ -65,26 +87,46 @@
         },
         "information": [
           {
-            "d": "EOuLCm4uS60feXJfg0LEPNB1Nzl_NuzrlEWW6j-ihsdG",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EFCvGuE816bnQi_YmB8DzojetTczTV82U49UOZCpw6Iz",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
               "id": "ID referring to the individual in the genotyping file (vcf)",
-              "lake_area": "Surface area of the lake",
+              "lake_area": "Surface area of the lake where the individual was sampled",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
               "organism": "Species name in latin according to the Linneaus classification",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EGiRTHQIupGJmZX6kwyEbbZh4uFrFCsjqazrhnyb_vB-",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "lake_area": "Superficie du lac où l’individu a été échantillonné",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
             }
           }
         ],
         "label": [
           {
-            "d": "EEBUjAE8GOvlXNPDIRPqqGLXS-sfUzAwO9_iYYEedpQe",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EKY2t_IqHSLjt8_BC_TjJZiPumlYLoam9AM3YrXXKPAX",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -96,24 +138,54 @@
               "latitude": "latitude",
               "longitude": "longitude",
               "organism": "organism",
+              "publication_code": "publication_code",
+              "sampling_location": "sampling_location",
               "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EH47pDtnBSrQkU5n43PAC3l9pJnKozTYMyeSV3unAYso",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "lake_area": "superficie_lac",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "publication_code": "code_publication",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
             },
             "category_labels": {}
           }
         ],
         "meta": [
           {
-            "d": "EMIWVAGu13QG0fDQekRD8V9J1EcXiF3PT4-7jKi9FV9T",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EMdiZqH0C5-Ns7K8V9Tc1v--FfWSndNrKSYOE5gwy_j2",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypic data from lake trout (Salvelinus namaycush) individuals sampled across the species' natural range in the province of Quebec. A total of 673 individuals were genotyped at 7201 SNPs using a genotyping-by-sequencing approach.",
-            "name": "Salvelinus_namaycush"
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 7 201 SNPs for 673 lake trout (Salvelinus namaycush) from lakes across the species’ range in Quebec, with environmental data.",
+            "name": "salvelinus_namaycush_genetic_drift"
+          },
+          {
+            "d": "ECEcRRgVs8CwfoMapsoyidDgASXpCpi6gnXVwj2Go6Mk",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 673 touladis (Salvelinus namaycush) provenant de lacs couvrant l’ensemble de l’aire de répartition de l’espèce au Québec, génotypés à l’aide de 7 201 SNP, ainsi que des données environnementales.",
+            "name": "salvelinus_namaycush_genetic_drift"
           }
         ],
         "unit": {
-          "d": "EGYVW4sJEfYQ1S2v2dWHtQApaovnHQWOBypjH8GJEBor",
-          "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+          "d": "EANDOkBCALYEzAByg-B5vS1CcC1GL-zH0XYi8cc5SjtM",
+          "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
             "lake_area": "hectare",
@@ -127,13 +199,13 @@
   },
   "extensions": {
     "adc": {
-      "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH": {
-        "d": "EPfgFVIOoJoZIb438PuykA13mb90YFvxV5Lu9ZQERshw",
+      "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX": {
+        "d": "EGH2pVUiy5_h17qkyCRAD12vYH4ej3tYv3tFaG2qA5Tf",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ELZ9nak122PDKf2u5lpqAfIJThKq3QS5J72YYnaDgGwN",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EFy-ZER9wHv3CxKgdzybgdgLH3ES6V68gxL8eMIGKSSF",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
@@ -141,6 +213,8 @@
               "country",
               "latitude",
               "longitude",
+              "sampling_location",
+              "publication_code",
               "lake_area",
               "sequenced_molecule",
               "genotyping_technology"
@@ -161,8 +235,8 @@
             }
           },
           "unit_framing": {
-            "d": "EA3etrjyH6kfEPmU2rzjyHZ1iNZlTd5H2UVTmKHQN26t",
-            "capture_base": "EGKds-g42g-8fA-BMGQaFB5GhZKuQ-o3c2J5BQ7uGKEH",
+            "d": "EI6M_BZhDUx-iij1u1VHNpudsAnpMlOvlKzH4-SiB-KU",
+            "capture_base": "EI8wdXhEZdwmB9VctlgAn-UN_RFrTmCIf67_dJbCOlaX",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
               "id": "UCUM",

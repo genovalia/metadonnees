@@ -1,10 +1,10 @@
 {
-  "d": "ELava_dWeuCgEfiVRawRCYfZCAjZmiHvy9dR6nXiPz9W",
+  "d": "EAUyKNzk9iAkJRVbWwmJ_l70zCysAa2Kj6zeRkMhFA0e",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON000dba_",
-      "d": "EAk8PMNSFo9te9fl22PsuepdIgUC6VZmUT39icf9umCa",
+      "v": "OCAS11JSON001823_",
+      "d": "EOAJzAWV9BeQlZLAx9tt0LIFGQMrEGJJj12_aGZ6YkfQ",
       "capture_base": {
         "d": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
         "type": "spec/capture_base/1.1",
@@ -41,6 +41,26 @@
               "sequenced_molecule": {
                 "DNA": "DNA",
                 "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EGFBS1BS96qEZmnLr5_-s12FQCro2R6OK5ls4Grfl3hb",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
               }
             }
           }
@@ -81,6 +101,23 @@
               "sampling_month": "Month in which the sample was collected, as a number from 1 (January) to 12 (December)",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
+          },
+          {
+            "d": "ELr3-BueOR6lpYTcpy8Z--NpJjR-QSOGYmw_2W8dNrVA",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_month": "Mois au cours duquel l’échantillon a été prélevé, sous forme de nombre de 1 (janvier) à 12 (décembre)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
           }
         ],
         "label": [
@@ -102,6 +139,25 @@
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
+          },
+          {
+            "d": "EFGzwbgN1mUWozvF4hvgTirobQzVD21yu5b3ZgDV7waB",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_month": "mois_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
           }
         ],
         "meta": [
@@ -111,6 +167,14 @@
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains genotyping-by-sequencing genotypes at 10 156 SNPs for 586 American lobsters (Homarus americanus) from across much of the species range in Canada and the United States.",
+            "name": "homarus_americanus_population_assignment"
+          },
+          {
+            "d": "EPKd_Db8pJ71RAzQ2SLrRqnsdhRjLsgs1pQBZJ6xxEZF",
+            "capture_base": "EAHbezB7w0RLNztVdI9sMSSC1m5IHXgmBtFpGz7_geQO",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 586 homards d’Amérique (Homarus americanus) provenant d’une grande partie de l’aire de répartition de l’espèce au Canada et aux États-Unis, génotypés à l’aide de 10 156 SNP.",
             "name": "homarus_americanus_population_assignment"
           }
         ],

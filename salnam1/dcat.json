@@ -39,7 +39,12 @@
     "Quebec"
   ],
   "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8040/",
-  "dcat:distribution": [],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
   "dcterms:temporal": {
     "@type": "dcterms:PeriodOfTime",
     "time:hasBeginning": {
@@ -52,7 +57,8 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6115047/",
-  "dcterms:license": "",
+  "dcat:version": "1.6.0",
+  "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
     "@id": "https://orcid.org/0000-0002-8085-9709",
@@ -62,29 +68,28 @@
   "dcat:qualifiedAttribution": [
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "principalInvestigator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0002-8085-9709",
         "@type": "prov:Person",
         "foaf:name": "Louis Bernatchez"
-      }
+      },
+      "dcat:hadRole": [
+        "principalInvestigator"
+      ]
     },
     {
       "@type": "prov:Attribution",
-      "dcat:hadRole": [
-        "pointOfContact",
-        "collaborator"
-      ],
       "prov:agent": {
         "@id": "https://orcid.org/0000-0001-5820-9374",
         "@type": "prov:Person",
         "foaf:name": "Charles Perrier"
-      }
+      },
+      "dcat:hadRole": [
+        "pointOfContact",
+        "collaborator"
+      ]
     }
   ],
-  "dcat:version": "1.5.0",
   "dct:relation": [
     "https://doi.org/10.1111/mec.14361",
     "https://doi.org/10.5061/dryad.2b8f1"
