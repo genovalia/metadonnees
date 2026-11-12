@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis2",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "lymdis2",
+  "dcterms:issued": "2026-11-13",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of spongy moth laboratory colonies from Eurasia and North America",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 327 SNPs for 91 spongy moths (Lymantria dispar) from eight laboratory-reared colonies whose original stocks were collected in Asia, Europe and North America, covering the three subspecies L. d. dispar, L. d. asiatica and L. d. japonica.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis2",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "spongy moth",
+    "Lymantria dispar",
+    "genotyping-by-sequencing",
+    "invasive species",
+    "biosurveillance",
+    "population assignment"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13123/",
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "1992"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2011"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6295630/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0003-1541-6052",
+    "@type": "foaf:Person",
+    "foaf:name": "Michel Cusson"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-1541-6052",
+        "@type": "prov:Person",
+        "foaf:name": "Michel Cusson"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0003-1436-3307",
+        "@type": "prov:Person",
+        "foaf:name": "Sandrine Picq"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/eva.12559",
+    "https://doi.org/10.5061/dryad.01s00"
+  ]
+}

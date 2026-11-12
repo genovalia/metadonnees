@@ -1,0 +1,258 @@
+{
+  "d": "EHEN-USzdCiDM4YcAahJyZ_T--GJtxE8FMe9rsII0z-z",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON00237d_",
+      "d": "EO1OKmzf3IzYVktUJC4K6qW79-R6IlSn2diFTQ53GsCA",
+      "capture_base": {
+        "d": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "gbs_match_id": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "label_conflict": "Boolean",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ED5w2Boi6utfvjxyzMNgIo8qBNNOCUAdDzY4iBnc7Hp5",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EL5GE0Jg33sFE_h99ut0iziXGpfbSXqktlKdUWsaXslH",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EFhnxUU5EogoNiHasGtG71h_zU0b8U_c9-ivnosBZgKp",
+          "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EEDDoCUKt-ZxqEIiIyHEH9s51wC3f4G2STgZIwJ2AtkF",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "gbs_match_id": "ID of the sample, in the genotyping-by-sequencing (GbS) dataset of the same lobsters (Genovalia dataset homame3), that comes from the same lobster as this Rapture (RAD capture) sample, found by comparing genotypes: the genotyping-by-sequencing (GbS) sample with the highest proportion of identical genotypes over the SNPs genotyped by both methods (minor allele frequency > 0.1). It is kept only if this proportion is at least 0.75 and at least 0.10 higher than that of the second most similar genotyping-by-sequencing (GbS) sample, so that the match is unambiguous (about 0.82-0.87 for the same lobster, 0.55-0.65 for two different lobsters); NA if no genotyping-by-sequencing (GbS) sample meets this threshold",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "label_conflict": "true if the genotyping-by-sequencing (GbS) sample from the same lobster (gbs_match_id) does not carry the same site and number as this Rapture (RAD capture) sample (labelling error in one of the two datasets), or if no genotyping-by-sequencing (GbS) sample could be matched (gbs_match_id is NA); false if both samples carry the same label",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EECuospvjZFKgz16-uqCAWm6-p3FTttDgPmLZBYV752_",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "gbs_match_id": "Identifiant de l’échantillon, dans le jeu de génotypage par séquençage (GbS) des mêmes homards (jeu Genovalia homame3), qui provient du même homard que cet échantillon Rapture (capture RAD), trouvé en comparant les génotypes : l’échantillon de génotypage par séquençage (GbS) ayant la plus forte proportion de génotypes identiques sur les SNP génotypés par les deux méthodes (fréquence de l’allèle mineur > 0,1). Il n’est retenu que si cette proportion atteint au moins 0,75 et dépasse d’au moins 0,10 celle du deuxième échantillon de génotypage par séquençage (GbS) le plus semblable, pour que l’appariement soit sans ambiguïté (environ 0,82-0,87 pour un même homard, 0,55-0,65 pour deux homards différents) ; NA si aucun échantillon de génotypage par séquençage (GbS) n’atteint ce seuil",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "label_conflict": "true si l’échantillon de génotypage par séquençage (GbS) du même homard (gbs_match_id) ne porte pas le même site et le même numéro que cet échantillon Rapture (capture RAD) (erreur d’étiquetage dans l’un des deux jeux), ou si aucun échantillon de génotypage par séquençage (GbS) n’a pu être apparié (gbs_match_id vaut NA) ; false si les deux échantillons portent la même étiquette",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EKpk32L3sFGi-S6hvm4ec2Iqcfy1CBDPDIdBH0xDlyaA",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "gbs_match_id": "gbs_match_id",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "label_conflict": "label_conflict",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EMK1zQltWxWDFaYcbz1T8Kk-uyzGKA6AN-nOgYYzfZ6g",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "gbs_match_id": "id_correspondance_gbs",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "label_conflict": "conflit_étiquette",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EAP1gbIe7qf4k4bGM95jSTuhG_DbJLkb9OTFslgkV6rj",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains unfiltered targeted sequencing genotypes (Rapture) at 36 531 SNPs for 287 egg-bearing female American lobsters (Homarus americanus) from the Gulf of St. Lawrence, Newfoundland and the Bay of Fundy region (Canada). DNA was extracted from walking legs. The same lobsters were also genotyped by genotyping-by-sequencing (GbS) in a separate dataset (homame3); sample labels do not always agree between the two datasets, and genotype matching links each lobster across both.",
+            "name": "homarus_americanus_rapture_method_comparison"
+          },
+          {
+            "d": "EJhJuWDT42XL5ZcI_PhCeak6FLA3S5bGIqxATsZNnEPt",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes non filtrés, obtenus par séquençage ciblé (Rapture), de 287 homards d’Amérique femelles porteuses d’œufs (Homarus americanus) provenant du golfe du Saint-Laurent, de Terre-Neuve et de la région de la baie de Fundy (Canada), génotypées à l’aide de 36 531 SNP. L’ADN a été extrait des pattes marcheuses. Les mêmes homards ont aussi été génotypés par génotypage par séquençage (GbS) dans un jeu de données distinct (homame3) ; les étiquettes des échantillons ne concordent pas toujours entre les deux jeux, et l’appariement des génotypes relie chaque homard d’un jeu à l’autre.",
+            "name": "homarus_americanus_rapture_method_comparison"
+          }
+        ],
+        "unit": {
+          "d": "EP49i4E6ADWjSBiVAJTtu0Y6BXHLG0RcuRyFN9oRD2Ra",
+          "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm": {
+        "d": "ECCcZFFlKoZokuTVX6fVF0Saq8gAz2I28bYqlfiDh5YW",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EBdBxJLNUo3ZRZDAgNaAAAtGoZF_xk-4DnMFNw8F7bom",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "gbs_match_id",
+              "label_conflict",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EFpVbQJxR-WE-nuncbpveI2Ng5OXl5BFcA6m8KUboPkS",
+            "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
