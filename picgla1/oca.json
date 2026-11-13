@@ -1,10 +1,10 @@
 {
-  "d": "EOory2ddQXamZ7kYmN7pozbYEJ-WJb89F4EWxTHY_xJU",
+  "d": "EOKYhFW4R0-aggl4rKOXZmBQEZCj5pbfL3rb_X4a-5if",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON002a6c_",
-      "d": "EOveqatX5qC0XT4RCxNn9DJYoQNu0s4rx0YEv6GER2g-",
+      "v": "OCAS11JSON002a92_",
+      "d": "EIjnUxKcknJKli15ogVB_jhVwtGUDmhMTd82xB3ISDv2",
       "capture_base": {
         "d": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
         "type": "spec/capture_base/1.1",
@@ -38,18 +38,18 @@
       "overlays": {
         "entry": [
           {
-            "d": "EOy7ljG_LudHLOHB1CMxT2lcTRUi-jIW_5dqfaJ4zLfs",
+            "d": "EK4lKAM1I8mWmmJHxyUKM5-H_2MKXj41C6PtlZzI7W9e",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "RNA sequencing",
-                "SNP chip": "SNP chip",
                 "genotyping-by-sequencing": "genotyping-by-sequencing",
-                "targeted SNP assay": "targeted SNP assay",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
                 "targeted sequencing": "targeted sequencing",
-                "whole genome sequencing": "whole genome sequencing"
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
               },
               "sequenced_molecule": {
                 "DNA": "DNA",
@@ -58,18 +58,18 @@
             }
           },
           {
-            "d": "ECRUgna2WMpoSvUG4YAgP31-x1DAolaN-k6pggNR0DcZ",
+            "d": "EAV2wWqP6ma5JNWOKpYK03Zlp_pM-DcoYZZVg6eXadL0",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/entry/1.1",
             "language": "fra",
             "attribute_entries": {
               "genotyping_technology": {
-                "RNA sequencing": "séquençage de l’ARN",
-                "SNP chip": "puce de SNP",
                 "genotyping-by-sequencing": "génotypage par séquençage",
-                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
                 "targeted sequencing": "séquençage ciblé",
-                "whole genome sequencing": "séquençage du génome entier"
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
               },
               "sequenced_molecule": {
                 "DNA": "ADN",
@@ -79,17 +79,17 @@
           }
         ],
         "entry_code": {
-          "d": "EF6cPl-YSjDaKoupZ_ghZ26iSV2szE2jFK_5QsFjJ1mH",
+          "d": "EJvoQ7nLKP2c0sBxVwjE1q1Cn5JVPmthL3A5t8HnYBK-",
           "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
-              "RNA sequencing",
-              "SNP chip",
               "genotyping-by-sequencing",
-              "targeted SNP assay",
+              "SNP chip",
+              "whole genome sequencing",
               "targeted sequencing",
-              "whole genome sequencing"
+              "targeted SNP assay",
+              "RNA sequencing"
             ],
             "sequenced_molecule": [
               "DNA",
@@ -99,27 +99,27 @@
         },
         "information": [
           {
-            "d": "EMVCZ4-f9XuX2SzK37BrRVAhq4pbUXHXKGAimn7llgcF",
+            "d": "EMzCxjB-o7xzEWrsAhuML44cpfZlxI40ln9SGGAQadtL",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
               "country": "Country of origin of the individuals sampled",
-              "cwr_radial": "Radial cell wall reinforcement of the wood cells (tracheids) of the tree, a ratio without unit",
-              "dbh_1997": "Stem diameter at breast height (in centimeters), measured in 1997 (tree age = 28 years old)",
-              "dbh_2017": "Diameter at breast height (in centimeters), measured in 2017 (tree age = 38 years old)",
+              "cwr_radial": "Radial cell wall reinforcement of the wood cells (tracheids) of the tree over 1995–2005, a ratio without unit",
+              "dbh_1997": "Stem diameter at breast height measured in 1997 (tree age = 18 years), in millimetres",
+              "dbh_2017": "Stem diameter at breast height measured in 2017 (tree age = 38 years), in millimetres",
               "elevation": "Elevation at the sites where individuals were collected (in meters)",
               "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
-              "height_1986": "Individual height measured in 1986",
-              "height_1992": "Individual height measured in 1992",
-              "height_1997": "Individual height measured in 1997",
-              "height_2017": "Individual height measured in 2017",
+              "height_1986": "Tree height measured in 1986 (tree age = 7 years), in centimetres",
+              "height_1992": "Tree height measured in 1992 (tree age = 13 years), in centimetres",
+              "height_1997": "Tree height measured in 1997 (tree age = 18 years), in centimetres",
+              "height_2017": "Tree height measured in 2017 (tree age = 38 years), in centimetres",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "latitude": "Latitude in decimal degree. Ex: -42.23452",
               "longitude": "Longitude in decimal degree. Ex: -42.23452",
-              "mean_cell_radial_diameter": "Mean radial diameter of the wood cells (tracheids) of the tree (average value given in the source data)",
-              "mean_cell_wall_thickness": "Mean cell wall thickness of the wood cells (tracheids) of the tree (average value given in the source data)",
-              "mean_wood_density": "Mean wood density of the tree (average value given in the source data)",
+              "mean_cell_radial_diameter": "Mean radial diameter of the wood cells (tracheids) of the tree over 1995–2005: radial lumen diameter plus double cell wall thickness",
+              "mean_cell_wall_thickness": "Mean cell wall thickness of the wood cells (tracheids) of the tree over 1995–2005",
+              "mean_wood_density": "Mean wood density of the tree over 1995–2005 (Silviscan X-ray densitometry)",
               "organism": "Species name in latin according to the Linneaus classification",
               "recovery_2_years_2002": "Growth recovery (basal area increment) 2 years following drought (2002 episode), calculated according to Lloret et al. 2011",
               "rel_resil_2_years_2002": "Relative growth resilience (basal area increment) 2 years following drought (2002 episode)",
@@ -129,27 +129,27 @@
             }
           },
           {
-            "d": "EJZwv2lg9LwOvW7_HI-YrjFApu9m2WXke3UbaPupi6oL",
+            "d": "EClCoxGqcSvH4GG82_W_ls6EdahbWbKaT23UahCPr9bI",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
             "attribute_information": {
               "country": "Pays d’origine des individus échantillonnés",
-              "cwr_radial": "Renforcement radial de la paroi des cellules du bois (trachéides) de l’arbre, un rapport sans unité",
-              "dbh_1997": "Diamètre de la tige à hauteur de poitrine (en centimètres), mesuré en 1997 (âge de l’arbre = 28 ans)",
-              "dbh_2017": "Diamètre à hauteur de poitrine (en centimètres), mesuré en 2017 (âge de l’arbre = 38 ans)",
+              "cwr_radial": "Renforcement radial de la paroi des cellules du bois (trachéides) de l’arbre sur 1995–2005, un rapport sans unité",
+              "dbh_1997": "Diamètre de la tige à hauteur de poitrine mesuré en 1997 (âge de l’arbre = 18 ans), en millimètres",
+              "dbh_2017": "Diamètre de la tige à hauteur de poitrine mesuré en 2017 (âge de l’arbre = 38 ans), en millimètres",
               "elevation": "Altitude des sites où les individus ont été récoltés (en mètres)",
               "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
-              "height_1986": "Hauteur de l’individu mesurée en 1986",
-              "height_1992": "Hauteur de l’individu mesurée en 1992",
-              "height_1997": "Hauteur de l’individu mesurée en 1997",
-              "height_2017": "Hauteur de l’individu mesurée en 2017",
+              "height_1986": "Hauteur de l’arbre mesurée en 1986 (âge de l’arbre = 7 ans), en centimètres",
+              "height_1992": "Hauteur de l’arbre mesurée en 1992 (âge de l’arbre = 13 ans), en centimètres",
+              "height_1997": "Hauteur de l’arbre mesurée en 1997 (âge de l’arbre = 18 ans), en centimètres",
+              "height_2017": "Hauteur de l’arbre mesurée en 2017 (âge de l’arbre = 38 ans), en centimètres",
               "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
               "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
               "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
-              "mean_cell_radial_diameter": "Diamètre radial moyen des cellules du bois (trachéides) de l’arbre (valeur moyenne fournie dans les données sources)",
-              "mean_cell_wall_thickness": "Épaisseur moyenne de la paroi des cellules du bois (trachéides) de l’arbre (valeur moyenne fournie dans les données sources)",
-              "mean_wood_density": "Densité moyenne du bois de l’arbre (valeur moyenne fournie dans les données sources)",
+              "mean_cell_radial_diameter": "Diamètre radial moyen des cellules du bois (trachéides) de l’arbre sur 1995–2005 : diamètre radial du lumen plus épaisseur de la double paroi",
+              "mean_cell_wall_thickness": "Épaisseur moyenne de la paroi des cellules du bois (trachéides) de l’arbre sur 1995–2005",
+              "mean_wood_density": "Densité moyenne du bois de l’arbre sur 1995–2005 (densitométrie aux rayons X Silviscan)",
               "organism": "Nom de l’espèce en latin selon la classification de Linné",
               "recovery_2_years_2002": "Récupération de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002), calculée selon Lloret et al. 2011",
               "rel_resil_2_years_2002": "Résilience relative de la croissance (accroissement en surface terrière) 2 ans après la sécheresse (épisode de 2002)",
@@ -227,34 +227,34 @@
         ],
         "meta": [
           {
-            "d": "EKoT3PXaVETYpqO1TvrQE2plzjs19n2WvK029FaxW9u-",
+            "d": "ELjol0-7zForOe721krqUZQxxRrT184ukXmhikYeqXJ5",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotypic and phenotypic data used to investigate the genomic architecture of drought adaptation in white spruce (Picea glauca), a widely distributed North American conifer. It includes gene SNP genotypes (6153 SNPs), phenotypes related to anatomy, growth response and climate-sensitivity, as well as environmental data for 1473 trees sampled in 43 natural populations from the province of Quebec. Trees were planted in a common garden established in 1979 in Mastigouche (Québec, Canada).",
+            "description": "This dataset contains SNP chip genotypes at 6 145 gene SNPs for 1 473 white spruce trees (Picea glauca) from natural populations of Quebec grown in a common garden, with phenotypic data.",
             "name": "picea_glauca_drought_adaptation"
           },
           {
-            "d": "EFlARbkHb9Y7oNVWCJ8qQFD3oCFGs3fyYi4Su6r-1fG6",
+            "d": "EJyu_3KodXKGRYEbdPowllpMds-gKkxMwjEDRbxchm8d",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "spec/overlays/meta/1.1",
             "language": "fra",
-            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 153 SNP géniques, ainsi que des données phénotypiques.",
+            "description": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 145 SNP géniques, ainsi que des données phénotypiques.",
             "name": "picea_glauca_drought_adaptation"
           }
         ],
         "unit": {
-          "d": "EKtaJ80BMmqvudvvfS1KDLpqqXbhjwcSXLJst5wI-hA1",
+          "d": "EOgBfXY4s6Pe3jR9mEfhCq0ny5h3FWQRHAKCvUZX_QG9",
           "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
           "type": "spec/overlays/unit/1.1",
           "attribute_unit": {
-            "dbh_1997": "centimeter",
-            "dbh_2017": "centimeter",
+            "dbh_1997": "millimeter",
+            "dbh_2017": "millimeter",
             "elevation": "meter",
-            "height_1986": "meter",
-            "height_1992": "meter",
-            "height_1997": "meter",
-            "height_2017": "meter",
+            "height_1986": "centimeter",
+            "height_1992": "centimeter",
+            "height_1997": "centimeter",
+            "height_2017": "centimeter",
             "latitude": "decimal degree",
             "longitude": "decimal degree",
             "mean_cell_radial_diameter": "micrometer",
@@ -269,7 +269,7 @@
   "extensions": {
     "adc": {
       "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET": {
-        "d": "EGzIILWiSb0Dxw5VXt1YYn4t6kq3cUbI3AfdPQdDRIOr",
+        "d": "EOX0GzP0REdQ1Q1sCiwnVEUMV8TNJg8jXYFwAAxw0nHq",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
@@ -316,7 +316,7 @@
             }
           },
           "unit_framing": {
-            "d": "EEEM_-wjzeuHx4fTQHxqiaVbqTfYlmKvD-aF7nqm-8Q5",
+            "d": "EDP1TmwQI45bvHEHMDZ9UMy4xVF2IqDE0Dtcvp9t6Hyd",
             "capture_base": "EDA85OctGc_-ZJ3QZbSValua6A2aIi9SymP4mPD2LTET",
             "type": "community/overlays/adc/unit_framing/1.0",
             "framing_metadata": {
@@ -350,6 +350,11 @@
                 "framing_justification": "semapv:ManualMappingCuration",
                 "predicate_id": "skos:exactMatch",
                 "term_id": "um"
+              },
+              "millimeter": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "mm"
               }
             }
           }
