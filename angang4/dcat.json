@@ -82,6 +82,7 @@
     {
       "@type": "prov:Attribution",
       "prov:agent": {
+        "@id": "https://openalex.org/A5078186211",
         "@type": "prov:Person",
         "foaf:name": "Malene G. Ulrik"
       },
