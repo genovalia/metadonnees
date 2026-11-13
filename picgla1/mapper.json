@@ -6,14 +6,20 @@
       "value": "Picea glauca"
     },
     "publisher": {
-      "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
       "url": {
         "type": "jsonpath",
         "path": "'dcterms:publisher'.'foaf:homepage'"
       }
     },
     "contact": {
-      "name": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:fn'" },
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
       "email": {
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
@@ -29,8 +35,8 @@
         "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
       },
       "year_end": {
-        "type": "literal",
-        "value": "present"
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
       }
     },
     "spatial": {
@@ -54,21 +60,27 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 153 SNP géniques, ainsi que des données phénotypiques."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 1 473 épinettes blanches (Picea glauca) provenant de populations naturelles du Québec et plantées en jardin commun, génotypées à l’aide de 6 145 SNP géniques, ainsi que des données phénotypiques."
     },
     "theme": {
       "type": "literal",
       "value": "Picea glauca"
     },
     "publisher": {
-      "name": { "type": "jsonpath", "path": "'dcterms:publisher'.'foaf:name'" },
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
       "url": {
         "type": "jsonpath",
         "path": "'dcterms:publisher'.'foaf:homepage'"
       }
     },
     "contact": {
-      "name": { "type": "jsonpath", "path": "'dcat:contactPoint'.'vcard:fn'" },
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
       "email": {
         "type": "jsonpath",
         "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
