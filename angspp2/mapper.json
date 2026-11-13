@@ -102,7 +102,7 @@
     },
     "spatial": {
       "type": "literal",
-      "value": "Atlantique Nord (Europe et est de l'Amérique du Nord)"
+      "value": "Atlantique Nord (Europe et est de l’Amérique du Nord)"
     },
     "creators": {
       "type": "jsonpath",

@@ -83,7 +83,7 @@
       "@type": "prov:Attribution",
       "prov:agent": {
         "@type": "prov:Person",
-        "foaf:name": "Malene G Ulrik"
+        "foaf:name": "Malene G. Ulrik"
       },
       "dcat:hadRole": [
         "collaborator"

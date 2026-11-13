@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-11-13",
   "dcterms:language": "en",
   "dcterms:title": "Targeted sequencing dataset of egg-bearing female American lobsters from Atlantic Canada",
-  "dcterms:description": "This dataset contains unfiltered targeted sequencing genotypes (Rapture) at 36 531 SNPs for 287 egg-bearing female American lobsters (Homarus americanus) from the Gulf of St. Lawrence, Newfoundland and the Bay of Fundy region (Canada). DNA was extracted from walking legs. The same lobsters were also genotyped by genotyping-by-sequencing (GbS) in a separate dataset (homame3); sample labels do not always agree between the two datasets, and genotype matching links each lobster across both.",
+  "dcterms:description": "This dataset contains unfiltered targeted sequencing genotypes (Rapture) at 36 531 SNPs for 287 egg-bearing female American lobsters (Homarus americanus) from the Gulf of St. Lawrence, Newfoundland and the Bay of Fundy region (Canada). DNA was extracted from walking legs. These lobsters were also genotyped by genotyping-by-sequencing (GbS) in a separate dataset (homame3); sample labels do not always agree between the two datasets, and genotype matching links each lobster across both.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/homame6",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",

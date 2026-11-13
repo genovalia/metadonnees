@@ -1,10 +1,10 @@
 {
-  "d": "EHEN-USzdCiDM4YcAahJyZ_T--GJtxE8FMe9rsII0z-z",
+  "d": "EOFUBHP-jBeUP0QLxt5ADsflaZTYk5wjXILoA6F7drgS",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON00237d_",
-      "d": "EO1OKmzf3IzYVktUJC4K6qW79-R6IlSn2diFTQ53GsCA",
+      "v": "OCAS11JSON002373_",
+      "d": "EAucJYtb364u4MYmbo_8TyQ0y3ZSv1a2IYG06wTZ4Q-p",
       "capture_base": {
         "d": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
         "type": "spec/capture_base/1.1",
@@ -167,19 +167,19 @@
         ],
         "meta": [
           {
-            "d": "EAP1gbIe7qf4k4bGM95jSTuhG_DbJLkb9OTFslgkV6rj",
+            "d": "EB-Jaa_JbfyThBsD1G2t_IRHIKstHeogNbr61KLMk3xD",
             "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains unfiltered targeted sequencing genotypes (Rapture) at 36 531 SNPs for 287 egg-bearing female American lobsters (Homarus americanus) from the Gulf of St. Lawrence, Newfoundland and the Bay of Fundy region (Canada). DNA was extracted from walking legs. The same lobsters were also genotyped by genotyping-by-sequencing (GbS) in a separate dataset (homame3); sample labels do not always agree between the two datasets, and genotype matching links each lobster across both.",
+            "description": "This dataset contains unfiltered targeted sequencing genotypes (Rapture) at 36 531 SNPs for 287 egg-bearing female American lobsters (Homarus americanus) from the Gulf of St. Lawrence, Newfoundland and the Bay of Fundy region (Canada). DNA was extracted from walking legs. These lobsters were also genotyped by genotyping-by-sequencing (GbS) in a separate dataset (homame3); sample labels do not always agree between the two datasets, and genotype matching links each lobster across both.",
             "name": "homarus_americanus_rapture_method_comparison"
           },
           {
-            "d": "EJhJuWDT42XL5ZcI_PhCeak6FLA3S5bGIqxATsZNnEPt",
+            "d": "ELcff-VX1a_dFdwL7i65LIdmT9B3NBxNE9OJvwchp24I",
             "capture_base": "EKmSZ9Inew-quoM_iNP1EZNEZYzqZ2O-nSJ5HSHqMykm",
             "type": "spec/overlays/meta/1.1",
             "language": "fra",
-            "description": "Ce jeu de données contient les génotypes non filtrés, obtenus par séquençage ciblé (Rapture), de 287 homards d’Amérique femelles porteuses d’œufs (Homarus americanus) provenant du golfe du Saint-Laurent, de Terre-Neuve et de la région de la baie de Fundy (Canada), génotypées à l’aide de 36 531 SNP. L’ADN a été extrait des pattes marcheuses. Les mêmes homards ont aussi été génotypés par génotypage par séquençage (GbS) dans un jeu de données distinct (homame3) ; les étiquettes des échantillons ne concordent pas toujours entre les deux jeux, et l’appariement des génotypes relie chaque homard d’un jeu à l’autre.",
+            "description": "Ce jeu de données contient les génotypes non filtrés, obtenus par séquençage ciblé (Rapture), de 287 homards d’Amérique femelles porteuses d’œufs (Homarus americanus) provenant du golfe du Saint-Laurent, de Terre-Neuve et de la région de la baie de Fundy (Canada), génotypées à l’aide de 36 531 SNP. L’ADN a été extrait des pattes marcheuses. Ces homards ont aussi été génotypés par génotypage par séquençage (GbS) dans un jeu de données distinct (homame3) ; les étiquettes des échantillons ne concordent pas toujours entre les deux jeux, et l’appariement des génotypes relie chaque homard d’un jeu à l’autre.",
             "name": "homarus_americanus_rapture_method_comparison"
           }
         ],

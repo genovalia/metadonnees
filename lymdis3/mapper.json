@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 245 spongieuses (Lymantria dispar), surtout des mâles capturés au piège, provenant de l’aire de répartition de l’espèce en Amérique du Nord, en Europe, en Afrique du Nord et en Asie, génotypées à l’aide de 2 335 SNP répartis sur le génome. Les mêmes papillons ont aussi été génotypés à 285 SNP diagnostiques de la provenance dans un jeu de données distinct (lymdis1), sous les mêmes identifiants d’échantillon."
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 245 spongieuses (Lymantria dispar), surtout des mâles capturés au piège, provenant de l’aire de répartition de l’espèce en Amérique du Nord, en Europe, en Afrique du Nord et en Asie, génotypées à l’aide de 2 335 SNP répartis sur le génome. La plupart de ces papillons ont aussi été génotypés à 285 SNP diagnostiques de la provenance dans un jeu de données distinct (lymdis1), sous les mêmes identifiants d’échantillon."
     },
     "theme": {
       "type": "literal",

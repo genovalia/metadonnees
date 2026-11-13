@@ -16,7 +16,7 @@
   "dcterms:issued": "2026-11-13",
   "dcterms:language": "en",
   "dcterms:title": "Genome-wide genotyping-by-sequencing dataset of spongy moth from North America to Japan",
-  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 335 genome-wide SNPs for 1 245 spongy moths (Lymantria dispar), mostly males caught in traps, from across the species range in North America, Europe, North Africa and Asia. The same moths were also genotyped at 285 provenance-diagnostic SNPs in a separate dataset (lymdis1), under the same sample identifiers.",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 2 335 genome-wide SNPs for 1 245 spongy moths (Lymantria dispar), mostly males caught in traps, from across the species range in North America, Europe, North Africa and Asia. Most of these moths were also genotyped at 285 provenance-diagnostic SNPs in a separate dataset (lymdis1), under the same sample identifiers.",
   "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/lymdis3",
   "dcterms:publisher": {
     "@id": "https://genovalia.ulaval.ca/",
