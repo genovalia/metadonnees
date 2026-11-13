@@ -1,0 +1,310 @@
+{
+  "d": "ELymcdHuAVRSEzK-3Lxr1fuOLGrWv_lRRNx5Q4pEKW1b",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON001f2b_",
+      "d": "EEzG8YR0C_kgKGe2fnaTSwAM9vgoDEhISGPWmaLvte9f",
+      "capture_base": {
+        "d": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "publication_code": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text",
+          "sex": "Text",
+          "stock_collection_year": "Numeric",
+          "subspecies": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EJ6OaLSFX51Qi2aBVkyeM_RkBm4YPUXq5NJCYFLQPeeg",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              },
+              "sex": {
+                "female": "female",
+                "male": "male",
+                "unknown": "unknown"
+              },
+              "subspecies": {
+                "dispar": "Lymantria dispar dispar",
+                "asiatica": "Lymantria dispar asiatica",
+                "japonica": "Lymantria dispar japonica"
+              }
+            }
+          },
+          {
+            "d": "EN0l362NH7p9yI_nZsl9NIuNITUptSGwLZ5lCwa14dPd",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              },
+              "sex": {
+                "female": "femelle",
+                "male": "mâle",
+                "unknown": "inconnu"
+              },
+              "subspecies": {
+                "dispar": "Lymantria dispar dispar",
+                "asiatica": "Lymantria dispar asiatica",
+                "japonica": "Lymantria dispar japonica"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGeX-vI0vGEPqpP6VfMGGQQb9ySmpiVSJk4vybUHYVIj",
+          "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ],
+            "sex": [
+              "female",
+              "male",
+              "unknown"
+            ],
+            "subspecies": [
+              "dispar",
+              "asiatica",
+              "japonica"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EIFRJRr84AVpUvdzCTdHadbYljCdtxWe6scU2_mRYsLj",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA.",
+              "sex": "Sex of the individual: female, male or unknown (examined but the sex could not be determined); NA when the source does not report it",
+              "stock_collection_year": "Year in which the original stock of the laboratory colony was collected in the wild; the genotyped moths were reared in the laboratory several generations later",
+              "subspecies": "Subspecies of the individual"
+            }
+          },
+          {
+            "d": "EJ13cdJByJfX1hxQ2TLC2c2ByOR29QFGr6Ar4KZ6Uyc4",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN.",
+              "sex": "Sexe de l’individu : femelle, mâle ou inconnu (examiné, mais le sexe n’a pas pu être déterminé); NA lorsque la source ne l’indique pas",
+              "stock_collection_year": "Année de récolte en milieu naturel de la souche d’origine de la colonie de laboratoire; les papillons génotypés ont été élevés en laboratoire plusieurs générations plus tard",
+              "subspecies": "Sous-espèce de l’individu"
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EIeUy1JPIFwnJkH9qZjViFWuA8Pn_U_ZXovDabja3jak",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "publication_code": "publication_code",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule",
+              "sex": "sex",
+              "stock_collection_year": "stock_collection_year",
+              "subspecies": "subspecies"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EMRrR9GEG72in9S73KWzTizKBIxbEmzccp0dyKjKgeWD",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "publication_code": "code_publication",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée",
+              "sex": "sexe",
+              "stock_collection_year": "année_collecte_souche",
+              "subspecies": "sous_espèce"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EAye0vRhq_pAKQoYB9668gPGSq1XWXVnTyeLqXIUSQVU",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 327 SNPs for 91 spongy moths (Lymantria dispar) from eight laboratory-reared colonies whose original stocks were collected in Asia, Europe and North America, covering the three subspecies L. d. dispar, L. d. asiatica and L. d. japonica.",
+            "name": "lymantria_dispar_laboratory_colonies"
+          },
+          {
+            "d": "EKba9Ho8fTUI4tHnTia2ICpVPc38xlclCIbP27gM2U_l",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 91 spongieuses (Lymantria dispar) issues de huit colonies élevées en laboratoire dont les souches d’origine ont été récoltées en Asie, en Europe et en Amérique du Nord, couvrant les trois sous-espèces L. d. dispar, L. d. asiatica et L. d. japonica, génotypées à l’aide de 2 327 SNP.",
+            "name": "lymantria_dispar_laboratory_colonies"
+          }
+        ],
+        "unit": {
+          "d": "EGj0yzBWB1XHyj-7MVFVmTF_fG9v_3wb6dkY75D05BFv",
+          "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt": {
+        "d": "EHJgQ03X-uQn7K8uZDsukTfNHJ400EWUX2fWVm3Ozdpb",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EDnDxCJ71u1G6HXjL7RwBoL3HhONOWgyA8I30WozXjNF",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "publication_code",
+              "subspecies",
+              "stock_collection_year",
+              "sex",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ],
+              "sex": [
+                "female",
+                "male",
+                "unknown"
+              ],
+              "subspecies": [
+                "dispar",
+                "asiatica",
+                "japonica"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EKWWWbkQljsoVvcuBGD2552t1Bo5iMsUqbDOmV-A1kOr",
+            "capture_base": "ECMqzb4na3-FaekU2u5HdEMU0y6XYVtB0OxjtFVT94mt",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

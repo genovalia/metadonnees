@@ -1,0 +1,258 @@
+{
+  "d": "EI2i7VQj6bI-s8H_lbeypwuFb6ubjLCnABaznJluzSGa",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON001984_",
+      "d": "EEC094UbhVToIe9UxDMk8VD_f4URtEm-kWwWsURAcrFq",
+      "capture_base": {
+        "d": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "longitude": "Numeric",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sampling_month": "Numeric",
+          "sampling_year": "Numeric",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "ENlsKQCocE35B0J3QnNNSvzREJDMzUKXS6AW6v-hP4XA",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EDz78jWq0HNG3edWUnjhK_bRlmsfc-VIWej_1QaOuqEa",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EHzK3nklNQ_Bta37_tpxn7_V6NULNSBMmO1VZ6sJIfcy",
+          "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EHi4erTqxruMzhouxM5NHcEd0syWfyGhHDT_7RAXozLM",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sampling_month": "Month in which the sample was collected, as a number from 1 (January) to 12 (December)",
+              "sampling_year": "Year in which the sample was collected",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EPFHwSiOGei0ZblJobuhw3OGqZ62z2GDoMbNDWh8BwS2",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sampling_month": "Mois au cours duquel l’échantillon a été prélevé, sous forme de nombre de 1 (janvier) à 12 (décembre)",
+              "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EArt_kiZ_Dxn4Teve7qUlOL-6NvTTXgQs2vsONn_yMe8",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sampling_month": "sampling_month",
+              "sampling_year": "sampling_year",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EL2hfKXhcuO2J-l70H_JVjKr2v7e1RFFDN3TVRDBDnhK",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "longitude": "longitude",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sampling_month": "mois_échantillonnage",
+              "sampling_year": "année_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EEqwDWfoyLvN1P6LlQTelt-QoVcM9z93VKCNLlUjbQ2-",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains targeted SNP assay genotypes at 61 coding-gene SNPs for 312 European eels (Anguilla anguilla) at the glass eel stage from Europe. Some of these eels were also genotyped by genotyping-by-sequencing in a separate dataset.",
+            "name": "anguilla_anguilla_spatial_selection"
+          },
+          {
+            "d": "EKYP41WntZysawiAOKodxwliiSheVsvXIko2gWuv0iE7",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage de SNP ciblés, de 312 anguilles européennes (Anguilla anguilla) au stade civelle provenant d’Europe, génotypées à l’aide de 61 SNP de gènes codants. Une partie de ces anguilles a également été génotypée par génotypage par séquençage dans un jeu de données distinct.",
+            "name": "anguilla_anguilla_spatial_selection"
+          }
+        ],
+        "unit": {
+          "d": "EJNGaA9JYXC18RcN1QH9arWwM3WPPBbusLZXN6vVoLVR",
+          "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "longitude": "decimal degree"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E": {
+        "d": "EECf9dWDm0QZeR_oz6wT0R6JI--clsh1HW0fvjNGFBHF",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EG9qEEeoCpnEnoBFsbFkHCsF4Q9f9J9WmJ9uA4PbZ31e",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "sampling_year",
+              "sampling_month",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EITfRPJ2kAG3d_EkMZvjb4qh_RJefLy0_jLgDF2sfJ5e",
+            "capture_base": "EPMQeGN-ckJzm_IO2GaQxNOUIIS6bNVQWeTldQPI-18E",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
