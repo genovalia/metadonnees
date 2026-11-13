@@ -1,0 +1,109 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "time": "http://www.w3.org/2006/time#"
+  },
+  "@id": "https://sedna.apps.genovalia.ulaval.ca/datasets/angang2",
+  "@type": "dcat:Dataset",
+  "dcterms:identifier": "angang2",
+  "dcterms:issued": "2026-11-13",
+  "dcterms:language": "en",
+  "dcterms:title": "Genotyping-by-sequencing dataset of European eel from across the species range (glass eels)",
+  "dcterms:description": "This dataset contains genotyping-by-sequencing genotypes at 445 290 SNPs for 259 European eels (Anguilla anguilla) at the glass eel stage from across the species range. Some of these eels were also genotyped at candidate coding-gene SNPs by targeted SNP assay in a separate dataset.",
+  "dcat:landingPage": "https://sedna.apps.genovalia.ulaval.ca/datasets/angang2",
+  "dcterms:publisher": {
+    "@id": "https://genovalia.ulaval.ca/",
+    "@type": "foaf:Organization",
+    "foaf:name": "Genovalia",
+    "foaf:homepage": "https://genovalia.ulaval.ca/"
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Kind",
+    "vcard:fn": "Genovalia",
+    "vcard:hasEmail": {
+      "@id": "mailto:genovalia@ulaval.ca"
+    }
+  },
+  "dcat:keyword": [
+    "European eel",
+    "Anguilla anguilla",
+    "genotyping-by-sequencing",
+    "local adaptation",
+    "natural selection",
+    "population genetics"
+  ],
+  "dcat:theme": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7936/",
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "dcterms:temporal": {
+    "@type": "dcterms:PeriodOfTime",
+    "time:hasBeginning": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2001"
+    },
+    "time:hasEnd": {
+      "@type": "time:Instant",
+      "time:inXSDgYear": "2010"
+    }
+  },
+  "dcterms:spatial": "https://sws.geonames.org/6255148/",
+  "dcat:version": "1.0.0",
+  "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
+  "dcterms:creator": {
+    "@id": "https://orcid.org/0000-0001-5372-4828",
+    "@type": "foaf:Person",
+    "foaf:name": "Michael M. Hansen"
+  },
+  "dcat:qualifiedAttribution": [
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0001-5372-4828",
+        "@type": "prov:Person",
+        "foaf:name": "Michael M. Hansen"
+      },
+      "dcat:hadRole": [
+        "principalInvestigator",
+        "pointOfContact"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-5037-8840",
+        "@type": "prov:Person",
+        "foaf:name": "José Martín Pujolar"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    },
+    {
+      "@type": "prov:Attribution",
+      "prov:agent": {
+        "@id": "https://orcid.org/0000-0002-8085-9709",
+        "@type": "prov:Person",
+        "foaf:name": "Louis Bernatchez"
+      },
+      "dcat:hadRole": [
+        "collaborator"
+      ]
+    }
+  ],
+  "dct:relation": [
+    "https://doi.org/10.1111/mec.12753",
+    "https://doi.org/10.5061/dryad.s8v7q"
+  ]
+}

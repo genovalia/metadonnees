@@ -1,0 +1,486 @@
+{
+  "d": "ECLJef3n9SkrHYogkl7mtH31B_NUq247mzgrjgaI3Mg2",
+  "type": "oca_package/1.0",
+  "oca_bundle": {
+    "bundle": {
+      "v": "OCAS11JSON004006_",
+      "d": "EIQuIa8ot8ntGTqZMGBtrvWVJr8ZAqDukAVH-JuzSlbI",
+      "capture_base": {
+        "d": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+        "type": "spec/capture_base/1.1",
+        "attributes": {
+          "country": "Text",
+          "exposure": "Text",
+          "genotyping_technology": "Text",
+          "id": "Text",
+          "latitude": "Numeric",
+          "liver_ag": "Numeric",
+          "liver_as": "Numeric",
+          "liver_cd": "Numeric",
+          "liver_cr": "Numeric",
+          "liver_cu": "Numeric",
+          "liver_hg": "Numeric",
+          "liver_ni": "Numeric",
+          "liver_pb": "Numeric",
+          "liver_se": "Numeric",
+          "liver_zn": "Numeric",
+          "longitude": "Numeric",
+          "muscle_2_4_dde": "Numeric",
+          "muscle_2_4_ddt": "Numeric",
+          "muscle_4_4_ddd": "Numeric",
+          "muscle_4_4_dde": "Numeric",
+          "muscle_4_4_ddt": "Numeric",
+          "muscle_hcb": "Numeric",
+          "muscle_lindane": "Numeric",
+          "muscle_pbde_100": "Numeric",
+          "muscle_pbde_153": "Numeric",
+          "muscle_pbde_154": "Numeric",
+          "muscle_pbde_209": "Numeric",
+          "muscle_pbde_28": "Numeric",
+          "muscle_pbde_47": "Numeric",
+          "muscle_pbde_49": "Numeric",
+          "muscle_pbde_99": "Numeric",
+          "muscle_pcb_101": "Numeric",
+          "muscle_pcb_118": "Numeric",
+          "muscle_pcb_138": "Numeric",
+          "muscle_pcb_153": "Numeric",
+          "muscle_pcb_180": "Numeric",
+          "muscle_pcb_50_28": "Numeric",
+          "muscle_pcb_52": "Numeric",
+          "organism": "Text",
+          "sampling_location": "Text",
+          "sequenced_molecule": "Text"
+        },
+        "classification": "RDF106",
+        "flagged_attributes": []
+      },
+      "overlays": {
+        "entry": [
+          {
+            "d": "EAdenVWkMV8qctpbVWwlXxDEjK7OdAH8lorcg3EtENJD",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/entry/1.1",
+            "language": "eng",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "genotyping-by-sequencing",
+                "SNP chip": "SNP chip",
+                "whole genome sequencing": "whole genome sequencing",
+                "targeted sequencing": "targeted sequencing",
+                "targeted SNP assay": "targeted SNP assay",
+                "RNA sequencing": "RNA sequencing"
+              },
+              "sequenced_molecule": {
+                "DNA": "DNA",
+                "RNA": "RNA"
+              }
+            }
+          },
+          {
+            "d": "EK6WcbQHv6xy-mc1KSzsmCciDMdJr9-CFwXskQcBE-Ld",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/entry/1.1",
+            "language": "fra",
+            "attribute_entries": {
+              "genotyping_technology": {
+                "genotyping-by-sequencing": "génotypage par séquençage",
+                "SNP chip": "puce de SNP",
+                "whole genome sequencing": "séquençage du génome entier",
+                "targeted sequencing": "séquençage ciblé",
+                "targeted SNP assay": "essai de génotypage ciblé de SNP",
+                "RNA sequencing": "séquençage de l’ARN"
+              },
+              "sequenced_molecule": {
+                "DNA": "ADN",
+                "RNA": "ARN"
+              }
+            }
+          }
+        ],
+        "entry_code": {
+          "d": "EGTFeAWDzLZMa886WoI0sQurItycud6wfDkYSF2hu30r",
+          "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+          "type": "spec/overlays/entry_code/1.1",
+          "attribute_entry_codes": {
+            "genotyping_technology": [
+              "genotyping-by-sequencing",
+              "SNP chip",
+              "whole genome sequencing",
+              "targeted sequencing",
+              "targeted SNP assay",
+              "RNA sequencing"
+            ],
+            "sequenced_molecule": [
+              "DNA",
+              "RNA"
+            ]
+          }
+        },
+        "information": [
+          {
+            "d": "EIoXTebkVCv6PkmcLwgdXMJ4PEgFMPPwjt_GnVKT7Bnp",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/information/1.1",
+            "language": "eng",
+            "attribute_information": {
+              "country": "Country of origin of the individuals sampled",
+              "exposure": "Control or polluted site, as classified by the source study",
+              "genotyping_technology": "Genotyping technology used to obtain the genotypes: genotyping-by-sequencing, SNP chip, whole genome sequencing, targeted sequencing, targeted SNP assay or RNA sequencing.",
+              "id": "ID referring to the individual in the genotyping file (vcf)",
+              "latitude": "Latitude in decimal degree. Ex: -42.23452",
+              "liver_ag": "Concentration of silver (Ag) measured in liver tissue",
+              "liver_as": "Concentration of arsenic (As) measured in liver tissue",
+              "liver_cd": "Concentration of cadmium (Cd) measured in liver tissue",
+              "liver_cr": "Concentration of chromium (Cr) measured in liver tissue",
+              "liver_cu": "Concentration of copper (Cu) measured in liver tissue",
+              "liver_hg": "Concentration of mercury (Hg) measured in liver tissue",
+              "liver_ni": "Concentration of nickel (Ni) measured in liver tissue",
+              "liver_pb": "Concentration of lead (Pb) measured in liver tissue",
+              "liver_se": "Concentration of selenium (Se) measured in liver tissue",
+              "liver_zn": "Concentration of zinc (Zn) measured in liver tissue",
+              "longitude": "Longitude in decimal degree. Ex: -42.23452",
+              "muscle_2_4_dde": "Concentration of 2,4'-dichlorodiphenyldichloroethylene (2,4'-DDE) measured in muscle tissue",
+              "muscle_2_4_ddt": "Concentration of 2,4'-dichlorodiphenyltrichloroethane (2,4'-DDT) measured in muscle tissue",
+              "muscle_4_4_ddd": "Concentration of 4,4'-dichlorodiphenyldichloroethane (4,4'-DDD) measured in muscle tissue",
+              "muscle_4_4_dde": "Concentration of 4,4'-dichlorodiphenyldichloroethylene (4,4'-DDE) measured in muscle tissue",
+              "muscle_4_4_ddt": "Concentration of 4,4'-dichlorodiphenyltrichloroethane (4,4'-DDT) measured in muscle tissue",
+              "muscle_hcb": "Concentration of hexachlorobenzene (HCB) measured in muscle tissue",
+              "muscle_lindane": "Concentration of lindane (gamma-hexachlorocyclohexane) measured in muscle tissue",
+              "muscle_pbde_100": "Concentration of the polybrominated diphenyl ether BDE-100 (PBDE 100) measured in muscle tissue",
+              "muscle_pbde_153": "Concentration of the polybrominated diphenyl ether BDE-153 (PBDE 153) measured in muscle tissue",
+              "muscle_pbde_154": "Concentration of the polybrominated diphenyl ether BDE-154 (PBDE 154) measured in muscle tissue",
+              "muscle_pbde_209": "Concentration of the polybrominated diphenyl ether BDE-209 (PBDE 209) measured in muscle tissue",
+              "muscle_pbde_28": "Concentration of the polybrominated diphenyl ether BDE-28 (PBDE 28) measured in muscle tissue",
+              "muscle_pbde_47": "Concentration of the polybrominated diphenyl ether BDE-47 (PBDE 47) measured in muscle tissue",
+              "muscle_pbde_49": "Concentration of the polybrominated diphenyl ether BDE-49 (PBDE 49) measured in muscle tissue",
+              "muscle_pbde_99": "Concentration of the polybrominated diphenyl ether BDE-99 (PBDE 99) measured in muscle tissue",
+              "muscle_pcb_101": "Concentration of the polychlorinated biphenyl PCB 101 measured in muscle tissue",
+              "muscle_pcb_118": "Concentration of the polychlorinated biphenyl PCB 118 measured in muscle tissue",
+              "muscle_pcb_138": "Concentration of the polychlorinated biphenyl PCB 138 measured in muscle tissue",
+              "muscle_pcb_153": "Concentration of the polychlorinated biphenyl PCB 153 measured in muscle tissue",
+              "muscle_pcb_180": "Concentration of the polychlorinated biphenyl PCB 180 measured in muscle tissue",
+              "muscle_pcb_50_28": "Concentration of the polychlorinated biphenyls PCB 50 and PCB 28 (reported together) measured in muscle tissue",
+              "muscle_pcb_52": "Concentration of the polychlorinated biphenyl PCB 52 measured in muscle tissue",
+              "organism": "Species name in latin according to the Linneaus classification",
+              "sampling_location": "Name of the location where the individual was sampled (site, locality, river or lake)",
+              "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
+            }
+          },
+          {
+            "d": "EJXIYufsPptcYB8X8h5mhbffwsMVZbPEOM8ikvCoj5Pl",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/information/1.1",
+            "language": "fra",
+            "attribute_information": {
+              "country": "Pays d’origine des individus échantillonnés",
+              "exposure": "Site témoin ou pollué, selon la classification de l’étude source",
+              "genotyping_technology": "Technologie de génotypage utilisée pour obtenir les génotypes : génotypage par séquençage, puce de SNP, séquençage du génome entier, séquençage ciblé, essai de génotypage ciblé de SNP ou séquençage de l’ARN.",
+              "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
+              "latitude": "Latitude en degrés décimaux. Ex. : -42.23452",
+              "liver_ag": "Concentration en argent (Ag) mesurée dans le tissu hépatique",
+              "liver_as": "Concentration en arsenic (As) mesurée dans le tissu hépatique",
+              "liver_cd": "Concentration en cadmium (Cd) mesurée dans le tissu hépatique",
+              "liver_cr": "Concentration en chrome (Cr) mesurée dans le tissu hépatique",
+              "liver_cu": "Concentration en cuivre (Cu) mesurée dans le tissu hépatique",
+              "liver_hg": "Concentration en mercure (Hg) mesurée dans le tissu hépatique",
+              "liver_ni": "Concentration en nickel (Ni) mesurée dans le tissu hépatique",
+              "liver_pb": "Concentration en plomb (Pb) mesurée dans le tissu hépatique",
+              "liver_se": "Concentration en sélénium (Se) mesurée dans le tissu hépatique",
+              "liver_zn": "Concentration en zinc (Zn) mesurée dans le tissu hépatique",
+              "longitude": "Longitude en degrés décimaux. Ex. : -42.23452",
+              "muscle_2_4_dde": "Concentration du 2,4'-dichlorodiphényldichloroéthylène (2,4'-DDE) mesurée dans le tissu musculaire",
+              "muscle_2_4_ddt": "Concentration du 2,4'-dichlorodiphényltrichloroéthane (2,4'-DDT) mesurée dans le tissu musculaire",
+              "muscle_4_4_ddd": "Concentration du 4,4'-dichlorodiphényldichloroéthane (4,4'-DDD) mesurée dans le tissu musculaire",
+              "muscle_4_4_dde": "Concentration du 4,4'-dichlorodiphényldichloroéthylène (4,4'-DDE) mesurée dans le tissu musculaire",
+              "muscle_4_4_ddt": "Concentration du 4,4'-dichlorodiphényltrichloroéthane (4,4'-DDT) mesurée dans le tissu musculaire",
+              "muscle_hcb": "Concentration de l’hexachlorobenzène (HCB) mesurée dans le tissu musculaire",
+              "muscle_lindane": "Concentration du lindane (gamma-hexachlorocyclohexane) mesurée dans le tissu musculaire",
+              "muscle_pbde_100": "Concentration du polybromodiphényléther BDE-100 (PBDE 100) mesurée dans le tissu musculaire",
+              "muscle_pbde_153": "Concentration du polybromodiphényléther BDE-153 (PBDE 153) mesurée dans le tissu musculaire",
+              "muscle_pbde_154": "Concentration du polybromodiphényléther BDE-154 (PBDE 154) mesurée dans le tissu musculaire",
+              "muscle_pbde_209": "Concentration du polybromodiphényléther BDE-209 (PBDE 209) mesurée dans le tissu musculaire",
+              "muscle_pbde_28": "Concentration du polybromodiphényléther BDE-28 (PBDE 28) mesurée dans le tissu musculaire",
+              "muscle_pbde_47": "Concentration du polybromodiphényléther BDE-47 (PBDE 47) mesurée dans le tissu musculaire",
+              "muscle_pbde_49": "Concentration du polybromodiphényléther BDE-49 (PBDE 49) mesurée dans le tissu musculaire",
+              "muscle_pbde_99": "Concentration du polybromodiphényléther BDE-99 (PBDE 99) mesurée dans le tissu musculaire",
+              "muscle_pcb_101": "Concentration du biphényle polychloré PCB 101 mesurée dans le tissu musculaire",
+              "muscle_pcb_118": "Concentration du biphényle polychloré PCB 118 mesurée dans le tissu musculaire",
+              "muscle_pcb_138": "Concentration du biphényle polychloré PCB 138 mesurée dans le tissu musculaire",
+              "muscle_pcb_153": "Concentration du biphényle polychloré PCB 153 mesurée dans le tissu musculaire",
+              "muscle_pcb_180": "Concentration du biphényle polychloré PCB 180 mesurée dans le tissu musculaire",
+              "muscle_pcb_50_28": "Concentration des biphényles polychlorés PCB 50 et PCB 28 (déclarés ensemble) mesurée dans le tissu musculaire",
+              "muscle_pcb_52": "Concentration du biphényle polychloré PCB 52 mesurée dans le tissu musculaire",
+              "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "sampling_location": "Nom du lieu où l’individu a été échantillonné (site, localité, rivière ou lac)",
+              "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
+            }
+          }
+        ],
+        "label": [
+          {
+            "d": "EL7dT9hC-bRSIGwt-to3KzS9jxWFXyeXAtRSlsOHhWQd",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/label/1.1",
+            "language": "eng",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "country",
+              "exposure": "exposure",
+              "genotyping_technology": "genotyping_technology",
+              "id": "id",
+              "latitude": "latitude",
+              "liver_ag": "liver_ag",
+              "liver_as": "liver_as",
+              "liver_cd": "liver_cd",
+              "liver_cr": "liver_cr",
+              "liver_cu": "liver_cu",
+              "liver_hg": "liver_hg",
+              "liver_ni": "liver_ni",
+              "liver_pb": "liver_pb",
+              "liver_se": "liver_se",
+              "liver_zn": "liver_zn",
+              "longitude": "longitude",
+              "muscle_2_4_dde": "muscle_2_4_dde",
+              "muscle_2_4_ddt": "muscle_2_4_ddt",
+              "muscle_4_4_ddd": "muscle_4_4_ddd",
+              "muscle_4_4_dde": "muscle_4_4_dde",
+              "muscle_4_4_ddt": "muscle_4_4_ddt",
+              "muscle_hcb": "muscle_hcb",
+              "muscle_lindane": "muscle_lindane",
+              "muscle_pbde_100": "muscle_pbde_100",
+              "muscle_pbde_153": "muscle_pbde_153",
+              "muscle_pbde_154": "muscle_pbde_154",
+              "muscle_pbde_209": "muscle_pbde_209",
+              "muscle_pbde_28": "muscle_pbde_28",
+              "muscle_pbde_47": "muscle_pbde_47",
+              "muscle_pbde_49": "muscle_pbde_49",
+              "muscle_pbde_99": "muscle_pbde_99",
+              "muscle_pcb_101": "muscle_pcb_101",
+              "muscle_pcb_118": "muscle_pcb_118",
+              "muscle_pcb_138": "muscle_pcb_138",
+              "muscle_pcb_153": "muscle_pcb_153",
+              "muscle_pcb_180": "muscle_pcb_180",
+              "muscle_pcb_50_28": "muscle_pcb_50_28",
+              "muscle_pcb_52": "muscle_pcb_52",
+              "organism": "organism",
+              "sampling_location": "sampling_location",
+              "sequenced_molecule": "sequenced_molecule"
+            },
+            "category_labels": {}
+          },
+          {
+            "d": "EOZGw5YYm_RbVIHoVejh45SC4089CB8ykIg_Mb04W4Xy",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/label/1.1",
+            "language": "fra",
+            "attribute_categories": [],
+            "attribute_labels": {
+              "country": "pays",
+              "exposure": "exposition",
+              "genotyping_technology": "technologie_génotypage",
+              "id": "identifiant",
+              "latitude": "latitude",
+              "liver_ag": "argent_dans_foie",
+              "liver_as": "arsenic_dans_foie",
+              "liver_cd": "cadmium_dans_foie",
+              "liver_cr": "chrome_dans_foie",
+              "liver_cu": "cuivre_dans_foie",
+              "liver_hg": "mercure_dans_foie",
+              "liver_ni": "nickel_dans_foie",
+              "liver_pb": "plomb_dans_foie",
+              "liver_se": "sélénium_dans_foie",
+              "liver_zn": "zinc_dans_foie",
+              "longitude": "longitude",
+              "muscle_2_4_dde": "2_4_dde_dans_muscle",
+              "muscle_2_4_ddt": "2_4_ddt_dans_muscle",
+              "muscle_4_4_ddd": "4_4_ddd_dans_muscle",
+              "muscle_4_4_dde": "4_4_dde_dans_muscle",
+              "muscle_4_4_ddt": "4_4_ddt_dans_muscle",
+              "muscle_hcb": "hcb_dans_muscle",
+              "muscle_lindane": "lindane_dans_muscle",
+              "muscle_pbde_100": "pbde_100_dans_muscle",
+              "muscle_pbde_153": "pbde_153_dans_muscle",
+              "muscle_pbde_154": "pbde_154_dans_muscle",
+              "muscle_pbde_209": "pbde_209_dans_muscle",
+              "muscle_pbde_28": "pbde_28_dans_muscle",
+              "muscle_pbde_47": "pbde_47_dans_muscle",
+              "muscle_pbde_49": "pbde_49_dans_muscle",
+              "muscle_pbde_99": "pbde_99_dans_muscle",
+              "muscle_pcb_101": "pcb_101_dans_muscle",
+              "muscle_pcb_118": "pcb_118_dans_muscle",
+              "muscle_pcb_138": "pcb_138_dans_muscle",
+              "muscle_pcb_153": "pcb_153_dans_muscle",
+              "muscle_pcb_180": "pcb_180_dans_muscle",
+              "muscle_pcb_50_28": "pcb_50_et_28_dans_muscle",
+              "muscle_pcb_52": "pcb_52_dans_muscle",
+              "organism": "organisme",
+              "sampling_location": "lieu_échantillonnage",
+              "sequenced_molecule": "molécule_séquencée"
+            },
+            "category_labels": {}
+          }
+        ],
+        "meta": [
+          {
+            "d": "EBSYEgVXDpco6u0E2ObiCbrJ_il-y0UM9Sz-X1r4R0wf",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/meta/1.1",
+            "language": "eng",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 13 446 SNPs for 89 American eels (Anguilla rostrata) from control and polluted sites in Quebec (Canada), with pollutant data.",
+            "name": "anguilla_rostrata_pollutant_selection"
+          },
+          {
+            "d": "EDXqwBdDjsLqoBSvj2CzMYdF4wTbbBVx_Z9kn4j5kU7U",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "spec/overlays/meta/1.1",
+            "language": "fra",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 89 anguilles d’Amérique (Anguilla rostrata) provenant de sites témoins et pollués du Québec (Canada), génotypées à l’aide de 13 446 SNP, ainsi que des données de contaminants.",
+            "name": "anguilla_rostrata_pollutant_selection"
+          }
+        ],
+        "unit": {
+          "d": "EDtevGVkKFN8c3AvIexGuLSD7nT4cgukcA5Oy4PtEhtn",
+          "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+          "type": "spec/overlays/unit/1.1",
+          "attribute_unit": {
+            "latitude": "decimal degree",
+            "liver_ag": "microgram per gram",
+            "liver_as": "microgram per gram",
+            "liver_cd": "microgram per gram",
+            "liver_cr": "microgram per gram",
+            "liver_cu": "microgram per gram",
+            "liver_hg": "microgram per gram",
+            "liver_ni": "microgram per gram",
+            "liver_pb": "microgram per gram",
+            "liver_se": "microgram per gram",
+            "liver_zn": "microgram per gram",
+            "longitude": "decimal degree",
+            "muscle_2_4_dde": "nanogram per gram",
+            "muscle_2_4_ddt": "nanogram per gram",
+            "muscle_4_4_ddd": "nanogram per gram",
+            "muscle_4_4_dde": "nanogram per gram",
+            "muscle_4_4_ddt": "nanogram per gram",
+            "muscle_hcb": "nanogram per gram",
+            "muscle_lindane": "nanogram per gram",
+            "muscle_pbde_100": "nanogram per gram",
+            "muscle_pbde_153": "nanogram per gram",
+            "muscle_pbde_154": "nanogram per gram",
+            "muscle_pbde_209": "nanogram per gram",
+            "muscle_pbde_28": "nanogram per gram",
+            "muscle_pbde_47": "nanogram per gram",
+            "muscle_pbde_49": "nanogram per gram",
+            "muscle_pbde_99": "nanogram per gram",
+            "muscle_pcb_101": "nanogram per gram",
+            "muscle_pcb_118": "nanogram per gram",
+            "muscle_pcb_138": "nanogram per gram",
+            "muscle_pcb_153": "nanogram per gram",
+            "muscle_pcb_180": "nanogram per gram",
+            "muscle_pcb_50_28": "nanogram per gram",
+            "muscle_pcb_52": "nanogram per gram"
+          }
+        }
+      }
+    },
+    "dependencies": []
+  },
+  "extensions": {
+    "adc": {
+      "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0": {
+        "d": "EAVxHel-trj9RPzEIqgk0Orl-MOyEmbJ5O8ktiPkCWNY",
+        "type": "community/adc/extension/1.0",
+        "overlays": {
+          "ordering": {
+            "d": "EFYd3mPDnB6Fr90rct0crYe-S7xB9pgW_P9jI8aYQIga",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "community/overlays/adc/ordering/1.0",
+            "attribute_ordering": [
+              "id",
+              "organism",
+              "country",
+              "latitude",
+              "longitude",
+              "sampling_location",
+              "exposure",
+              "liver_ag",
+              "liver_as",
+              "liver_cd",
+              "liver_cr",
+              "liver_cu",
+              "liver_ni",
+              "liver_pb",
+              "liver_se",
+              "liver_zn",
+              "liver_hg",
+              "muscle_hcb",
+              "muscle_lindane",
+              "muscle_2_4_dde",
+              "muscle_4_4_dde",
+              "muscle_4_4_ddd",
+              "muscle_2_4_ddt",
+              "muscle_4_4_ddt",
+              "muscle_pbde_28",
+              "muscle_pbde_47",
+              "muscle_pbde_49",
+              "muscle_pbde_99",
+              "muscle_pbde_100",
+              "muscle_pbde_153",
+              "muscle_pbde_154",
+              "muscle_pbde_209",
+              "muscle_pcb_50_28",
+              "muscle_pcb_52",
+              "muscle_pcb_101",
+              "muscle_pcb_118",
+              "muscle_pcb_153",
+              "muscle_pcb_138",
+              "muscle_pcb_180",
+              "sequenced_molecule",
+              "genotyping_technology"
+            ],
+            "entry_code_ordering": {
+              "genotyping_technology": [
+                "genotyping-by-sequencing",
+                "SNP chip",
+                "whole genome sequencing",
+                "targeted sequencing",
+                "targeted SNP assay",
+                "RNA sequencing"
+              ],
+              "sequenced_molecule": [
+                "DNA",
+                "RNA"
+              ]
+            }
+          },
+          "unit_framing": {
+            "d": "EDcBDj3KfgTrVpACpPDijWSJoGJC6hJNu2mJfzh2tE-K",
+            "capture_base": "ED2oX0KIsM8rH-1nyTI6HCjGpyXfzBPzss2BD1LIIPy0",
+            "type": "community/overlays/adc/unit_framing/1.0",
+            "framing_metadata": {
+              "id": "UCUM",
+              "label": "Unified Code for Units of Measure",
+              "location": "https://ucum.org/",
+              "version": ""
+            },
+            "units": {
+              "decimal degree": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "deg"
+              },
+              "microgram per gram": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "ug/g"
+              },
+              "nanogram per gram": {
+                "framing_justification": "semapv:ManualMappingCuration",
+                "predicate_id": "skos:exactMatch",
+                "term_id": "ng/g"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

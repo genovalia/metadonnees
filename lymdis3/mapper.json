@@ -1,0 +1,117 @@
+{
+  "id": "lymdis3",
+  "en": {
+    "theme": {
+      "type": "literal",
+      "value": "Lymantria dispar"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Lymantria dispar"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Worldwide"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  },
+  "fr": {
+    "title": {
+      "type": "literal",
+      "value": "Données de génotypage par séquençage à l’échelle du génome de la spongieuse de l’Amérique du Nord au Japon"
+    },
+    "description": {
+      "type": "literal",
+      "value": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 245 spongieuses (Lymantria dispar), surtout des mâles capturés au piège, provenant de l’aire de répartition de l’espèce en Amérique du Nord, en Europe, en Afrique du Nord et en Asie, génotypées à l’aide de 2 335 SNP répartis sur le génome. La plupart de ces papillons ont aussi été génotypés à 285 SNP diagnostiques de la provenance dans un jeu de données distinct (lymdis1), sous les mêmes identifiants d’échantillon."
+    },
+    "theme": {
+      "type": "literal",
+      "value": "Lymantria dispar"
+    },
+    "publisher": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:name'"
+      },
+      "url": {
+        "type": "jsonpath",
+        "path": "'dcterms:publisher'.'foaf:homepage'"
+      }
+    },
+    "contact": {
+      "name": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:fn'"
+      },
+      "email": {
+        "type": "jsonpath",
+        "path": "'dcat:contactPoint'.'vcard:hasEmail'.'@id'"
+      }
+    },
+    "species": {
+      "type": "literal",
+      "value": "Lymantria dispar"
+    },
+    "temporal": {
+      "year_begin": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasBeginning'.'time:inXSDgYear'"
+      },
+      "year_end": {
+        "type": "jsonpath",
+        "path": "'dcterms:temporal'.'time:hasEnd'.'time:inXSDgYear'"
+      }
+    },
+    "spatial": {
+      "type": "literal",
+      "value": "Monde entier"
+    },
+    "creators": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'foaf:name'"
+    },
+    "creators_urls": {
+      "type": "jsonpath",
+      "path": "'dcterms:creator'.'@id'"
+    },
+    "access_request_url": "https://wagtail.apps.genovalia.ulaval.ca/documents/20/Annexe_partage_donnees_sept2025.pdf"
+  }
+}
