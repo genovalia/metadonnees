@@ -60,7 +60,7 @@
     },
     "description": {
       "type": "literal",
-      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 76 mouflons d’Amérique (Ovis canadensis) provenant d’une population suivie individuellement à long terme en Alberta (Canada), génotypés à l’aide de 3 775 SNP autosomaux, ainsi que des données phénotypiques."
+      "value": "Ce jeu de données contient les génotypes, obtenus à l’aide d’une puce de SNP, de 76 mouflons d’Amérique (Ovis canadensis) provenant d’une population suivie individuellement à long terme en Alberta (Canada), génotypés à l’aide de 3 776 SNP autosomaux, ainsi que des données phénotypiques."
     },
     "theme": {
       "type": "literal",
