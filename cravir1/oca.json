@@ -1,10 +1,10 @@
 {
-  "d": "EN5EOQhFRpI_3_18Ao10FZPXJBue_PLv9BrqerSw_eUt",
+  "d": "EJYqeavOFn7rA1bdt-O3d7e_VjBZxLSEuUsaQ5TB_uuu",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0017fd_",
-      "d": "EGjv1N-qk3jAzPHh8CwOm0BsTqIQUm9ZeRSSvW2i1M33",
+      "v": "OCAS11JSON001709_",
+      "d": "EJbuAIgTk3fCG56wvELiggyuPTA2Op6YHJD8XlLA4J-z",
       "capture_base": {
         "d": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
         "type": "spec/capture_base/1.1",
@@ -157,19 +157,19 @@
         ],
         "meta": [
           {
-            "d": "EJsyUSTSIQCCHg5tNxAnB5KN-4CfoodLj8CHvEOTCuTa",
+            "d": "EKbnMJshtMmss88-Ysluyr5s516_fqr9h-lT6NUbBJYw",
             "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada). The temporal coverage is the year of the funding grant application (2016); the sampling dates are not published.",
+            "description": "This dataset contains non-imputed genotyping-by-sequencing genotypes at 11 321 SNPs for 486 eastern oysters (Crassostrea virginica) from the Gulf of St. Lawrence (New Brunswick, Nova Scotia and Prince Edward Island, Canada).",
             "name": "crassostrea_virginica_seascape_genomics"
           },
           {
-            "d": "EMTlcAOWJm9nfr25qNAy8BjM7NGKUXF7hwGns6aLUNDK",
+            "d": "EKKqDeM9dj-D4Rz0VTv17F3pr2wJxllbKghW9zWVTJ1j",
             "capture_base": "EPYQ1T2cjFLjK3DQKHDMmgZXtoyb8t6s7gYIWpt6qqR1",
             "type": "spec/overlays/meta/1.1",
             "language": "fra",
-            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, non imputés, de 486 huîtres américaines (Crassostrea virginica) provenant du golfe du Saint-Laurent (Nouveau-Brunswick, Nouvelle-Écosse et Île-du-Prince-Édouard, Canada), génotypées à l’aide de 11 321 SNP. La couverture temporelle est l’année de la demande de subvention (2016) ; les dates d’échantillonnage ne sont pas publiées.",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, non imputés, de 486 huîtres américaines (Crassostrea virginica) provenant du golfe du Saint-Laurent (Nouveau-Brunswick, Nouvelle-Écosse et Île-du-Prince-Édouard, Canada), génotypées à l’aide de 11 321 SNP.",
             "name": "crassostrea_virginica_seascape_genomics"
           }
         ],
