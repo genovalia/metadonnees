@@ -1,10 +1,10 @@
 {
-  "d": "EBHzclnvJgM_NKFJ5nTNzCZTYdwQ8wwvN3h20QC6SmA6",
+  "d": "EFAI9gHYFioxvOjU0mnxDbTXkpdHYelGkCMXyqbsTTg9",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
       "v": "OCAS11JSON001d11_",
-      "d": "EGCzKAdLS1IshR_uoVqgkCO9se1oQG88vkx7qYTL-FTK",
+      "d": "EMHO-jenZKzKwKBMM6A4PBmnaHwlv8JBECCtovyruYk9",
       "capture_base": {
         "d": "EKylRb4NquX9FGWzD5qVF_qWrCuFLnhz_9z__caef3uf",
         "type": "spec/capture_base/1.1",
@@ -187,19 +187,19 @@
         ],
         "meta": [
           {
-            "d": "EI95BqM2dEVXMY14Si1nXfPzLrdaUCPpZSBdU_soiZ2H",
+            "d": "EMYvA7XHhZ_KjcEbGNNRBvPRcEongJAZa2qqkvuoOYKh",
             "capture_base": "EKylRb4NquX9FGWzD5qVF_qWrCuFLnhz_9z__caef3uf",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
-            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 335 genome-wide SNPs for 1 245 spongy moths (Lymantria dispar), mostly males caught in traps, from across the species range in North America, Europe, North Africa and Asia. Most of these moths were also genotyped at 285 provenance-diagnostic SNPs in a separate dataset (lymdis1), under the same sample identifiers.",
+            "description": "This dataset contains genotyping-by-sequencing genotypes at 2 335 genome-wide SNPs for 1 246 spongy moths (Lymantria dispar), mostly males caught in traps, from across the species range in North America, Europe, North Africa and Asia. Most of these moths were also genotyped at 285 provenance-diagnostic SNPs in a separate dataset (lymdis1), under the same sample identifiers.",
             "name": "lymantria_dispar_range_wide_gbs"
           },
           {
-            "d": "EOe0_ITiq_oNakiJZr4bZph0NC66QVx9QXMQW5t3Gjrc",
+            "d": "ELOG7nuJkQ0iIpXo65OzkJ0nydpm51TTTV5cqByZEQSW",
             "capture_base": "EKylRb4NquX9FGWzD5qVF_qWrCuFLnhz_9z__caef3uf",
             "type": "spec/overlays/meta/1.1",
             "language": "fra",
-            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 245 spongieuses (Lymantria dispar), surtout des mâles capturés au piège, provenant de l’aire de répartition de l’espèce en Amérique du Nord, en Europe, en Afrique du Nord et en Asie, génotypées à l’aide de 2 335 SNP répartis sur le génome. La plupart de ces papillons ont aussi été génotypés à 285 SNP diagnostiques de la provenance dans un jeu de données distinct (lymdis1), sous les mêmes identifiants d’échantillon.",
+            "description": "Ce jeu de données contient les génotypes, obtenus par génotypage par séquençage, de 1 246 spongieuses (Lymantria dispar), surtout des mâles capturés au piège, provenant de l’aire de répartition de l’espèce en Amérique du Nord, en Europe, en Afrique du Nord et en Asie, génotypées à l’aide de 2 335 SNP répartis sur le génome. La plupart de ces papillons ont aussi été génotypés à 285 SNP diagnostiques de la provenance dans un jeu de données distinct (lymdis1), sous les mêmes identifiants d’échantillon.",
             "name": "lymantria_dispar_range_wide_gbs"
           }
         ],

@@ -1,12 +1,12 @@
 {
-  "d": "EBaB5GRM35u3hrJPAD-sEKh9urSXqJLWTamgqd0rtFm6",
+  "d": "ENGZIN8s2QAgERLUQkiA94vxvLcH6_u66g-8KId2jJ3R",
   "type": "oca_package/1.0",
   "oca_bundle": {
     "bundle": {
-      "v": "OCAS11JSON0015a5_",
-      "d": "EGa4QgvM_pVlisxqPlTsEuAjH5afDRoOwhx61H-nTWoK",
+      "v": "OCAS11JSON001764_",
+      "d": "EHPM9hUcuHDCtWsdk-oT0FEc-Wfc00zFhOdr-sYXn4Z-",
       "capture_base": {
-        "d": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+        "d": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
         "type": "spec/capture_base/1.1",
         "attributes": {
           "country": "Text",
@@ -14,6 +14,7 @@
           "host_plant": "Text",
           "id": "Text",
           "organism": "Text",
+          "publication_code": "Text",
           "sampling_year": "Numeric",
           "sequenced_molecule": "Text"
         },
@@ -23,8 +24,8 @@
       "overlays": {
         "entry": [
           {
-            "d": "EJOnKli5urFuWnz0Nm-0_R5TMyaSNYhr7Gs4zTPl-aRG",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "ECVg5lSbn7dmEGAoNiao2a6k2FtLkAJMItexdiky1Wmn",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/entry/1.1",
             "language": "eng",
             "attribute_entries": {
@@ -43,8 +44,8 @@
             }
           },
           {
-            "d": "ENLObTstpNd8gK4lTVrOkxqVwFxLNgAKWNkPwdlEAfrF",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "ECjtnla_c1geL-45xKiD3Iwo6az2TKmLCorIsEDHdTuB",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/entry/1.1",
             "language": "fra",
             "attribute_entries": {
@@ -64,8 +65,8 @@
           }
         ],
         "entry_code": {
-          "d": "ENhJ5IG-ZTWWdokS3zEHy91spsMC1AiNrgRPf7ryo1Bx",
-          "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+          "d": "EPFSmva91jHc9kxKIbc_jxw9VOl6hFKF3L4T4BAjiNR8",
+          "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
           "type": "spec/overlays/entry_code/1.1",
           "attribute_entry_codes": {
             "genotyping_technology": [
@@ -84,8 +85,8 @@
         },
         "information": [
           {
-            "d": "EHj2uIyp_JvVho79Q-GeM_s0C11Spo95VKBj_A43Smx9",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "ED0aeFVB3zKv-5L8nRAQs_dJ3mXMFsy13NwAI-CFYQVa",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/information/1.1",
             "language": "eng",
             "attribute_information": {
@@ -94,13 +95,14 @@
               "host_plant": "Host plant species of the individual, such as the plant on which it was collected or on which its larva fed",
               "id": "ID referring to the individual in the genotyping file (vcf)",
               "organism": "Species name in latin according to the Linneaus classification",
+              "publication_code": "Code of the sampling site or population as used in the source publication, linking the individual to the tables and figures of the article",
               "sampling_year": "Year in which the sample was collected",
               "sequenced_molecule": "Sequenced molecule such as DNA or RNA."
             }
           },
           {
-            "d": "EJvD9B0o2btHiTOYKAb0oDy6c4FnHjBWaVVvWUXFRYJl",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "EKTNPZ--gnH3RbjWuHT1hOrvk7WU_FYCHThcuPrbad_Z",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/information/1.1",
             "language": "fra",
             "attribute_information": {
@@ -109,6 +111,7 @@
               "host_plant": "Espèce de plante hôte de l’individu, comme la plante sur laquelle il a été récolté ou dont sa larve s’est nourrie",
               "id": "Identifiant de l’individu dans le fichier de génotypage (vcf)",
               "organism": "Nom de l’espèce en latin selon la classification de Linné",
+              "publication_code": "Code du site d’échantillonnage ou de la population tel qu’utilisé dans la publication source, reliant l’individu aux tableaux et aux figures de l’article",
               "sampling_year": "Année au cours de laquelle l’échantillon a été prélevé",
               "sequenced_molecule": "Molécule séquencée, comme l’ADN ou l’ARN."
             }
@@ -116,8 +119,8 @@
         ],
         "label": [
           {
-            "d": "EHAheNGcmENEG4GZAB_kiHhxiKlZFkGl67seLnPk1Zvn",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "ENaquvHAZlX-96QRk_ZTO6-3T4bX5q-zIWodlfwiKYNS",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/label/1.1",
             "language": "eng",
             "attribute_categories": [],
@@ -127,14 +130,15 @@
               "host_plant": "host_plant",
               "id": "id",
               "organism": "organism",
+              "publication_code": "publication_code",
               "sampling_year": "sampling_year",
               "sequenced_molecule": "sequenced_molecule"
             },
             "category_labels": {}
           },
           {
-            "d": "EJbJ1UjO0thDLkb-P7hcWBPTP5Ayqxf6uWWp43EcrpgP",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "EHIIjUjmLiepKeqNUVE3mtymuDZebQJlOQJSH9sNiM50",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/label/1.1",
             "language": "fra",
             "attribute_categories": [],
@@ -144,6 +148,7 @@
               "host_plant": "plante_hôte",
               "id": "identifiant",
               "organism": "organisme",
+              "publication_code": "code_publication",
               "sampling_year": "année_échantillonnage",
               "sequenced_molecule": "molécule_séquencée"
             },
@@ -152,16 +157,16 @@
         ],
         "meta": [
           {
-            "d": "EMzjTzQ28DdXl-zRBETWUbJhiVvvq7dVW2Kz7mICNKda",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "EDKp7VCSWiW9CI7LqZezwbgnJ7Gu_qv34qqw5kOxr534",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/meta/1.1",
             "language": "eng",
             "description": "This dataset contains whole genome sequencing genotypes at 442 376 bi-allelic SNPs without missing data for 91 strains of the wild yeast Saccharomyces paradoxus from a mixed hardwood forest of southern Ontario, Canada.",
             "name": "saccharomyces_paradoxus_host_tree_structure"
           },
           {
-            "d": "EDh1jxltWEmv5tZPFo4FONsdEK_xVNv5gsEiYNyLoVJI",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "EJVFMlXWDgyaB9RPoKZ_Kpqdw912dKiytJS-uOiBHW8R",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "spec/overlays/meta/1.1",
             "language": "fra",
             "description": "Ce jeu de données contient les génotypes, obtenus par séquençage du génome entier, de 91 souches de la levure sauvage Saccharomyces paradoxus provenant d’une forêt feuillue mixte du sud de l’Ontario (Canada), génotypées à l’aide de 442 376 SNP bialléliques sans données manquantes.",
@@ -174,18 +179,19 @@
   },
   "extensions": {
     "adc": {
-      "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1": {
-        "d": "EANalIgtyU5di9oEnBQtSbv8kogXTKoropGWoCPUnJeV",
+      "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS": {
+        "d": "EIwCOz4yFg3ahKsC57q9mgvTDvmVCqfz-tgk7l0OPgcZ",
         "type": "community/adc/extension/1.0",
         "overlays": {
           "ordering": {
-            "d": "ED2LiAfH05r1Hs-l_ucBnFIY1c0POVmflPHdF4yjISVB",
-            "capture_base": "EEshsemYjbIRpFUq-pBeXOK8vnttCcIL3Np4UMy_TMs1",
+            "d": "ELcFy3qhsjci8CitXNah7pyQ0OPHRBuN0ozGXpPZ7-AQ",
+            "capture_base": "EOPPPzx76yr7r1hdHywmYe7ebB8_Lo8WDN6o_XopcKgS",
             "type": "community/overlays/adc/ordering/1.0",
             "attribute_ordering": [
               "id",
               "organism",
               "country",
+              "publication_code",
               "sampling_year",
               "host_plant",
               "sequenced_molecule",
