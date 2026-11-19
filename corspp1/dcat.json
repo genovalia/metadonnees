@@ -57,7 +57,7 @@
     }
   },
   "dcterms:spatial": "https://sws.geonames.org/6255149/",
-  "dcat:version": "1.4.0",
+  "dcat:version": "1.4.1",
   "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "dcterms:accessRights": "http://purl.org/eprint/accessRights/OpenAccess",
   "dcterms:creator": {
